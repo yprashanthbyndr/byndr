@@ -1,25 +1,5 @@
 import React from 'react';
-import '../styles/Home.style.css';
-import slider_1 from '../../assets/images/slider-1.png';
-import open_book from '../../assets/images/open-book.png';
-import teamwork from '../../assets/images/teamwork.png';
-import medical_history from '../../assets/images/medical-history.png';
-import earth_globe from '../../assets/images/earth-globe.png';
-import blackboard from '../../assets/images/blackboard.png';
-import light_bulb from '../../assets/images/light-bulb.png';
-import byndr_android from '../../assets/images/byndr-android.png';
-import byndr_ios from '../../assets/images/byndr-ios.png';
-import byndr_responsive_platform from '../../assets/images/byndr-responsive-platform.png';
-import vvit_img from '../../assets/images/testimonials/vvit.png';
-import stanley_img from '../../assets/images/testimonials/stanley.png';
-import vardhaman_img from '../../assets/images/testimonials/vardhaman.png';
-import gprec_img from '../../assets/images/testimonials/gprec.png';
-
-import author_Img from '../../assets/images/testimonials/testimonial-author.png';
-import { AppContext } from '../../contextApi/AppContext';
-
-
-
+import { slider_1,open_book,teamwork,medical_history,earth_globe,blackboard,light_bulb,byndr_android,byndr_ios,byndr_responsive_platform,vvit_img,stanley_img,vardhaman_img,gprec_img,author_Img } from "../../assets";
 
 interface props {
     onLeftMenu?(): void;
@@ -33,7 +13,7 @@ export default class Home1 extends React.Component<props, any> {
         return (
         // <AppContext.Consumer value={true}>
                 
-                  <div className="bodySection">
+                  <div className="bodySection fixed_header">
 
                     <section>
                         <div className="homeBanner">

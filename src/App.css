@@ -736,7 +736,7 @@ float: left;
 .home_v2_banner {
     width: 100%;
     float: left;
-    background: url('./assets/images/homev2_bg.png') repeat-x top center;
+    background: url(./assets/images/homev2_bg.png) repeat-x top center;
     height: 710px;
 }
 .home_v2_banner_inr {
@@ -1200,6 +1200,7 @@ td+td,   th+th {
     color: #8a959e;
     float: left;
     resize: none;
+    font-family: 'Lato', sans-serif;
 }
 
 .contact-form-container input[type="submit"] {
@@ -1343,4 +1344,63 @@ select#contact_purpose {
     width: 100%;
     float: left;
     padding: 80px 0;
+    /* background-image: url(./assets/images/contact_address_bg.svg); */
+    background-repeat: no-repeat;
+    background-size: Cover;
+    background-position: top;
+    background-color: #ececec;
 }
+.contact-form-address-inr{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.contact-form-address-inr h3{
+    font-size: 52px;
+    color: #cb0a7a; 
+    margin-top: 0;
+}
+.single_address_name h4{
+    font-size: 1.5rem;
+    margin: 0;
+    color: #cb0a7a;
+    margin-bottom: 10px;
+}
+.contact-form-address-block{
+    background: #fff;
+    float: left;
+    border-radius: 5px;
+    background-clip: padding-box;
+    background-color: #ffffff;
+    border-width: 1px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 2rem;
+    border: 1px solid transparent;
+    transition: border-color 150ms;
+    width: 100%;
+    z-index: 1;
+    text-align: left;
+}
+.single_address_name{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    width: 100%;
+    float: left;
+}
+.single_address_name span{
+    font-size: 1.25rem;
+    width: 100%;
+    float: left;
+}
+/* .address_details{
+    
+}
+.address_maincity{
+
+}
+.address_streetAddress{
+
+}
+.address_Locality{
+
+} */

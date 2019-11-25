@@ -1,12 +1,6 @@
 import React from 'react';
-// import '../styles/Footer.style.css'
-import '../../App.css'
-import byndr_Logo from '../../assets/images/byndr-Logo.png';
-import FB_img from '../../assets/images/fb.png';
-import TW_img from '../../assets/images/tw.png';
-import Li_img from '../../assets/images//li.png';
-import Android_Byndr_img from '../../assets/images/byndr-android.png';
-import Ios_Byndr_img from '../../assets/images/byndr-ios.png';
+import { byndr_Logo,FB_img,TW_img,Li_img,Android_Byndr_img,Ios_Byndr_img } from "../../assets";
+import { NavLink } from 'react-router-dom';
 
 interface props {
     onLeftMenu?(): void;
@@ -29,22 +23,22 @@ export default class Footer extends React.Component<props, any> {
                                         <div className="footerWidgetList">
                                             <ul>
                                                 <li>
-                                                    <a href="./">Overview</a>
+                                                    <NavLink exact to="/">Overview</NavLink>
                                                 </li>
                                                 <li>
-                                                    <a href="./">For Teachers</a>
+                                                    <NavLink exact to="/">For Teachers</NavLink>
                                                 </li>
                                                 <li>
-                                                    <a href="./">For Students</a>
+                                                    <NavLink exact to="/">For Students</NavLink>                                                    
                                                 </li>
                                                 <li>
-                                                    <a href="./">For Institutes</a>
+                                                    <NavLink exact to="/">For Institutes</NavLink>
                                                 </li>
                                                 <li>
-                                                    <a href="./">Pricing</a>
+                                                    <NavLink exact to="/">Pricing</NavLink>
                                                 </li>
                                                 <li>
-                                                    <a href="./">Request a Demo</a>
+                                                    <NavLink exact to="/">Request a Demo</NavLink>
                                                 </li>
                                             </ul>
                                         </div>
@@ -56,16 +50,16 @@ export default class Footer extends React.Component<props, any> {
                                         <div className="footerWidgetList">
                                             <ul>
                                                 <li>
-                                                    <a href="./"> About</a>
+                                                    <NavLink exact to="/">About</NavLink>
                                                 </li>
                                                 <li>
-                                                    <a href="./">Careers</a>
+                                                    <NavLink exact to="/">Careers</NavLink>
                                                 </li>
                                                 <li>
-                                                    <a href="./">News</a>
+                                                    <NavLink exact to="/">News</NavLink>
                                                 </li>
                                                 <li>
-                                                    <a href="./">Contact Us</a>
+                                                    <NavLink exact to="/">Contact Us</NavLink>
                                                 </li>
                                             </ul>
                                         </div>
@@ -77,16 +71,16 @@ export default class Footer extends React.Component<props, any> {
                                         <div className="footerWidgetList">
                                             <ul>
                                                 <li>
-                                                    <a href="./"> Datasheets</a>
+                                                <NavLink exact to="/">Datasheets</NavLink>
                                                 </li>
                                                 <li>
-                                                    <a href="./">FAQs</a>
+                                                <NavLink exact to="/">FAQs</NavLink>
                                                 </li>
                                                 <li>
-                                                    <a href="./">Knowledge Base</a>
+                                                <NavLink exact to="/">Knowledge Base</NavLink>
                                                 </li>
                                                 <li>
-                                                    <a href="./"> Videos</a>
+                                                <NavLink exact to="/">Videos</NavLink>
                                                 </li>
                                             </ul>
                                         </div>
@@ -102,13 +96,13 @@ export default class Footer extends React.Component<props, any> {
                                         <div className="footerWidgetSocial">
                                             <ul>
                                                 <li>
-                                                    <img src={FB_img} />
+                                                <NavLink exact to="/"><img src={FB_img} alt="Bynder Facebook" /></NavLink>
                                                 </li>
                                                 <li>
-                                                    <img src={TW_img} />
+                                                <NavLink exact to="/"><img src={TW_img} alt="Bynder Twitter" /></NavLink>
                                                 </li>
                                                 <li>
-                                                    <img src={Li_img} />
+                                                <NavLink exact to="/"><img src={Li_img} alt="Bynder LinkedIn" /></NavLink>
                                                 </li>
                                             </ul>
                                         </div>
@@ -120,14 +114,10 @@ export default class Footer extends React.Component<props, any> {
                                         <div className="footerWidgetDownload">
                                             <ul>
                                                 <li>
-                                                    <a href="#">
-                                                        <img src={Android_Byndr_img }/>
-                                                    </a>
+                                                    <NavLink exact to="/"><img src={Android_Byndr_img } alt="Bynder Android"/></NavLink>
                                                 </li>
                                                 <li>
-                                                    <a href="#">
-                                                        <img src={Ios_Byndr_img} />
-                                                    </a>
+                                                    <NavLink exact to="/"><img src={Ios_Byndr_img} alt="Bynder IOS" /></NavLink>
                                                 </li>
                                             </ul>
                                         </div>
@@ -137,10 +127,11 @@ export default class Footer extends React.Component<props, any> {
                         </div>
                         <div className="footer_mini_footer">
                             <div className="footer_logo">
-                                <img src={byndr_Logo} />
+                                <NavLink exact to="/"><img src={byndr_Logo} /></NavLink>
                             </div>
                             <div className="copyright">
-                                &copy; 2019 Byndr, Inc. <a href="./">Privacy Policy</a> <a href="./">Terms of Use</a>
+                                &copy; 2019 Byndr, Inc. <NavLink exact to="/">Privacy Policy</NavLink>
+                                <NavLink exact to="/">Terms of Use</NavLink>
                             </div>
                         </div>
                     </div>

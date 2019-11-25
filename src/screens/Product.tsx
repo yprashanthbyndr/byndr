@@ -1,12 +1,9 @@
 import React from 'react';
-import '../theme/styles/Product.style.css';
+// import '../theme/styles/Product.style.css';
 
 import Dummy_Img from '../assets/images/penn.png';
 import testimonial_person from '../assets/images/testimonial_person.png';
 import penn_img from '../assets/images/penn.png';
-
-
-
 
 interface props {
     onLeftMenu?(): void;
