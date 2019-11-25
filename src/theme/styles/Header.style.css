@@ -1,0 +1,90 @@
+.header_main{
+    width: 100%;
+    float: left;
+    padding:35px 0;
+}
+.header_main_inr{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.logo{
+    width: 30%;
+    max-width: 120px;
+    float: left;
+    padding: 3px 0;
+}
+.logo img{
+    width: 100%;
+}
+.header_nav{
+    width: 70%;
+    float: right;
+    max-width: 340px;
+}
+.header_nav_inr{
+    width: 100%;
+    float: right;
+    font-size: 16px;
+    color: #333333;    
+    
+    text-align: center;
+}
+.signIn{
+    width: 100%;
+    font-weight: 600;
+    float: left;
+    line-height: 1;
+    max-width: 140px;
+}
+.signIn a{
+    color: #00144C;
+    width: 100%;
+    float: left;
+    text-align: center;
+    font: Bold 16px/19px Lato;
+    letter-spacing: 0;
+    border: 2px solid transparent;
+    border-radius: 2px;
+    opacity: 1;
+    padding: 8px 0;
+    max-width: 136px;
+}
+.signUpFree {
+    width: 100%;
+    font-weight: 600;
+    float: left;
+    line-height: 1;
+    max-width: 140px;
+}
+.signUpFree a{
+    width: 100%;
+    float: left;
+    text-align: center;
+    font: Bold 16px/19px Lato;
+    letter-spacing: 0;
+    color: #CB0A7A;
+    border: 2px solid #CB0A7A;
+    border-radius: 2px;
+    opacity: 1;
+    padding: 8px 0;
+    max-width: 136px;
+}
+.navMenu {
+    float: right;
+    padding: 7px 0;
+}
+.menuIcon{
+
+}
+.menuIcon i{
+    
+}
+.bodySection{
+    width: 100%;
+    float: left;
+    margin-top: 110px;
+}
+.bodySection.fixed_header {
+    margin-top: 0;
+}

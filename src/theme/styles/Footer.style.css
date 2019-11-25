@@ -1,0 +1,101 @@
+.footer{
+    width: 100%;
+    float: left;
+    border-bottom: 6px solid #cb0a7a;
+    padding: 100px 0 10px 0;
+    font-size: 16px;
+    background: #f2f3f6;
+}
+.footerInr{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.footerWidgetsList{
+    width: 100%;
+    float: left;
+}
+.footer_left{
+    width: 50%;
+    float: left;
+}
+.footer_left ul{
+    width: 100%;
+    float: left;
+}
+.footer_left ul li{
+    width: 33.3%;
+    float: left;
+}
+.footerWidgetTitle{
+    width: 100%;
+    float: left;
+    text-align: left;
+    font-size: 17px;
+    letter-spacing: 0;
+    color: #26567A;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.footerWidgetList{
+    width: 100%;
+    float: left;
+}
+.footerWidgetList ul{
+    width: 100%;
+    float: left;
+    font-size: 16px;
+}
+.footerWidgetList ul li{
+    width: 100%;
+    float: left;
+    padding: 5px 0;
+}
+.footer_right{
+    width: 38%;
+    float: right;
+}
+.footer_right ul{
+    width: 100%;
+    float: left;
+}
+.footer_right ul li{
+    width: 50%;
+    float: left;
+}
+.footerWidgetSocial{
+    width: 100%;
+    float: left;
+}
+.footerWidgetSocial ul{
+    width: 100%;
+    float: left;
+    display: flex;
+    flex-direction: row;
+}
+.footerWidgetSocial ul li{
+    float: left;
+    width: auto;
+    margin-right: 15px;
+}
+.footerWidgetSocial ul li img{
+    width: 100%;
+    max-width: 32px;
+}
+
+.footerWidgetDownload{
+    width: 100%;
+    float: left;
+}
+.footerWidgetDownload ul{
+    width: 100%;
+    float: left;
+}
+.footerWidgetDownload ul li{
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+}
+.footerWidgetDownload ul li img{
+    max-width: 135px;
+}
