@@ -19,6 +19,16 @@ import TW_img from './images/tw.png';
 import Li_img from './images//li.png';
 import Android_Byndr_img from './images/byndr-android.png';
 import Ios_Byndr_img from './images/byndr-ios.png';
+import Inverstors_1 from './images/inverstors/inverstors_1.png';
+import Inverstors_2 from './images/inverstors/inverstors_2.png';
+
+import Inverstors_3 from './images/inverstors/inverstors_3.png';
+import Inverstors_4 from './images/inverstors/inverstors_3.png';
+import Inverstors_5 from './images/inverstors/inverstors_3.png';
+import Inverstors_6 from './images/inverstors/inverstors_3.png';
+import ben_franklin from './images/ben_franklin.png';
+
+import penn_img from './images/penn.png';
 
 export {
     byndr_Logo,
@@ -41,5 +51,13 @@ export {
     stanley_img,
     vardhaman_img,
     gprec_img,
-    author_Img
+    author_Img,
+    Inverstors_1,
+    Inverstors_2,
+    Inverstors_3,
+    Inverstors_4,
+    Inverstors_5,
+    Inverstors_6,
+    ben_franklin,
+    penn_img
 }
