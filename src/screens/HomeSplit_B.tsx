@@ -8,6 +8,7 @@ interface props {
 
 class HomeSplit_B extends Component<props, any>{
     render(): any {
+        console.log('This is Pr', this.props)
         return (
             <AppContext.Provider value={{
                 authenticated: false,

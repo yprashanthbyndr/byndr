@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import {Home} from './screens/'
 import './App.css';
-
-class App extends Component {
+import { ByndrRoutes } from './routes/routers';
+interface props {
+    
+}
+class App extends Component <props, any>{
+  
     render() {
+      console.log('ByndrRoutes', ByndrRoutes)
       return (
         <div className="main">
           <BrowserRouter>
             <Switch>
-              <Route exact path='/' component={Home} />
+              {ByndrRoutes.map((route, i) => <RouteWithSubRoutes key={i} {...route} />)}
             </Switch>
           </BrowserRouter>
         </div>
@@ -19,3 +23,18 @@ class App extends Component {
 }
 
 export default App;
+
+ const RouteWithSubRoutes =(route)=> {
+  console.log('route', route)
+  return (
+    <Route
+      exact
+      path={route.path}
+      component={route.component}
+      // render={props => (
+      //   // pass the sub-routes down to keep nesting
+      //   <route  {...props} routes={route.routes} />
+      // )}
+    />
+  );
+}
