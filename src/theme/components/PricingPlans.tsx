@@ -15,7 +15,7 @@ export default class PricingPlans extends React.Component<props, any> {
             <article>
 
                     <ul>
-                      <li className="bg-blue active">
+                      <li className="bg-blue PricingActive">
                         <button>STANDARD</button>
                       </li>
                       <li className="bg-blue">
