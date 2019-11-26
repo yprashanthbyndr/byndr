@@ -1,8 +1,6 @@
 import React from 'react';
-import { FooterCTA, Header, Navigation, Footer, InnerPageTitleBlock } from '../theme/components';
+import {ProductCoreCapabilities,WhoIsBynderFor, FooterCTA, Header, Navigation, Footer, InnerPageTitleBlock } from '../theme/components';
 import { AppContext } from '../contextApi/AppContext';
-import WhoIsBynderFor from '../theme/components/WhoIsBynderFor';
-import ProductCoreCapabilities from '../theme/components/ProductCoreCapabilities';
 
 interface props {
     onLeftMenu?(): void;

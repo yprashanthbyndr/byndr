@@ -2244,7 +2244,7 @@ margin-bottom: 13px;
     font-weight: bold;
 }
   
-  .active, .accordion:hover {
+  .PricingActive, .accordion:hover {
     background-color: #fff;
   }
   .panel p {
@@ -2263,7 +2263,7 @@ margin-bottom: 13px;
     -webkit-font-smoothing: antialiased;
   }
   
-  .active:after {
+  .PricingActive:after {
     content: "\f106";
   }
   
