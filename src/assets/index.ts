@@ -1,4 +1,6 @@
 import slider_1 from './images/slider-1.png';
+import slider_2 from './images/slider-2.jpg';
+import slider_3 from './images/slider-3.jpg';
 import open_book from './images/open-book.png';
 import teamwork from './images/teamwork.png';
 import medical_history from './images/medical-history.png';
@@ -38,6 +40,8 @@ export {
     Android_Byndr_img,
     Ios_Byndr_img,
     slider_1,
+    slider_2,
+    slider_3,
     open_book,
     teamwork,
     medical_history,
@@ -59,5 +63,6 @@ export {
     Inverstors_5,
     Inverstors_6,
     ben_franklin,
-    penn_img
+    penn_img ,
+   
 }
