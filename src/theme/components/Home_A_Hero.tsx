@@ -43,7 +43,7 @@ export default class Home_A_Hero extends React.Component<props, any> {
 
               <CSSTransition
                 in={this.context.state.selectedTab == "teacher"}
-                timeout={3000}
+                timeout={1000}
                 classNames="imgslider"
                 unmountOnExit
               // onEnter={() => console.log("on enter click")}
@@ -78,7 +78,7 @@ export default class Home_A_Hero extends React.Component<props, any> {
 
               <CSSTransition
                 in={this.context.state.selectedTab == "student"}
-                timeout={3000}
+                timeout={1000}
                 classNames="imgslider"
                 unmountOnExit
 
@@ -111,7 +111,7 @@ export default class Home_A_Hero extends React.Component<props, any> {
 
               <CSSTransition
                 in={this.context.state.selectedTab == "Adminstrator"}
-                timeout={3000}
+                timeout={1000}
                 classNames="imgslider"
                 unmountOnExit
               >

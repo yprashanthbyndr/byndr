@@ -10,7 +10,7 @@
     transform: translateX(0);
     transition: opacity 300ms, transform 300ms; */
     transform: translate(0%);
-    transition: transform 3000ms ease-in-out;
+    transition: transform 1000ms ease-in-out;
   }
   .imgslider-exit {
     /* opacity: 1; */
@@ -21,7 +21,7 @@
     transform: scale(0.9);
     transition: opacity 300ms, transform 300ms; */
     transform: translate(-100%);
-    transition: transform 3000ms ease-in-out;
+    transition: transform 1000ms ease-in-out;
   }
 
 
