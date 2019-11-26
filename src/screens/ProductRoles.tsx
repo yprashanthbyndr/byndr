@@ -3,12 +3,16 @@ import { FooterCTA, Header, Navigation, Footer, InnerPageTitleBlock } from '../t
 import { AppContext } from '../contextApi/AppContext';
 import WhoIsBynderFor from '../theme/components/WhoIsBynderFor';
 import ProductCoreCapabilities from '../theme/components/ProductCoreCapabilities';
+import ProductForRolesBlock from '../theme/components/ProductForRolesBlock';
+import BlogGrid from '../theme/components/BlogGrid';
+import ProductRolesTestimonials from '../theme/components/ProductRolesTestimonials';
+import FaqBlock from '../theme/components/FaqBlock';
 
 interface props {
     onLeftMenu?(): void;
 }
 
-export default class Product extends React.Component<props, any> {
+export default class ProductRoles extends React.Component<props, any> {
 
     render(): any {
 
@@ -19,8 +23,10 @@ export default class Product extends React.Component<props, any> {
               <Header />
             <div className="bodySection">
             <InnerPageTitleBlock />
-            <WhoIsBynderFor />
-            <ProductCoreCapabilities />
+            <ProductForRolesBlock />
+            <BlogGrid />
+            <ProductRolesTestimonials />
+            <FaqBlock />
             <FooterCTA />
             </div>
             <Footer />

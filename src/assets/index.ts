@@ -30,6 +30,11 @@ import ben_franklin from './images/ben_franklin.png';
 
 import penn_img from './images/penn.png';
 
+import Dummy_Img from "./images/dummy_image.png";
+import testimonial_person from './images/testimonial_person.png';
+import Blog_img from "./images/blog.png";
+import PersonImage from "./images/person-icon.png";
+
 export {
     byndr_Logo,
     FB_img,
@@ -59,5 +64,9 @@ export {
     Inverstors_5,
     Inverstors_6,
     ben_franklin,
-    penn_img
+    penn_img,
+    Dummy_Img,
+    testimonial_person,
+    Blog_img,
+    PersonImage
 }
