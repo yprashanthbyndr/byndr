@@ -2,9 +2,12 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { AppContext } from '../../contextApi/AppContext';
 import { slider_1, open_book, teamwork, medical_history, earth_globe, blackboard, light_bulb, byndr_android, byndr_ios, byndr_responsive_platform, vvit_img, stanley_img, vardhaman_img, gprec_img, author_Img } from "../../assets";
+import { Home_A_Context } from '../../contextApi/HomeSplit_A.context';
 
 interface props {
   onLeftMenu?(): void;
+  State?: any;
+  click_Tab?: any
 }
 
 export default class Home_A_Hero extends React.Component<props, any> {
@@ -12,10 +15,11 @@ export default class Home_A_Hero extends React.Component<props, any> {
 
 
   componentDidMount(): any {
-    console.log("in Home_A_Hero component: ", this.context.authenticated , this.context.onclick_);
-}
+    console.log("in Home_A_Hero component: ", this.context.authenticated, this.context.onclick_);
+  }
 
   render(): any {
+    console.log("in Home_A_Hero render: ", this.context);
     return (
       // <AppContext.Provider value={{
       //   authenticated: false,
@@ -52,7 +56,7 @@ export default class Home_A_Hero extends React.Component<props, any> {
             <div className="homeBanner_slider_navigation">
               <div className="homeBanner_slider_nav_inr flexslider">
                 <ul className="slides">
-                  <li className="flex-active-slide" onClick = {()=> this.context.click_Tab("teacher")}>
+                  <li className={ this.context.state.selectedTab == "teacher" ? " flex-active-slide" : ""} onClick={() =>  this.context.click_Tab("selectedTab", "teacher") }>
                     <span className="homeBanner_slider_nav_icon">
                       <i className="fa fa-user" aria-hidden="true" />
                     </span>
@@ -60,7 +64,10 @@ export default class Home_A_Hero extends React.Component<props, any> {
                       Teacher
               </span>
                   </li>
-                  <li onClick = {()=> this.context.click_Tab("student")}>
+                  <li className={ this.context.state.selectedTab == "student" ? " flex-active-slide" : ""}
+                   onClick={() => 
+                    this.context.click_Tab("selectedTab", "student")
+                  }>
                     <span className="homeBanner_slider_nav_icon">
                       <i className="fa fa-users" aria-hidden="true" />
                     </span>
@@ -68,7 +75,8 @@ export default class Home_A_Hero extends React.Component<props, any> {
                       Student
               </span>
                   </li>
-                  <li onClick = {()=> this.context.click_Tab("Adminstrator")}>
+                  <li className={ this.context.state.selectedTab == "Adminstrator" ? " flex-active-slide" : ""}
+                   onClick={() =>  this.context.click_Tab("selectedTab", "Adminstrator") }>
                     <span className="homeBanner_slider_nav_icon">
                       <i className="fa fa-user" aria-hidden="true" />
                     </span>
@@ -89,4 +97,4 @@ export default class Home_A_Hero extends React.Component<props, any> {
 }
 
 
-Home_A_Hero.contextType= AppContext
+Home_A_Hero.contextType = Home_A_Context
