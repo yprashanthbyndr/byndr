@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { AppContext } from '../contextApi/AppContext';
 
 import { HomeSplit_A,HomeSplit_B } from './index';
-import { Header,Footer } from "../theme/components";
+import { Header,Footer, Navigation } from "../theme/components";
 
 interface props {
 
@@ -20,6 +20,7 @@ class Home extends Component<props, any> {
             <Header />
             <HomeSplit_A />
             <Footer />
+            <Navigation />
         </AppContext.Provider>
         );
     }
