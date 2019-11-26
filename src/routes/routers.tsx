@@ -1,6 +1,8 @@
 import { HomeSplit_A, HomeSplit_B } from "../screens"
 import AboutUs from "../screens/AboutUs"
 import Pricing from "../screens/Pricing"
+import Product from "../screens/Product"
+import ProductRoles from "../screens/ProductRoles"
 
 const ByndrRoutes = [
     {
@@ -45,6 +47,28 @@ const ByndrRoutes = [
         path:'/pricing',
         metaDescription:"Pricing Plans Meta Description",
         component:Pricing,
+        routes: []
+    },
+    {
+        pageName:"Product",
+        title:"Product",
+        seoVisibility:true, // default it has to be true
+        metaTitle:"Product",
+        metaTags:"Product Meta Tags",
+        path:'/product',
+        metaDescription:"Product Meta Description",
+        component:Product,
+        routes: []
+    },
+    {
+        pageName:"Product Roles",
+        title:"Product Roles",
+        seoVisibility:true, // default it has to be true
+        metaTitle:"Product Roles",
+        metaTags:"Product Roles Meta Tags",
+        path:'/product-roles',
+        metaDescription:"Product Roles Meta Description",
+        component:ProductRoles,
         routes: []
     }
 ]

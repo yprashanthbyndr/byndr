@@ -1,12 +1,12 @@
 import React from 'react';
-import {ProductCoreCapabilities,WhoIsBynderFor, FooterCTA, Header, Navigation, Footer, InnerPageTitleBlock } from '../theme/components';
+import {BlogGrid,ProductRolesTestimonials,FaqBlock,MiniHeader, FooterCTA, Header, Navigation, Footer, InnerPageTitleBlock,ProductForRolesBlock } from '../theme/components';
 import { AppContext } from '../contextApi/AppContext';
 
 interface props {
     onLeftMenu?(): void;
 }
 
-export default class Product extends React.Component<props, any> {
+export default class ProductRoles extends React.Component<props, any> {
 
     render(): any {
 
@@ -16,9 +16,12 @@ export default class Product extends React.Component<props, any> {
             }}>
               <Header />
             <div className="bodySection">
+                <MiniHeader />
             <InnerPageTitleBlock />
-            <WhoIsBynderFor />
-            <ProductCoreCapabilities />
+            <ProductForRolesBlock />
+            <BlogGrid />
+            <ProductRolesTestimonials />
+            <FaqBlock />
             <FooterCTA />
             </div>
             <Footer />
