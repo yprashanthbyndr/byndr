@@ -14,7 +14,9 @@ class App extends Component <props, any>{
         <div className="main">
           <BrowserRouter>
             <Switch>
-              {ByndrRoutes.map((route, i) => <RouteWithSubRoutes key={i} {...route} />)}
+              {ByndrRoutes.map((route, i) =>{
+               return RouteWithSubRoutes({...route})
+              } )}
             </Switch>
           </BrowserRouter>
         </div>
