@@ -1,13 +1,18 @@
 import React from 'react';
 // import '../styles/Header.style.css'
-import byndr_Logo from '../../assets/images/byndr-Logo.png'; 
+import byndr_Logo from '../../assets/images/byndr-Logo.png';
 import { NavLink } from 'react-router-dom';
+import { AppContext } from '../../contextApi/AppContext';
 
 interface props {
     onLeftMenu?(): void;
 }
 
 export default class Header extends React.Component<props, any> {
+
+    componentDidMount(): any {
+        console.log("in header component: ", this.context);
+    }
     render(): any {
         return (
             <header>
@@ -26,8 +31,8 @@ export default class Header extends React.Component<props, any> {
                                 </div>
                                 <div className="navMenu">
                                     <div className="menuIcon">
-                                            <i className="material-icons">
-                                                    menu
+                                        <i className="material-icons">
+                                            menu
                                                     </i>
                                     </div>
                                 </div>
@@ -39,3 +44,5 @@ export default class Header extends React.Component<props, any> {
         );
     }
 }
+
+Header.contextType = AppContext;

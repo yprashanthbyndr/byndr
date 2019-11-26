@@ -10,7 +10,7 @@ export default class FooterCTA extends React.Component<props, any> {
     render(): any {
         return (
         <AppContext.Provider value={{
-                authenticated: false,
+                // authenticated: false,
             }}>
                 {/* cta start */}
                 <section>

@@ -11,7 +11,7 @@ export default class Home_A_Grids extends React.Component<props, any> {
     render(): any {
         return (
         <AppContext.Provider value={{
-                authenticated: false,
+                // authenticated: false,
             }}>
 {/* grid block start */}
 <section>

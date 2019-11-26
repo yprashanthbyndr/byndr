@@ -10,7 +10,7 @@ export default class WelcomeBannerGrids extends React.Component<props, any> {
     render(): any {
         return (
         <AppContext.Provider value={{
-                authenticated: false,
+                // authenticated: false,
             }}>
             <section>
                     <div className="home_v2_blocks">

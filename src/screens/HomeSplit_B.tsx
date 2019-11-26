@@ -11,7 +11,7 @@ class HomeSplit_B extends Component<props, any>{
         console.log('This is Pr', this.props)
         return (
             <AppContext.Provider value={{
-                authenticated: false,
+                // authenticated: false,
             }}>
             <div className="bodySection fixed_header">
                 <Home_B_Hero />

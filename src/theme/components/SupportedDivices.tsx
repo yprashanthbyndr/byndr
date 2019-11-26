@@ -11,7 +11,7 @@ export default class SupportedDivices extends React.Component<props, any> {
     render(): any {
         return (
           <AppContext.Provider value={{
-              authenticated: false,
+              // authenticated: false,
           }}>
             {/* home availble divices start */}
             <section>

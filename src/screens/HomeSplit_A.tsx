@@ -8,11 +8,19 @@ interface props {
 }
 
 class HomeSplit_A extends Component<props, any>{
+
+    onbuttonclick (value) : any {
+        console.log("clicked: " ,value);
+    }
+
     render(): any {
         // console.log('this.props From HomeSplit A', this.props)
+
+        let activeTab= "teacher";
         return (
             <AppContext.Provider value={{
-                authenticated: false,
+                activeTab: activeTab,
+                click_Tab : this.onbuttonclick
             }}>
                 <Helmet>
                     <meta charSet="utf-8" />
