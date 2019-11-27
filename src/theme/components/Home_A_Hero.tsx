@@ -39,108 +39,108 @@ export default class Home_A_Hero extends React.Component<props, any> {
             <div className="homeBanner_slider flexslider">
 
               {/* <ul className="slides"> */}
-              <div style={{flexDirection:'row'}}>
+              <div style={{ flexDirection: 'row' }}>
 
-              <CSSTransition
-                in={this.context.state.selectedTab == "teacher"}
-                timeout={1000}
-                classNames="imgslider"
-                unmountOnExit
-              // onEnter={() => console.log("on enter click")}
-              // onExited={() => console.log("on exit click")}
-              >
+                <CSSTransition
+                  in={this.context.state.selectedTab == "teacher"}
+                  timeout={1000}
+                  classNames="imgslider"
+                  unmountOnExit
+                // onEnter={() => console.log("on enter click")}
+                // onExited={() => console.log("on exit click")}
+                >
 
-                <div >
-                  <div className="homeBanner_single">
-                    <div className="homeBanner_left">
-                      <h1>
-                        this is teacher view
+                  <div >
+                    <div className="homeBanner_single">
+                      <div className="homeBanner_left">
+                        <h1>
+                          this is teacher view
 </h1>
-                      <div className="calltoActions">
-                        <div className="cta_full_color">
-                          <NavLink exact to="/">Get Started For Free</NavLink>
-                        </div>
-                        <div className="cta_outline_color">
-                          <NavLink exact to="/"><i className="material-icons">
-                            play_arrow
+                        <div className="calltoActions">
+                          <div className="cta_full_color">
+                            <NavLink exact to="/">Get Started For Free</NavLink>
+                          </div>
+                          <div className="cta_outline_color">
+                            <NavLink exact to="/"><i className="material-icons">
+                              play_arrow
       </i>  How it works for teacher</NavLink>
+                          </div>
                         </div>
                       </div>
+                      <div className="homeBanner_right">
+                        <img src={slider_1} />
+                      </div>
                     </div>
-                    <div className="homeBanner_right">
-                      <img src={slider_1} />
-                    </div>
+                    {/* </li> */}
                   </div>
-                  {/* </li> */}
-                </div>
 
-              </CSSTransition>
+                </CSSTransition>
 
-              <CSSTransition
-                in={this.context.state.selectedTab == "student"}
-                timeout={1000}
-                classNames="imgslider"
-                unmountOnExit
+                <CSSTransition
+                  in={this.context.state.selectedTab == "student"}
+                  timeout={1000}
+                  classNames="imgslider"
+                  unmountOnExit
 
-              >
+                >
 
-                <div >
-                  <div className="homeBanner_single">
-                    <div className="homeBanner_left">
-                      <h1>
-                        this is student view
+                  <div >
+                    <div className="homeBanner_single">
+                      <div className="homeBanner_left">
+                        <h1>
+                          this is student view
 </h1>
-                      <div className="calltoActions">
-                        <div className="cta_full_color">
-                          <NavLink exact to="/">Get Started For Free</NavLink>
-                        </div>
-                        <div className="cta_outline_color">
-                          <NavLink exact to="/"><i className="material-icons">
-                            play_arrow
+                        <div className="calltoActions">
+                          <div className="cta_full_color">
+                            <NavLink exact to="/">Get Started For Free</NavLink>
+                          </div>
+                          <div className="cta_outline_color">
+                            <NavLink exact to="/"><i className="material-icons">
+                              play_arrow
       </i>  How it works for student</NavLink>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="homeBanner_right">
-                      <img src={open_book} />
+                      <div className="homeBanner_right">
+                        <img src={open_book} />
+                      </div>
                     </div>
                   </div>
-                </div>
 
-              </CSSTransition>
+                </CSSTransition>
 
-              <CSSTransition
-                in={this.context.state.selectedTab == "Adminstrator"}
-                timeout={1000}
-                classNames="imgslider"
-                unmountOnExit
-              >
+                <CSSTransition
+                  in={this.context.state.selectedTab == "Adminstrator"}
+                  timeout={1000}
+                  classNames="imgslider"
+                  unmountOnExit
+                >
 
-                <div >
-                  <div className="homeBanner_single">
-                    <div className="homeBanner_left">
-                      <h1>
-                        this is Administrater view
+                  <div >
+                    <div className="homeBanner_single">
+                      <div className="homeBanner_left">
+                        <h1>
+                          this is Administrater view
 </h1>
-                      <div className="calltoActions">
-                        <div className="cta_full_color">
-                          <NavLink exact to="/">Get Started For Free</NavLink>
-                        </div>
-                        <div className="cta_outline_color">
-                          <NavLink exact to="/"><i className="material-icons">
-                            play_arrow
+                        <div className="calltoActions">
+                          <div className="cta_full_color">
+                            <NavLink exact to="/">Get Started For Free</NavLink>
+                          </div>
+                          <div className="cta_outline_color">
+                            <NavLink exact to="/"><i className="material-icons">
+                              play_arrow
       </i>  How it works for Admin</NavLink>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="homeBanner_right">
-                      <img src={slider_1} />
+                      <div className="homeBanner_right">
+                        <img src={slider_1} />
+                      </div>
                     </div>
                   </div>
-                </div>
 
-              </CSSTransition>
-              {/* </ul> */}
+                </CSSTransition>
+                {/* </ul> */}
 
               </div>
             </div>
