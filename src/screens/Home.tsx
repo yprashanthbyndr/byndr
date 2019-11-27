@@ -20,8 +20,6 @@ class Home extends Component<props, any> {
             }}>
             <Header />
             <HomeSplit_A />
-
-            
             <Footer />
             <Navigation />
         {/* </div> */}
