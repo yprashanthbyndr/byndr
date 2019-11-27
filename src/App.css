@@ -224,7 +224,7 @@ header,footer,section{
 }
 .cta_outline_color{
     width: 100%;
-    max-width: 244px;
+    max-width: 275px;
     color: #fff;
     float: left;
 }
@@ -1712,12 +1712,12 @@ select#contact_purpose {
 }
 a.linkedin {
     display: inline-block;
-    height: 26px;
-    width: 26px;
+    height: 20px;
+    width: 21px;
     text-indent: -9999px;
     margin: 0 3px;
     background: url(./assets/images/pictos-team-sprite2x.png) no-repeat;
-    background-size: 52px auto;
+    background-size: 40px auto;
     transition: opacity .2s linear;
     -webkit-transition: opacity .2s linear;
     -moz-transition: opacity .2s linear;
@@ -1727,12 +1727,12 @@ a.linkedin {
 }
 a.twitter {
     display: inline-block;
-    height: 26px;
-    width: 26px;
+    height: 20px;
+    width: 21px;
     text-indent: -9999px;
     margin: 0 3px;
     background: url(./assets/images/pictos-team-sprite2x.png) no-repeat;
-    background-size: 52px auto;
+    background-size:40px auto;
     transition: opacity .2s linear;
     -webkit-transition: opacity .2s linear;
     -moz-transition: opacity .2s linear;
@@ -2397,7 +2397,7 @@ li.current-page {
 }
 
 li.year_details:before {
-    background: transparent url(../images/icon.png) 0% 0% no-repeat;
+    background: transparent url(./assets/images/footicon.png) 0% 0% no-repeat;
     content: "";
     width: 51px;
     height: 47px;
