@@ -2392,3 +2392,1194 @@ li.current-page {
     max-width: 136px;
     background: #CB0A7A;
 }
+.testmonials_profile img {
+    width: 100%;
+}
+
+li.year_details:before {
+    background: transparent url(../images/icon.png) 0% 0% no-repeat;
+    content: "";
+    width: 51px;
+    height: 47px;
+    position: absolute;
+    left: -67px;
+    top: -10px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    border-radius: 50%;
+    padding: 20px 11px 14px 18px;
+    line-height: 1;
+    transform: rotate(100deg);
+    -webkit-transform: rotate(100deg);
+}
+li.year_details {
+    float: left;
+    position: relative;
+}
+.mobile {
+    display: none;
+}
+/* 1360 screen */
+@media only screen and (max-width: 1380px) {
+    .header_main_inr, .homeBanner_inr, .homeGrid_inr, .homeAvailableDivices_inr, .footerInr, .role_based_header_main, .product-role .homeGrid_inr{
+        width: 95%;
+        max-width: 100%;
+    } 
+    .home_v2_blocks_inr{
+        width: 80%;
+    }
+    .homeBanner_left {
+        width: 100%;
+        float: left;
+        max-width: 50%;
+        margin-top: 100px;
+        margin-left: 51px;
+    }
+    .home_v2_list_single {
+        width: 95%;
+        margin: 0px 5%;
+    }
+    .homeBanner_right {
+        width: 100%;
+        float: right;
+        max-width: 45%;
+        text-align: center;
+        margin-top: 41px;
+    }
+    .our_passionate_team_main{
+        width:80%;
+        max-width: 100%;
+    }
+    .contact_section_inr {
+        max-width: 100%;
+    }
+    
+  }
+
+  /* 1150 screen */
+@media only screen and (max-width: 1150px) {
+    .homeBanner_right img {
+        width: 100%;
+    }
+    .home_v2_blocks_inr, .pricing_table_main, .who_is_byndr_main, .core_capabilities_main,.testimonial_main, .homeBanner_contentblock, .blog_inr, .faq_main, .who_is_byndr_main{
+        width: 90%;
+        max-width: 100%;
+    }
+    #tags-cloud {
+        width: 800px;
+        margin: 0px auto;
+    }
+    .homeAvailableDivicesIcons ul li img {
+        max-width: 125px;
+    }
+    .testmonials_inr{
+        width: 80% !important;
+    }
+    .homeAvailableDivices_left {
+        width: calc(48% - 44px);
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    .homeBanner_right {
+        max-width: 40%;
+    }
+    .homeBanner_left h1 {
+        font-size: 38px;
+    }
+    .cta_full_color, .cta_outline_color {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .home_v2_list_single {
+        width: 95%;
+        margin: 0px 5%;
+    }
+    .li_title {
+        font-size: 28px;
+    }
+    .core_capabilities.bg_gray li:before {
+        width: 37px;
+        height: 40px;
+        left: -13px;
+        top: 2px;
+        font-size: 28px;
+        padding: 21px 11px 8px 23px;
+    }
+    .testimonial_profile {
+        width: 35%;
+    }
+    .company_logo {
+        margin-bottom: 15px;
+    }
+    .testimonial_content {
+        float: right;
+        width: 50%;
+        padding: 40px;
+    }
+    .callToAction_main {
+        padding: 100px 0;
+    }
+    .banner_title {
+        font-size: 40px;
+    }
+    .widget_block_title, .CallToAction_title {
+        font-size: 36px;
+    }
+    .core_capabilities.bg_gray li:nth-child(2n) {
+        float: right;
+    }
+    .core_capabilities.bg_gray li {
+        width: 40%;
+        padding: 6px 0 0 72px;
+        margin: 30px 0px;
+    }
+    .core_capabilities, .testimonial.drak_gray, .who_is_byndr, .homeAvailableDivices, .pricing_table {
+        padding: 80px 0px 80px 0px;
+    }
+    .widget_button a {
+        padding: 13px 43px;
+    }
+    .inverstors_main, .vision_and_mission_main {
+        width: 90%;
+        margin: 0px auto;
+        max-width: 100%;
+    }
+    .vision_block {
+        width: 43%;
+        float: left;
+        padding: 0;
+    }
+    .mission_block {
+        width: 43%;
+        float: right;
+        padding: 0px;
+    }
+    .slider_logo img {
+        width: 100%;
+    }
+  }
+
+    /* 1024 screen */
+@media only screen and (max-width: 1024px) { 
+    .callToAction_inr, .homeTestimonialsInr {
+        width: 80%;
+        max-width: 100%;
+    }
+    .CallToAction_btn {
+        max-width: 225px;
+    }
+    .banner_title {
+        font-size: 36px;
+    }
+    div#tags-cloud {
+        display: none;
+    }
+
+}
+
+/* 1000 screen */
+@media only screen and (max-width: 1000px) {
+    .contact-thankyou-wrapper h2 {
+        font-size: 28px;
+    } 
+    .contact-form-address-inr h3 {
+        font-size: 38px;
+    }
+    .product-role-small_content {
+        width: 66%;
+        max-width: 100%;
+        font-size: 28px;
+        text-align: center;
+    }
+    .faq {
+        width: 100%;
+        float: left;
+        padding: 80px 0px;
+    }
+    .inverstors_block {
+        padding: 80px 0px;
+    }
+    .ourJourney {
+        padding: 0px 0px 80px 0px;
+    }
+    .product-role-small_content {
+        width: 80%;
+        max-width: 100%;
+        font-size: 22px;
+        text-align: center;
+    }
+    .footprint_down .single_year {
+        width: 40%;
+        margin-top: -38px;
+    }
+    .footprint_down_main {
+        max-width: 600px;
+    }
+    .single_year {
+        width: 28%;
+        margin: 18px;
+    }
+    .footprint_up_main {
+        width: 100%;
+        max-width: 950px;
+        margin: 0px auto;
+    }
+    .footprint_down {
+        margin-top: -3.8%;
+        border-top: 3px dashed #ccd0db;
+    }
+    .footprint_down .single_year:after {
+        margin-top: 16px;
+    }
+    .yearOfJourney_content {
+        font-size: 16px;
+    }
+}
+
+
+
+/* 935 screen */
+@media only screen and (max-width: 935px) { 
+    
+    .testmonials {
+        width: 100%;
+        float: left;
+        padding: 40px 0px 80px 0px;
+    }
+    .testmonials .profile_name {
+        font-size: 15px;
+    }
+    .testmonials .sub_title {
+        font-size: 14px;
+    }
+    .accordion {
+        font-size: 16px;
+    }
+    .panel p {
+        font-size: 16px;
+    }
+    .widget_button a {
+        padding: 12px 35px;
+        font-size: 16px;
+    }
+    .home_v2_list_single_cta a {
+        padding: 10px 0px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .content {
+        font-size: 16px;
+    }
+    .home_v2_list_single_cta {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 100%;
+        margin-top: 40px;
+    }
+    .home_v2_list_single {
+        padding: 24px 0;
+    }
+    .home_v2_blocks_inr {
+        margin-top: -115px;
+    }
+    .home_v2_list_single_icon {
+        padding: 10px 0;
+    }
+    .home_v2_features_inr {
+        width: 95%;
+        margin: 0px auto;
+    }
+    .homeBanner_left h1 {
+        font-size: 32px;
+    }
+    .cta_full_color a, .cta_outline_color a {
+        font-size: 16px;
+    }
+    .material-icons {
+        font-size: 17px; 
+    }
+    .homeBanner_slider_nav_icon {
+        font-size: 18px;
+    }
+    .homeBanner_slider_nav_text {
+        font-size: 14px;
+    }
+    .homeBanner_slider_navigation ul li {
+        max-width: 100px;
+    }
+    .homeBanner_slider_navigation ul {
+        max-width: 300px;
+    }
+    .homeGrid {
+        padding:0px 0px 50px 0px;
+    }
+    .homeSingleGridContent {
+        font-size: 15px; 
+    }
+    .homeSingleGrid {
+        height: 260px;
+    }
+    .homeSingleGridinr {
+        padding: 40px 50px 0px 50px;
+    }
+    .homeAvailableDivices_left h3 {
+        font-size: 22px;
+    }
+    .homeAvailableDivicesText {
+        font-size: 16px;
+    }
+    .homeTestimonialsLogos_inr ul li img {
+        width: 100%;
+        max-width: 92px;
+        -ms-transform: translateY(-25%);
+        transform: translateY(-25%);
+        text-align: center;
+        margin: 0px auto;
+    }
+    .widget_block_title, .CallToAction_title {
+        font-size: 28px;
+    }
+    .CallToAction_content {
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+    .CallToAction_btn_inr a {
+        font-size: 16px;
+        padding: 14px 0px;
+    }
+    .CallToAction_btn {
+        max-width: 200px;
+    }
+    .homeTestimonialsDropShadow {
+        font-size: 75px;
+    }
+    .footerWidgetTitle {
+        font-size: 14px;
+    }
+    .footerWidgetList ul {
+        width: 100%;
+        float: left;
+        font-size: 13px;
+    }
+    .homeAvailableDivicesIcons ul li {
+        float: left;
+        margin-right: 20px;
+    }
+    .pricing_title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .pricing_value {
+        font-size: 16px;
+    }
+    .pricing_table tbody tr .sep{
+        font-size: 20px;
+    }
+    .title, .pricing_table tbody tr td.sep.extrapadding {
+        font-size: 16px;
+    }
+    .pricing_table_main p {
+        font-size: 16px;
+    }
+    .pricing_table_main td, .pricing_table_main th {
+        width: auto;
+    }
+    button.pricing_btn {
+    width: 160px;
+    }
+    .who_is_byndr_left_block.image img {
+        width: 100%;
+    }
+    .profile_content {
+        color: #333333;
+        font-size: 16px;
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+    .company_logo {
+        width: 125px;
+    }
+    .company_logo img {
+        width: 100% !important;
+    }
+    .profile_name {
+        font-size: 16px;
+        margin-bottom: 3px;
+    }
+    .profession {
+        font-size: 14px;
+    }
+    ul.menu li {
+        font-size: 16px;
+        font-weight: 400;
+        padding: 29px 14px;
+    }
+
+}
+
+/* 840 screen */
+@media only screen and (max-width: 840px) { 
+    
+    .contact-form-address-inr h3 {
+        font-size: 30px;
+    }
+    .single_address_name h4 {
+        font-size: 18px;
+    }
+    .single_address_name span {
+        font-size: 16px;
+    }
+    .contact-form-address-block {
+        padding: 5%;
+        width: 90%;
+    }
+    .header_main {
+        padding: 15px 0;
+    }
+    .home_v2_feature_single_right {
+        width: 75%;
+        float: left;
+    }
+    .home_v2_feature_single_icon {
+        width: 15%;
+        float: left;
+        margin-right: 10%;
+        padding: 3% 0px;
+    }
+    .home_v2_feature_single_title {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .home_v2_feature_single_content {
+        font-size: 15px;
+        color: #00144C;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    .core_capabilities.bg_gray li {
+        width: 38%;
+        padding: 6px 0 0 64px;
+        margin: 30px 0px;
+    }
+    .li_title {
+        font-size: 24px;
+        margin-bottom: 0px;
+    }
+    .core_capabilities.bg_gray li:before {
+        width: 37px;
+        height: 36px;
+        left: -13px;
+        top: 2px;
+        font-size: 22px;
+        padding: 16px 0px 0px 14px;
+    }
+    .core_capabilities, .testimonial.drak_gray, .who_is_byndr, .homeAvailableDivices, .pricing_table {
+        padding: 60px 0px 60px 0px;
+    }
+    .flex-direction-nav .flex-next {
+        opacity: 1;
+        right: -55px;
+    }
+    .bodySection {
+        margin-top: 70px;
+    }
+}
+
+/* 767 screen */
+@media only screen and (max-width: 767px) { 
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    li.year_details {
+        width: 60%;
+        float: left;
+        position: relative;
+        padding: 6px 0 0 47px;
+        margin: 0px 0px 0px 15%;
+        border-left: 3px dashed #ccd0db;
+        padding-bottom: 20px;
+    }
+    .product-role .homeSingleGrid {
+        width: calc(50% - 4px);
+        height: 200px;
+    }
+    .homeBanner_main {
+        padding: 80px 0;
+    }
+    .bodySection {
+        margin-top: 67px;
+    }
+    .banner_title {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    .banner_content {
+        text-align: center;
+        font-size: 20px;
+    }
+    .home_v2_list_single_title {
+        font: Bold 18px/48px Lato;
+    }
+    .home_v2_list_single_content {
+        text-align: left;
+        font-size: 14px;
+    }
+    .home_v2_list_single_cta a {
+        font-size: 14px;
+    }
+    .home_v2_features_title {
+        font-size: 22px;
+        line-height: 40px;
+        margin-bottom: 40px;
+    }
+    .home_v2_features {
+        padding: 50px 0px;
+    }
+    .homeBanner_right {
+        margin-top: 0;
+    }
+    .cta_full_color, .cta_outline_color {
+        max-width: 78%;
+        margin: 10px 0px;
+    }
+    .homeBanner_left {
+        margin-top: 40px;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .homeBanner_left h1 {
+        font-size: 28px;
+    }
+    .homeSingleGrid {
+        width: calc(50% - 4px);
+    }
+    .homeAvailableDivicesText {
+        font-size: 14px;
+    }
+    .homeAvailableDivices_left h3 {
+        font-size: 20px;
+    }
+    .homeTestimonialCurrent_Content {
+        margin: 12px auto;
+        max-width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
+    .callToAction_main {
+        padding: 50px 0;
+    }
+    .homeTestimonialsLogos_inr ul {
+        width: 100%;
+        max-width: 100%;
+    }
+    .footerWidgetDownload ul li img {
+        max-width: 100%;
+    }
+    .homeAvailableDivicesIcons ul li {
+        float: left;
+        margin-right: 20px;
+        width: 41%;
+    }
+    .homeAvailableDivicesIcons ul li img {
+        max-width: 100%;
+    }
+    ul.menu li {
+        font-size: 13px;
+        font-weight: 400;
+        padding: 31px 14px;
+    }
+}
+/* 678 screen */
+@media only screen and (max-width: 678px) { 
+    .vision_block {
+        width: 100%;
+        float: left;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    .mission_block{
+        width: 100%;
+    }
+    .role_based_header {
+        display: none;
+    }
+    .homeAvailableDivices_left {
+        width: 90%;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    .home_v2_blocks_inr {
+        margin-top: 40px;
+    }
+    .home_v2_list_single_title {
+        text-align: center;
+        font: Bold 18px/22px Lato;
+        letter-spacing: 0;
+        margin-bottom: 10px;
+    }
+    .homeAvailableDivicesIcons ul li img {
+        max-width: 135px;
+    }
+    .homeAvailableDivicesIcons ul {
+        width: auto;
+        float: left;
+    }
+    .homeAvailableDivices_right {
+        float: left;
+        width: 100%;
+    }
+    .homeAvailableDivices_inr {
+        display: -webkit-flex;
+        -webkit-flex-direction: row-reverse;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .core_capabilities, .testimonial.drak_gray, .who_is_byndr, .homeAvailableDivices {
+        padding: 40px 0px 80px 0px;
+    }
+    .signIn a, .signUpFree a {
+        font: Bold 14px/19px Lato;
+    }
+    .widget_block_title, .CallToAction_title {
+        font-size: 22px;
+    }
+    .CallToAction_content {
+        text-align: center;
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+    .CallToAction_btn_inr a {
+        font-size: 14px;
+        padding: 14px 0px;
+    }
+    .who_is_byndr_right_block, .who_is_byndr_left_block {
+        width: 100%;
+        float: right;
+    }
+    .who_is_byndr_left_block.image img {
+        width: 300px;
+    }
+    .who_is_byndr_left_block.image {
+        text-align: center;
+    }
+    .column-reverse {
+        display: -webkit-flex;
+        -webkit-flex-direction: column-reverse;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .who_is_byndr_right_block.image {
+        text-align: center;
+    }
+    .who_is_byndr_right_block.image img {
+        width: 300px;
+    }
+    .who_is_byndr_blocks {
+        padding: 0px 0px 50px 0px;
+    }
+    .core_capabilities.bg_gray li:nth-child(2n) {
+        float: left;
+    }
+    .core_capabilities.bg_gray li {
+        width: 87%;
+    }
+    .core_capabilities {
+        padding: 40px 0px 40px 0px;
+    }
+    .testimonial_content {
+        float: left;
+        width: 100%;
+        padding: 40px;
+    }
+    .testimonial_profile {
+        width: 35%;
+        clear: both;
+        margin: 15px auto;
+        float: none;
+        clip-path: none;
+    }
+    .testimonial_content {
+        float: left;
+        width: 100%;
+        padding: 20px 40px 40px 40px;
+    }
+    .slider {
+        margin-top: 0;
+    }
+}
+/* 639 screen */
+@media only screen and (max-width: 639px) { 
+    .active:after {
+        content: "\f106";
+        display: none;
+    }
+    article button:focus {
+        outline: none;
+    }
+    .pricing_table_main li.active button {
+        background: #cb0a7a;
+        color: #fff;
+    }
+}
+/* 600 screen */
+@media only screen and (max-width: 600px) { 
+    .vision_mission_content {
+        font-size: 16px;
+        text-align: left;
+        line-height: 27px;
+        color: #00144C;
+    }
+    .inverstors_block {
+        padding: 60px 0px;
+    }
+    .vision_and_mission {
+        background: #fff;
+        padding: 40px 0px;
+        width: 100%;
+        float: left;
+    }
+    .slider_logo_block {
+        width: 100%;
+        float: left;
+        margin-top: 0;
+    }
+    .contact-form-container h2 {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+    .contact-form-container input, .contact-form-container select, .contact-form-container textarea {
+        font-size: 14px;
+    }
+    .contact-thankyou-wrapper h2 {
+        margin-bottom: 0px;
+        margin-top: 17px;
+        font-size: 22px;
+    }
+    .contact-thankyou-wrapper p {
+        margin-bottom: 40px;
+        font-size: 15px;
+    }
+    .contact-form-address-inr h3 {
+        font-size: 24px;
+    }
+    .contact_section_form_section {
+        width: 90%;
+        margin: 0 auto;
+        color: #747c83;
+    }
+    .input-select-wrapper {
+        width: 100% !important;
+    }
+    .contact-form-address-inr {
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .contact-form-address-block {
+        width: 90%;
+    }
+    .contact-form-address-block {
+        padding: 5%;
+    }
+    .product-role-small_content {
+        font-size: 18px;
+    }
+    .home_v2_banner {
+        height: 400px;
+    }
+    .footer_left {
+        width: 100%;
+        float: left;
+    }
+    .home_v2_banner_main {
+        padding: 185px 0 50px 0px;
+    }
+    .home_v2_features {
+        padding: 50px 0px 0px 0px;
+    }
+    .home_v2_list_block ul {
+        width: 100%;
+        float: left;
+        display: block;
+        flex-direction: row;
+    }
+    .home_v2_list_block ul li {
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin: 0px auto;
+        max-width: 340px;
+    }
+    .home_v2_list_single {
+        width: 100%;
+        margin: 20px 0px;
+        float: left;
+        text-align: center;
+    }
+    .footer_right {
+        width: 100%;
+        float: right;
+        margin-top: 25px;
+    }
+    .homeBanner_left h1 {
+        font-size: 24px;
+    }
+    .footerWidgetDownload ul li img {
+        max-width: 135px;
+    }
+    .footer {
+        padding: 40px 0 10px 0;
+    }
+    .home_v2_feature_single_content {
+        font-size: 14px;
+    }
+    .home_v2_features_title {
+        color: #00144C;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 40px;
+    }
+    .widget_title {
+        text-align: center;
+        font-size: 16px;
+        padding-bottom :20px;
+    }
+    .li_title {
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+    .core_capabilities.bg_gray li {
+        margin: 6px 0px;
+    }
+    .testimonial_content {
+        float: left;
+        width: 95%;
+        padding: 9px 10px 10px 10px;
+    }
+    .profile_content, .profile_name, .profession {
+        font-size: 14px;
+    }
+    .home_v2_banner_play_icon {
+        width: 50px;
+        padding: 8px 0 2px 0px;
+        border-radius: 50px;
+    }
+    .video {
+        text-align: center;
+        padding: 29px 0px 0px 0px;
+    }
+}
+/* 568 screen */
+@media only screen and (max-width: 568px) {  
+    .product-role-small_content {
+        margin-bottom: 40px;
+    }
+    .banner_title {
+        font-size: 22px;
+    }
+    .homeBanner_right {
+        display: none;
+    }
+    .flex-direction-nav .flex-next {
+        opacity: 1;
+        right: -14px;
+    }
+    
+    .homeBanner_left {
+        margin-top: 40px;
+        margin-left: 0;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+    .cta_full_color, .cta_outline_color {
+        max-width: 220px;
+        width: 100%;
+        clear: both;
+        margin: 0 auto;
+        float: none;
+    }
+    .cta_full_color a, .cta_outline_color a {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .banner_content {
+        text-align: center;
+        font-size: 16px;
+    }
+    .calltoActions {
+        margin-top: 25px;
+    }
+    .homeAvailableDivicesText {
+        font-size: 14px;
+        display: none;
+    }
+    .homeBanner_left h1 {
+        font-size: 24px;
+        text-align: center;
+        width: 80%;
+        margin: 0px auto;
+    }
+    .homeBanner_left {
+        margin-top: 20px;
+        margin-left: 0;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+    .homeSingleGrid {
+        width: 80%;
+        margin: 0px auto;
+        float: none;
+    }
+    .product-role .homeSingleGrid {
+        width: 80%;
+        margin: 0px auto;
+        float: none;
+    }
+    .homeAvailableDivices_left h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .homeAvailableDivices_left {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+    .homeAvailableDivicesIcons {
+        width: 300px;
+        text-align: center;
+        margin: 0px auto;
+        float: none;
+    }
+    .slider_logo {
+        width: 250px;
+        float: none;
+        text-align: center;
+        margin: 0px auto;
+        padding: 10px;
+    }
+    .inverstors_block {
+        width: 100%;
+        float: left;
+        background: #fff;
+        padding: 40px 0px;
+    }
+    .slider_logo_block {
+        width: 100%;
+        float: left;
+        margin-top: 0;
+    }
+    .ourJourney {
+        width: 100%;
+        float: left;
+        padding: 0px 0px 40px 0px;
+    }
+}
+
+/* 468 screen */
+@media only screen and (max-width: 468px) {  
+    .home_v2_features_title {
+        font-size: 18px;
+    }
+    .home_v2_feature_single_title {
+        font-size: 16px;
+    }
+    .home_v2_feature_single_content {
+        font-size: 14px;
+        text-align: justify;
+        line-height: 25px;
+    }
+    .home_v2_feature_single_link {
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .homeAvailableDivices_left h3 {
+        font-size: 16px;
+        text-align: center;
+    }
+    .widget_block_title, .CallToAction_title {
+        font-size: 19px;
+        line-height: 1.2;
+        margin-bottom: 12px;
+    }
+    .accordion {
+        font-size: 14px;
+    }
+    .home_v2_feature_single_right {
+        width: 100%;
+        float: left;
+    }
+    .home_v2_feature_single_icon {
+        width: 100px;
+        float: none;
+        margin-right: 10%;
+        padding: 3% 0px;
+        margin: 0px auto;
+    }
+    .home_v2_feature_single {
+        width: 100%;
+        float: left;
+        margin-bottom: 20px;
+    }
+    .home_v2_feature_single_title {
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .homeAvailableDivices_left h3{
+        padding-bottom: 25px;
+    }
+    .home_v2_features_title, .homeAvailableDivices_left h3 {
+        width: 90%;
+        margin: 0px auto;
+    }
+    .header_nav {
+        width: 70%;
+        float: right;
+        max-width: 203px;
+    }
+    .signIn {
+        max-width: 76px;
+    }
+    .signUpFree {
+        max-width: 100px;
+    }
+    .homeTestimonialsLogos {
+        width: 100%;
+        float: left;
+        padding: 20px 0 0 0;
+        border-bottom: 2px solid #f2f3f6;
+    }
+    .who_is_byndr {
+        padding: 40px 0px 20px 0px;
+    }
+    .contact-thankyou-wrapper {
+        margin-bottom: 40px;
+    }
+    
+}
+
+/* 386 screen */
+@media only screen and (max-width: 386px) { 
+    .homeBanner_slider_navigation ul {
+        max-width: 275px;
+        margin: 0px auto;
+    }
+    .flex-direction-nav .flex-prev {
+        opacity: 1;
+        left: -30px;
+    }
+    .flex-direction-nav .flex-next {
+        opacity: 1;
+        right: -35px;
+    }
+    .testmonials_content:after {
+        margin-right: -18px;
+    }
+    .testmonials_content:before {
+        left: -26px;
+        top: -9px;
+    }
+    .homeTestimonialsLogos_inr ul li {
+        flex: 1;
+        padding: 0 7px;
+        text-align: center;
+        margin-bottom: -2px;
+    }  
+    .footer_right ul li {
+        width: 100%;
+        float: left;
+        margin-bottom: 5px;
+    }
+    .footer_left ul li {
+        width: 100%;
+        float: left;
+        margin-bottom: 5px;
+    }
+    .footer_logo {
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+    .copyright {
+        font-size: 12px;
+        float: right;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .copyright {
+        width: 100%;
+    }
+    .footer_mini_footer {
+        width: 100%;
+        float: left;
+        padding-top: 20px;
+        border-top: 1px solid #ccc;
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+    .footer_right ul li {
+        width: 100%;
+        float: left;
+        margin-bottom: 10px;
+    }
+    .footer_right ul li {
+        display: inline;
+        width: auto;
+        float: left;
+        margin-bottom: 10px;
+    }
+    .footerWidgetSocial ul {
+        display: initial;
+    }
+    .footer_right .footerWidgetDownload li {
+        display: block;
+        clear: both;
+    }
+    .contact-thankyou-wrapper a {
+        width: 185px;
+        font: 700 13px/1.5em "Open Sans",open-sans,sans-serif;
+        padding: 30px 21px;
+    }
+    .contact-thankyou-wrapper {
+        margin-bottom: 20px;
+    }
+
+}
+
+/* 368 screen */
+@media only screen and (max-width: 368px) { 
+    .home_v2_banner_play_icon {
+        width: 50px;
+        padding: 8px 0 2px 0px;
+        border-radius: 50px;
+    }
+    .group_buttons .widget_button {
+        width: 43%;
+    }
+    .widget_button a {
+        padding: 9px 19px;
+        font-size: 14px;
+    }
+    .core_capabilities.bg_gray li:before {
+        left: 4px;
+    }
+    .core_capabilities.bg_gray li:before {
+        width: 31px;
+        height: 31px;
+        left: 4px;
+        top: 10px;
+        font-size: 17px;
+        padding: 13px 0px 0px 14px;
+    }
+    .core_capabilities.bg_gray li {
+        width: 80%;
+    }
+    .contact-thankyou-wrapper {
+        margin-bottom: 0px;
+    }
+ }
