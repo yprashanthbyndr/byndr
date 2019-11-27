@@ -23,19 +23,19 @@ export default class Footer extends React.Component<props, any> {
                                         <div className="footerWidgetList">
                                             <ul>
                                                 <li>
-                                                    <NavLink exact to="/">Overview</NavLink>
+                                                    <NavLink exact to="/product-roles">Overview</NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact to="/">For Teachers</NavLink>
+                                                    <NavLink exact to="/product-roles">For Teachers</NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact to="/">For Students</NavLink>                                                    
+                                                    <NavLink exact to="/product-roles">For Students</NavLink>                                                    
                                                 </li>
                                                 <li>
-                                                    <NavLink exact to="/">For Institutes</NavLink>
+                                                    <NavLink exact to="/product-roles">For Institutes</NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact to="/">Pricing</NavLink>
+                                                    <NavLink exact to="/pricing">Pricing</NavLink>
                                                 </li>
                                                 <li>
                                                     <NavLink exact to="/">Request a Demo</NavLink>
@@ -50,16 +50,22 @@ export default class Footer extends React.Component<props, any> {
                                         <div className="footerWidgetList">
                                             <ul>
                                                 <li>
-                                                    <NavLink exact to="/">About</NavLink>
+                                                    <NavLink exact to="/aboutus">About</NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact to="/">Careers</NavLink>
+                                                <NavLink exact 
+                                                    to="/"
+                                                    onClick={()=> {
+                                                        window.open( 
+                                                            "https://byndr.breezy.hr/", "_blank"); 
+                                                    }}
+                                                    >Careers</NavLink>
                                                 </li>
                                                 <li>
                                                     <NavLink exact to="/">News</NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact to="/">Contact Us</NavLink>
+                                                    <NavLink exact to="/contact-us">Contact Us</NavLink>
                                                 </li>
                                             </ul>
                                         </div>

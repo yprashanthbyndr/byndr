@@ -19,7 +19,6 @@ export default class ProductRoles extends React.Component<props, any> {
                 <MiniHeader />
             <InnerPageTitleBlock />
             <ProductForRolesBlock />
-            <BlogGrid />
             <ProductRolesTestimonials />
             <FaqBlock />
             <FooterCTA />

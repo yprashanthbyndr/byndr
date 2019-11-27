@@ -36,7 +36,7 @@ import Dummy_Img from "./images/dummy_image.png";
 import testimonial_person from './images/testimonial_person.png';
 import Blog_img from "./images/blog.png";
 import PersonImage from "./images/person-icon.png";
-
+import Our_team from "./images/testimonial_person.png";
 export {
     byndr_Logo,
     FB_img,
@@ -72,5 +72,6 @@ export {
     Dummy_Img,
     testimonial_person,
     Blog_img,
-    PersonImage
+    PersonImage,
+    Our_team
 }

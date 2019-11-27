@@ -801,7 +801,7 @@ float: left;
     width: 64px;
     background: rgba(203, 10, 122, 0.9);
     color: #fff;
-    padding: 13px 0;
+    padding: 15px 0 9px 0px;
     border-radius: 50px;
     margin:0 auto;
     cursor: pointer;
@@ -1610,6 +1610,7 @@ select#contact_purpose {
     text-align: left;
     line-height: 36px;
     color:#00144C;
+    font-weight: 300;
 }
 .core_capabilities.bg_gray li {
     width: 41%;
@@ -1656,7 +1657,7 @@ select#contact_purpose {
 }
 .our_passionate_team_main {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1000px;
     margin: 0px auto;
 }
 .our_passionate_team {
@@ -1678,9 +1679,6 @@ select#contact_purpose {
 }
 .passionate_name {
     font-size: 0;
-}
-.our_passionate_team .widget_title {
-    padding-bottom: 100px !important;
 }
 .tag:hover .hover_details {
     width: 200px;
@@ -2420,6 +2418,73 @@ li.year_details {
 .mobile {
     display: none;
 }
+.our-team{
+    width: 22%;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin: 15px;
+}
+.our-team img{
+    width: 100%;
+    height: auto;
+    transition: all 0.5s ease-in-out 0s;
+}
+.our-team:hover img{ transform: scale(1.2); }
+.our-team .social{
+    list-style: none;
+    padding: 30px 15px;
+    margin: 0;
+    background: #cb0a7a;
+    border-bottom-right-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: -50%;
+    transition: all 0.4s ease-in-out 0s;
+}
+.our-team:hover .social{ left: 0; }
+.our-team .social li{ display: block; }
+.our-team .social li a{
+    display: block;
+    padding: 5px 0;
+    font-size: 18px;
+    color: #fff;
+    transition: all 0.3s ease-in-out 0s;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.our-team .social li:first-child a{ padding-top: 0; }
+.our-team .social li:last-child a{ padding-bottom: 0; }
+.our-team .social li a:hover{ color: #000; }
+.our-team .team-content{
+    width: 100%;
+    padding: 15px 10px;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.our-team .title{
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 0 0 5px 0;
+}
+.our-team .post{
+    display: block;
+    font-size: 14px;
+    color: #fff;
+}
+.group_buttons .widget_button {
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 /* 1360 screen */
 @media only screen and (max-width: 1380px) {
     .header_main_inr, .homeBanner_inr, .homeGrid_inr, .homeAvailableDivices_inr, .footerInr, .role_based_header_main, .product-role .homeGrid_inr{
@@ -2447,10 +2512,6 @@ li.year_details {
         text-align: center;
         margin-top: 41px;
     }
-    .our_passionate_team_main{
-        width:80%;
-        max-width: 100%;
-    }
     .contact_section_inr {
         max-width: 100%;
     }
@@ -2459,6 +2520,7 @@ li.year_details {
 
   /* 1150 screen */
 @media only screen and (max-width: 1150px) {
+    
     .homeBanner_right img {
         width: 100%;
     }
@@ -2562,6 +2624,10 @@ li.year_details {
 
     /* 1024 screen */
 @media only screen and (max-width: 1024px) { 
+    .our_passionate_team_main{
+        width:80%;
+        max-width: 100%;
+    }
     .callToAction_inr, .homeTestimonialsInr {
         width: 80%;
         max-width: 100%;
@@ -2574,6 +2640,12 @@ li.year_details {
     }
     div#tags-cloud {
         display: none;
+    }
+    .our-team {
+        width: 29%;
+    }
+    .our_passionate_team .widget_title {
+        padding-bottom: 40px;
     }
 
 }
@@ -2816,12 +2888,28 @@ li.year_details {
         font-weight: 400;
         padding: 29px 14px;
     }
+    .home_v2_list_single_title {
+        text-align: center;
+        font: Bold 20px/64px Lato;
+        letter-spacing: 0;
+    }
+    .our-team {
+        width: 28.5%;
+    }
 
 }
 
 /* 840 screen */
 @media only screen and (max-width: 840px) { 
-    
+    .our-team .title {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .our-team .post {
+        display: block;
+        font-size: 12px;
+        color: #fff;
+    }
     .contact-form-address-inr h3 {
         font-size: 30px;
     }
@@ -2885,12 +2973,24 @@ li.year_details {
     .bodySection {
         margin-top: 70px;
     }
+    .our-team {
+        width: 28%;
+    }
 }
 
 /* 767 screen */
 @media only screen and (max-width: 767px) { 
     .desktop {
         display: none;
+    }
+    .vision_mission_content {
+        font-size: 16px;
+        text-align: left;
+        line-height: 28px;
+        color: #00144C;
+    }
+    .vision_and_mission {
+        padding: 60px 0px;
     }
     .mobile {
         display: block;
@@ -2992,6 +3092,14 @@ li.year_details {
         font-size: 13px;
         font-weight: 400;
         padding: 31px 14px;
+    }
+
+}
+/* 705 screen */
+@media only screen and (max-width: 705px) { 
+    .our-team {
+        width: 44%;
+        margin: 3%;
     }
 }
 /* 678 screen */
@@ -3383,6 +3491,14 @@ li.year_details {
 
 /* 468 screen */
 @media only screen and (max-width: 468px) {  
+    .homeGrid.product-role {
+        padding: 100px 0 0px 0px;
+    }
+    .our-team {
+        width: 220px;
+        margin: 7% auto;
+        float: none;
+    }
     .home_v2_features_title {
         font-size: 18px;
     }

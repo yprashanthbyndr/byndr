@@ -21,9 +21,9 @@ export default class OurTeam extends React.Component<props, any> {
                         <div className="inverstors_main">
                             <div className="widget_title">- INVESTORS -</div>
                             <div className="slider_logo_block">
-                                <div className="slider_logo"><a href="#"><img src={ben_franklin} width="294" style={{ marginTop: "-17px" }} /></a></div>
-                                <div className="slider_logo"><a href="#"><img src={penn_img} width="207" /></a></div>
-                                <div className="slider_logo"><a href="#"><img src={penn_img} width="207" /></a></div>
+                                <div className="slider_logo"><a href="#"><img src={ben_franklin} width="294"/></a></div>
+                                <div className="slider_logo"><a href="#"><img src={ben_franklin} width="294" /></a></div>
+                                <div className="slider_logo"><a href="#"><img src={ben_franklin} width="294" /></a></div>
                             </div>
                         </div>
                     </div>

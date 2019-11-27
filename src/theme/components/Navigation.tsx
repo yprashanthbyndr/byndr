@@ -22,12 +22,27 @@ export default class Navigation extends React.Component<props, any> {
                     <NavLink exact to="/">Home</NavLink>
                 </li>
                 <li className="menuItem">
-                <NavLink exact to="/">Home</NavLink>    
+                <NavLink exact to="/aboutus">About Us</NavLink>    
                 </li>
                 <li className="menuItem">
-                <NavLink exact to="/">Home</NavLink>
+                <NavLink exact to="/product">Product</NavLink>    
                 </li>
-                <li className="submenu">
+                <li className="menuItem">
+                <NavLink exact 
+                to="/"
+                onClick={()=> {
+                    window.open( 
+                        "https://byndr.breezy.hr/", "_blank"); 
+                }}
+                >Careers</NavLink>
+                </li>
+                <li className="menuItem">
+                <NavLink exact to="/">News</NavLink>
+                </li>
+                <li className="menuItem">
+                <NavLink exact to="/contact-us">Contact Us</NavLink>
+                </li>
+                {/* <li className="submenu">
                     <div className="menuItem">
                     <NavLink exact to="/">Home</NavLink>
                     </div>
@@ -47,7 +62,7 @@ export default class Navigation extends React.Component<props, any> {
                             </li>
                         </ul>
                     </div>
-                </li>
+                </li> */}
             </ul>
         </div>
         </div>
