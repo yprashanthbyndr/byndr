@@ -1178,10 +1178,11 @@ td+td,   th+th {
 .contact_section{
     background-color: #fff;
     padding: 80px 0;
-    text-align: center;
+    width: 100%;
+    float: left;
 }
 .contact_section_inr{
-    max-width: 1320px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 20px;
@@ -1195,8 +1196,9 @@ td+td,   th+th {
     display: table;
 }
 .contact_section_form_section{
-    width: 500px;
-    margin: 0 auto;
+    width: 50%;
+    max-width: 500px;
+    float: left;
     color: #747c83;
 }
 .contact-form-container {
@@ -1233,7 +1235,7 @@ td+td,   th+th {
     text-decoration: none;
 }
 .contact-form-container input,.contact-form-container select,.contact-form-container textarea{
-    width: 100%;
+    width: calc(100% - 30px);
     background: #fff;
     line-height: 1em;
     border-radius: 3px;
@@ -1262,6 +1264,7 @@ td+td,   th+th {
     text-transform: uppercase;
     cursor: pointer;
     transition: background .3s;
+    width: 100%;
 }
 
 .contact-form-container input::-webkit-input-placeholder,.contact-form-container input::-ms-input-placeholder,.contact-form-container input::placeholder{ /* Edge */
@@ -1286,6 +1289,7 @@ select#contact_purpose {
     z-index: 1;
     -webkit-appearance: none;
     -moz-appearance: 'window';
+    width: 100%;
 }
 .input-select-wrapper:before {
     border-top-color: #a4abb1 !important;
@@ -1386,30 +1390,26 @@ select#contact_purpose {
     float: left;
 }
 .contact-form-address{
-    width: 100%;
-    float: left;
-    padding: 80px 0;
-    /* background-image: url(./assets/images/contact_address_bg.svg); */
-    background-repeat: no-repeat;
-    background-size: Cover;
-    background-position: top;
-    background-color: #ececec;
+    width: 50%;
+    float: right;
+    max-width: 500px;
 }
 .contact-form-address-inr{
     width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
+    float: left;
 }
 .contact-form-address-inr h3{
-    font-size: 52px;
-    color: #cb0a7a; 
+    margin-bottom: 28px;
     margin-top: 0;
+    font-weight: 100;
+    font-size: 36px;
+    color: #747c83;
 }
 .single_address_name h4{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 0;
-    color: #cb0a7a;
     margin-bottom: 10px;
+    font-weight: 400;
 }
 .contact-form-address-block{
     background: #fff;
@@ -1419,12 +1419,13 @@ select#contact_purpose {
     background-color: #ffffff;
     border-width: 1px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    padding: 2rem;
+    padding: 30px;
     border: 1px solid transparent;
     transition: border-color 150ms;
-    width: 100%;
+    width: calc(100% - 60px);
     z-index: 1;
     text-align: left;
+    max-width: 500px;
 }
 .single_address_name{
     margin-bottom: 20px;
@@ -1433,9 +1434,10 @@ select#contact_purpose {
     float: left;
 }
 .single_address_name span{
-    font-size: 1.25rem;
+    font-size: 15px;
     width: 100%;
     float: left;
+    line-height: 1.8;
 }
 /* inner page Banner */
 .homeBanner_backgroundimage {

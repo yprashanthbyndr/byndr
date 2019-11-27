@@ -1,4 +1,4 @@
-import { HomeSplit_A, HomeSplit_B } from "../screens"
+import { HomeSplit_A, HomeSplit_B, ContactUs } from "../screens"
 import AboutUs from "../screens/AboutUs"
 import Pricing from "../screens/Pricing"
 import Product from "../screens/Product"
@@ -69,6 +69,17 @@ const ByndrRoutes = [
         path:'/product-roles',
         metaDescription:"Product Roles Meta Description",
         component:ProductRoles,
+        routes: []
+    },
+    {
+        pageName:"Contact Us",
+        title:"Contact Us",
+        seoVisibility:true, // default it has to be true
+        metaTitle:"Contact Us",
+        metaTags:"Contact Us Meta Tags",
+        path:'/contact-us',
+        metaDescription:"Contact Us Meta Description",
+        component:ContactUs,
         routes: []
     }
 ]
