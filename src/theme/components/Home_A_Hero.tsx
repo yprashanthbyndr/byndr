@@ -39,11 +39,12 @@ export default class Home_A_Hero extends React.Component<props, any> {
             <div className="homeBanner_slider flexslider">
 
               {/* <ul className="slides"> */}
-              <div style={{ flexDirection: 'row' }}>
+              <div style={{ flexDirection: 'row', display: 'flex' }}>
 
                 <CSSTransition
                   in={this.context.state.selectedTab == "teacher"}
                   timeout={1000}
+                  transition
                   classNames="imgslider"
                   unmountOnExit
                 // onEnter={() => console.log("on enter click")}
