@@ -16,6 +16,7 @@ import vardhaman_img from './images/testimonials/vardhaman.png';
 import gprec_img from './images/testimonials/gprec.png';
 import author_Img from './images/testimonials/testimonial-author.png';
 import byndr_Logo from './images/byndr-Logo.png';
+import byndr_Logo_White from './images/byndr-logo-white.png';
 import FB_img from './images/fb.png';
 import TW_img from './images/tw.png';
 import Li_img from './images//li.png';
@@ -38,6 +39,7 @@ import Blog_img from "./images/blog.png";
 import PersonImage from "./images/person-icon.png";
 import Our_team from "./images/testimonial_person.png";
 export {
+    byndr_Logo_White,
     byndr_Logo,
     FB_img,
     TW_img,

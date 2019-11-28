@@ -1,5 +1,6 @@
 import React from 'react';
 import byndr_Logo from '../../assets/images/byndr-Logo.png';
+import byndr_Logo_White from '../../assets/images/byndr-logo-white.png';
 import { NavLink } from 'react-router-dom';
 import { AppContext } from '../../contextApi/AppContext';
 
@@ -18,7 +19,8 @@ export default class Header extends React.Component<props, any> {
                 <div className="header_main" id="navbar">
                     <div className="header_main_inr">
                         <div className="logo">
-                            <NavLink exact to="/"><img src={byndr_Logo} /></NavLink>
+                            <NavLink exact to="/"><img src={byndr_Logo} className="default_logo"/></NavLink>
+                            <NavLink exact to="/"><img src={byndr_Logo_White} className="transparent_logo"/></NavLink>
                         </div>
                         <div className="header_nav">
                             <div className="header_nav_inr">

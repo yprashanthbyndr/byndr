@@ -33,6 +33,7 @@ body{
     height: auto;
     font-family: 'Lato', sans-serif;
 }
+
 a{
     color: #333333;
     text-decoration: none;
@@ -66,6 +67,18 @@ header,footer,section{
     max-width: 120px;
     float: left;
     padding: 3px 0;
+}
+.transparent img.transparent_logo {
+    display: block;
+}
+.transparent img.default_logo, img.transparent_logo {
+    display: none;
+}
+.header_main {
+    background: #fff;
+}
+.header_main.transparent {
+    background:transparent;
 }
 .logo img{
     width: 100%;
@@ -2513,14 +2526,25 @@ li.year_details {
         margin-top: 41px;
     }
     .contact_section_inr {
-        max-width: 100%;
+        max-width: 95%;
     }
     
   }
 
   /* 1150 screen */
 @media only screen and (max-width: 1150px) {
-    
+    .contact-form-address {
+        width: 45%;
+        float: right;
+        max-width: 100%;
+    }
+    .contact_section_form_section {
+        width: 45%;
+        max-width: 100%;
+    }
+    .input-select-wrapper {
+        width: 100% !important;
+    }
     .homeBanner_right img {
         width: 100%;
     }
@@ -3093,6 +3117,20 @@ li.year_details {
         font-weight: 400;
         padding: 31px 14px;
     }
+    .contact_section_form_section {
+        width: 100%;
+        max-width: 100%;
+    }
+    .contact-form-address {
+        width: 100%;
+        float: right;
+        max-width: 100%;
+    }
+    .contact-form-address-block {
+        padding: 5%;
+        width: 89%;
+        max-width: 100%;
+    }
 
 }
 /* 705 screen */
@@ -3242,6 +3280,11 @@ li.year_details {
         line-height: 27px;
         color: #00144C;
     }
+    .contact_section_form_section {
+        width: 100%;
+        margin: 0 auto;
+        color: #747c83;
+    }
     .inverstors_block {
         padding: 60px 0px;
     }
@@ -3276,7 +3319,7 @@ li.year_details {
         font-size: 24px;
     }
     .contact_section_form_section {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         color: #747c83;
     }
@@ -3285,7 +3328,7 @@ li.year_details {
     }
     .contact-form-address-inr {
         width: 100%;
-        max-width: 90%;
+        max-width: 100%;
         margin: 0 auto;
     }
     .contact-form-address-block {
