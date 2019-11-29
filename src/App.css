@@ -1027,6 +1027,7 @@ div#carousel1 .flex-viewport{
     width: 100%;
     display: block;
     transition: top 0.3s;
+    z-index: 9;
   }
 
 

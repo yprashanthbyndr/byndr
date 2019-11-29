@@ -51,7 +51,6 @@ export default class Home_A_Hero extends React.Component<props, any> {
                 // onExited={() => console.log("on exit click")}
                 >
 
-                  <div >
                     <div className="homeBanner_single">
                       <div className="homeBanner_left">
                         <h1>
@@ -73,7 +72,6 @@ export default class Home_A_Hero extends React.Component<props, any> {
                       </div>
                     </div>
                     {/* </li> */}
-                  </div>
 
                 </CSSTransition>
 
@@ -85,7 +83,6 @@ export default class Home_A_Hero extends React.Component<props, any> {
 
                 >
 
-                  <div >
                     <div className="homeBanner_single">
                       <div className="homeBanner_left">
                         <h1>
@@ -106,7 +103,6 @@ export default class Home_A_Hero extends React.Component<props, any> {
                         <img src={open_book} />
                       </div>
                     </div>
-                  </div>
 
                 </CSSTransition>
 
@@ -117,7 +113,6 @@ export default class Home_A_Hero extends React.Component<props, any> {
                   unmountOnExit
                 >
 
-                  <div >
                     <div className="homeBanner_single">
                       <div className="homeBanner_left">
                         <h1>
@@ -138,7 +133,6 @@ export default class Home_A_Hero extends React.Component<props, any> {
                         <img src={slider_1} />
                       </div>
                     </div>
-                  </div>
 
                 </CSSTransition>
                 {/* </ul> */}
