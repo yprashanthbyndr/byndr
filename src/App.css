@@ -60,7 +60,7 @@ header,footer,section{
 .header_main{
     width: 100%;
     float: left;
-    padding:35px 0;
+    padding:20px 0;
 }
 .header_main_inr{
     width: 100%;
@@ -69,7 +69,7 @@ header,footer,section{
 }
 .logo{
     width: 30%;
-    max-width: 120px;
+    max-width: 150px;
     float: left;
     padding: 3px 0;
 }
@@ -85,13 +85,15 @@ header,footer,section{
 .header_main.transparent {
     background:transparent;
 }
-.logo img{
+.logo img {
     width: 100%;
+    margin-top: 10px;
 }
 .header_nav{
     width: 70%;
     float: right;
     max-width: 340px;
+    margin-top: 12px;
 }
 .header_nav_inr{
     width: 100%;
@@ -154,7 +156,7 @@ header,footer,section{
 .bodySection{
     width: 100%;
     float: left;
-    margin-top: 110px;
+    margin-top: 98px;
 }
 .bodySection.fixed_header {
     margin-top: 0;
@@ -232,13 +234,14 @@ header,footer,section{
 }
 .cta_full_color a{
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     padding: 14px 0;
     width: 100%;
     float: left;
-    font-weight: 600;
+    font-weight: 500;
     background: #CB0A7A 0% 0% no-repeat padding-box;
     border-radius: 4px;
+    letter-spacing: 0.03em;
 }
 .cta_outline_color{
     width: 100%;
@@ -247,14 +250,25 @@ header,footer,section{
     float: left;
 }
 .cta_outline_color a{
-    font-size: 20px;
-    padding: 12px 0;
+    letter-spacing: 0.03em;
+    font-size: 18px;
+    padding: 11px 0;
     width: 100%;
     float: left;
-    font-weight: 600;
+    font-weight: 500;
     border-radius: 4px;
     color: #CB0A7A;
     border: 2px solid #CB0A7A;
+}
+.cta_full_color a:hover{
+    border: 2px solid #CB0A7A;
+    background: transparent;
+    color:#CB0A7A;
+    padding: 12px 0;
+}
+.cta_outline_color a:hover{
+    background: #CB0A7A 0% 0% no-repeat padding-box;
+    color:#fff;
 }
 .cta_outline_color a i{
     vertical-align: bottom;
@@ -386,6 +400,7 @@ font-weight: 600;
     color: #00144C;
     opacity: 1;
     margin-top: 0;
+    font-weight: 400;
 }
 .homeAvailableDivicesText{
     text-align: left;
@@ -394,6 +409,7 @@ font-weight: 600;
     color: #00144C;
     opacity: 1;
     line-height: 1.4;
+    font-weight: 300;
 }
 .homeAvailableDivicesIcons{
     width: 100%;
@@ -496,6 +512,7 @@ font-weight: 600;
     letter-spacing: 0;
     color: #00144C;
     line-height: 1.4;
+    font-weight: 300;
 }
 .homeTestimonialCurrent_author{
     width: 100%;
@@ -537,7 +554,7 @@ font-weight: 600;
 .callToAction_main{
     width: 100%;
     float: left;
-    padding: 150px 0;
+    padding: 100px 0;
     background: rgba(0, 0, 0, 0.76);
 }
 .callToAction_inr{
@@ -550,11 +567,13 @@ font-weight: 600;
     font-size: 40px;
     margin-bottom: 24px;
     letter-spacing: 0;
+    font-weight: 100;
 }
 .CallToAction_content{
     text-align: center;
     font-size: 20px;
     letter-spacing: 0;
+    font-weight: 300;
 }
 .CallToAction_btn{
     width: 100%;
@@ -567,15 +586,19 @@ font-weight: 600;
     width: 100%;
     float: left;
 }
-.CallToAction_btn_inr a{
+.CallToAction_btn_inr a {
     background: #CB0A7A 0% 0% no-repeat padding-box;
     border-radius: 4px;
-    padding: 20px 0px;
+    padding: 16px 0px;
     width: 100%;
     float: left;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 500;
     line-height: 1;
+    letter-spacing: 0.03em;
+}
+.CallToAction_btn_inr a:hover {
+    background: #960c5c 0% 0% no-repeat padding-box;
 }
 
 /* Footer */
@@ -888,7 +911,7 @@ float: left;
 }
 .home_v2_list_single_title {
     text-align: center;
-    font: Bold 24px/64px Lato;
+    font: 500 24px/64px Lato;
     letter-spacing: 0;
 }
 .home_v2_list_single_title span{
@@ -899,7 +922,10 @@ color: #CB0A7A;
     letter-spacing: 0;
     color: #00144C;
     line-height: 1.5;
-}.home_v2_list_single_cta {
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+.home_v2_list_single_cta {
     width: 100%;
     margin: 0 auto;
     max-width: 162px;
@@ -925,7 +951,7 @@ text-align: center;
 .home_v2_features_title {
     color: #00144C;
     font-size: 28px;
-    font-weight: bold;
+    font-weight: 500;
     text-align: center;
     line-height: 40px;
     margin-bottom: 85px;
@@ -964,7 +990,7 @@ text-align: center;
 .home_v2_feature_single_title {
     color: #00144C;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 400;
     line-height: 29px;
     margin-bottom: 16px;
 }
@@ -973,6 +999,7 @@ text-align: center;
     color: #00144C;
     line-height: 30px;
     margin-bottom: 20px;
+    font-weight: 300;
 }
 .home_v2_feature_single_link {
     font-size: 14px;
@@ -1048,16 +1075,22 @@ button.pricing_btn {
     background: #CB0A7A;
     color: #fff;
     border: none;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 500;
     font-family: 'Lato', sans-serif;
-    height: 48px;
+    height: 50px;
     width: 200px;
+    padding: 6px 10px;
+    border-radius: 3px;
+}
+button.pricing_btn:hover {
+    background: #960c5c;
+    cursor: pointer;
 }
 .pricing_value {
     font-size: 20px;
     font-family: 'Lato', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 30px;
     color: #333333;
     margin-top: 13px;
@@ -1073,7 +1106,7 @@ th.title_pricing {
     background: transparent;
     color: #195DB0;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 500;
     font-family: 'Lato', sans-serif;
     border-bottom: 2px solid #B3B3B3;
 }
@@ -1082,7 +1115,7 @@ th.title_pricing {
 }
 .title {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 400;
     color: #333333;
 }
 .pricing_table_main p {
@@ -1180,17 +1213,21 @@ td+td,   th+th {
 .show-more a{
     width: 100%;
     text-align: center;
-    font-size: 16px;
-    letter-spacing: 0;
+    font-size: 18px;
     color: #fff;
     border: 2px solid #CB0A7A;
-    border-radius: 2px;
+    border-radius: 4px;
     opacity: 1;
-    padding: 7px 25px;
+    padding: 12px 25px;
     max-width: 100px;
     background: #CB0A7A;
     line-height: 1;
-    font-weight: bold;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+}
+.show-more a:hover{
+    background: #960c5c;
+    border: 2px solid #960c5c;
 }
 
 /* contact page blocks */
@@ -1276,10 +1313,10 @@ td+td,   th+th {
     border: 0;
     border-radius: 5px;
     color: #fff;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1em;
     font-family: brandon-grotesque,sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     text-transform: uppercase;
     cursor: pointer;
     transition: background .3s;
@@ -1478,7 +1515,7 @@ select#contact_purpose {
     font-size: 48px;
     margin-bottom: 24px;
     letter-spacing: 0;
-    font-weight:300;
+    font-weight:100;
 }
 .banner_content {
     text-align: center;
@@ -1540,13 +1577,18 @@ select#contact_purpose {
 }
 .widget_button a {
     width: 198px;
-    padding: 18px 53px;
+    padding: 12px 53px;
     background: #CB0A7A 0% 0% no-repeat padding-box;
     border: 2px solid #CB0A7A;
     border-radius: 4px;
     opacity: 1;
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
+    font-weight: 500;
+}
+.widget_button a:hover {
+    background: #960c5c 0% 0% no-repeat padding-box;
+    border: 2px solid #960c5c;
 }
 .widget_button {
     margin-top: 50px;
@@ -1575,6 +1617,7 @@ select#contact_purpose {
     color: #333333;
     line-height: 30px;
     margin-bottom: 15px;
+    font-weight: 300;
 }
 .core_capabilities_main {
     width: 100%;
@@ -2198,7 +2241,7 @@ margin-bottom: 13px;
     margin-top: 25px;
 }
 .testmonials .profile_name {
-    font-weight: bold;
+    font-weight: 300;
     font-size: 18px;
     margin-bottom: 5px;
     letter-spacing: 0;
@@ -2210,6 +2253,7 @@ margin-bottom: 13px;
 .testmonials .sub_title{
     text-align: left;
     margin-top: 4px;
+    font-weight: 300;
 }
 .testmonials_profile img {
     border-radius: 50%;
@@ -2305,7 +2349,7 @@ margin-bottom: 13px;
     font-size: 20px;
     transition: 0.4s;
     border-top: 1px solid #dfdfdf;
-    font-weight: bold;
+    font-weight: 300;
 }
   
   .PricingActive, .accordion:hover {
@@ -2492,16 +2536,42 @@ li.year_details {
     letter-spacing: 1px;
     color: #fff;
     margin: 0 0 5px 0;
+    font-weight: 300;
 }
 .our-team .post{
     display: block;
     font-size: 14px;
     color: #fff;
+    font-weight: 300;
 }
 .group_buttons .widget_button {
     float: left;
     margin-left: 5px;
     margin-right: 5px;
+}
+.sticky_table_menu .pricing_title {
+    font-size: 18px;
+    float: left;
+    margin-top: 13px;
+}
+.sticky_table_title {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.sticky_table_menu button.pricing_btn {
+    padding: 3px 0px;
+    height: 41px;
+    width: 160px;
+    font-size: 16px;
+}
+.sticky_table_menu_main {
+    width: 72.7%;
+    float: right;
+}
+.sticky_table_menu {
+    width: 1000px;
+    margin: 0px auto;
 }
 
 /* 1360 screen */

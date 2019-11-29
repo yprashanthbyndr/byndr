@@ -11,9 +11,22 @@ export default class PricingPlans extends React.Component<props, any> {
         return (
             <section>
             <div className="pricing_table">
+              <div className="sticky_table_menu">
+                  <div className="sticky_table_menu_main">
+                    <div className="sticky_table_title">
+                      <div className="pricing_title">STANDARD</div>
+                      <button className="pricing_btn">Get Started</button>
+                    </div>
+                    <div className="sticky_table_title">
+                      <div className="pricing_title">PREMIUM</div>
+                      <button className="pricing_btn">Request Pricing</button>
+                    </div>
+                  </div>
+                </div>
+
                     <div className="pricing_table_main">
             <article>
-
+                    
                     <ul>
                       <li className="bg-blue PricingActive">
                         <button>STANDARD</button>
