@@ -4,6 +4,8 @@ import { Home } from './screens/'
 import './App.css';
 import { ByndrRoutes } from './routes/routers';
 import { AppContext } from './contextApi/AppContext';
+import {Provider} from 'react-redux';
+import { store } from './Redux/store';
 interface props {
 
 }
@@ -13,9 +15,9 @@ class App extends Component<props, any>{
   render() {
     console.log('ByndrRoutes', ByndrRoutes)
     return (
-      <AppContext.Provider value={{
-        authenticated: false,
-      }}>
+      
+      
+      <Provider store={store}>
         <div className="main">
           <BrowserRouter>
             <Switch>
@@ -25,7 +27,7 @@ class App extends Component<props, any>{
             </Switch>
           </BrowserRouter>
         </div>
-      </AppContext.Provider>
+      </Provider>
     );
   }
 }

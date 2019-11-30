@@ -4,7 +4,10 @@ import { Home_A_Hero, Home_A_Grids, FeaturesGrid, FooterCTA, SupportedDivices, H
 import { Helmet } from "react-helmet";
 import { Home_A_Context } from '../contextApi/HomeSplit_A.context';
 
+import { connect } from 'react-redux';
+
 interface props {
+    MainReducer: any
 
 }
 
@@ -56,4 +59,14 @@ class HomeSplit_A extends Component<props, any>{
     }
 }
 
-export default HomeSplit_A;
+const map = (state: any) => {
+    return {
+        ...state.MainReducer
+    };
+};
+
+export default connect(
+    map,
+    null,
+)(HomeSplit_A);
+

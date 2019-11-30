@@ -28,7 +28,40 @@
   }
 
 
+  /*  Header Animation Css  */
+
+  /* .todo-item {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    float: left;
+    border: solid 2px white;
+    box-sizing: border-box;
+  }
+   */
+  .headerAnim-enter {
+    opacity: 0.01;
+    height: 0px;
+  }
   
+  .headerAnim-enter.headerAnim-enter-active {
+    opacity: 1;
+    height: 100px;
+    transition: 2000ms;
+  }
+  
+  .headerAnim-leave {
+    opacity: 1;
+    height: 100px;
+  }
+  
+  .headerAnim-leave.headerAnim-leave-active {
+    opacity: 0.01;
+    height: 0px;
+    transition: 72000ms;
+  }
+
+  /* End Header Css */
 
 
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900,900i&display=swap');
