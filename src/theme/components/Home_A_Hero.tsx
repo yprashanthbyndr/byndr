@@ -2,10 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { AppContext } from '../../contextApi/AppContext';
 
-import { Container, Button, Alert } from 'react-bootstrap';
-import '../../App.css';
-
-import { CSSTransition } from 'react-transition-group';
+import { CSSTransition,Transition } from 'react-transition-group';
 import { slider_1, open_book, teamwork, medical_history, earth_globe, blackboard, light_bulb, byndr_android, byndr_ios, byndr_responsive_platform, vvit_img, stanley_img, vardhaman_img, gprec_img, author_Img, slider_2, slider_3 } from "../../assets";
 import { Home_A_Context } from '../../contextApi/HomeSplit_A.context';
 
@@ -17,18 +14,75 @@ interface props {
 
 export default class Home_A_Hero extends React.Component<props, any> {
 
+
   constructor(props: any) {
     super(props);
+    this.state = {
+      changeDetector:false,
+      activeSlide:"teachers",
+      sliders:{
+        adminstrator:{
+          imageUrl:slider_1,
+          content:"Dummy Text for Content Admins",
+          howitworks:{
+            link:'/',
+            text:"How it works For Admins"
+          },
+          gettingStarted:{
+            link:'/',
+            text:"Getting Started For Free"
+          },
+        },
+        teachers:{
+          imageUrl:slider_1,
+          content:"Dummy Text for Content Teachers",
+          howitworks:{
+            link:'/',
+            text:"How it works For Teacher"
+          },
+          gettingStarted:{
+            link:'/',
+            text:"Getting Started For Free"
+          },
+        },
+        students:{
+          imageUrl:slider_1,
+          content:"Dummy Text for Content Students",
+          howitworks:{
+            link:'/',
+            text:"How it works For Students"
+          },
+          gettingStarted:{
+            link:'/',
+            text:"Getting Started For Free"
+          },
+        }
+      }
+    };
+    this.selectedSlide = this.selectedSlide.bind(this)
+  }
 
+  selectedSlide(selectedSlide){
+    this.setState({changeDetector:true})
+    setTimeout(
+      () => this.setState({activeSlide:selectedSlide,changeDetector:this.state.changeDetector == true ? false:true}),
+      500
+    );
   }
 
   componentDidMount(): any {
-    console.log("in Home_A_Hero component: ", this.context.authenticated, this.context.onclick_);
+    // console.log("in Home_A_Hero component: ", this.context.authenticated, this.context.onclick_);
   }
 
 
   render(): any {
-    console.log("in Home_A_Hero render: ", this.context);
+
+    const {changeDetector,activeSlide,sliders} = this.state
+
+    const {teachers,adminstrator,students} = sliders
+
+    let activeSlideDetails = activeSlide == "adminstrator" ? adminstrator : activeSlide == "teachers" ? teachers : students 
+
     return (
       // <AppContext.Provider value={{
       //   authenticated: false,
@@ -38,117 +92,36 @@ export default class Home_A_Hero extends React.Component<props, any> {
           <div className="homeBanner_inr">
             <div className="homeBanner_slider flexslider">
 
-              {/* <ul className="slides"> */}
-              <div style={{ flexDirection: 'row', display: 'flex' }}>
-
-                <CSSTransition
-                  in={this.context.state.selectedTab == "teacher"}
-                  timeout={1000}
-                  transition
-                  classNames="imgslider"
-                  unmountOnExit
-                // onEnter={() => console.log("on enter click")}
-                // onExited={() => console.log("on exit click")}
-                >
-
-                  <div >
+              <ul className="home_slides">
+                <li className={changeDetector == true ? "m-fadeOut":"m-fadeIn"}>
                     <div className="homeBanner_single">
                       <div className="homeBanner_left">
                         <h1>
-                          this is teacher view
-</h1>
+                          {activeSlideDetails.content}
+                        </h1>
                         <div className="calltoActions">
                           <div className="cta_full_color">
-                            <NavLink exact to="/">Get Started For Free</NavLink>
+                            <NavLink exact to={activeSlideDetails.gettingStarted.link}>{activeSlideDetails.gettingStarted.text}</NavLink>
                           </div>
                           <div className="cta_outline_color">
-                            <NavLink exact to="/"><i className="material-icons">
+                            <NavLink exact to={activeSlideDetails.howitworks.link}><i className="material-icons">
                               play_arrow
-      </i>  How it works for teacher</NavLink>
+                                 </i>{activeSlideDetails.howitworks.text}</NavLink>
                           </div>
                         </div>
                       </div>
                       <div className="homeBanner_right">
-                        <img src={slider_1} />
+                        <img src={activeSlideDetails.imageUrl} />
                       </div>
                     </div>
-                    {/* </li> */}
-                  </div>
+                  </li>
 
-                </CSSTransition>
+              </ul>
 
-                <CSSTransition
-                  in={this.context.state.selectedTab == "student"}
-                  timeout={1000}
-                  classNames="imgslider"
-                  unmountOnExit
-
-                >
-
-                  <div >
-                    <div className="homeBanner_single">
-                      <div className="homeBanner_left">
-                        <h1>
-                          this is student view
-</h1>
-                        <div className="calltoActions">
-                          <div className="cta_full_color">
-                            <NavLink exact to="/">Get Started For Free</NavLink>
-                          </div>
-                          <div className="cta_outline_color">
-                            <NavLink exact to="/"><i className="material-icons">
-                              play_arrow
-      </i>  How it works for student</NavLink>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="homeBanner_right">
-                        <img src={open_book} />
-                      </div>
-                    </div>
-                  </div>
-
-                </CSSTransition>
-
-                <CSSTransition
-                  in={this.context.state.selectedTab == "Adminstrator"}
-                  timeout={1000}
-                  classNames="imgslider"
-                  unmountOnExit
-                >
-
-                  <div >
-                    <div className="homeBanner_single">
-                      <div className="homeBanner_left">
-                        <h1>
-                          this is Administrater view
-</h1>
-                        <div className="calltoActions">
-                          <div className="cta_full_color">
-                            <NavLink exact to="/">Get Started For Free</NavLink>
-                          </div>
-                          <div className="cta_outline_color">
-                            <NavLink exact to="/"><i className="material-icons">
-                              play_arrow
-      </i>  How it works for Admin</NavLink>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="homeBanner_right">
-                        <img src={slider_1} />
-                      </div>
-                    </div>
-                  </div>
-
-                </CSSTransition>
-                {/* </ul> */}
-
-              </div>
-            </div>
             <div className="homeBanner_slider_navigation">
               <div className="homeBanner_slider_nav_inr flexslider">
                 <ul className="slides">
-                  <li className={this.context.state.selectedTab == "teacher" ? " flex-active-slide" : ""} onClick={() => this.context.click_Tab("selectedTab", "teacher")}>
+                  <li className={activeSlide == "teachers" ? " flex-active-slide" : ""} onClick={() => this.selectedSlide("teachers")}>
                     <span className="homeBanner_slider_nav_icon">
                       <i className="fa fa-user" aria-hidden="true" />
                     </span>
@@ -156,9 +129,9 @@ export default class Home_A_Hero extends React.Component<props, any> {
                       Teacher
               </span>
                   </li>
-                  <li className={this.context.state.selectedTab == "student" ? " flex-active-slide" : ""}
+                  <li className={activeSlide == "students" ? " flex-active-slide" : ""}
                     onClick={() =>
-                      this.context.click_Tab("selectedTab", "student")
+                      this.selectedSlide("students")
                     }>
                     <span className="homeBanner_slider_nav_icon">
                       <i className="fa fa-users" aria-hidden="true" />
@@ -167,8 +140,8 @@ export default class Home_A_Hero extends React.Component<props, any> {
                       Student
               </span>
                   </li>
-                  <li className={this.context.state.selectedTab == "Adminstrator" ? " flex-active-slide" : ""}
-                    onClick={() => this.context.click_Tab("selectedTab", "Adminstrator")}>
+                  <li className={activeSlide == "adminstrator" ? " flex-active-slide" : ""}
+                    onClick={() => this.selectedSlide("adminstrator")}>
                     <span className="homeBanner_slider_nav_icon">
                       <i className="fa fa-user" aria-hidden="true" />
                     </span>
@@ -180,6 +153,7 @@ export default class Home_A_Hero extends React.Component<props, any> {
               </div>
             </div>
           </div>
+        </div>
         </div>
 
       </section>

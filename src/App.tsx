@@ -13,7 +13,6 @@ class App extends Component<props, any>{
 
 
   render() {
-    console.log('ByndrRoutes', ByndrRoutes)
     return (
       
       
@@ -35,7 +34,6 @@ class App extends Component<props, any>{
 export default App;
 
 const RouteWithSubRoutes = (route) => {
-  console.log('route', route)
   return (
     <Route
       exact
