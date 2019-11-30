@@ -127,12 +127,33 @@ header,footer,section{
     float: left;
     min-height: 432px;
 }
+header{
+    width: 100%;
+    float: left;
+    height: auto;
+    -webkit-transition: height 0.5s ease-in-out;
+    -moz-transition: height 0.5s ease-in-out;
+    -o-transition: height 0.5s ease-in-out;
+    transition: height 0.5s ease-in-out;
+}
+.header_main_container{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    float: left;
+    z-index: 9;
+}
 .header_main{
     width: 100%;
     float: left;
     padding:20px 0;
-    -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
-    transition: padding 2s;
+}
+.slideup{
+    height: 0;            
+    overflow-y: hidden;
+}
+.slidedown {            
+    height: 97px ;                    
 }
 .header_main_inr{
     width: 100%;

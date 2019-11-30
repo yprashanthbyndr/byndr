@@ -47,8 +47,8 @@ class Header extends React.Component<props, any> {
 
     render(): any {
         return (
-            <header>
-                <div ref="Sticky_context_header" className={this.props.HideHeader ? "hideHeader" : "header_main"} id="navbar">
+            <header className={this.props.HideHeader ? "slideup" : "slidedown"}>
+                <div ref="Sticky_context_header" className="header_main">
                     <div className="header_main_inr">
                         <div className="logo">
                             <NavLink exact to="/"><img src={byndr_Logo} className="default_logo" /></NavLink>

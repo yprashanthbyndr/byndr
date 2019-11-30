@@ -71,18 +71,11 @@ class ProductRoles extends React.Component<props, any> {
         let StateIs = this.props;
         return (
             <div>
-
-                {/* <CSSTransition
-                    in={!(this.props.HideHeader)}
-                    timeout={1000}
-                    transition
-                    classNames="headerAnim"
-                    unmountOnExit
-                > */}
+                <div className="header_main_container">
                     <Header />
-                {/* </CSSTransition> */}
-                <div className={this.props.HideHeader ? "bodySection_headerNo" : "bodySection"}>
                     <MiniHeader />
+                </div>                
+                <div className="bodySection">
                     <InnerPageTitleBlock />
                     <ProductForRolesBlock />
                     <ProductRolesTestimonials />
