@@ -1,5 +1,3 @@
-
-
 .imgslider-enter {
     /* opacity: 0; */
     /* transform: scale(0.9); */
@@ -25,6 +23,30 @@
     transform: translate(-100%);
     transition: transform 1000ms ease-in-out;
     direction:'right';
+  }
+
+  .moveminiHeader-enter {
+    opacity: 0.01;
+    transform: scale(1.1);
+    top:98 px
+  }
+  
+  .moveminiHeader-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 300ms;
+  }
+
+  .dialog-exit {
+    opacity: 1;
+    transform: scale(1);
+    top:0;
+  }
+  
+  .dialog-exit-active {
+    opacity: 0.01;
+    transform: scale(1.1);
+    transition: all 300ms;
   }
 
 
@@ -58,7 +80,7 @@
   .headerAnim-leave.headerAnim-leave-active {
     opacity: 0.01;
     height: 0px;
-    transition: 72000ms;
+    transition: 2000ms;
   }
 
   /* End Header Css */
@@ -109,6 +131,8 @@ header,footer,section{
     width: 100%;
     float: left;
     padding:20px 0;
+    -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+    transition: padding 2s;
 }
 .header_main_inr{
     width: 100%;
@@ -205,6 +229,13 @@ header,footer,section{
     width: 100%;
     float: left;
     margin-top: 98px;
+    /* transform: translate(100%); */
+}
+.bodySection_headerNo{
+    width: 100%;
+    float: left;
+    margin-top: 0px;
+    transform: translate(0%);
 }
 .bodySection.fixed_header {
     margin-top: 0;

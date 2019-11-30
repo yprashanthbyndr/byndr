@@ -10,7 +10,9 @@ import { SaveScroll_Height } from '../services';
 interface props {
     onLeftMenu?(): void;
     MainReducer: any,
-    HideHeader: boolean
+    HideHeader: boolean,
+    WindowScroolheight: number,
+
 }
 
 class ProductRoles extends React.Component<props, any> {
@@ -45,31 +47,41 @@ class ProductRoles extends React.Component<props, any> {
         let CurrentHeight = this.props;
         let a = 200
         scroll_position = window.scrollY;
-        var lastScrollTop = 0;
-        SaveScroll_Height(this.props, scroll_position)
+        var lastScrollTop = this.props.WindowScroolheight;
+        let HideHeder;
+
+        var st = window.pageYOffset || document.documentElement.scrollTop;
+
+        let diff = st - lastScrollTop;
+        if (st > lastScrollTop && !this.props.HideHeader) {
+            HideHeder = true;
+            SaveScroll_Height(HideHeder, st)
+        } else if (this.props.HideHeader && diff < -5) {
+            HideHeder = false;
+            SaveScroll_Height(HideHeder, st)
+        } else if (diff > 10 || diff < -10) {
+            HideHeder = undefined;
+            SaveScroll_Height(HideHeder, st)
+        }
+
 
     }
 
     render(): any {
         let StateIs = this.props;
-
-        console.log(". / . / . & & &  in Product Role COmponent :  ", this.props.HideHeader, StateIs);
-
         return (
             <div>
 
-                <CSSTransition
+                {/* <CSSTransition
                     in={!(this.props.HideHeader)}
                     timeout={1000}
                     transition
                     classNames="headerAnim"
                     unmountOnExit
-                // onEnter={() => console.log("on enter click")}
-                // onExited={() => console.log("on exit click")}
-                >
-                    <Header ref="header" />
-                </CSSTransition>
-                <div className="bodySection">
+                > */}
+                    <Header />
+                {/* </CSSTransition> */}
+                <div className={this.props.HideHeader ? "bodySection_headerNo" : "bodySection"}>
                     <MiniHeader />
                     <InnerPageTitleBlock />
                     <ProductForRolesBlock />
