@@ -65,10 +65,21 @@ export default class Footer extends React.Component<props, any> {
                                                     >Careers</NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact to="/">News</NavLink>
+                                                    <NavLink exact to="/" 
+                                                    onClick={() => {
+                                                        document.body.scrollTop = 0;
+                                                        document.documentElement.scrollTop = 0;
+                                                    }}
+                                                    >News</NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact to="/contact-us">Contact Us</NavLink>
+                                                    <NavLink exact to="/contact-us" 
+                                                    onClick={() => {
+                                                        document.body.scrollTop = 0;
+                                                        document.documentElement.scrollTop = 0;
+                                                    }}
+                                                    
+                                                    >Contact Us</NavLink>
                                                 </li>
                                             </ul>
                                         </div>

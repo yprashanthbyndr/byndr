@@ -1,26 +1,34 @@
 import React from 'react';
 
-import { Header,Footer,Navigation, ContactUsForm, ContactusThankYou, ContactFormAddress } from '../theme/components';
+import { Header, Footer, Navigation, ContactUsForm, ContactusThankYou, ContactFormAddress } from '../theme/components';
 import { AppContext } from '../contextApi/AppContext';
+
+
+import { connect } from 'react-redux';
 interface props {
     onLeftMenu?(): void;
+    ContactFormSubmitSuccess: boolean
 }
 
-export default class ContactUs extends React.Component<props, any> {
+class ContactUs extends React.Component<props, any> {
 
+
+    constructor(props: any) {
+        super(props);
+
+    }
     render(): any {
 
         return (
-            <AppContext.Provider value={{
-                authenticated: false,
-            }}>
-            <Header />
+            <div>
+                <Header />
                 <div className="bodySection">
                     <div className="contact_section">
                         <div className="contact_section_inr">
                             <div className="contact_section_form_section">
-                                <ContactUsForm />
-                                <ContactusThankYou />
+                                {this.props.ContactFormSubmitSuccess ? <ContactusThankYou /> :
+                                    <ContactUsForm />}
+
                             </div>
                             <div className="contact-form-address">
                                 <ContactFormAddress />
@@ -28,9 +36,21 @@ export default class ContactUs extends React.Component<props, any> {
                         </div>
                     </div>
                 </div>
-            <Footer />
-            {/* <Navigation /> */}
-            </AppContext.Provider>
+                <Footer />
+                {/* <Navigation /> */}
+            </div>
+
         )
     }
 }
+
+const map = (state: any) => {
+    return {
+        ...state.MainReducer
+    };
+};
+
+export default connect(
+    map,
+    null,
+)(ContactUs);
