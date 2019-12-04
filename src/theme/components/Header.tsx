@@ -4,6 +4,7 @@ import byndr_Logo_White from '../../assets/images/byndr-logo-white.png';
 import { NavLink } from 'react-router-dom';
 import { AppContext } from '../../contextApi/AppContext';
 import { connect } from 'react-redux';
+import { Open_Or_Close_MenuBar } from '../../services';
 
 
 interface props {
@@ -63,7 +64,7 @@ class Header extends React.Component<props, any> {
                                     <NavLink exact to="/">SignUp - Free</NavLink>
                                 </div>
                                 <div className="navMenu">
-                                    <div className="menuIcon">
+                                    <div className="menuIcon" onClick={()=> Open_Or_Close_MenuBar()}>
                                         <i className="material-icons">
                                             menu
                                                     </i>

@@ -1,7 +1,7 @@
 
 
 import { HomeReducer, ActionModel } from '../../models';
-import { SAVE_SCROLL_HEIGHT, SAVE_CONTACT_US_IP_VALUES, SUBMIT_CONTACT_FORM_SUCCESS } from '../actions';
+import { SAVE_SCROLL_HEIGHT, SAVE_CONTACT_US_IP_VALUES, SUBMIT_CONTACT_FORM_SUCCESS, OPEN_OR_CLOSE_MENUBAR } from '../actions';
 
 const INIT_STATE: HomeReducer = {
   HideHeader: false,
@@ -17,7 +17,8 @@ const INIT_STATE: HomeReducer = {
     No_Student: '',
     message: ''
   },
-  ContactFormSubmitSuccess: false
+  ContactFormSubmitSuccess: false ,
+  OpenMenuBar:false
 };
 
 export default (state = INIT_STATE, action: ActionModel) => {
@@ -35,6 +36,12 @@ export default (state = INIT_STATE, action: ActionModel) => {
     case SUBMIT_CONTACT_FORM_SUCCESS:
       return {
         ...state, ContactFormSubmitSuccess: true
+      }
+
+    case OPEN_OR_CLOSE_MENUBAR:
+
+      return {
+        ...state, OpenMenuBar: !state.OpenMenuBar
       }
 
     default:

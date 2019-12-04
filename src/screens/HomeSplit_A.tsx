@@ -1,14 +1,17 @@
 import React, { Component } from 'react'
 import { AppContext } from '../contextApi/AppContext';
-import { Home_A_Hero, Home_A_Grids, FeaturesGrid, FooterCTA, SupportedDivices, HomeTestimonial, Header, Footer } from '../theme/components';
+import { Home_A_Hero, Home_A_Grids, FeaturesGrid, FooterCTA, SupportedDivices, HomeTestimonial, Header, Footer, Navigation } from '../theme/components';
 import { Helmet } from "react-helmet";
 import { Home_A_Context } from '../contextApi/HomeSplit_A.context';
 
 import { connect } from 'react-redux';
+import { CSSTransition } from 'react-transition-group';
+
 
 interface props {
-    MainReducer: any
+    MainReducer: any,
 
+    OpenMenuBar: boolean
 }
 
 class HomeSplit_A extends Component<props, any>{
@@ -54,6 +57,16 @@ class HomeSplit_A extends Component<props, any>{
                     <FooterCTA />
                 </div>
                 <Footer />
+                {this.props.OpenMenuBar ?
+                    <CSSTransition
+                        in={this.props.OpenMenuBar}
+                        timeout={3000}
+                        transition
+                        classNames="moveminiHeader-enter"
+                        unmountOnExit
+                    >
+                        <Navigation />
+                    </CSSTransition> : null}
             </Home_A_Context.Provider>
         );
     }
