@@ -13,9 +13,11 @@ export default class Navigation extends React.Component<props, any> {
             <div className="main_menu">
                 <div className="main_menu_inr">
                     <div className="menu_cancel">
-                        <i className="material-icons" onClick={() => Open_Or_Close_MenuBar()}>
+                        <span style={{float: 'right',cursor:'pointer'}}  onClick={() => Open_Or_Close_MenuBar()}>
+                        <i className="material-icons">
                             close
         </i>
+                        </span>
                     </div>
                     <div className="menu_block">
                         <ul>

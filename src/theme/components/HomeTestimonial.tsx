@@ -27,7 +27,7 @@ export default class HomeTestimonial extends React.Component<props, any> {
                                 <li>
                                   <img src={vvit_img} />
                                 </li>
-                                <li>
+                                <li className="activeTestimonials">
                                   <img src={stanley_img} />
                                 </li>
                                 <li>

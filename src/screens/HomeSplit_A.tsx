@@ -19,15 +19,12 @@ class HomeSplit_A extends Component<props, any>{
     constructor(props: any) {
         super(props);
         this.state = {
-            //   ReturnMessage:""
             selectedTab: "teacher",
-
         };
         this.onbuttonclick = this.onbuttonclick.bind(this)
     }
 
     onbuttonclick(key, value): any {
-        console.log("clicked: ", key, value);
         this.setState({ [key]: value })
     }
 
