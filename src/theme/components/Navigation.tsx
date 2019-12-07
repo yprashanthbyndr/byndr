@@ -11,7 +11,9 @@ export default class Navigation extends React.Component<props, any> {
 
     render(): any {
         return (
-            <div className= {this.props.OpenMenuBar? "main_menu" : "" } >
+            <React.Fragment>
+                <div className={this.props.OpenMenuBar ? "nagivationBackdrop menu_open":""}></div>
+                <div className={this.props.OpenMenuBar ? "main_menu menu_open":"main_menu"}>
                 <div className="main_menu_inr">
                     <div className="menu_cancel">
                         <span style={{float: 'right',cursor:'pointer'}}  onClick={() => Open_Or_Close_MenuBar()}>
@@ -71,6 +73,7 @@ export default class Navigation extends React.Component<props, any> {
                     </div>
                 </div>
             </div>
+            </React.Fragment>
         );
     }
 }

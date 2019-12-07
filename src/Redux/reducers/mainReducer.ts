@@ -19,7 +19,7 @@ const INIT_STATE: HomeReducer = {
   },
   ContactFormSubmitSuccess: false,
   OpenMenuBar: false,
-  activeTestimonial: 'vvit_img'
+  activeTestimonial: 'vvit'
 };
 
 export default (state = INIT_STATE, action: ActionModel) => {

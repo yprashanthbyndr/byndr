@@ -59,13 +59,14 @@ class Home extends Component<props, any> {
     }
 
     render(): any {
-        console.log(" . / . / . / : in home render MainReducer ", this.props)
         return (
             <div>
                 <Header />
                 <HomeSplit_A />
                 <Footer />
-                <Navigation OpenMenuBar={this.props.OpenMenuBar} />
+            {  this.props.OpenMenuBar ?
+ 
+              <Navigation OpenMenuBar={this.props.OpenMenuBar} /> : null  } 
                 {/* </div> */}
             </div>
         );
