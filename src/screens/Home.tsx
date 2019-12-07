@@ -10,6 +10,7 @@ import { connect } from 'react-redux';
 interface props {
 
     MainReducer: any
+    OpenMenuBar: boolean
 
 }
 
@@ -64,7 +65,7 @@ class Home extends Component<props, any> {
                 <Header />
                 <HomeSplit_A />
                 <Footer />
-                <Navigation />
+                <Navigation OpenMenuBar={this.props.OpenMenuBar} />
                 {/* </div> */}
             </div>
         );

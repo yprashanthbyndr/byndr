@@ -1,4 +1,4 @@
-import { store, actionSaveScrollHeight, actionCantactUs_Ip_Values, actionCantactUs_ApiResponse, actionOpen_Or_Close_MenuBar } from "../Redux";
+import { store, actionSaveScrollHeight, actionCantactUs_Ip_Values, actionCantactUs_ApiResponse, actionOpen_Or_Close_MenuBar, actionTestimonialSelection } from "../Redux";
 
 function SaveScroll_Height(HideHeder, currentScroolHeight) {
 
@@ -40,4 +40,8 @@ function Open_Or_Close_MenuBar() {
 
 }
 
-export { SaveScroll_Height, CantactUs_Ip_Values ,SubmitContactPage , Open_Or_Close_MenuBar }
+function TestimonialSelection(SelectedOption: string) {
+    store.dispatch(actionTestimonialSelection(SelectedOption));
+}
+
+export { SaveScroll_Height, CantactUs_Ip_Values, SubmitContactPage, Open_Or_Close_MenuBar, TestimonialSelection }

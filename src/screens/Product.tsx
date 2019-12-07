@@ -22,7 +22,7 @@ export default class Product extends React.Component<props, any> {
             <FooterCTA />
             </div>
             <Footer />
-          <Navigation />
+          <Navigation OpenMenuBar = {false} />
           </AppContext.Provider>
        )
     }

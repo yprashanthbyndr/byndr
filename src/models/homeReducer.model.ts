@@ -6,7 +6,8 @@ export interface HomeReducer {
     WindowScroolheight: number,
     ContactUsForm: ContactFormObject,
     ContactFormSubmitSuccess: boolean,
-    OpenMenuBar: boolean
+    OpenMenuBar: boolean,
+    activeTestimonial: string
 }
 
 interface ContactFormObject {

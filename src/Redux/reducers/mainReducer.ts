@@ -1,7 +1,7 @@
 
 
 import { HomeReducer, ActionModel } from '../../models';
-import { SAVE_SCROLL_HEIGHT, SAVE_CONTACT_US_IP_VALUES, SUBMIT_CONTACT_FORM_SUCCESS, OPEN_OR_CLOSE_MENUBAR } from '../actions';
+import { SAVE_SCROLL_HEIGHT, SAVE_CONTACT_US_IP_VALUES, SUBMIT_CONTACT_FORM_SUCCESS, OPEN_OR_CLOSE_MENUBAR, SAVE_SELECTED_TESTIMONIAL } from '../actions';
 
 const INIT_STATE: HomeReducer = {
   HideHeader: false,
@@ -17,8 +17,9 @@ const INIT_STATE: HomeReducer = {
     No_Student: '',
     message: ''
   },
-  ContactFormSubmitSuccess: false ,
-  OpenMenuBar:false
+  ContactFormSubmitSuccess: false,
+  OpenMenuBar: false,
+  activeTestimonial: 'vvit_img'
 };
 
 export default (state = INIT_STATE, action: ActionModel) => {
@@ -42,6 +43,10 @@ export default (state = INIT_STATE, action: ActionModel) => {
 
       return {
         ...state, OpenMenuBar: !state.OpenMenuBar
+      }
+    case SAVE_SELECTED_TESTIMONIAL:
+      return {
+        ...state, activeTestimonial: action.payload
       }
 
     default:

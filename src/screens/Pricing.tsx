@@ -3,28 +3,28 @@ import { InnerPageTitleBlock, Header, FooterCTA, Footer, Navigation, PricingPlan
 import { AppContext } from '../contextApi/AppContext';
 
 interface props {
-    onLeftMenu?(): void;
+  onLeftMenu?(): void;
 }
 
 export default class Pricing extends React.Component<props, any> {
 
-    render(): any {
+  render(): any {
 
-        return (
-          <AppContext.Provider value={{
-            authenticated: false,
-        }}>
-          <Header />
-          <div className="bodySection">
-            <InnerPageTitleBlock />
-            <PricingPlans />
-            <FooterCTA />
-          </div>
-          <Footer />
-          <Navigation />
-          </AppContext.Provider>
-        )
-    }
+    return (
+      <AppContext.Provider value={{
+        authenticated: false,
+      }}>
+        <Header />
+        <div className="bodySection">
+          <InnerPageTitleBlock />
+          <PricingPlans />
+          <FooterCTA />
+        </div>
+        <Footer />
+        <Navigation OpenMenuBar={false} />
+      </AppContext.Provider>
+    )
+  }
 }
 
 

@@ -3,14 +3,15 @@ import { NavLink } from 'react-router-dom';
 import { Open_Or_Close_MenuBar } from '../../services';
 
 interface props {
-    onLeftMenu?(): void;
+    onLeftMenu?(): void
+    OpenMenuBar : boolean
 }
 
 export default class Navigation extends React.Component<props, any> {
 
     render(): any {
         return (
-            <div className="main_menu">
+            <div className= {this.props.OpenMenuBar? "main_menu" : "" } >
                 <div className="main_menu_inr">
                     <div className="menu_cancel">
                         <span style={{float: 'right',cursor:'pointer'}}  onClick={() => Open_Or_Close_MenuBar()}>
