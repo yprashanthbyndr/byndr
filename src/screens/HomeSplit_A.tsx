@@ -54,20 +54,7 @@ class HomeSplit_A extends Component<props, any>{
                     <FooterCTA />
                 </div>
                 <Footer />
-                {this.props.OpenMenuBar ?
-                    // <CSSTransition
-                    //     in={this.props.OpenMenuBar}
-                    //     // timeout={3000}
-                    //     // transition
-                    //     // classNames="moveminiHeader-enter"
-                    //     // unmountOnExit
-                    //     transitionName="background"
-                    //     transitionEnterTimeout={5000}
-                    //     transitionLeaveTimeout={5000}
-                    // >
-                    <Navigation OpenMenuBar={this.props.OpenMenuBar} />
-                    // </CSSTransition>
-                    : null}
+                <Navigation OpenMenuBar={this.props.OpenMenuBar} />
             </Home_A_Context.Provider>
         );
     }
