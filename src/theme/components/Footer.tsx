@@ -23,22 +23,53 @@ export default class Footer extends React.Component<props, any> {
                                         <div className="footerWidgetList">
                                             <ul>
                                                 <li>
-                                                    <NavLink exact to="/product-roles">Overview</NavLink>
+                                                    <NavLink exact to="/product-roles"
+                                                        onClick={() => {
+                                                            document.body.scrollTop = 0;
+                                                            document.documentElement.scrollTop = 0;
+                                                        }}
+                                                    >Overview</NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact to="/product-roles">For Teachers</NavLink>
+                                                    <NavLink exact to="/product-roles"
+                                                        onClick={() => {
+                                                            document.body.scrollTop = 0;
+                                                            document.documentElement.scrollTop = 0;
+                                                        }}
+                                                    >For Teachers</NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact to="/product-roles">For Students</NavLink>                                                    
+                                                    <NavLink exact to="/product-roles"
+                                                        onClick={() => {
+                                                            document.body.scrollTop = 0;
+                                                            document.documentElement.scrollTop = 0;
+                                                        }}
+                                                    >For Students</NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact to="/product-roles">For Institutes</NavLink>
+                                                    <NavLink exact to="/product-roles"
+                                                        onClick={() => {
+                                                            document.body.scrollTop = 0;
+                                                            document.documentElement.scrollTop = 0;
+                                                        }}
+                                                    >For Institutes</NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact to="/pricing">Pricing</NavLink>
+                                                    <NavLink exact to="/pricing"
+                                                        onClick={() => {
+                                                            document.body.scrollTop = 0;
+                                                            document.documentElement.scrollTop = 0;
+                                                        }}
+                                                    >Pricing</NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact to="/">Request a Demo</NavLink>
+                                                    <NavLink exact to="/"
+
+                                                        onClick={() => {
+                                                            document.body.scrollTop = 0;
+                                                            document.documentElement.scrollTop = 0;
+                                                        }}
+                                                    >Request a Demo</NavLink>
                                                 </li>
                                             </ul>
                                         </div>
@@ -56,29 +87,29 @@ export default class Footer extends React.Component<props, any> {
                                                     }}>About</NavLink>
                                                 </li>
                                                 <li>
-                                                <NavLink exact 
-                                                    to="/"
-                                                    onClick={()=> {
-                                                        window.open( 
-                                                            "https://byndr.breezy.hr/", "_blank"); 
-                                                    }}
+                                                    <NavLink exact
+                                                        to="/"
+                                                        onClick={() => {
+                                                            window.open(
+                                                                "https://byndr.breezy.hr/", "_blank");
+                                                        }}
                                                     >Careers</NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact to="/" 
-                                                    onClick={() => {
-                                                        document.body.scrollTop = 0;
-                                                        document.documentElement.scrollTop = 0;
-                                                    }}
+                                                    <NavLink exact to="/"
+                                                        onClick={() => {
+                                                            document.body.scrollTop = 0;
+                                                            document.documentElement.scrollTop = 0;
+                                                        }}
                                                     >News</NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact to="/contact-us" 
-                                                    onClick={() => {
-                                                        document.body.scrollTop = 0;
-                                                        document.documentElement.scrollTop = 0;
-                                                    }}
-                                                    
+                                                    <NavLink exact to="/contact-us"
+                                                        onClick={() => {
+                                                            document.body.scrollTop = 0;
+                                                            document.documentElement.scrollTop = 0;
+                                                        }}
+
                                                     >Contact Us</NavLink>
                                                 </li>
                                             </ul>
