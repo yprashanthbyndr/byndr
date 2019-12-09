@@ -25,11 +25,13 @@ import ProductCoreCapabilities from './ProductCoreCapabilities';
 import ContactFormAddress from './ContactFormAddress';
 import ContactUsForm from "./ContactUsForm";
 import ContactusThankYou from './ContactusThankYou';
+import BlogList from './BlogList';
 
 export {ContactusThankYou,ContactUsForm, ContactFormAddress,Header,Footer,FooterCTA,HomeTestimonial,SupportedDivices,Home_B_Hero,WelcomeBannerGrids,FeaturesGrid,Home_A_Hero,Home_A_Grids,Navigation,InnerPageTitleBlock,InvestorsBlock,OurJourneyBlock,OurTeam,VisionAndMission,PricingPlans,
     ProductForRolesBlock,BlogGrid,
     ProductRolesTestimonials,
     FaqBlock,
+    BlogList,
     MiniHeader,
     WhoIsBynderFor,
     ProductCoreCapabilities

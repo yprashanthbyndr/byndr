@@ -1,15 +1,20 @@
 import React from 'react';
 import { byndr_Logo, FB_img, TW_img, Li_img, Android_Byndr_img, Ios_Byndr_img } from "../../assets";
 import { NavLink } from 'react-router-dom';
+import Navigation from './Navigation';
+import { connect } from 'react-redux';
 
 interface props {
-    onLeftMenu?(): void;
+    onLeftMenu?(): void,
+    MainReducer: any,
+    OpenMenuBar: boolean
 }
 
-export default class Footer extends React.Component<props, any> {
+class Footer extends React.Component<props, any> {
 
     render(): any {
         return (
+            <React.Fragment>
             <footer>
                 <div className="footer">
                     <div className="footerInr">
@@ -188,10 +193,22 @@ export default class Footer extends React.Component<props, any> {
                     </div>
                 </div>
             </footer>
+            <Navigation OpenMenuBar={this.props.OpenMenuBar} />
+            </React.Fragment>
         );
     }
 }
 
+const map = (state: any) => {
+    return {
+        ...state.MainReducer
+    };
+};
+
+export default connect(
+    map,
+    null,
+)(Footer);
 
 
 

@@ -23,9 +23,6 @@ class Pricing extends React.Component<props, any> {
           <FooterCTA />
         </div>
         <Footer />
-        {this.props.OpenMenuBar ?
-          <Navigation OpenMenuBar={this.props.OpenMenuBar} /> :
-          null}
       </div>
     )
   }

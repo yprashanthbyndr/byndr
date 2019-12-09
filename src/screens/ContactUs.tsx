@@ -37,7 +37,6 @@ class ContactUs extends React.Component<props, any> {
                     </div>
                 </div>
                 <Footer />
-                {/* <Navigation /> */}
             </div>
 
         )

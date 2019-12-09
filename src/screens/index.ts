@@ -6,5 +6,6 @@ import ContactUs from './ContactUs';
 import Product from './Product';
 import ProductRoles from './ProductRoles';
 import AboutUs from './AboutUs';
+import Blog from './Blog';
 
-export { Home,HomeSplit_A,HomeSplit_B,Pricing,ContactUs,Product,ProductRoles,AboutUs };
+export { Home,HomeSplit_A,HomeSplit_B,Pricing,ContactUs,Product,ProductRoles,AboutUs,Blog };

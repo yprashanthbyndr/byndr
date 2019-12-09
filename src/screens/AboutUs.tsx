@@ -24,7 +24,6 @@ export default class AboutUs extends React.Component<props, any> {
                 <FooterCTA />
             </div>
             <Footer />
-            {/* <Navigation /> */}
             </AppContext.Provider>
         )
     }

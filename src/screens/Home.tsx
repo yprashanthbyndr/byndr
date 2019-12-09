@@ -64,10 +64,6 @@ class Home extends Component<props, any> {
                 <Header />
                 <HomeSplit_A />
                 <Footer />
-            {  this.props.OpenMenuBar ?
- 
-              <Navigation OpenMenuBar={this.props.OpenMenuBar} /> : null  } 
-                {/* </div> */}
             </div>
         );
     }

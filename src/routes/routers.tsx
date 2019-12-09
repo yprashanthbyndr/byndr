@@ -1,8 +1,4 @@
-import { HomeSplit_A, HomeSplit_B, ContactUs } from "../screens"
-import AboutUs from "../screens/AboutUs"
-import Pricing from "../screens/Pricing"
-import Product from "../screens/Product"
-import ProductRoles from "../screens/ProductRoles"
+import { AboutUs,Pricing,Product,ProductRoles,Blog,HomeSplit_A, HomeSplit_B, ContactUs } from "../screens"
 
 const ByndrRoutes = [
     {
@@ -80,6 +76,17 @@ const ByndrRoutes = [
         path:'/contact-us',
         metaDescription:"Contact Us Meta Description",
         component:ContactUs,
+        routes: []
+    },
+    {
+        pageName:"Blog",
+        title:"Blog",
+        seoVisibility:true, // default it has to be true
+        metaTitle:"Blog",
+        metaTags:"Blog Meta Tags",
+        path:'/blog',
+        metaDescription:"Blog Meta Description",
+        component:Blog,
         routes: []
     }
 ]

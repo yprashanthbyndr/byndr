@@ -54,7 +54,6 @@ class HomeSplit_A extends Component<props, any>{
                     <FooterCTA />
                 </div>
                 <Footer />
-                <Navigation OpenMenuBar={this.props.OpenMenuBar} />
             </Home_A_Context.Provider>
         );
     }

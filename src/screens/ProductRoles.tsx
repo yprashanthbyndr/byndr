@@ -1,5 +1,5 @@
 import React from 'react';
-import { BlogGrid, ProductRolesTestimonials, FaqBlock, MiniHeader, FooterCTA, Header, Navigation, Footer, InnerPageTitleBlock, ProductForRolesBlock } from '../theme/components';
+import { BlogGrid, ProductRolesTestimonials, FaqBlock, MiniHeader, FooterCTA, Header, Navigation, Footer, InnerPageTitleBlock, ProductForRolesBlock, HomeTestimonial } from '../theme/components';
 import { AppContext } from '../contextApi/AppContext';
 import { CSSTransition } from 'react-transition-group';
 
@@ -78,12 +78,12 @@ class ProductRoles extends React.Component<props, any> {
                 <div className="bodySection">
                     <InnerPageTitleBlock />
                     <ProductForRolesBlock />
-                    <ProductRolesTestimonials />
+                    <HomeTestimonial />
+                    {/* <ProductRolesTestimonials /> */}
                     <FaqBlock />
                     <FooterCTA />
                 </div>
                 <Footer />
-                {/* <Navigation /> */}
             </div>
         )
     }
