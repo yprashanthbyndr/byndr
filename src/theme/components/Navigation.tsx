@@ -43,7 +43,7 @@ export default class Navigation extends React.Component<props, any> {
                                 >Careers</NavLink>
                             </li>
                             <li className="menuItem">
-                                <NavLink exact to="/">News</NavLink>
+                                <NavLink exact to="/blog">Blog</NavLink>
                             </li>
                             <li className="menuItem">
                                 <NavLink exact to="/contact-us">Contact Us</NavLink>

@@ -101,12 +101,12 @@ class Footer extends React.Component<props, any> {
                                                     >Careers</NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact to="/"
+                                                    <NavLink exact to="/blog"
                                                         onClick={() => {
                                                             document.body.scrollTop = 0;
                                                             document.documentElement.scrollTop = 0;
                                                         }}
-                                                    >News</NavLink>
+                                                    >Blog</NavLink>
                                                 </li>
                                                 <li>
                                                     <NavLink exact to="/contact-us"
