@@ -170,10 +170,10 @@ class Footer extends React.Component<props, any> {
                                         <div className="footerWidgetDownload">
                                             <ul>
                                                 <li>
-                                                    <NavLink exact target="_blank"  to="https://play.google.com/store/apps/details?id=org.byndr.byndr&hl=en"><img src={Android_Byndr_img} alt="Bynder Android" /></NavLink>
+                                                    <a target="_blank"  href="https://play.google.com/store/apps/details?id=org.byndr.byndr&hl=en"><img src={Android_Byndr_img} alt="Bynder Android" /></a>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact target="_blank" to="https://apps.apple.com/gb/app/byndr/id1375913014"><img src={Ios_Byndr_img} alt="Bynder IOS" /></NavLink>
+                                                    <a target="_blank" href="https://apps.apple.com/gb/app/byndr/id1375913014"><img src={Ios_Byndr_img} alt="Bynder IOS" /></a>
                                                 </li>
                                             </ul>
                                         </div>
