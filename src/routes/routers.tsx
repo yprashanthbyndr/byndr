@@ -1,4 +1,4 @@
-import { AboutUs, Pricing, Product, ProductRoles, Blog, HomeSplit_A, HomeSplit_B, ContactUs } from "../screens"
+import { AboutUs, Pricing, Product, ProductRoles, Blog, HomeSplit_A, HomeSplit_B, ContactUs, PrivacyPolicy, TermsOfUse } from "../screens"
 import SingleBlog from "../screens/SingleBlog";
 
 import { BlogChild1 ,BlogChild2 ,BlogChild3, BlogChild4 } from '../screens/blogChilds/index';
@@ -181,6 +181,28 @@ const ByndrRoutes = [
         path: '/blogSingle',
         metaDescription: "Single Blog Meta Description",
         component: SingleBlog,
+        routes: []
+    },
+    {
+        pageName:"Privacy Policy",
+        title:"Privacy Policy",
+        seoVisibility:true, // default it has to be true
+        metaTitle:"Privacy Policy",
+        metaTags:"Privacy Policy Meta Tags",
+        path:'/privacy-policy',
+        metaDescription:"Privacy Policy Description",
+        component:PrivacyPolicy,
+        routes: []
+    },
+    {
+        pageName:"Terms of Use",
+        title:"Terms of Use",
+        seoVisibility:true, // default it has to be true
+        metaTitle:"Terms of Use",
+        metaTags:"Terms of Use Meta Tags",
+        path:'/terms-of-use',
+        metaDescription:"Terms of Use Description",
+        component:TermsOfUse,
         routes: []
     }
 ]

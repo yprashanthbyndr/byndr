@@ -5,6 +5,8 @@ import { NavLink } from 'react-router-dom';
 import { AppContext } from '../../contextApi/AppContext';
 import { connect } from 'react-redux';
 import { Open_Or_Close_MenuBar } from '../../services';
+import { YMInitializer } from 'react-yandex-metrika';
+import ReactGA from 'react-ga';
 
 interface props {
     onLeftMenu?(): void;
@@ -19,12 +21,14 @@ class Header extends React.Component<props, any> {
         // this.headerRef = {};
 
         this.handleScroll = this.handleScroll.bind(this);
+        this.initializeReactGA = this.initializeReactGA.bind(this);
     }
 
 
     componentDidMount(): any {
         console.log("in header component: ", this.context);
         window.addEventListener('scroll', this.handleScroll);
+        //window.addEventListener('load', this.initializeReactGA);
     }
 
 
@@ -42,7 +46,10 @@ class Header extends React.Component<props, any> {
         let element = this.refs.Sticky_context_header;
         // var domRect = element.getBoundingClientRect();
     }
-
+    initializeReactGA() {
+        ReactGA.initialize('UA-59718524-2');
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    }
     render(): any {
         console.log("Hide  Hide Hide : ", this.props);
         return (
@@ -74,6 +81,8 @@ class Header extends React.Component<props, any> {
                         </div>
                     </div>
                 </div>
+                <YMInitializer accounts={[56589457]} options={{webvisor: true}} />
+                {this.initializeReactGA}
             </header>
         );
     }
