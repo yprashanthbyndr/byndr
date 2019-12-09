@@ -19,7 +19,7 @@ const INIT_STATE: HomeReducer = {
   },
   ContactFormSubmitSuccess: false,
   OpenMenuBar: false,
-  activeTestimonial: 'vvit_img',
+  activeTestimonial: 'vvit',
   Stickypricing_table: false,
   MiniHeaderOptions: "overview",
 };
@@ -66,10 +66,7 @@ export default (state = INIT_STATE, action: ActionModel) => {
 };
 
 
-
-
 function SaveContactDetails(state: any, action: any) {
-
 
   switch (action.payload.field) {
 

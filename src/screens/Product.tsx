@@ -17,7 +17,7 @@ export default class Product extends React.Component<props, any> {
             <div>
                 <Header />
                 <div className="bodySection">
-                    <InnerPageTitleBlock  />
+                    <InnerPageTitleBlock />
                     <WhoIsBynderFor />
                     <ProductCoreCapabilities />
                     <FooterCTA />
