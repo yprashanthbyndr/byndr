@@ -44,6 +44,7 @@ class Header extends React.Component<props, any> {
     }
 
     render(): any {
+        console.log("Hide  Hide Hide : ", this.props);
         return (
             <header
                 className={this.props.Hide ? "slideup" : "slidedown"}

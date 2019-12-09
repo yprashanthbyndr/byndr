@@ -18,7 +18,7 @@ interface props {
             //     authenticated: false,
             // }}>
             <div>
-                <Header Hide={this.props.HideHeader} />
+                <Header />
                 <div className="bodySection">
                     <InnerPageTitleBlock />
                     <WhoIsBynderFor />

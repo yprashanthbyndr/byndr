@@ -72,7 +72,7 @@ class ProductRoles extends React.Component<props, any> {
         return (
             <div>
                 <div className="header_main_container">
-                    <Header />
+                    <Header   Hide={this.props.HideHeader} />
                     <MiniHeader />
                 </div>                
                 <div className="bodySection">
