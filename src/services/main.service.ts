@@ -1,4 +1,4 @@
-import { store, actionSaveScrollHeight, actionCantactUs_Ip_Values, actionCantactUs_ApiResponse, actionOpen_Or_Close_MenuBar, actionTestimonialSelection } from "../Redux";
+import { store, actionSaveScrollHeight, actionCantactUs_Ip_Values, actionCantactUs_ApiResponse, actionOpen_Or_Close_MenuBar, actionTestimonialSelection, actionSticky_PricingTable } from "../Redux";
 
 function SaveScroll_Height(HideHeder, currentScroolHeight) {
 
@@ -44,4 +44,24 @@ function TestimonialSelection(SelectedOption: string) {
     store.dispatch(actionTestimonialSelection(SelectedOption));
 }
 
-export { SaveScroll_Height, CantactUs_Ip_Values, SubmitContactPage, Open_Or_Close_MenuBar, TestimonialSelection }
+function Sticky_PricingTable(divheight: number, scroolHeight: number, StickyEnabled) {
+
+    // let Store= stat
+
+
+    if (scroolHeight > divheight && !StickyEnabled) {
+
+        console.log(" scrool height is exceeded div geight ");
+        store.dispatch(actionSticky_PricingTable(true));
+
+    } else if (StickyEnabled && scroolHeight < divheight) {
+
+        store.dispatch(actionSticky_PricingTable(false));
+    }
+
+}
+
+export {
+    SaveScroll_Height, CantactUs_Ip_Values, SubmitContactPage, Open_Or_Close_MenuBar, TestimonialSelection,
+    Sticky_PricingTable
+}

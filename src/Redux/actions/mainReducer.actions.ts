@@ -7,6 +7,7 @@ export const SAVE_CONTACT_US_IP_VALUES = 'SAVE_CONTACT_US_IP_VALUES';
 export const SUBMIT_CONTACT_FORM_SUCCESS = 'SUBMIT_CONTACT_FORM_SUCCESS';
 export const OPEN_OR_CLOSE_MENUBAR='OPEN_OR_CLOSE_MENUBAR';
 export const SAVE_SELECTED_TESTIMONIAL ='SAVE_SELECTED_TESTIMONIAL';
+export const STICKY_PRICINGTABLE = "STICKY_PRICINGTABLE";
 
 
 function sampleFunction(data: any): ActionModel {
@@ -49,6 +50,13 @@ function actionTestimonialSelection (selectedOption) : ActionModel {
     }; 
 }
 
+function actionSticky_PricingTable (enable) {
+    return {
+        type: STICKY_PRICINGTABLE,
+        payload: enable
+    }; 
+}
+
 
 
 export {
@@ -57,6 +65,7 @@ export {
     actionCantactUs_Ip_Values ,
     actionCantactUs_ApiResponse ,
     actionOpen_Or_Close_MenuBar ,
-    actionTestimonialSelection
+    actionTestimonialSelection ,
+    actionSticky_PricingTable
 };
 

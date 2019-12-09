@@ -7,7 +7,8 @@ export interface HomeReducer {
     ContactUsForm: ContactFormObject,
     ContactFormSubmitSuccess: boolean,
     OpenMenuBar: boolean,
-    activeTestimonial: string
+    activeTestimonial: string,
+    Stickypricing_table: boolean
 }
 
 interface ContactFormObject {
