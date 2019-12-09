@@ -1240,6 +1240,12 @@ div#carousel1 .flex-viewport{
     float: left;
     padding: 120px 0px;
 }
+.pricing_table_sticky{
+    width: 100%;
+    float: left;
+    padding: 120px 0px;
+ 
+}
 .pricing_title {
     color: #195DB0;
     font-size: 24px;

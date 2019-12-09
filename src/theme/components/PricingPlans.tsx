@@ -39,7 +39,6 @@ class PricingPlans extends React.Component<props, any> {
       let DivHeight = testDiv.offsetTop;
       const winScroll =
         document.body.scrollTop || document.documentElement.scrollTop
-
       Sticky_PricingTable(DivHeight, winScroll, this.props.Stickypricing_table);
     }
   }
@@ -49,9 +48,8 @@ class PricingPlans extends React.Component<props, any> {
     console.log(" pricing plans : ", this.props.Stickypricing_table)
     return (
       <section id="STANDARD"
-        ref="SelectionRef"
-      >
-        <div className="pricing_table">
+        ref="SelectionRef">
+        <div className= {this.props.Stickypricing_table? "pricing_table_sticky" :"pricing_table"}>
           <div className="sticky_table_menu">
             <div className="sticky_table_menu_main">
               <div className="sticky_table_title">

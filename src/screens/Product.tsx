@@ -9,7 +9,7 @@ interface props {
     onLeftMenu?(): void;
     HideHeader: boolean,
 }
- class Product extends React.Component<props, any> {
+class Product extends React.Component<props, any> {
 
     render(): any {
 
