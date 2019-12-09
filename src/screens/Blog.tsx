@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Header, Footer, Navigation, BlogList, InnerPageTitleBlock } from "../theme/components";
+import { Header, Footer, BlogList, InnerPageTitleBlock } from "../theme/components";
 
 import { connect } from 'react-redux';
 
@@ -8,6 +8,7 @@ interface props {
 
     MainReducer: any
     OpenMenuBar: boolean
+    fromPage:any
 
 }
 

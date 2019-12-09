@@ -3975,3 +3975,114 @@ li.year_details {
         margin-bottom: 0px;
     }
  }
+ /* Blog starts here */
+
+ .blogListContainer{
+width: 100%;
+float: left;
+ }
+.blogList{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    float: none;
+}
+.blogList_inr {
+    width: 100%;
+    float: left;
+    margin: 30px 0;
+}
+.blogList_product_content{
+    width: 100%;
+    max-width: 740px;
+    margin: 0px auto;
+    font-size: 32px;
+    font-weight: 300;
+    color: #333333;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.blogList_group {
+    width: 100%;
+    float: left;
+    padding: 10px 0;
+}
+.single_blogList {
+    width: 100%;
+    float: left;
+    padding: 30px 0;
+    border-bottom: 1px solid #efefef;
+}
+.blogList_group .single_blogList:last-child{
+    border-bottom: none;
+}
+.blogList_group {
+    width: 100%;
+    float: left;
+}
+.single_blogList_featured_image {
+    width: 30%;
+    float: left;
+    max-width: 250px;
+    margin-right: 30px;
+}
+.single_blogList_featured_image img{
+    max-width: 100%;
+    box-shadow: 0px 1px 12px #efefef;
+    border: 1px solid #efefef;
+    border-radius: 4px;
+}
+.content_blogList{
+    width: 70%;
+    float: left;
+    max-width: 750px;
+}
+.blogList_title {
+    font-size: 23px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    width: 100%;
+    float: left;
+}
+.blogList_feature_content {
+    width: 100%;
+    float: left;
+    line-height: 1.4;
+}
+.blogList_link {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+.blogList_link a{
+    background: #CB0A7A 0% 0% no-repeat padding-box;
+    color: #fff;
+    padding: 5px 20px;
+    float: left;
+    width: 100%;
+    max-width: 120px;
+    text-align: center;
+    font-size: 13px;
+    border-radius: 3px;
+}
+.SinlgeBlogItem {
+    width: 100%;
+    float: left;
+    padding: 40px 0;
+}
+.SinlgeBlogItemInr {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.SinlgeBlogItemMain {
+    width: 100%;
+    float: left;
+    line-height: 1.6;
+    color: #575757;
+}
+.SinlgeBlogItemMain img{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100%;
+}
