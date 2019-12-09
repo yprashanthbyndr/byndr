@@ -90,7 +90,12 @@ class MiniHeader extends React.Component<props, any> {
                             >FAQ</li>
                         </ul>
                     </div>
-                    <div className="try_byndr_btn"><a href="#">Try Byndr</a></div>
+                    <div className="try_byndr_btn" 
+                      onClick={() => {
+                        window.open(
+                            "https://test.byndr.com/freesignup/teacher/", "_blank");
+                    }}
+                    ><a href="#">Try Byndr</a></div>
                 </div>
             </div>
             //  </CSSTransition>
