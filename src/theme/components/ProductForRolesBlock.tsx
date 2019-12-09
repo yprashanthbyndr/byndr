@@ -13,7 +13,7 @@ export default class ProductForRolesBlock extends React.Component<props, any> {
             <section>
     <div className="homeGrid product-role">
       <div className="homeGrid_inr">
-        <div className="widget_title">- WHO IS BYNDR IS FOR? -</div>
+        <div className="widget_title"> WHO IS BYNDR IS FOR? </div>
         <div className="product-role-small_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</div>
         <div className="homeGridList">
           <div className="homeSingleGrid">

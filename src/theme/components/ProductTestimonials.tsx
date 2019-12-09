@@ -13,7 +13,7 @@ export default class ProductTestimonials extends React.Component<props, any> {
             <div className="testimonial drak_gray">
     <div className="testimonial_main">
         <div className="testimonial_inr">
-            <div className="widget_title">- TESTIMONIALS -</div>
+            <div className="widget_title"> TESTIMONIALS </div>
                 <div className="slider">
                 <section className="flexslider">
                     <ul className="slides">

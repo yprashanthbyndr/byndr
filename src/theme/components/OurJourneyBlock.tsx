@@ -12,7 +12,7 @@ export default class OurJourneyBlock extends React.Component<props, any> {
             <section>
                     <div className="ourJourney">
                         <div className="ourJourney_main">
-                            <div className="widget_title">- OUR JOURNEY -</div>
+                            <div className="widget_title"> OUR JOURNEY </div>
                             <div className="footprint_up desktop">
                                 <div className="footprint_up_main">
 
