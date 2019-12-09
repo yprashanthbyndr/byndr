@@ -172,13 +172,18 @@ header{
     float: left;
     z-index: 9;
 }
+.header_main_sticky{
+    position: -webkit-sticky;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    float: left;
+    padding:20px;
+}
 .header_main{
     width: 100%;
     float: left;
-    padding:20px 0;
-    position: static;
-    top: 0;
-    position: -webkit-sticky;
+    padding:20px;
 }
 .slideup{
     height: 0;            
