@@ -1,21 +1,27 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Header, Footer } from '../../theme/components';
-import BlogItems from './BlogItems';
 
 interface props {
-    OpenMenuBar: boolean
-    fromPage: any
+    Content: any
+
 }
 
-class BlogChild4 extends Component<props, any> {
+class BlogItems extends Component<props, any> {
+
     constructor(props) {
         super(props);
     }
+
     render(): any {
+
+        console.log(" props : ", this.props);
         return (
             <div>
-                <BlogItems Content={<BlogData />} />
+                <Header />
+
+                {this.props.Content}
+                <Footer />
             </div>
         );
     }
@@ -29,15 +35,4 @@ const map = (state: any) => {
 export default connect(
     map,
     null,
-)(BlogChild4);
-
-const BlogData = () => {
-
-    return (
-        <div>
-            <h1>
-                from  Child  Blog 4
-            </h1>
-        </div>
-    )
-}
+)(BlogItems);

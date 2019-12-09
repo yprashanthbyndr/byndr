@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Header, Footer } from '../../theme/components';
+import BlogItems from './BlogItems'
 
 interface props {
 
@@ -17,13 +18,9 @@ class BlogChild1 extends Component<props, any> {
 
     render(): any {
         return (
-            <React.Fragment>
-                <Header/>
-                <div>
-                    <h1>BlogChild 1</h1>
-                </div>
-                <Footer/>
-            </React.Fragment>
+            <div>
+                <BlogItems Content={<BlogData />} />
+            </div>
         );
     }
 }
@@ -37,3 +34,17 @@ export default connect(
     map,
     null,
 )(BlogChild1);
+
+
+
+
+const BlogData = () => {
+
+    return (
+        <div>
+            <h1>
+                from  Child  Blog 1
+            </h1>
+        </div>
+    )
+}
