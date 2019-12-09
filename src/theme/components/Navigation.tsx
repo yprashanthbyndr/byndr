@@ -25,28 +25,33 @@ export default class Navigation extends React.Component<props, any> {
                     <div className="menu_block">
                         <ul>
                             <li className="menuItem activeMenu">
-                                <NavLink exact to="/">Home</NavLink>
+                                <NavLink exact to="/" onClick={ () => Open_Or_Close_MenuBar()}>Home</NavLink>
                             </li>
                             <li className="menuItem">
-                                <NavLink exact to="/aboutus">About Us</NavLink>
+                                <NavLink exact to="/aboutus"
+                                 onClick={ () => Open_Or_Close_MenuBar()}>About Us</NavLink>
                             </li>
                             <li className="menuItem">
-                                <NavLink exact to="/product">Product</NavLink>
+                                <NavLink exact to="/product" 
+                                onClick={ () => Open_Or_Close_MenuBar()}>Product</NavLink>
                             </li>
                             <li className="menuItem">
                                 <NavLink exact
                                     to="/"
                                     onClick={() => {
+                                       Open_Or_Close_MenuBar();
                                         window.open(
                                             "https://byndr.breezy.hr/", "_blank");
                                     }}
                                 >Careers</NavLink>
                             </li>
                             <li className="menuItem">
-                                <NavLink exact to="/blog">Blog</NavLink>
+                                <NavLink exact to="/blog" 
+                                onClick={ () => Open_Or_Close_MenuBar()}>Blog</NavLink>
                             </li>
                             <li className="menuItem">
-                                <NavLink exact to="/contact-us">Contact Us</NavLink>
+                                <NavLink exact to="/contact-us" 
+                                onClick={ () => Open_Or_Close_MenuBar()}>Contact Us</NavLink>
                             </li>
                             {/* <li className="submenu">
                     <div className="menuItem">
