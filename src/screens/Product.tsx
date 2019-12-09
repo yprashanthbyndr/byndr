@@ -3,7 +3,8 @@ import { ProductCoreCapabilities, WhoIsBynderFor, FooterCTA, Header, Navigation,
 import { AppContext } from '../contextApi/AppContext';
 
 interface props {
-    onLeftMenu?(): void;
+    onLeftMenu?(): void,
+    fromPage:any
 }
 
 export default class Product extends React.Component<props, any> {
@@ -17,7 +18,7 @@ export default class Product extends React.Component<props, any> {
             <div>
                 <Header />
                 <div className="bodySection">
-                    <InnerPageTitleBlock  />
+                    <InnerPageTitleBlock fromPage="Product"  />
                     <WhoIsBynderFor />
                     <ProductCoreCapabilities />
                     <FooterCTA />

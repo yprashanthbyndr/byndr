@@ -101,6 +101,39 @@ const ByndrRoutes = [
         // }]
     },
     {
+        pageName: "LMS For Teachers",
+        title: "Contact Us",
+        seoVisibility: true, // default it has to be true
+        metaTitle: "Contact Us",
+        metaTags: "Contact Us Meta Tags",
+        path: '/lms-for-teachers',
+        metaDescription: "Contact Us Meta Description",
+        component: ProductRoles,
+        routes: []
+    },
+    {
+        pageName: "LMS For Students",
+        title: "LMS For Students",
+        seoVisibility: true, // default it has to be true
+        metaTitle: "LMS For Students",
+        metaTags: "LMS For Students Meta Tags",
+        path: '/lms-for-students',
+        metaDescription: "LMS For Students Meta Description",
+        component: ProductRoles,
+        routes: []
+    },
+    {
+        pageName: "LMS For Admins",
+        title: "LMS For Admins",
+        seoVisibility: true, // default it has to be true
+        metaTitle: "LMS For Admins",
+        metaTags: "LMS For Admins Meta Tags",
+        path: '/lms-for-admins',
+        metaDescription: "LMS For Admins Meta Description",
+        component: ProductRoles,
+        routes: []
+    },
+    {
         pageName: "Blog child1",
         title: "Blog child1",
         seoVisibility: true,

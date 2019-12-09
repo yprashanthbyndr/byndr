@@ -127,16 +127,16 @@ class Footer extends React.Component<props, any> {
                                         <div className="footerWidgetList">
                                             <ul>
                                                 <li>
-                                                    <NavLink exact target="_blank" to="https://byndr.zendesk.com/">Datasheets</NavLink>
+                                                    <a target="_blank" href="https://byndr.zendesk.com/">Datasheets</a>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact target="_blank" to="https://byndr.zendesk.com/">FAQs</NavLink>
+                                                    <a target="_blank" href="https://byndr.zendesk.com/">FAQs</a>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact target="_blank" to="https://byndr.zendesk.com/">Knowledge Base</NavLink>
+                                                    <a target="_blank" href="https://byndr.zendesk.com/">Knowledge Base</a>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact target="_blank" to="https://byndr.zendesk.com/">Videos</NavLink>
+                                                    <a target="_blank" href="https://byndr.zendesk.com/">Videos</a>
                                                 </li>
                                             </ul>
                                         </div>

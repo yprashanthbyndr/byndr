@@ -18,8 +18,6 @@ class BlogChild2 extends Component<props, any> {
         super(props);
     }
 
-
-
     render(): any {
         return (
             <div>

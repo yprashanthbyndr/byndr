@@ -2,19 +2,25 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 interface props {
-    onLeftMenu?(): void;
+    onLeftMenu?(): void
+    fromPage:any
 }
 
 export default class InnerPageTitleBlock extends React.Component<props, any> {
-
+  constructor(props) {
+    super(props);
+}
     render(): any {
+
+      const {fromPage} = this.props
+
         return (
             <section>
             <div className="homeBanner_backgroundimage">
               <div className="homeBanner_main">
                 <div className="homeBanner_contentblock">
                   <div className="banner_title">
-                    Built to bridge the gaps between teachers and students
+                    {fromPage}
                   </div>
                   <div className="banner_content">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna

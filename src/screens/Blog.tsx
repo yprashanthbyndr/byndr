@@ -40,7 +40,7 @@ class Blog extends Component<props, any> {
         return (
             <React.Fragment>
                 <Header />
-                <InnerPageTitleBlock />
+                <InnerPageTitleBlock fromPage="Blog" />
                 <BlogList />
                 <Footer />
             </React.Fragment>

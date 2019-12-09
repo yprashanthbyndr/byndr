@@ -12,6 +12,7 @@ interface props {
     MainReducer: any,
     HideHeader: boolean,
     WindowScroolheight: number,
+    fromPage:any
 
 }
 
@@ -76,7 +77,7 @@ class ProductRoles extends React.Component<props, any> {
                     <MiniHeader />
                 </div>                
                 <div className="bodySection">
-                    <InnerPageTitleBlock />
+                    <InnerPageTitleBlock fromPage="Product Roles" />
                     <ProductForRolesBlock />
                     <HomeTestimonial />
                     {/* <ProductRolesTestimonials /> */}

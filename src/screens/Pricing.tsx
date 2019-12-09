@@ -7,7 +7,8 @@ import { connect } from 'react-redux';
 
 interface props {
   onLeftMenu?(): void;
-  OpenMenuBar: boolean
+  OpenMenuBar: boolean,
+  fromPage:any
 }
 
 class Pricing extends React.Component<props, any> {
@@ -18,7 +19,7 @@ class Pricing extends React.Component<props, any> {
       <div>
         <Header />
         <div className="bodySection">
-          <InnerPageTitleBlock />
+          <InnerPageTitleBlock fromPage="Pricing" />
           <PricingPlans />
           <FooterCTA />
         </div>

@@ -19,7 +19,7 @@ const INIT_STATE: HomeReducer = {
   },
   ContactFormSubmitSuccess: false,
   OpenMenuBar: false,
-  activeTestimonial: 'vvit_img',
+  activeTestimonial: 'vvit',
   Stickypricing_table: false,
   MiniHeaderOptions: "overview",
 };

@@ -9,6 +9,7 @@ interface props {
     MainReducer: any,
     HideHeader: boolean,
     WindowScroolheight: number,
+    fromPage:any
 }
 
 class SingleBlog extends React.Component<props, any> {
@@ -71,7 +72,7 @@ class SingleBlog extends React.Component<props, any> {
                     <Header />
                 </div>                
                 <div className="bodySection">
-                    <InnerPageTitleBlock />
+                    <InnerPageTitleBlock fromPage="Single Blog" />
                     <BlogItem />
                     <FooterCTA />
                 </div>
