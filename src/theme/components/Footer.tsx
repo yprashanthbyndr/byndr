@@ -101,12 +101,12 @@ class Footer extends React.Component<props, any> {
                                                     >Careers</NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact to="/"
+                                                    <NavLink exact to="/blog"
                                                         onClick={() => {
                                                             document.body.scrollTop = 0;
                                                             document.documentElement.scrollTop = 0;
                                                         }}
-                                                    >News</NavLink>
+                                                    >Blog</NavLink>
                                                 </li>
                                                 <li>
                                                     <NavLink exact to="/contact-us"
@@ -127,16 +127,16 @@ class Footer extends React.Component<props, any> {
                                         <div className="footerWidgetList">
                                             <ul>
                                                 <li>
-                                                    <NavLink exact to="/">Datasheets</NavLink>
+                                                    <NavLink exact target="_blank" to="https://byndr.zendesk.com/">Datasheets</NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact to="/">FAQs</NavLink>
+                                                    <NavLink exact target="_blank" to="https://byndr.zendesk.com/">FAQs</NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact to="/">Knowledge Base</NavLink>
+                                                    <NavLink exact target="_blank" to="https://byndr.zendesk.com/">Knowledge Base</NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact to="/">Videos</NavLink>
+                                                    <NavLink exact target="_blank" to="https://byndr.zendesk.com/">Videos</NavLink>
                                                 </li>
                                             </ul>
                                         </div>
@@ -152,13 +152,13 @@ class Footer extends React.Component<props, any> {
                                         <div className="footerWidgetSocial">
                                             <ul>
                                                 <li>
-                                                    <NavLink exact to="/"><img src={FB_img} alt="Bynder Facebook" /></NavLink>
+                                                    <NavLink exact target="_blank" to="https://facebook.com/ByndrApp"><img src={FB_img} alt="Bynder Facebook" /></NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact to="/"><img src={TW_img} alt="Bynder Twitter" /></NavLink>
+                                                    <NavLink exact target="_blank" to="https://twitter.com/Byndr_Mobile"><img src={TW_img} alt="Bynder Twitter" /></NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact to="/"><img src={Li_img} alt="Bynder LinkedIn" /></NavLink>
+                                                    <NavLink exact target="_blank" to="https://www.linkedin.com/company/byndr/about/"><img src={Li_img} alt="Bynder LinkedIn" /></NavLink>
                                                 </li>
                                             </ul>
                                         </div>
@@ -170,10 +170,10 @@ class Footer extends React.Component<props, any> {
                                         <div className="footerWidgetDownload">
                                             <ul>
                                                 <li>
-                                                    <NavLink exact to="/"><img src={Android_Byndr_img} alt="Bynder Android" /></NavLink>
+                                                    <NavLink exact target="_blank"  to="https://play.google.com/store/apps/details?id=org.byndr.byndr&hl=en"><img src={Android_Byndr_img} alt="Bynder Android" /></NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact to="/"><img src={Ios_Byndr_img} alt="Bynder IOS" /></NavLink>
+                                                    <NavLink exact target="_blank" to="https://apps.apple.com/gb/app/byndr/id1375913014"><img src={Ios_Byndr_img} alt="Bynder IOS" /></NavLink>
                                                 </li>
                                             </ul>
                                         </div>

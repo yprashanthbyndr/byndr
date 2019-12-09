@@ -60,7 +60,7 @@ class PricingPlans extends React.Component<props, any> {
               </div>
               <div className="sticky_table_title">
                 <div className="pricing_title">PREMIUM</div>
-                <button className="pricing_btn">Request Pricing</button>
+                <button className="pricing_btn">Request a Demo</button>
               </div>
             </div>
           </div>
@@ -88,7 +88,7 @@ class PricingPlans extends React.Component<props, any> {
                     </th>
                     <th className="title_pricing">
                       <div className="pricing_title">PREMIUM</div>
-                      <button className="pricing_btn">Request Pricing</button>
+                      <button className="pricing_btn">Request a Demo</button>
                       <div className="pricing_value">Starts from INR 2000 per teacher per class</div>
                     </th>
                   </tr>
@@ -183,7 +183,7 @@ class PricingPlans extends React.Component<props, any> {
                   <tr>
                     <td></td>
                     <td className="default"><button className="pricing_btn">Get Started</button></td>
-                    <td><button className="pricing_btn">Request Pricing</button></td>
+                    <td><button className="pricing_btn">Request a Demo</button></td>
                   </tr>
                 </tbody>
               </table>

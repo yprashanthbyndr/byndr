@@ -13,7 +13,7 @@ export default class ProductRolesTestimonials extends React.Component<props, any
 <section>
     <div className="testmonials">
       <div className="testmonials_inr">
-        <div className="widget_title">- TESTIMONIALS -</div>
+        <div className="widget_title"> TESTIMONIALS </div>
         {/* Place somewhere in the <body> of your page */}
         <div className="flexslider carousel">
           <ul className="slides">

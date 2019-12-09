@@ -19,7 +19,7 @@ export default class OurTeam extends React.Component<props, any> {
             <section>
                 <div className="our_passionate_team">
                     <div className="our_passionate_team_main">
-                        <div className="widget_title">- OUR PASSIONATE TEAM -</div>
+                        <div className="widget_title"> OUR PASSIONATE TEAM </div>
                             <div className="teams_members">
 
                                 <div className="our-team">

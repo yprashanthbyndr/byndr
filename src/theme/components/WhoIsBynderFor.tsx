@@ -13,7 +13,7 @@ export default class WhoIsBynderFor extends React.Component<props, any> {
             <section>
                 <div className="who_is_byndr">
                   <div className="who_is_byndr_main">
-                    <div className="widget_title">- WHO IS BYNDR IS FOR? -</div>
+                    <div className="widget_title"> WHO IS BYNDR IS FOR? </div>
 
                      <div className="who_is_byndr_blocks">
                          <div className="who_is_byndr_left_block image"><img src={Dummy_Img} width="375"/></div>

@@ -27,10 +27,10 @@ export default class SupportedDivices extends React.Component<props, any> {
                     <div className="homeAvailableDivicesIcons">
                       <ul>
                         <li>
-                        <NavLink exact to="/"><img src={byndr_android} /></NavLink>
+                        <NavLink exact target="_blank"  to="https://play.google.com/store/apps/details?id=org.byndr.byndr&hl=en"><img src={byndr_android} /></NavLink>
                         </li>
                         <li>
-                        <NavLink exact to="/"><img src={byndr_ios} /></NavLink>
+                        <NavLink exact target="_blank" to="https://apps.apple.com/gb/app/byndr/id1375913014"><img src={byndr_ios} /></NavLink>
                         </li>
                       </ul>
                     </div>

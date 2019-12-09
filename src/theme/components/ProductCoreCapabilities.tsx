@@ -12,7 +12,7 @@ export default class ProductCoreCapabilities extends React.Component<props, any>
             <section>
             <div className="core_capabilities bg_gray">
                 <div className="core_capabilities_main">
-                        <div className="widget_title">- CORE CAPABILITIES -</div>
+                        <div className="widget_title"> CORE CAPABILITIES </div>
                     <ul>
                         <li>
                             <div className="li_title">Lorem Ipsum</div>
