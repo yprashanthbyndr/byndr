@@ -10,64 +10,60 @@ export default class BlogList extends React.Component<props, any> {
 
     render(): any {
         return (
-          <section>
-          <div className="blog">
-            <div className="blog_inr">
-              <div className="product-role-small_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</div>
-              <div className="blog_group">
-                {/* single blog start*/}
-                <div className="single_blog">
-                  <div className="featured_image">
-                    <img src={Blog_img} />
-                    <div className="overlay" />
+          <section className="blogListContainer">
+            <div className="blogList">
+              <div className="blogList_inr">
+                <div className="blogList_product_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
+                <div className="blogList_group">
+                  {/* single blogList start*/}
+                  <div className="single_blogList">
+                    <div className="single_blogList_featured_image">
+                      <img src={Blog_img} />
+                    </div>
+                    <div className="content_blogList">
+                      <div className="blogList_title">Lorem ipsum dolor sit</div>
+                      <div className="blogList_feature_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</div>
+                      <div className="blogList_link"><NavLink exact to="/">Know More</NavLink></div>
+                    </div>
                   </div>
-                  <div className="content_blog">
-                    <div className="blog_title">Lorem ipsum dolor sit</div>
-                    <div className="blog_feature_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</div>
-                    <div className="blog_link"><NavLink exact to="/">Know More</NavLink></div>
+                  {/* single block end*/}
+                  {/* single blogList start*/}
+                  <div className="single_blogList">
+                    <div className="single_blogList_featured_image">
+                      <img src={Blog_img} />
+                    </div>
+                    <div className="content_blogList">
+                      <div className="blogList_title">Lorem ipsum dolor sit</div>
+                      <div className="blogList_feature_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</div>
+                      <div className="blogList_link"><NavLink exact to="/">Know More</NavLink></div>
+                    </div>
                   </div>
+                  {/* single block end*/}
+                  {/* single blogList start*/}
+                  <div className="single_blogList">
+                    <div className="single_blogList_featured_image">
+                      <img src={Blog_img} />
+                    </div>
+                    <div className="content_blogList">
+                      <div className="blogList_title">Lorem ipsum dolor sit</div>
+                      <div className="blogList_feature_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</div>
+                      <div className="blogList_link"><NavLink exact to="/">Know More</NavLink></div>
+                    </div>
+                  </div>
+                  {/* single block end*/}
+                  {/* single blogList start*/}
+                  <div className="single_blogList">
+                    <div className="single_blogList_featured_image">
+                      <img src={Blog_img} />
+                    </div>
+                    <div className="content_blogList">
+                      <div className="blogList_title">Lorem ipsum dolor sit</div>
+                      <div className="blogList_feature_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</div>
+                      <div className="blogList_link"><NavLink exact to="/">Know More</NavLink></div>
+                    </div>
+                  </div>
+                  {/* single block end*/}
                 </div>
-                {/* single block end*/}
-                {/* single blog start*/}
-                <div className="single_blog">
-                  <div className="featured_image">
-                    <img src={Blog_img} />
-                    <div className="overlay" />
-                  </div>
-                  <div className="content_blog">
-                    <div className="blog_title">Lorem ipsum dolor sit</div>
-                    <div className="blog_feature_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</div>
-                    <div className="blog_link"><NavLink exact to="/">Know More</NavLink></div>
-                  </div>
-                </div>
-                {/* single block end*/}
-                {/* single blog start*/}
-                <div className="single_blog">
-                  <div className="featured_image">
-                    <img src={Blog_img} />
-                    <div className="overlay" />
-                  </div>
-                  <div className="content_blog">
-                    <div className="blog_title">Lorem ipsum dolor sit</div>
-                    <div className="blog_feature_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</div>
-                    <div className="blog_link"><NavLink exact to="/">Know More</NavLink></div>
-                  </div>
-                </div>
-                {/* single block end*/}
-                {/* single blog start*/}
-                <div className="single_blog">
-                  <div className="featured_image">
-                    <img src={Blog_img} />
-                    <div className="overlay" />
-                  </div>
-                  <div className="content_blog">
-                    <div className="blog_title">Lorem ipsum dolor sit</div>
-                    <div className="blog_feature_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</div>
-                    <div className="blog_link"><NavLink exact to="/">Know More</NavLink></div>
-                  </div>
-                </div>
-                {/* single block end*/}
-              </div>
             </div>
           </div>
         </section>

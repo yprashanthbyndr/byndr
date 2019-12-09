@@ -1,4 +1,5 @@
 import { AboutUs,Pricing,Product,ProductRoles,Blog,HomeSplit_A, HomeSplit_B, ContactUs } from "../screens"
+import SingleBlog from "../screens/SingleBlog"
 
 const ByndrRoutes = [
     {
@@ -87,6 +88,18 @@ const ByndrRoutes = [
         path:'/blog',
         metaDescription:"Blog Meta Description",
         component:Blog,
+        routes: []
+    },
+    ,
+    {
+        pageName:"Single Blog",
+        title:"Single Blog",
+        seoVisibility:true, // default it has to be true
+        metaTitle:"Single Blog",
+        metaTags:"Single Blog Meta Tags",
+        path:'/blogSingle',
+        metaDescription:"Single Blog Meta Description",
+        component:SingleBlog,
         routes: []
     }
 ]
