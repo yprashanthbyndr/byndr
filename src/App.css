@@ -497,15 +497,23 @@ font-weight: 600;
 .homeSingleGridIcon img{
     width: 90px;
 }
+.homeSingleGridTitle {
+    width: 100%;
+    float: left;
+    font-size: 20px;
+    padding: 9px 0;
+    color: #01154d;
+}
 .homeSingleGridContent{
     width: 100%;
     float: left;
     text-align: center;
     font-size: 17px;
     letter-spacing: 0;
-    color: #00144C;
+    color: #333333;
     opacity: 1;
     line-height: 1.4;
+    font-weight: 300;
 }
 
 /* available divices */
@@ -2291,7 +2299,7 @@ margin-bottom: 13px;
 .product-role .homeSingleGridIcon img {
     width: 60px;
 }
-.homeSingleGridContent {
+/* .homeSingleGridContent {
     width: 100%;
     float: left;
     text-align: center;
@@ -2301,7 +2309,7 @@ margin-bottom: 13px;
     opacity: 1;
     line-height: 1.4;
     font-weight: 300;
-}
+} */
 .product-role-small_content {
     width: 100%;
     max-width: 740px;

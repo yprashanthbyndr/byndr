@@ -18,15 +18,15 @@ export default class FooterCTA extends React.Component<props, any> {
                       <div className="callToAction_main">
                         <div className="callToAction_inr">
                           <div className="CallToAction_title">
-                            Lorem ipsum dolor sit amet, consetetur
+                          Get started with Byndr?
                           </div>
                           <div className="CallToAction_content">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                            Create your (teachers & students) account and start experiencing the Byndr today.
                           </div>
                           <div className="CallToAction_btn">
                             <div className="CallToAction_btn_inr">
                               <NavLink exact to="/">
-                                Get Started For Free
+                                Get Started Free
                               </NavLink>
                             </div>
                           </div>

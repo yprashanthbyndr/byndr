@@ -19,10 +19,10 @@ export default class SupportedDivices extends React.Component<props, any> {
                 <div className="homeAvailableDivices_inr">
                   <div className="homeAvailableDivices_left">
                     <h3>
-                      Lorem Ipsum is simply dummy text of the printing
+                      Access Byndr Anyplace & Anytime
                     </h3>
                     <div className="homeAvailableDivicesText">
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat
+                      With our deep experience in technology products, Byndr aims to provide an easy-to-use, fast, and mobile-first platform to benefit all stakeholders in higher education. Byndr has been designed and developed with attention on connectivity and the mobile user experience. Our native Android app & iOS along with responsive web apps - are lightweight, ensuring every student and teacher, no matter where they live, has access to educational resources inside and outside the classroom.
                     </div>
                     <div className="homeAvailableDivicesIcons">
                       <ul>
