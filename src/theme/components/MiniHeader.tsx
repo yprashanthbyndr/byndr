@@ -29,9 +29,8 @@ class MiniHeader extends React.Component<props, any> {
     ScroolEvent(event) {
         let winScroll =
             document.body.scrollTop || document.documentElement.scrollTop
-
-        console.log("this.props.MiniHeaderOptions", this.props.MiniHeaderOptions);
-        console.log(". / . / .  / winScroll in min header : ", winScroll);
+        // console.log("this.props.MiniHeaderOptions", this.props.MiniHeaderOptions);
+        // console.log(". / . / .  / winScroll in min header : ", winScroll);
         if (winScroll > 0 && winScroll < 700 && this.props.MiniHeaderOptions !== "overview") {
             store.dispatch(actionMiniHeaderOptions("overview"))
         } else if (winScroll > 700 && winScroll < 1500 && this.props.MiniHeaderOptions !== "features") {
@@ -90,7 +89,12 @@ class MiniHeader extends React.Component<props, any> {
                             >FAQ</li>
                         </ul>
                     </div>
-                    <div className="try_byndr_btn"><a href="#">Try Byndr</a></div>
+                    <div className="try_byndr_btn" 
+                      onClick={() => {
+                        window.open(
+                            "https://test.byndr.com/freesignup/teacher/", "_blank");
+                    }}
+                    ><a href="#">Try Byndr</a></div>
                 </div>
             </div>
             //  </CSSTransition>

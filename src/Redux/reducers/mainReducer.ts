@@ -66,10 +66,7 @@ export default (state = INIT_STATE, action: ActionModel) => {
 };
 
 
-
-
 function SaveContactDetails(state: any, action: any) {
-
 
   switch (action.payload.field) {
 

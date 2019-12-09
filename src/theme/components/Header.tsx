@@ -9,11 +9,10 @@ import { Open_Or_Close_MenuBar } from '../../services';
 interface props {
     onLeftMenu?(): void;
     MainReducer: any,
-    HideHeader: boolean,
+    Hide?: boolean
 }
 
 class Header extends React.Component<props, any> {
-
 
     constructor(props: any) {
         super(props);
@@ -45,9 +44,12 @@ class Header extends React.Component<props, any> {
     }
 
     render(): any {
+        console.log("Hide  Hide Hide : ", this.props);
         return (
-            <header className={this.props.HideHeader ? "slideup" : "slidedown"}>
-                <div ref="Sticky_context_header" className="header_main">
+            <header
+                className={this.props.Hide ? "slideup" : "slidedown"}
+            >
+                <div ref="Sticky_context_header" className={this.props.Hide ? "header_main" : "header_main_sticky"}>
                     <div className="header_main_inr">
                         <div className="logo">
                             <NavLink exact to="/"><img src={byndr_Logo} className="default_logo" /></NavLink>
@@ -62,7 +64,7 @@ class Header extends React.Component<props, any> {
                                     <NavLink exact to="/">SignUp - Free</NavLink>
                                 </div>
                                 <div className="navMenu">
-                                    <div className="menuIcon" onClick={()=> Open_Or_Close_MenuBar()}>
+                                    <div className="menuIcon" onClick={() => Open_Or_Close_MenuBar()}>
                                         <i className="material-icons">
                                             menu
                                                     </i>

@@ -172,13 +172,18 @@ header{
     float: left;
     z-index: 9;
 }
+.header_main_sticky{
+    position: -webkit-sticky;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    float: left;
+    padding:20px;
+}
 .header_main{
     width: 100%;
     float: left;
-    padding:20px 0;
-    position: static;
-    top: 0;
-    position: -webkit-sticky;
+    padding:20px;
 }
 .slideup{
     height: 0;            
@@ -1234,6 +1239,12 @@ div#carousel1 .flex-viewport{
     width: 100%;
     float: left;
     padding: 120px 0px;
+}
+.pricing_table_sticky{
+    width: 100%;
+    float: left;
+    padding: 120px 0px;
+ 
 }
 .pricing_title {
     color: #195DB0;
@@ -2581,7 +2592,7 @@ margin-bottom: 13px;
 }
 .try_byndr_btn {
     float: right;
-    width: 33.33%;
+    width: 200px;
     text-align: right;
     padding: 28px 0px;
 }
