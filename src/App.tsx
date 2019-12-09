@@ -3,9 +3,10 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Home } from './screens/'
 import './App.css';
 import { ByndrRoutes } from './routes/routers';
-import { AppContext } from './contextApi/AppContext';
+// import { AppContext } from './contextApi/AppContext';
 import {Provider} from 'react-redux';
 import { store } from './Redux/store';
+import { Header, Footer } from './theme/components';
 interface props {
 
 }
@@ -18,12 +19,14 @@ class App extends Component<props, any>{
       <Provider store={store}>
         <div className="main">
           <BrowserRouter>
+          {/* <Header /> */}
             <Switch>
               {ByndrRoutes.map((route, i) => {
                 return RouteWithSubRoutes({ ...route })
               })}
             </Switch>
           </BrowserRouter>
+          {/* <Footer /> */}
         </div>
       </Provider>
     );

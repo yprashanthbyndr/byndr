@@ -7,6 +7,9 @@ interface props {
 
 export default class InnerPageTitleBlock extends React.Component<props, any> {
 
+
+
+
     render(): any {
         return (
             <section>

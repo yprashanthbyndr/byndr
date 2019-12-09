@@ -6,7 +6,6 @@ import { AppContext } from '../../contextApi/AppContext';
 import { connect } from 'react-redux';
 import { Open_Or_Close_MenuBar } from '../../services';
 
-
 interface props {
     onLeftMenu?(): void;
     MainReducer: any,
@@ -44,7 +43,6 @@ class Header extends React.Component<props, any> {
         let element = this.refs.Sticky_context_header;
         // var domRect = element.getBoundingClientRect();
     }
-
 
     render(): any {
         return (

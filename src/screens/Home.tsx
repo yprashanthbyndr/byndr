@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { AppContext } from '../contextApi/AppContext';
+// import { AppContext } from '../contextApi/AppContext';
 
 import { HomeSplit_A, HomeSplit_B } from './index';
 import { Header, Footer, Navigation } from "../theme/components";

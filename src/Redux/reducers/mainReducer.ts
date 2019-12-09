@@ -1,7 +1,7 @@
 
 
 import { HomeReducer, ActionModel } from '../../models';
-import { SAVE_SCROLL_HEIGHT, SAVE_CONTACT_US_IP_VALUES, SUBMIT_CONTACT_FORM_SUCCESS, OPEN_OR_CLOSE_MENUBAR, SAVE_SELECTED_TESTIMONIAL, STICKY_PRICINGTABLE } from '../actions';
+import { SAVE_SCROLL_HEIGHT, SAVE_CONTACT_US_IP_VALUES, SUBMIT_CONTACT_FORM_SUCCESS, OPEN_OR_CLOSE_MENUBAR, SAVE_SELECTED_TESTIMONIAL, STICKY_PRICINGTABLE, MINI_HEADER_OPTIONS } from '../actions';
 
 const INIT_STATE: HomeReducer = {
   HideHeader: false,
@@ -20,7 +20,8 @@ const INIT_STATE: HomeReducer = {
   ContactFormSubmitSuccess: false,
   OpenMenuBar: false,
   activeTestimonial: 'vvit_img',
-  Stickypricing_table: false
+  Stickypricing_table: false,
+  MiniHeaderOptions: "overview",
 };
 
 export default (state = INIT_STATE, action: ActionModel) => {
@@ -53,6 +54,11 @@ export default (state = INIT_STATE, action: ActionModel) => {
 
       return {
         ...state, Stickypricing_table: action.payload
+      }
+
+    case MINI_HEADER_OPTIONS:
+      return {
+        ...state, MiniHeaderOptions: action.payload
       }
     default:
       return state;

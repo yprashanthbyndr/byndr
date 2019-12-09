@@ -4,14 +4,15 @@ export interface HomeReducer {
     HideHeader: any,
     StickInnerHeader: boolean,
     WindowScroolheight: number,
-    ContactUsForm: ContactFormObject,
+    ContactUsForm: Intr_ContactFormObject,
     ContactFormSubmitSuccess: boolean,
     OpenMenuBar: boolean,
     activeTestimonial: string,
-    Stickypricing_table: boolean
+    Stickypricing_table: boolean,
+    MiniHeaderOptions: string,
 }
 
-interface ContactFormObject {
+interface Intr_ContactFormObject {
     title: string
     name: string
     email: string

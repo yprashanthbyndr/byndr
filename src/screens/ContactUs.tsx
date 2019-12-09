@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Header, Footer, Navigation, ContactUsForm, ContactusThankYou, ContactFormAddress } from '../theme/components';
-import { AppContext } from '../contextApi/AppContext';
+// import { AppContext } from '../contextApi/AppContext';
 
 
 import { connect } from 'react-redux';

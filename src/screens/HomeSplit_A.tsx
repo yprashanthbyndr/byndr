@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { AppContext } from '../contextApi/AppContext';
+// import { AppContext } from '../contextApi/AppContext';
 import { Home_A_Hero, Home_A_Grids, FeaturesGrid, FooterCTA, SupportedDivices, HomeTestimonial, Header, Footer, Navigation } from '../theme/components';
 import { Helmet } from "react-helmet";
 import { Home_A_Context } from '../contextApi/HomeSplit_A.context';
@@ -33,10 +33,11 @@ class HomeSplit_A extends Component<props, any>{
 
         // let activeTab= "teacher";
         return (
-            <Home_A_Context.Provider value={{
-                state: this.state,
-                click_Tab: this.onbuttonclick
-            }}>
+            // <Home_A_Context.Provider value={{
+            //     state: this.state,
+            //     click_Tab: this.onbuttonclick
+            // }}>
+            <div>
                 <Helmet>
                     <meta charSet="utf-8" />
                     <title>Byndr Title Goes here Page by Page</title>
@@ -54,7 +55,8 @@ class HomeSplit_A extends Component<props, any>{
                     <FooterCTA />
                 </div>
                 <Footer />
-            </Home_A_Context.Provider>
+                {/* </Home_A_Context.Provider> */}
+            </div>
         );
     }
 }
