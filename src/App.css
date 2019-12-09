@@ -162,6 +162,8 @@ header{
     -moz-transition: height 0.5s ease-in-out;
     -o-transition: height 0.5s ease-in-out;
     transition: height 0.5s ease-in-out;
+    border-bottom: 1px solid #efefef;
+    box-shadow: 0px 2px 2px #efefef;
 }
 .header_main_container{
     position: fixed;
@@ -4088,4 +4090,28 @@ float: left;
     text-align: center;
     margin: 0 auto;
     max-width: 100%;
+}
+/* 404 Page not  found */
+
+.RouteNotFound{
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 10px 0 200px 0;
+    font-size: 50px;
+    line-height: 1;
+}
+.RouteNotFoundInr{
+    width: 100%;
+    float: left;
+}
+.RouteNotFoundMain{
+    width: 100%;
+    float: left;
+}
+.RouteNotFoundMain h1{
+margin: 10px 0;
+}
+.RouteNotFoundMain h4{
+    margin: 10px 0;
 }
