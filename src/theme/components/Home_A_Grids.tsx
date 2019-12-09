@@ -1,7 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import { AppContext } from '../../contextApi/AppContext';
-import { slider_1, open_book, teamwork, medical_history, earth_globe, blackboard, light_bulb, byndr_android, byndr_ios, byndr_responsive_platform, vvit_img, stanley_img, vardhaman_img, gprec_img, author_Img } from "../../assets";
+import { open_book, teamwork, medical_history, earth_globe, blackboard, light_bulb } from "../../assets";
 
 interface props {
   onLeftMenu?(): void;
@@ -19,8 +17,9 @@ export default class Home_A_Grids extends React.Component<props, any> {
                     <div className="homeSingleGridIcon">
                       <img src={open_book} />
                     </div>
+                    <div className="homeSingleGridTitle">Learn & Innovate Together</div>
                     <div className="homeSingleGridContent">
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                    Enables teachers to provide study materials, communicate effectively and encourage pro-active thinking among students.
             </div>
                   </div>
                 </div>
@@ -29,8 +28,9 @@ export default class Home_A_Grids extends React.Component<props, any> {
                     <div className="homeSingleGridIcon">
                       <img src={teamwork} />
                     </div>
+                    <div className="homeSingleGridTitle">Built-In Accessibility Features</div>
                     <div className="homeSingleGridContent">
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                    It enables the students to access course material, get their doubts clarified, take assessments and monitor the progress.
             </div>
                   </div>
                 </div>
@@ -39,8 +39,9 @@ export default class Home_A_Grids extends React.Component<props, any> {
                     <div className="homeSingleGridIcon">
                       <img src={medical_history} />
                     </div>
+                    <div className="homeSingleGridTitle">Collaboration & Communication</div>
                     <div className="homeSingleGridContent">
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                    It is a cloud-based platform that enables the administrators to co-ordinate and monitor the performance of teachers and students on a regular basis.
             </div>
                   </div>
                 </div>
@@ -49,8 +50,9 @@ export default class Home_A_Grids extends React.Component<props, any> {
                     <div className="homeSingleGridIcon">
                       <img src={earth_globe} />
                     </div>
+                    <div className="homeSingleGridTitle">Support & Connect</div>
                     <div className="homeSingleGridContent">
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                    It enables the teachers to create assignments, track performance and evaluate to overcome the weaknesses.
             </div>
                   </div>
                 </div>
@@ -59,8 +61,9 @@ export default class Home_A_Grids extends React.Component<props, any> {
                     <div className="homeSingleGridIcon">
                       <img src={blackboard} />
                     </div>
+                    <div className="homeSingleGridTitle">Peer-to-Peer Learning</div>
                     <div className="homeSingleGridContent">
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                    It enables the students to create their own study group, share knowledge and exchange ideas within the group and focus on self-development.
             </div>
                   </div>
                 </div>
@@ -69,8 +72,9 @@ export default class Home_A_Grids extends React.Component<props, any> {
                     <div className="homeSingleGridIcon">
                       <img src={light_bulb} />
                     </div>
+                    <div className="homeSingleGridTitle">Secure Technology</div>
                     <div className="homeSingleGridContent">
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                    A secured learning management tool enabling easy integration, no set-up costs and servers to maintain.
             </div>
                   </div>
                 </div>

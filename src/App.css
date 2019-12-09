@@ -162,6 +162,8 @@ header{
     -moz-transition: height 0.5s ease-in-out;
     -o-transition: height 0.5s ease-in-out;
     transition: height 0.5s ease-in-out;
+    border-bottom: 1px solid #efefef;
+    box-shadow: 0px 2px 2px #efefef;
 }
 .header_main_container{
     position: fixed;
@@ -495,15 +497,23 @@ font-weight: 600;
 .homeSingleGridIcon img{
     width: 90px;
 }
+.homeSingleGridTitle {
+    width: 100%;
+    float: left;
+    font-size: 20px;
+    padding: 9px 0;
+    color: #01154d;
+}
 .homeSingleGridContent{
     width: 100%;
     float: left;
     text-align: center;
     font-size: 17px;
     letter-spacing: 0;
-    color: #00144C;
+    color: #333333;
     opacity: 1;
     line-height: 1.4;
+    font-weight: 300;
 }
 
 /* available divices */
@@ -2289,7 +2299,7 @@ margin-bottom: 13px;
 .product-role .homeSingleGridIcon img {
     width: 60px;
 }
-.homeSingleGridContent {
+/* .homeSingleGridContent {
     width: 100%;
     float: left;
     text-align: center;
@@ -2299,7 +2309,7 @@ margin-bottom: 13px;
     opacity: 1;
     line-height: 1.4;
     font-weight: 300;
-}
+} */
 .product-role-small_content {
     width: 100%;
     max-width: 740px;
@@ -4088,4 +4098,28 @@ float: left;
     text-align: center;
     margin: 0 auto;
     max-width: 100%;
+}
+/* 404 Page not  found */
+
+.RouteNotFound{
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 10px 0 200px 0;
+    font-size: 50px;
+    line-height: 1;
+}
+.RouteNotFoundInr{
+    width: 100%;
+    float: left;
+}
+.RouteNotFoundMain{
+    width: 100%;
+    float: left;
+}
+.RouteNotFoundMain h1{
+margin: 10px 0;
+}
+.RouteNotFoundMain h4{
+    margin: 10px 0;
 }

@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { Home } from './screens/'
+import { BrowserRouter, Route, Switch,Redirect } from 'react-router-dom';
 import './App.css';
 import { ByndrRoutes } from './routes/routers';
 // import { AppContext } from './contextApi/AppContext';
 import {Provider} from 'react-redux';
 import { store } from './Redux/store';
-import { Header, Footer } from './theme/components';
+import Notfound from './screens/Notfound';
+
 interface props {
 
 }
@@ -20,9 +20,13 @@ class App extends Component<props, any>{
           <BrowserRouter>
           {/* <Header /> */}
             <Switch>
-              {ByndrRoutes.map((route, i) => {
+              {ByndrRoutes.map((route) => {
                 return RouteWithSubRoutes({ ...route })
               })}
+              {/* 301&302 redirects start */}
+                <Redirect from='/old-path' to='/blog' />
+              {/* 301&302 redirects end */}
+              <Route component={Notfound} />
             </Switch>
           </BrowserRouter>
           {/* <Footer /> */}

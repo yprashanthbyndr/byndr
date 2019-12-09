@@ -21,7 +21,7 @@ export default class Home_A_Hero extends React.Component<props, any> {
       sliders: {
         adminstrator: {
           imageUrl: slider_1,
-          content: "Dummy Text for Content Admins",
+          content: "Monitoring Made Easy, Organized & Efficient",
           howitworks: {
             link: '/',
             text: "How it works For Admins"
@@ -33,7 +33,7 @@ export default class Home_A_Hero extends React.Component<props, any> {
         },
         teachers: {
           imageUrl: slider_1,
-          content: "Dummy Text for Content Teachers",
+          content: "Teaching Made Engaging, Productive & Valuable",
           howitworks: {
             link: '/',
             text: "How it works For Teacher"
@@ -45,7 +45,7 @@ export default class Home_A_Hero extends React.Component<props, any> {
         },
         students: {
           imageUrl: slider_1,
-          content: "Dummy Text for Content Students",
+          content: "Learning Made Interactive, Simple & Effective",
           howitworks: {
             link: '/',
             text: "How it works For Students"
