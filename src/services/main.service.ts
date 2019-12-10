@@ -23,6 +23,28 @@ function SaveScroll_Height(HideHeder, currentScroolHeight) {
     }
 }
 
+
+
+function MiniHeaderScrollLogic(st, lastScrollTop, HideHeader_Present) {
+
+    let diff = st - lastScrollTop;
+    let HideHeder;
+    if (st > lastScrollTop && !HideHeader_Present) {
+        HideHeder = true;
+        SaveScroll_Height(HideHeder, st)
+    } else if (HideHeader_Present && diff < -5) {
+        HideHeder = false;
+        SaveScroll_Height(HideHeder, st)
+    } else if (diff > 10 || diff < -10) {
+        HideHeder = undefined;
+        SaveScroll_Height(HideHeder, st)
+    }
+
+}
+
+
+
+
 function CantactUs_Ip_Values(field: string, value: string) {
 
     store.dispatch(actionCantactUs_Ip_Values(field, value));
@@ -63,5 +85,5 @@ function Sticky_PricingTable(divheight: number, scroolHeight: number, StickyEnab
 
 export {
     SaveScroll_Height, CantactUs_Ip_Values, SubmitContactPage, Open_Or_Close_MenuBar, TestimonialSelection,
-    Sticky_PricingTable
+    Sticky_PricingTable, MiniHeaderScrollLogic
 }

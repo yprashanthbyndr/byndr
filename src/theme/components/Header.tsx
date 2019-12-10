@@ -51,7 +51,7 @@ class Header extends React.Component<props, any> {
         ReactGA.pageview(window.location.pathname + window.location.search);
     }
     render(): any {
-        console.log("Hide  Hide Hide : ", this.props);
+        // console.log("Hide  Hide Hide : ", this.props);
         return (
             <header
                 className={this.props.Hide ? "slideup" : "slidedown"}

@@ -36,7 +36,7 @@ class Footer extends React.Component<props, any> {
                                                     >Overview</NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact to="/product-roles"
+                                                    <NavLink exact to="/lms-for-teachers"
                                                         onClick={() => {
                                                             document.body.scrollTop = 0;
                                                             document.documentElement.scrollTop = 0;
@@ -44,7 +44,7 @@ class Footer extends React.Component<props, any> {
                                                     >For Teachers</NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact to="/product-roles"
+                                                    <NavLink exact to="/lms-for-students"
                                                         onClick={() => {
                                                             document.body.scrollTop = 0;
                                                             document.documentElement.scrollTop = 0;
@@ -52,7 +52,7 @@ class Footer extends React.Component<props, any> {
                                                     >For Students</NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact to="/product-roles"
+                                                    <NavLink exact to="/lms-for-admins"
                                                         onClick={() => {
                                                             document.body.scrollTop = 0;
                                                             document.documentElement.scrollTop = 0;

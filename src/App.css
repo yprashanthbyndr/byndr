@@ -188,9 +188,11 @@ header{
 .slideup{
     height: 0;            
     overflow-y: hidden;
+    /* background-color: #FFFFFF; */
 }
 .slidedown {            
-    height: 97px ;                    
+    height: 97px ;    
+    /* background-color: #FFFFFF;                 */
 }
 .header_main_inr{
     width: 100%;

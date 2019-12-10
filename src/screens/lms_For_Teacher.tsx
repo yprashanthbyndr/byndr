@@ -1,11 +1,11 @@
 import React from 'react';
-import { BlogGrid, ProductRolesTestimonials, FaqBlock, MiniHeader, FooterCTA, Header, Navigation, Footer, InnerPageTitleBlock, ProductForRolesBlock, HomeTestimonial } from '../theme/components';
-import { AppContext } from '../contextApi/AppContext';
-import { CSSTransition } from 'react-transition-group';
-
+import {
+    FaqBlock, MiniHeader, FooterCTA, Header, Footer, InnerPageTitleBlock,
+    ProductForRolesBlock, HomeTestimonial
+} from '../theme/components';
 
 import { connect } from 'react-redux';
-import { SaveScroll_Height } from '../services';
+import { SaveScroll_Height, MiniHeaderScrollLogic } from '../services';
 
 interface props {
     onLeftMenu?(): void;
@@ -13,13 +13,11 @@ interface props {
     HideHeader: boolean,
     WindowScroolheight: number,
     fromPage: any
-
 }
 
-class ProductRoles extends React.Component<props, any> {
+class lms_For_Teacher extends React.Component<props, any> {
     constructor(props: any) {
         super(props);
-        // this.headerRef = {};
 
         this.handleScroll = this.handleScroll.bind(this);
     }
@@ -41,44 +39,28 @@ class ProductRoles extends React.Component<props, any> {
     }
 
     handleScroll() {
-        // let element = this.refs.header;
-        // let self = this;
-
         let scroll_position = 0;
-        let CurrentHeight = this.props;
-        let a = 200;
         scroll_position = window.scrollY;
         var lastScrollTop = this.props.WindowScroolheight;
         let HideHeder;
 
         var st = window.pageYOffset || document.documentElement.scrollTop;
 
-        let diff = st - lastScrollTop;
-        if (st > lastScrollTop && !this.props.HideHeader) {
-            HideHeder = true;
-            SaveScroll_Height(HideHeder, st)
-        } else if (this.props.HideHeader && diff < -5) {
-            HideHeder = false;
-            SaveScroll_Height(HideHeder, st)
-        } else if (diff > 10 || diff < -10) {
-            HideHeder = undefined;
-            SaveScroll_Height(HideHeder, st)
-        }
+        MiniHeaderScrollLogic(st, lastScrollTop, this.props.HideHeader);
+
     }
 
     render(): any {
-        let StateIs = this.props;
         return (
             <div>
                 <div className="header_main_container">
                     <Header Hide={this.props.HideHeader} />
-                    <MiniHeader />
+                    <MiniHeader Title="for Teachers" />
                 </div>
                 <div className="bodySection">
                     <InnerPageTitleBlock fromPage="Product Roles" />
                     <ProductForRolesBlock />
                     <HomeTestimonial />
-                    {/* <ProductRolesTestimonials /> */}
                     <FaqBlock />
                     <FooterCTA />
                 </div>
@@ -97,4 +79,4 @@ const map = (state: any) => {
 export default connect(
     map,
     null,
-)(ProductRoles);
+)(lms_For_Teacher);
