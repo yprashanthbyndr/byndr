@@ -186,8 +186,8 @@ class Footer extends React.Component<props, any> {
                                 <NavLink exact to="/"><img src={byndr_Logo} /></NavLink>
                             </div>
                             <div className="copyright">
-                                &copy; 2019 Byndr, Inc. <NavLink exact to="/">Privacy Policy</NavLink>
-                                <NavLink exact to="/">Terms of Use</NavLink>
+                                &copy; 2019 Byndr, Inc. <NavLink exact to="/privacy-policy">Privacy Policy</NavLink>
+                                <NavLink exact to="/terms-of-use">Terms of Use</NavLink>
                             </div>
                         </div>
                     </div>
