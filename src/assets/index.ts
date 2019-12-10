@@ -38,8 +38,12 @@ import testimonial_person from './images/testimonial_person.png';
 import Blog_img from "./images/blog.png";
 import PersonImage from "./images/person-icon.png";
 import Our_team from "./images/testimonial_person.png";
+import learning from "./images/learning.png";
+import educationalmobileapp from "./images/educational-mobile-app.jpg"
 export {
     byndr_Logo_White,
+    educationalmobileapp,
+    learning,
     byndr_Logo,
     FB_img,
     TW_img,
