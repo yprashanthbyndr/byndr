@@ -32,14 +32,13 @@ class ContactUsForm extends React.Component<props, any> {
   OnClickSubmitForm() {
 
     let FormDetails = this.props.ContactUsForm
-    if (FormDetails.name == '' || FormDetails.title == '' || FormDetails.No_Student == '' ||
-      FormDetails.collegeName == '' || FormDetails.email == '' ||
-      FormDetails.message == '' || FormDetails.phoneNo == '' || FormDetails.positionAtCollege == '') {
+    if (FormDetails.name == '' || FormDetails.title == '' || FormDetails.num_students == '' ||
+      FormDetails.institution == '' || FormDetails.email == '' ||
+      FormDetails.comments == '' || FormDetails.phone == '' || FormDetails.Position == '') {
       alert('please enter valid details')
     } else {
       let validate = validateEmail(FormDetails.email);
       console.log("./ . /. / validate : ", validate);
-
       // let ObjectResponseis = this.props.ContactUsForm
       SubmitContactPage(FormDetails)
     }
@@ -91,35 +90,35 @@ class ContactUsForm extends React.Component<props, any> {
           </div>
           <div className="singleField">
             <input type="text" name="text" id="contact_phone" placeholder="Phone Number" autoComplete="off"
-              value={this.props.ContactUsForm.phoneNo}
-              onChange={(txt) => this.ReadeInput('phoneNo', txt.target.value)}
+              value={this.props.ContactUsForm.phone}
+              onChange={(txt) => this.ReadeInput('phone', txt.target.value)}
             />
           </div>
           <div className="singleField">
             <input type="text" name="text" id="contact_position" placeholder="Position at College" autoComplete="off"
-              value={this.props.ContactUsForm.positionAtCollege}
-              onChange={(txt) => this.ReadeInput('positionAtCollege', txt.target.value)}
+              value={this.props.ContactUsForm.Position}
+              onChange={(txt) => this.ReadeInput('Position', txt.target.value)}
             />
           </div>
           <div className="singleField">
             <input type="text" name="text" id="contact_college_name" placeholder="College/University Name" autoComplete="off"
-              value={this.props.ContactUsForm.collegeName}
-              onChange={(txt) => this.ReadeInput('collegeName', txt.target.value)}
+              value={this.props.ContactUsForm.institution}
+              onChange={(txt) => this.ReadeInput('institution', txt.target.value)}
             />
           </div>
           <div className="singleField">
-            <input type="text" name="text" id="No_Student" placeholder="Number of Students in your College" autoComplete="off"
-              value={this.props.ContactUsForm.No_Student}
-              onChange={(txt) => this.ReadeInput('No_Student', txt.target.value)}
+            <input type="text" name="text" id="num_students" placeholder="Number of Students in your College" autoComplete="off"
+              value={this.props.ContactUsForm.num_students}
+              onChange={(txt) => this.ReadeInput('num_students', txt.target.value)}
             />
           </div>
           <div className="singleField">
-            <textarea rows={7} name="question" id="contact_question" placeholder="Your Message" maxLength={5000}
-              value={this.props.ContactUsForm.message}
-              onChange={(txt) => this.ReadeInput('message', txt.target.value)}
+            <textarea rows={7} name="question" id="contact_question" placeholder="Your comments" maxLength={5000}
+              value={this.props.ContactUsForm.comments}
+              onChange={(txt) => this.ReadeInput('comments', txt.target.value)}
             />
           </div>
-          <div className="singleField" onClick={() => this.OnClickSubmitForm() }>
+          <div className="singleField" onClick={() => this.OnClickSubmitForm()}>
             <input type="submit" defaultValue="Send It!" />
           </div>
           {/* </form> */}

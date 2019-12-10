@@ -16,9 +16,10 @@ interface Intr_ContactFormObject {
     title: string
     name: string
     email: string
-    phoneNo: string
-    positionAtCollege: string
-    collegeName: string
-    No_Student: string
-    message: string
+    phone: string
+    Position: string
+    institution: string
+    num_students: string
+    num_classes:string
+    comments: string
 }

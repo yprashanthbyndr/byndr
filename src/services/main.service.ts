@@ -53,8 +53,26 @@ function CantactUs_Ip_Values(field: string, value: string) {
 
 function SubmitContactPage(reqObject: any) {
 
-    let SuccessOrFail = 'success'
-    store.dispatch(actionCantactUs_ApiResponse(SuccessOrFail));
+    let SuccessOrFail = 'success';
+    const proxyurl = "https://cors-anywhere.herokuapp.com/";
+
+
+    let Url = proxyurl + 'https://www.byndr.com/contact/';
+    fetch(Url, {
+        method: 'post',
+        body: JSON.stringify(reqObject)
+    }).then(function (response) {
+        return response.json();
+    }).then(function (data) {
+        console.log(" data on contact api ", data);
+
+        store.dispatch(actionCantactUs_ApiResponse(SuccessOrFail));
+
+    }).catch(err => {
+        console.log("   error on contact api   ", err);
+    });
+
+
 }
 
 function Open_Or_Close_MenuBar() {

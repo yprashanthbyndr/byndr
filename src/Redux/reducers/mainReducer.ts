@@ -11,11 +11,12 @@ const INIT_STATE: HomeReducer = {
     title: '',
     name: '',
     email: '',
-    phoneNo: '',
-    positionAtCollege: '',
-    collegeName: '',
-    No_Student: '',
-    message: ''
+    phone: '',
+    Position:'',
+    institution: '',
+    num_students: '',
+    num_classes:'',
+    comments:'',
   },
   ContactFormSubmitSuccess: false,
   OpenMenuBar: false,
@@ -92,42 +93,49 @@ function SaveContactDetails(state: any, action: any) {
           email: action.payload.value,
         }
       }
-    case 'phoneNo':
+    case 'phone':
       return {
         ...state, ContactUsForm: {
           ...state.ContactUsForm,
-          phoneNo: action.payload.value,
+          phone: action.payload.value,
         }
       }
-    case 'positionAtCollege':
+    case 'Position':
       return {
         ...state, ContactUsForm: {
           ...state.ContactUsForm,
-          positionAtCollege: action.payload.value,
+          Position: action.payload.value,
 
         }
       }
-    case 'collegeName':
+    case 'institution':
       return {
         ...state, ContactUsForm: {
           ...state.ContactUsForm,
-          collegeName: action.payload.value,
+          institution: action.payload.value,
 
         }
       }
-    case 'No_Student':
+    case 'num_students':
       return {
         ...state, ContactUsForm: {
           ...state.ContactUsForm,
-          No_Student: action.payload.value,
+          num_students: action.payload.value,
         }
       }
+      case 'num_classes':
+          return {
+            ...state, ContactUsForm: {
+              ...state.ContactUsForm,
+              num_classes: action.payload.value,
+            }
+          }
 
-    case 'message':
+    case 'comments':
       return {
         ...state, ContactUsForm: {
           ...state.ContactUsForm,
-          message: action.payload.value,
+          comments: action.payload.value,
         }
       }
     default:
