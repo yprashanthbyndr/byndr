@@ -49,7 +49,7 @@ class HomeSplit_A extends Component<props, any>{
                     //  State={this.state}  click_Tab={this.onbuttonclick}  
                     />
                     <Home_A_Grids />
-                    <FeaturesGrid />
+                    {/* <FeaturesGrid /> */}
                     <SupportedDivices />
                     <HomeTestimonial />
                     <FooterCTA />

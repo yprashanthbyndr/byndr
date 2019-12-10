@@ -29,38 +29,32 @@ export default class Navigation extends React.Component<props, any> {
                         </div>
                         <div className="menu_block">
                             <ul>
-                                <li className="menuItem activeMenu">
-                                    <NavLink exact to="/" onClick={() => {
+                                <li className="menuItem">
+                                    <NavLink exact to="/" activeClassName="activeMenu" onClick={() => {
                                         this.ScroolToTp();
                                         Open_Or_Close_MenuBar()
                                     }}>Home</NavLink>
                                 </li>
                                 <li className="menuItem">
-                                    <NavLink exact to="/aboutus"
+                                    <NavLink exact to="/aboutus" activeClassName="activeMenu"
                                         onClick={() =>{
                                                 this.ScroolToTp();
                                                 Open_Or_Close_MenuBar()
                                             }}>About Us</NavLink>
                                 </li>
                                 <li className="menuItem">
-                                    <NavLink exact to="/product"
+                                    <NavLink exact to="/product" activeClassName="activeMenu"
                                         onClick={() =>   {
                                             this.ScroolToTp();
                                             Open_Or_Close_MenuBar()
                                         }}>Product</NavLink>
                                 </li>
                                 <li className="menuItem">
-                                    <NavLink exact
-                                        to="/"
-                                        onClick={() => {
-                                            Open_Or_Close_MenuBar();
-                                            window.open(
-                                                "https://byndr.breezy.hr/", "_blank");
-                                        }}
-                                    >Careers</NavLink>
+                                    <a target="_blank" href="https://byndr.breezy.hr/">Careers</a>
                                 </li>
                                 <li className="menuItem">
                                     <NavLink exact to="/blog"
+                                    activeClassName="activeMenu"
                                         onClick={() =>   {
                                             this.ScroolToTp();
                                             Open_Or_Close_MenuBar()
@@ -68,6 +62,7 @@ export default class Navigation extends React.Component<props, any> {
                                 </li>
                                 <li className="menuItem">
                                     <NavLink exact to="/contact-us"
+                                    activeClassName="activeMenu"
                                         onClick={() =>   {
                                             this.ScroolToTp();
                                             Open_Or_Close_MenuBar()

@@ -181,7 +181,7 @@ header{
     float: left;
     padding:20px;
     border-bottom: 1px solid #efefef;
-    box-shadow: 0px 2px 2px #efefef;
+    /* box-shadow: 0px 2px 2px #efefef; */
     background: #ffffff;
     z-index: 9;
 }
@@ -465,8 +465,8 @@ font-weight: 600;
 .homeGrid{
     width: 100%;
     float: left;
-    padding: 70px 0;
-    /* background: #F2F3F6; */
+    /* padding: 70px 0; */
+    background: #f9f9fb;
 }
 .homeGrid_inr{
     width: 100%;
@@ -481,7 +481,7 @@ font-weight: 600;
     width: calc(33.33% - 4px);
     float: left;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    /* border: 2px solid #F2F3F6; */
+    border: 2px solid #F2F3F6;
     height: 337px;
     text-align: center;
 }
@@ -493,6 +493,7 @@ font-weight: 600;
   transition: box-shadow 0.2s ease, z-index 0s 0s ease, -webkit-transform 0.2s ease;
   transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease;
   transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease, -webkit-transform 0.2s ease;
+  border: 2px solid #fff;
 }
 .homeSingleGridinr{
     padding: 80px 50px 0px 50px;
@@ -959,6 +960,7 @@ float: left;
     background-color: rgba(50,50,50,0.06);
 }
 .activeMenu,.activeMenu:hover{
+    color: #ffffff !important;
     background-color: rgba(196, 32, 116, 0.89) !important;
 }
 .activeMenu a{
