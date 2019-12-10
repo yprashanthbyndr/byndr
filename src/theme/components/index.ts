@@ -28,6 +28,7 @@ import ContactusThankYou from './ContactusThankYou';
 import BlogList from './BlogList';
 import BlogItem from './BlogItem';
 import Page404 from './Page404';
+import FooterDoubleCTA from './FooterDoubleCTA';
 
 export {ContactusThankYou,ContactUsForm, ContactFormAddress,Header,Footer,FooterCTA,HomeTestimonial,SupportedDivices,Home_B_Hero,WelcomeBannerGrids,FeaturesGrid,Home_A_Hero,Home_A_Grids,Navigation,InnerPageTitleBlock,InvestorsBlock,OurJourneyBlock,OurTeam,VisionAndMission,PricingPlans,
     ProductForRolesBlock,BlogGrid,
@@ -38,5 +39,6 @@ export {ContactusThankYou,ContactUsForm, ContactFormAddress,Header,Footer,Footer
     WhoIsBynderFor,
     ProductCoreCapabilities,
     BlogItem,
-    Page404
+    Page404,
+    FooterDoubleCTA
  }

@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://www.example.com/</loc> </url>
-<url> <loc>https://www.example.com/</loc> </url>
-<url> <loc>https://www.example.com/blog/:id</loc> </url>
+<url> <loc>https://www.byndr.com/</loc> </url>
+<url> <loc>https://www.byndr.com/</loc> </url>
+<url> <loc>https://www.byndr.com/test-case</loc> </url>
+<url> <loc>https://www.byndr.com/aboutus</loc> </url>
+<url> <loc>https://www.byndr.com/pricing</loc> </url>
+<url> <loc>https://www.byndr.com/product</loc> </url>
+<url> <loc>https://www.byndr.com/product-roles</loc> </url>
+<url> <loc>https://www.byndr.com/contact-us</loc> </url>
+<url> <loc>https://www.byndr.com/blog</loc> </url>
+<url> <loc>https://www.byndr.com/lms-for-teachers</loc> </url>
+<url> <loc>https://www.byndr.com/lms-for-students</loc> </url>
+<url> <loc>https://www.byndr.com/lms-for-admins</loc> </url>
+<url> <loc>https://www.byndr.com/blog/whats-in-store-for-learning-management-system-india-in-2017</loc> </url>
+<url> <loc>https://www.byndr.com/blog/key-factors-to-consider-when-planning-to-collaborate-with-a-mobile-lms-platform</loc> </url>
+<url> <loc>https://www.byndr.com/blog/use-of-learning-management-systems-in-india</loc> </url>
+<url> <loc>https://www.byndr.com/blog/why-colleges-need-mobile-learning-apps</loc> </url>
+<url> <loc>https://www.byndr.com/privacy-policy</loc> </url>
+<url> <loc>https://www.byndr.com/terms-of-use</loc> </url>
 </urlset>

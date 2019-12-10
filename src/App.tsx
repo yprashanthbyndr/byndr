@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch,Redirect } from 'react-router-dom';
 import './App.css';
 import { ByndrRoutes } from './routes/routers';
-// import { AppContext } from './contextApi/AppContext';
 import {Provider} from 'react-redux';
 import { store } from './Redux/store';
 import Notfound from './screens/Notfound';

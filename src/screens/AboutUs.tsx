@@ -17,7 +17,7 @@ export default class AboutUs extends React.Component<props, any> {
             <div>
                 <Header />
                 <div className="bodySection">
-                    <InnerPageTitleBlock fromPage="About Us" pageSubtitle="Lorem Ipsum is simply dummy text of the printing and typesetting industry" videoDisplay="false" tryBtnDisplay="false" />
+                    <InnerPageTitleBlock fromPage="Welcome to Byndr" pageSubtitle="Utilising the technology for successful learning experience" videoDisplay="false" tryBtnDisplay="false" />
                     <VisionAndMission />
                     <OurJourneyBlock />
                     <OurTeam />
