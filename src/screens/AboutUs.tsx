@@ -4,7 +4,6 @@ import { Header, Footer, Navigation, InnerPageTitleBlock, VisionAndMission, OurJ
 import { AppContext } from '../contextApi/AppContext';
 interface props {
     onLeftMenu?(): void,
-    fromPage:any
 }
 
 export default class AboutUs extends React.Component<props, any> {
@@ -18,7 +17,7 @@ export default class AboutUs extends React.Component<props, any> {
             <div>
                 <Header />
                 <div className="bodySection">
-                    <InnerPageTitleBlock fromPage="About Us" />
+                    <InnerPageTitleBlock fromPage="About Us" pageSubtitle="Lorem Ipsum is simply dummy text of the printing and typesetting industry" videoDisplay="false" tryBtnDisplay="false" />
                     <VisionAndMission />
                     <OurJourneyBlock />
                     <OurTeam />

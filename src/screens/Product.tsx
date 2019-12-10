@@ -7,7 +7,6 @@ import { connect } from 'react-redux';
 
 interface props {
     onLeftMenu?(): void,
-    fromPage:any
     HideHeader: boolean,
 }
 class Product extends React.Component<props, any> {
@@ -21,7 +20,7 @@ class Product extends React.Component<props, any> {
             <div>
                 <Header />
                 <div className="bodySection">
-                    <InnerPageTitleBlock fromPage="Product"  />
+                    <InnerPageTitleBlock fromPage="Product" pageSubtitle="Lorem Ipsum is simply dummy text of the printing and typesetting industry" videoDisplay="true" tryBtnDisplay="true"  />
                     <WhoIsBynderFor />
                     <ProductCoreCapabilities />
                     <FooterCTA />

@@ -162,6 +162,8 @@ header{
     -moz-transition: height 0.5s ease-in-out;
     -o-transition: height 0.5s ease-in-out;
     transition: height 0.5s ease-in-out;
+    background: #ffffff;
+    overflow-x: hidden;
 }
 .header_main_container{
     position: fixed;
@@ -169,6 +171,7 @@ header{
     width: 100%;
     float: left;
     z-index: 9;
+    background: #ffffff;
 }
 .header_main_sticky{
     position: -webkit-sticky;
@@ -288,7 +291,7 @@ cursor: pointer;
 .bodySection{
     width: 100%;
     float: left;
-    margin-top: 98px;
+    /* margin-top: 98px; */
     /* transform: translate(100%); */
 }
 .bodySection_headerNo{
@@ -2609,6 +2612,7 @@ ul.menu li {
     font-size: 16px;
     font-weight: 400;
     padding: 29px 30px;
+    cursor: pointer;
 }
 .role_title {
     font-size: 20px;

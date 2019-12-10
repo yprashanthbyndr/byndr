@@ -13,7 +13,7 @@ export default class BlogList extends React.Component<props, any> {
       <section className="blogListContainer">
         <div className="blogList">
           <div className="blogList_inr">
-            <div className="blogList_product_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
+            {/* <div className="blogList_product_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div> */}
             <div className="blogList_group">
               {/* single blogList start*/}
               <div className="single_blogList">

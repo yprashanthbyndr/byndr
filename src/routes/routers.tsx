@@ -1,5 +1,4 @@
 import { AboutUs, Pricing, Product, ProductRoles, Blog, HomeSplit_A, HomeSplit_B, ContactUs, PrivacyPolicy, TermsOfUse } from "../screens"
-import SingleBlog from "../screens/SingleBlog";
 
 import { BlogChild1 ,BlogChild2 ,BlogChild3, BlogChild4 } from '../screens/blogChilds/index';
 
@@ -171,17 +170,6 @@ const ByndrRoutes = [
         path: '/blog/why-colleges-need-mobile-learning-apps',
         metaDescription:"BlogChild4",
         component: BlogChild4,
-    },
-    {
-        pageName: "Single Blog",
-        title: "Single Blog",
-        seoVisibility: true, // default it has to be true
-        metaTitle: "Single Blog",
-        metaTags: "Single Blog Meta Tags",
-        path: '/blogSingle',
-        metaDescription: "Single Blog Meta Description",
-        component: SingleBlog,
-        routes: []
     },
     {
         pageName:"Privacy Policy",

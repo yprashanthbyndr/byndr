@@ -2,8 +2,11 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 interface props {
-    onLeftMenu?(): void
-    fromPage:any
+    onLeftMenu?(): void,
+    fromPage:any,
+    pageSubtitle:any,
+    videoDisplay:any,
+    tryBtnDisplay:any,
 }
 
 export default class InnerPageTitleBlock extends React.Component<props, any> {
@@ -12,7 +15,7 @@ export default class InnerPageTitleBlock extends React.Component<props, any> {
 }
     render(): any {
 
-      const {fromPage} = this.props
+      const {fromPage,pageSubtitle,videoDisplay,tryBtnDisplay} = this.props
 
         return (
             <section>
@@ -22,10 +25,10 @@ export default class InnerPageTitleBlock extends React.Component<props, any> {
                   <div className="banner_title">
                     {fromPage}
                   </div>
-                  <div className="banner_content">
+                  {pageSubtitle !=""?<div className="banner_content">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  </div>
-                  <div className="video">
+                  </div>:null}
+                  {videoDisplay == "true"?<div className="video">
                     <div className="home_v2_banner_play">
                       <div className="home_v2_banner_play_icon">
                         <a href="https://vimeo.com/83897470" data-lightbox><i className="material-icons">
@@ -33,14 +36,14 @@ export default class InnerPageTitleBlock extends React.Component<props, any> {
                           </i></a>
                       </div>
                     </div>
-                  </div>
-                  <div className="CallToAction_btn">
+                  </div>:null}
+                  {tryBtnDisplay == "true"?<div className="CallToAction_btn">
                     <div className="CallToAction_btn_inr">
                       <a href="./"> 
                         Try Byndr
                       </a>
                     </div>
-                  </div>
+                  </div>:null}
                 </div>
               </div>
             </div>

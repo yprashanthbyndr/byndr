@@ -4,10 +4,8 @@ import { Header, Footer, InnerPageTitleBlock, FooterCTA, BlogItem } from '../../
 import { learning, educationalmobileapp } from '../../assets';
 
 interface props {
-
-    MainReducer: any
-    OpenMenuBar: boolean
-    fromPage: any
+    MainReducer: any,
+    OpenMenuBar: boolean,
 }
 
 class BlogChild4 extends Component<props, any> {
@@ -26,7 +24,7 @@ class BlogChild4 extends Component<props, any> {
                 <Header />
             </div>                
             <div className="bodySection">
-                <InnerPageTitleBlock fromPage="Why colleges need mobile learning apps" />
+                <InnerPageTitleBlock fromPage="Why colleges need mobile learning apps" pageSubtitle="" videoDisplay="true" tryBtnDisplay="true" />
                     <BlogItem Content={contentGenerated} />
                 <FooterCTA />
             </div>

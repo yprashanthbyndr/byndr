@@ -5,9 +5,8 @@ import { byndr_responsive_platform, learning } from '../../assets';
 
 interface props {
 
-    MainReducer: any
-    OpenMenuBar: boolean
-    fromPage: any
+    MainReducer: any,
+    OpenMenuBar: boolean,
 }
 
 class BlogChild1 extends Component<props, any> {
@@ -26,7 +25,7 @@ class BlogChild1 extends Component<props, any> {
                 <Header />
             </div>                
             <div className="bodySection">
-                <InnerPageTitleBlock fromPage="What’s in store for Learning Management System India in 2017?" />
+                <InnerPageTitleBlock fromPage="What's in store for Learning Management System India in 2017?" pageSubtitle="" videoDisplay="true" tryBtnDisplay="true" />
                     <BlogItem Content={contentGenerated} />
                 <FooterCTA />
             </div>

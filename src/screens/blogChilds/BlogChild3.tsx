@@ -5,9 +5,8 @@ import { learning } from '../../assets';
 
 interface props {
 
-    MainReducer: any
-    OpenMenuBar: boolean
-    fromPage: any
+    MainReducer: any,
+    OpenMenuBar: boolean,
 }
 
 class BlogChild3 extends Component<props, any> {
@@ -26,7 +25,7 @@ class BlogChild3 extends Component<props, any> {
                 <Header />
             </div>                
             <div className="bodySection">
-                <InnerPageTitleBlock fromPage="Use of learning management systems in India" />
+                <InnerPageTitleBlock fromPage="Use of learning management systems in India" pageSubtitle="" videoDisplay="true" tryBtnDisplay="true" />
                     <BlogItem Content={contentGenerated} />
                 <FooterCTA />
             </div>

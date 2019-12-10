@@ -7,7 +7,8 @@ import { Inverstors_1,
     Inverstors_5,
     Inverstors_6,
     ben_franklin,
-    penn_img } from '../../assets';
+    penn_img, 
+    penn_selvania} from '../../assets';
 interface props {
     onLeftMenu?(): void;
 }
@@ -22,7 +23,7 @@ export default class OurTeam extends React.Component<props, any> {
                             <div className="widget_title"> INVESTORS </div>
                             <div className="slider_logo_block">
                                 <div className="slider_logo"><a href="#"><img src={ben_franklin} width="294"/></a></div>
-                                <div className="slider_logo"><a href="#"><img src={ben_franklin} width="294" /></a></div>
+                                <div className="slider_logo"><a href="#"><img src={penn_selvania} width="294" /></a></div>
                                 <div className="slider_logo"><a href="#"><img src={ben_franklin} width="294" /></a></div>
                             </div>
                         </div>

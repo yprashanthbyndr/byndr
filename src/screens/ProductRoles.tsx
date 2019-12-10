@@ -11,8 +11,7 @@ interface props {
     onLeftMenu?(): void;
     MainReducer: any,
     HideHeader: boolean,
-    WindowScroolheight: number,
-    fromPage:any
+    WindowScroolheight: number
 
 }
 
@@ -76,8 +75,8 @@ class ProductRoles extends React.Component<props, any> {
                     <Header   Hide={this.props.HideHeader} />
                     <MiniHeader />
                 </div>                
-                <div className="bodySection">
-                    <InnerPageTitleBlock fromPage="Product Roles" />
+                <div className="bodySection" style={{marginTop:98}}>
+                    <InnerPageTitleBlock fromPage="Product Roles" pageSubtitle="" videoDisplay="true" tryBtnDisplay="true" />
                     <ProductForRolesBlock />
                     <HomeTestimonial />
                     {/* <ProductRolesTestimonials /> */}

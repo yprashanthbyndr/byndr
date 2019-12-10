@@ -40,9 +40,13 @@ import PersonImage from "./images/person-icon.png";
 import Our_team from "./images/testimonial_person.png";
 import learning from "./images/learning.png";
 import educationalmobileapp from "./images/educational-mobile-app.jpg"
+
+import penn_selvania from './images/university-of-pennsylvania-penn-vector-logo.png'
+
 export {
     byndr_Logo_White,
     educationalmobileapp,
+    penn_selvania,
     learning,
     byndr_Logo,
     FB_img,

@@ -5,9 +5,8 @@ import { learning } from '../../assets';
 
 interface props {
 
-    MainReducer: any
-    OpenMenuBar: boolean
-    fromPage: any
+    MainReducer: any,
+    OpenMenuBar: boolean,
 }
 
 class BlogChild2 extends Component<props, any> {
@@ -26,7 +25,7 @@ class BlogChild2 extends Component<props, any> {
                 <Header />
             </div>                
             <div className="bodySection">
-                <InnerPageTitleBlock fromPage="Key factors to consider when planning to collaborate with a mobile LMS platform" />
+                <InnerPageTitleBlock fromPage="Key factors to consider when planning to collaborate with a mobile LMS platform" pageSubtitle="" videoDisplay="true" tryBtnDisplay="true" />
                     <BlogItem Content={contentGenerated} />
                 <FooterCTA />
             </div>

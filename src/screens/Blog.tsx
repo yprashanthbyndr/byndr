@@ -8,8 +8,6 @@ interface props {
 
     MainReducer: any
     OpenMenuBar: boolean
-    fromPage:any
-
 }
 
 class Blog extends Component<props, any> {
@@ -40,7 +38,7 @@ class Blog extends Component<props, any> {
         return (
             <React.Fragment>
                 <Header />
-                <InnerPageTitleBlock fromPage="Blog" />
+                <InnerPageTitleBlock fromPage="Blog" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false"  />
                 <BlogList />
                 <Footer />
             </React.Fragment>
