@@ -12,7 +12,8 @@ interface props {
     onLeftMenu?(): void;
     // MainReducer: any,
     HideHeader: boolean,
-    MiniHeaderOptions: string
+    MiniHeaderOptions: string,
+    Title: string
 }
 
 class MiniHeader extends React.Component<props, any> {
@@ -54,31 +55,31 @@ class MiniHeader extends React.Component<props, any> {
             // >
             <div className="role_based_header">
                 <div className="role_based_header_main">
-                    <div className="role_title"><span>Byndr</span> for Teachers</div>
+                    <div className="role_title"><span>Byndr</span> {this.props.Title} </div>
                     <div className="role_menu">
                         <ul className="menu">
-                            <li className={this.props.MiniHeaderOptions == "overview" ? "current-page" : ""}
+                            <li className={this.props.MiniHeaderOptions === "overview" ? "current-page" : ""}
                                 onClick={() => {
                                     store.dispatch(actionMiniHeaderOptions("overview"))
                                     document.body.scrollTop = 0;
                                     document.documentElement.scrollTop = 0;
                                 }}
                             >Overview</li>
-                            <li className={this.props.MiniHeaderOptions == "features" ? "current-page" : ""}
+                            <li className={this.props.MiniHeaderOptions === "features" ? "current-page" : ""}
 
                                 onClick={() => {
                                     document.body.scrollTop = 700;
                                     document.documentElement.scrollTop = 700;
                                     store.dispatch(actionMiniHeaderOptions("features"))
                                 }}>Features</li>
-                            <li className={this.props.MiniHeaderOptions == "Testimonials" ? "current-page" : ""}
+                            <li className={this.props.MiniHeaderOptions === "Testimonials" ? "current-page" : ""}
                                 onClick={() => {
                                     document.body.scrollTop = 1500;
                                     document.documentElement.scrollTop = 1500;
                                     store.dispatch(actionMiniHeaderOptions("Testimonials"))
                                 }}
                             >Testimonials</li>
-                            <li className={this.props.MiniHeaderOptions == "FAQ" ? "current-page" : ""}
+                            <li className={this.props.MiniHeaderOptions === "FAQ" ? "current-page" : ""}
 
                                 onClick={() => {
                                     document.body.scrollTop = 2200;
@@ -89,11 +90,11 @@ class MiniHeader extends React.Component<props, any> {
                             >FAQ</li>
                         </ul>
                     </div>
-                    <div className="try_byndr_btn" 
-                      onClick={() => {
-                        window.open(
-                            "https://test.byndr.com/freesignup/teacher/", "_blank");
-                    }}
+                    <div className="try_byndr_btn"
+                        onClick={() => {
+                            window.open(
+                                "https://test.byndr.com/freesignup/teacher/", "_blank");
+                        }}
                     ><a href="#">Try Byndr</a></div>
                 </div>
             </div>

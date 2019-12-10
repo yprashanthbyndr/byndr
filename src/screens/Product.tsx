@@ -4,7 +4,6 @@ import { AppContext } from '../contextApi/AppContext';
 
 import { connect } from 'react-redux';
 
-
 interface props {
     onLeftMenu?(): void,
     HideHeader: boolean,

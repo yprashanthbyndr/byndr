@@ -1,6 +1,8 @@
-import { AboutUs, Pricing, Product, ProductRoles, Blog, HomeSplit_A, HomeSplit_B, ContactUs, PrivacyPolicy, TermsOfUse } from "../screens"
+import { AboutUs, Pricing, Product, ProductRoles, Blog, HomeSplit_A, HomeSplit_B, ContactUs, PrivacyPolicy, TermsOfUse, lms_For_Admin, lms_For_Student, lms_For_Teacher } from "../screens"
+
 
 import { BlogChild1 ,BlogChild2 ,BlogChild3, BlogChild4 } from '../screens/blogChilds/index';
+
 
 const ByndrRoutes = [
     {
@@ -107,7 +109,7 @@ const ByndrRoutes = [
         metaTags: "Contact Us Meta Tags",
         path: '/lms-for-teachers',
         metaDescription: "Contact Us Meta Description",
-        component: ProductRoles,
+        component: lms_For_Teacher,
         routes: []
     },
     {
@@ -118,7 +120,7 @@ const ByndrRoutes = [
         metaTags: "LMS For Students Meta Tags",
         path: '/lms-for-students',
         metaDescription: "LMS For Students Meta Description",
-        component: ProductRoles,
+        component: lms_For_Student,
         routes: []
     },
     {
@@ -129,7 +131,7 @@ const ByndrRoutes = [
         metaTags: "LMS For Admins Meta Tags",
         path: '/lms-for-admins',
         metaDescription: "LMS For Admins Meta Description",
-        component: ProductRoles,
+        component: lms_For_Admin,
         routes: []
     },
     {

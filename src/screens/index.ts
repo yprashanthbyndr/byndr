@@ -9,5 +9,14 @@ import AboutUs from './AboutUs';
 import Blog from './Blog';
 import PrivacyPolicy from './PrivacyPolicy';
 import TermsOfUse from './TermsOfUse';
+import lms_For_Student from './lms_For_Student';
+import lms_For_Teacher from './lms_For_Teacher';
+import lms_For_Admin from './lms_For_Admins';
+ 
 
-export { Home,HomeSplit_A,HomeSplit_B,Pricing,ContactUs,Product,ProductRoles,AboutUs,Blog,PrivacyPolicy,TermsOfUse };
+export {
+    Home, HomeSplit_A, HomeSplit_B, Pricing,
+    ContactUs, Product, ProductRoles, AboutUs,
+    Blog, PrivacyPolicy, TermsOfUse, lms_For_Teacher ,
+    lms_For_Student ,lms_For_Admin
+};
