@@ -55,11 +55,11 @@ class lms_For_Teacher extends React.Component<props, any> {
             <div>
                 <div className="header_main_container">
                     <Header Hide={this.props.HideHeader} />
-                    <MiniHeader Title="for Teachers" />
+                    <MiniHeader Title="Teachers" tryLink="https://test.byndr.com/freesignup/teacher/" />
                 </div>
                 <div className="bodySection" style={{marginTop:175}}>
                     <InnerPageTitleBlock fromPage="Teaching Made Engaging, Productive & Valuable" pageSubtitle="Experience Byndr Today!" videoDisplay="true" tryBtnDisplay="true"  />
-                    <ProductForRolesBlock />
+                    <ProductForRolesBlock Title="Teachers" content="Lorem Ipsum dolor sit amit" />
                     <HomeTestimonial />
                     <FaqBlock />
                     <FooterDoubleCTA />

@@ -13,7 +13,8 @@ interface props {
     // MainReducer: any,
     HideHeader: boolean,
     MiniHeaderOptions: string,
-    Title: string
+    Title: string,
+    tryLink?:string
 }
 
 class MiniHeader extends React.Component<props, any> {
@@ -55,7 +56,7 @@ class MiniHeader extends React.Component<props, any> {
             // >
             <div className="role_based_header">
                 <div className="role_based_header_main">
-                    <div className="role_title"><span>Byndr</span> {this.props.Title} </div>
+                    <div className="role_title"><span>Byndr</span> For {this.props.Title} </div>
                     <div className="role_menu">
                         <ul className="menu">
                             <li className={this.props.MiniHeaderOptions === "overview" ? "current-page" : ""}
@@ -90,12 +91,7 @@ class MiniHeader extends React.Component<props, any> {
                             >FAQ</li>
                         </ul>
                     </div>
-                    <div className="try_byndr_btn"
-                        onClick={() => {
-                            window.open(
-                                "https://test.byndr.com/freesignup/teacher/", "_blank");
-                        }}
-                    ><a href="#">Try Byndr</a></div>
+                    <div className="try_byndr_btn"><a href={this.props.tryLink}>Try Byndr</a></div>
                 </div>
             </div>
             //  </CSSTransition>

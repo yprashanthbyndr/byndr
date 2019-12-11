@@ -65,11 +65,11 @@ class lms_For_Student extends React.Component<props, any> {
             <div>
                 <div className="header_main_container">
                     <Header Hide={this.props.HideHeader} />
-                    <MiniHeader Title="for Student" />
+                    <MiniHeader Title="Student" tryLink="https://test.byndr.com/freesignup/student/" />
                 </div>
                 <div className="bodySection" style={{marginTop:175}}>
                     <InnerPageTitleBlock fromPage="Learning Made Interactive, Simple & Effective" pageSubtitle="" videoDisplay="true" tryBtnDisplay="true"  />
-                    <ProductForRolesBlock />
+                    <ProductForRolesBlock Title="Student" content="Lorem Ipsum dolor sit amit" />
                     <HomeTestimonial />
                     <FaqBlock />
                     <FooterDoubleCTA />

@@ -3,7 +3,9 @@ import { NavLink } from 'react-router-dom';
 import { penn_img, testimonial_person, open_book, teamwork, medical_history, earth_globe, blackboard, light_bulb } from '../../assets';
 
 interface props {
-    onLeftMenu?(): void;
+    onLeftMenu?(): void,
+    Title?:string,
+    content?:string
 }
 
 export default class ProductForRolesBlock extends React.Component<props, any> {
@@ -13,8 +15,8 @@ export default class ProductForRolesBlock extends React.Component<props, any> {
             <section>
     <div className="homeGrid product-role">
       <div className="homeGrid_inr">
-        <div className="widget_title"> WHO IS BYNDR IS FOR? </div>
-        <div className="product-role-small_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</div>
+        <div className="widget_title"> BYNDR FOR {this.props.Title} </div>
+        <div className="product-role-small_content">{this.props.content}</div>
         <div className="homeGridList">
           <div className="homeSingleGrid">
             <div className="homeSingleGridinr">
