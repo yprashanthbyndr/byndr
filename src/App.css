@@ -2560,7 +2560,7 @@ margin-bottom: 13px;
     font-size: 20px;
     transition: 0.4s;
     border-top: 1px solid #dfdfdf;
-    font-weight: 300;
+    font: 100 20px 'Lato', sans-serif;
 }
   
   .PricingActive, .accordion:hover {
@@ -2659,11 +2659,15 @@ li.current-page {
     letter-spacing: 0;
     color: #fff;
     border: 2px solid #CB0A7A;
-    border-radius: 2px;
+    border-radius: 4px;
     opacity: 1;
     padding: 9px 24px;
     max-width: 136px;
     background: #CB0A7A;
+}
+.try_byndr_btn a:hover{
+    background: #960c5c;
+    border: 2px solid #960c5c;
 }
 .testmonials_profile img {
     width: 100%;
