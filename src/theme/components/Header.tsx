@@ -49,6 +49,10 @@ class Header extends React.Component<props, any> {
         ReactGA.initialize('UA-59718524-2');
         ReactGA.pageview(window.location.pathname + window.location.search);
     }
+    ScroolToTp(): any {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
     render(): any {
         let handleBorder = this.state.scroll_length > 200 ? true:false
         return (
@@ -58,8 +62,12 @@ class Header extends React.Component<props, any> {
                 <div ref="Sticky_context_header" className={this.props.Hide ? "header_main" : "header_main_sticky"} style={{borderBottom:handleBorder === true ?"1px solid #efefef":"none"}}>
                     <div className="header_main_inr">
                         <div className="logo">
-                            <NavLink exact to="/"><img src={byndr_Logo} className="default_logo" /></NavLink>
-                            <NavLink exact to="/"><img src={byndr_Logo_White} className="transparent_logo" /></NavLink>
+                            <NavLink exact to="/" onClick={() =>   {
+                                            this.ScroolToTp()
+                                        }}><img src={byndr_Logo} className="default_logo" /></NavLink>
+                            <NavLink exact to="/"  onClick={() =>   {
+                                            this.ScroolToTp()
+                                        }}><img src={byndr_Logo_White} className="transparent_logo" /></NavLink>
                         </div>
                         <div className="header_nav">
                             <div className="header_nav_inr">
