@@ -1,4 +1,4 @@
-import { store, actionSaveScrollHeight, actionCantactUs_Ip_Values, actionCantactUs_ApiResponse, actionOpen_Or_Close_MenuBar, actionTestimonialSelection, actionSticky_PricingTable } from "../Redux";
+import { store, actionSaveScrollHeight, actionCantactUs_Ip_Values, actionCantactUs_ApiResponse, actionOpen_Or_Close_MenuBar, actionTestimonialSelection, actionSticky_PricingTable, action_TestimonialInterval } from "../Redux";
 
 function SaveScroll_Height(HideHeder, currentScroolHeight) {
 
@@ -77,7 +77,10 @@ function SubmitContactPage(reqObject: any) {
 
 function Open_Or_Close_MenuBar() {
     store.dispatch(actionOpen_Or_Close_MenuBar());
+}
 
+function TestimonialInterval() {
+    store.dispatch(action_TestimonialInterval());
 }
 
 function TestimonialSelection(SelectedOption: string) {
@@ -103,5 +106,5 @@ function Sticky_PricingTable(divheight: number, scroolHeight: number, StickyEnab
 
 export {
     SaveScroll_Height, CantactUs_Ip_Values, SubmitContactPage, Open_Or_Close_MenuBar, TestimonialSelection,
-    Sticky_PricingTable, MiniHeaderScrollLogic
+    Sticky_PricingTable, MiniHeaderScrollLogic, TestimonialInterval
 }

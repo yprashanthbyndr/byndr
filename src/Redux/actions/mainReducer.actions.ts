@@ -9,6 +9,7 @@ export const OPEN_OR_CLOSE_MENUBAR = 'OPEN_OR_CLOSE_MENUBAR';
 export const SAVE_SELECTED_TESTIMONIAL = 'SAVE_SELECTED_TESTIMONIAL';
 export const STICKY_PRICINGTABLE = "STICKY_PRICINGTABLE";
 export const MINI_HEADER_OPTIONS = "MINI_HEADER_OPTIONS";
+export const TESTIMONIAL_INTERVAL = "TESTIMONIAL_INTERVAL";
 
 
 function sampleFunction(data: any): ActionModel {
@@ -65,6 +66,13 @@ function actionMiniHeaderOptions(selected: string): ActionModel {
     };
 }
 
+function action_TestimonialInterval(): ActionModel {
+    return {
+        type: TESTIMONIAL_INTERVAL,
+        // payload: selected
+    };
+}
+
 
 
 export {
@@ -75,6 +83,7 @@ export {
     actionOpen_Or_Close_MenuBar,
     actionTestimonialSelection,
     actionSticky_PricingTable,
-    actionMiniHeaderOptions
+    actionMiniHeaderOptions ,
+    action_TestimonialInterval
 };
 

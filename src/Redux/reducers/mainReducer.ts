@@ -1,7 +1,7 @@
 
 
 import { HomeReducer, ActionModel } from '../../models';
-import { SAVE_SCROLL_HEIGHT, SAVE_CONTACT_US_IP_VALUES, SUBMIT_CONTACT_FORM_SUCCESS, OPEN_OR_CLOSE_MENUBAR, SAVE_SELECTED_TESTIMONIAL, STICKY_PRICINGTABLE, MINI_HEADER_OPTIONS } from '../actions';
+import { SAVE_SCROLL_HEIGHT, SAVE_CONTACT_US_IP_VALUES, SUBMIT_CONTACT_FORM_SUCCESS, OPEN_OR_CLOSE_MENUBAR, SAVE_SELECTED_TESTIMONIAL, STICKY_PRICINGTABLE, MINI_HEADER_OPTIONS, TESTIMONIAL_INTERVAL } from '../actions';
 
 const INIT_STATE: HomeReducer = {
   HideHeader: false,
@@ -12,11 +12,11 @@ const INIT_STATE: HomeReducer = {
     name: '',
     email: '',
     phone: '',
-    Position:'',
+    Position: '',
     institution: '',
     num_students: '',
-    num_classes:'',
-    comments:'',
+    num_classes: '',
+    comments: '',
   },
   ContactFormSubmitSuccess: false,
   OpenMenuBar: false,
@@ -62,6 +62,13 @@ export default (state = INIT_STATE, action: ActionModel) => {
       return {
         ...state, MiniHeaderOptions: action.payload
       }
+    case TESTIMONIAL_INTERVAL:
+      let Current = state.activeTestimonial;
+      return {
+        ...state, activeTestimonial: Current == 'vvit' ? 'stanley' : Current == 'stanley' ? 'sist' : 'vvit'
+      }
+
+
     default:
       return state;
   }
@@ -124,13 +131,13 @@ function SaveContactDetails(state: any, action: any) {
           num_students: action.payload.value,
         }
       }
-      case 'num_classes':
-          return {
-            ...state, ContactUsForm: {
-              ...state.ContactUsForm,
-              num_classes: action.payload.value,
-            }
-          }
+    case 'num_classes':
+      return {
+        ...state, ContactUsForm: {
+          ...state.ContactUsForm,
+          num_classes: action.payload.value,
+        }
+      }
 
     case 'comments':
       return {
