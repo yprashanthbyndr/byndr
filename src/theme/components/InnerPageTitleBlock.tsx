@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import ModelPopup from './ModelPopup';
 
 interface props {
     onLeftMenu?(): void,
@@ -7,11 +8,19 @@ interface props {
     pageSubtitle:any,
     videoDisplay:any,
     tryBtnDisplay:any,
+    OpenModelPopup?: any
 }
 
 export default class InnerPageTitleBlock extends React.Component<props, any> {
   constructor(props) {
     super(props);
+    this.state = { OpenModelPopup: false };
+}
+
+togglePopup() {
+  this.setState({
+    OpenModelPopup: !this.state.OpenModelPopup
+  });
 }
     render(): any {
 
@@ -37,6 +46,13 @@ export default class InnerPageTitleBlock extends React.Component<props, any> {
                       </div>
                     </div>
                   </div>:null}
+                  {/* <button onClick={this.togglePopup.bind(this)}> Play</button>
+                  {this.state.OpenModelPopup ?
+         <ModelPopup OpenModelPopup={this.state.OpenModelPopup}
+         />
+         : null
+       } */}
+                  {/* <ModelPopup OpenModelPopup={this.props.OpenModelPopup}/> */}
                   {tryBtnDisplay == "true"?<div className="CallToAction_btn">
                     <div className="CallToAction_btn_inr">
                       <a href="./"> 
