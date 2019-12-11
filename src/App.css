@@ -1765,6 +1765,20 @@ select#contact_purpose {
     font-weight: 300;
     line-height: 30px;
 }
+.content ul{
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.content ul li{
+    width: calc(100% - 30px);
+    float: left;
+    background: url('./assets//images/verified.svg') no-repeat 0% 5px;
+    padding-left: 30px;
+    background-size: 19px;
+    font-size: 17px;
+}
 .widget_button a {
     width: 198px;
     padding: 12px 53px;
@@ -1803,7 +1817,7 @@ select#contact_purpose {
     line-height: 1;
 } */
 .li_title {
-    font-size: 32px;
+    font-size: 28px;
     color: #333333;
     line-height: 30px;
     margin-bottom: 15px;
@@ -4157,12 +4171,12 @@ margin: 10px 0;
 .DoublecallToAction_main{
     width: 100%;
     float: left;
-    padding: 100px 0;
+    /* padding: 100px 0; */
     background: rgba(0, 0, 0, 0.76);
 }
 .DoublecallToAction_inr{
     width: 100%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
 }
 .DoublecallToAction_title{
@@ -4207,7 +4221,7 @@ margin: 10px 0;
 .DoublecallToActionLeft{
     width: 50%;
     float: left;
-    /* position: relative; */
+    padding: 100px 0;
 }
 /* .DoublecallToActionLeft::after{
     content: "";
@@ -4224,11 +4238,29 @@ margin: 10px 0;
     right: -5rem;
 } */
 .DoublecallToActionRight{
-    width: 50%;
+    width: calc(50% - 1px);
     float: left;
+    padding: 100px 0;
+    border-right: 1px solid #3f3d3d;
 }
 .DoublecallToActionInrRow{
     width: 100%;
     max-width: 80%;
     margin: 0 auto;
+}
+.DoublecallToActionLeft .DoublecallToActionInrRow{
+    width: 100%;
+    max-width: 480px;
+    float: right;
+    padding-right: 40px;
+}
+.DoublecallToActionRight .DoublecallToActionInrRow{
+    width: 100%;
+    max-width: 480px;
+    float: left;
+    padding-left: 40px;
+}
+
+.DoublecallToActionRight:hover,.DoublecallToActionLeft:hover{
+    background: rgba(0, 0, 0, 0.2);
 }

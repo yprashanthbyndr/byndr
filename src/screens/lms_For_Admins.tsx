@@ -1,7 +1,7 @@
 import React from 'react';
 import {
     FaqBlock, MiniHeader, FooterCTA, Header, Footer, InnerPageTitleBlock,
-    ProductForRolesBlock, HomeTestimonial
+    ProductForRolesBlock, HomeTestimonial, FooterDoubleCTA
 } from '../theme/components';
 
 import { connect } from 'react-redux';
@@ -66,12 +66,12 @@ class lms_For_Admins extends React.Component<props, any> {
                     <Header Hide={this.props.HideHeader} />
                     <MiniHeader Title="for Admins" />
                 </div>
-                <div className="bodySection">
-                    <InnerPageTitleBlock fromPage="Product Roles" pageSubtitle="" videoDisplay="true" tryBtnDisplay="true"  />
+                <div className="bodySection" style={{marginTop:175}}>
+                    <InnerPageTitleBlock fromPage="Monitoring Made Easy, Organized & Efficient" pageSubtitle="" videoDisplay="true" tryBtnDisplay="true"  />
                     <ProductForRolesBlock />
                     <HomeTestimonial />
                     <FaqBlock />
-                    <FooterCTA />
+                    <FooterDoubleCTA />
                 </div>
                 <Footer />
             </div>

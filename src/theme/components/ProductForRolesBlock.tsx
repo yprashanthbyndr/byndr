@@ -19,20 +19,10 @@ export default class ProductForRolesBlock extends React.Component<props, any> {
           <div className="homeSingleGrid">
             <div className="homeSingleGridinr">
               <div className="homeSingleGridIcon">
-                <img src={open_book} />
-              </div>
-              <div className="homeSingleGridContent">
-                Lorem dolor
-              </div>
-            </div>
-          </div>
-          <div className="homeSingleGrid">
-            <div className="homeSingleGridinr">
-              <div className="homeSingleGridIcon">
                 <img src={teamwork} />
               </div>
               <div className="homeSingleGridContent">
-                Consetetur
+              Cloud-based LMS
               </div>
             </div>
           </div>
@@ -42,7 +32,7 @@ export default class ProductForRolesBlock extends React.Component<props, any> {
                 <img src={medical_history} />
               </div>
               <div className="homeSingleGridContent">
-                Ipsum dolor sit
+              	Attendance &amp; Student Performance
               </div>
             </div>
           </div>
@@ -52,7 +42,7 @@ export default class ProductForRolesBlock extends React.Component<props, any> {
                 <img src={earth_globe} />
               </div>
               <div className="homeSingleGridContent">
-                Mutryem Folor
+              Create Courses
               </div>
             </div>
           </div>
@@ -62,7 +52,7 @@ export default class ProductForRolesBlock extends React.Component<props, any> {
                 <img src={blackboard} />
               </div>
               <div className="homeSingleGridContent">
-                Lipsum smetiy
+              Create Your Own Library
               </div>
             </div>
           </div>
@@ -72,7 +62,7 @@ export default class ProductForRolesBlock extends React.Component<props, any> {
                 <img src={light_bulb} />
               </div>
               <div className="homeSingleGridContent">
-                Consetetur sadipscing
+              Quiz, Assignments, Polls and Assessments
               </div>
             </div>
           </div>
@@ -82,7 +72,7 @@ export default class ProductForRolesBlock extends React.Component<props, any> {
                 <img src={medical_history} />
               </div>
               <div className="homeSingleGridContent">
-                Ipsum dolor sit
+              Weightage-Based Grading
               </div>
             </div>
           </div>
@@ -92,7 +82,17 @@ export default class ProductForRolesBlock extends React.Component<props, any> {
                 <img src={earth_globe} />
               </div>
               <div className="homeSingleGridContent">
-                Mutryem Folor
+              Personalized, Social and Mobile Learning
+              </div>
+            </div>
+          </div>
+          <div className="homeSingleGrid">
+            <div className="homeSingleGridinr">
+              <div className="homeSingleGridIcon">
+                <img src={open_book} />
+              </div>
+              <div className="homeSingleGridContent">
+                Lorem dolor
               </div>
             </div>
           </div>
