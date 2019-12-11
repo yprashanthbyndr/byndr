@@ -23,6 +23,7 @@ const INIT_STATE: HomeReducer = {
   activeTestimonial: 'vvit',
   Stickypricing_table: false,
   MiniHeaderOptions: "overview",
+  // SelectedFaq:''
 };
 
 export default (state = INIT_STATE, action: ActionModel) => {

@@ -6,7 +6,8 @@ import { CantactUs_Ip_Values, SubmitContactPage } from '../../services';
 
 interface props {
   onLeftMenu?(): void;
-  ContactUsForm: any
+  ContactUsForm: any;
+
 
 }
 
@@ -94,24 +95,42 @@ class ContactUsForm extends React.Component<props, any> {
               onChange={(txt) => this.ReadeInput('phone', txt.target.value)}
             />
           </div>
-          <div className="singleField">
-            <input type="text" name="text" id="contact_position" placeholder="Position at College" autoComplete="off"
-              value={this.props.ContactUsForm.Position}
-              onChange={(txt) => this.ReadeInput('Position', txt.target.value)}
+          {
+            this.props.ContactUsForm.title == 'Student' ? null :
+              <div className="singleField">
+                <input type="text" name="text" id="contact_position" placeholder="Position at College" autoComplete="off"
+                  value={this.props.ContactUsForm.Position}
+                  onChange={(txt) => this.ReadeInput('Position', txt.target.value)}
+                />
+              </div>}
+          {
+            this.props.ContactUsForm.title == 'Other' ? null :
+              <div className="singleField">
+                <input type="text" name="text" id="contact_college_name" placeholder="College/University Name" autoComplete="off"
+                  value={this.props.ContactUsForm.institution}
+                  onChange={(txt) => this.ReadeInput('institution', txt.target.value)}
+                />
+              </div>
+          }
+          {
+            this.props.ContactUsForm.title == 'Student' || this.props.ContactUsForm.title == 'Other' ? null :
+              <div className="singleField">
+                <input type="text" name="text" id="num_students" placeholder="Number of Students in your College" autoComplete="off"
+                  value={this.props.ContactUsForm.num_students}
+                  onChange={(txt) => this.ReadeInput('num_students', txt.target.value)}
+                />
+              </div>
+          }
+
+          {this.props.ContactUsForm.title == 'Faculty' ? <div className="singleField">
+            <input type="text" name="text" id="num_classes" placeholder="Number of Classes you will teach this academic year"
+              autoComplete="off"
+              value={this.props.ContactUsForm.num_classes}
+              onChange={(txt) => this.ReadeInput('num_classes', txt.target.value)}
             />
-          </div>
-          <div className="singleField">
-            <input type="text" name="text" id="contact_college_name" placeholder="College/University Name" autoComplete="off"
-              value={this.props.ContactUsForm.institution}
-              onChange={(txt) => this.ReadeInput('institution', txt.target.value)}
-            />
-          </div>
-          <div className="singleField">
-            <input type="text" name="text" id="num_students" placeholder="Number of Students in your College" autoComplete="off"
-              value={this.props.ContactUsForm.num_students}
-              onChange={(txt) => this.ReadeInput('num_students', txt.target.value)}
-            />
-          </div>
+          </div> : null
+          }
+
           <div className="singleField">
             <textarea rows={7} name="question" id="contact_question" placeholder="Your comments" maxLength={5000}
               value={this.props.ContactUsForm.comments}
