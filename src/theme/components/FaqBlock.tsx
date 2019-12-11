@@ -23,13 +23,9 @@ class FaqBlock extends React.Component<props, any> {
   toggle(toggle) {
     console.log("clucked ")
     this.setState({ SelectedFaq: this.state.SelectedFaq == toggle ? "" : toggle })
-
-
-
   };
 
   render(): any {
-    console.log("this,state", this.state);
     return (
       <section>
         <div className="faq">
