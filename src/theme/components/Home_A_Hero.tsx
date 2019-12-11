@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { AppContext } from '../../contextApi/AppContext';
 
 import { CSSTransition, Transition } from 'react-transition-group';
-import { slider_1, open_book, teamwork, medical_history, earth_globe, blackboard, light_bulb, byndr_android, byndr_ios, byndr_responsive_platform, vvit_img, stanley_img, vardhaman_img, gprec_img, author_Img, slider_2, slider_3, student_icon, admin_icon, teacher_icon } from "../../assets";
+import { slider_1, open_book, teamwork, medical_history, earth_globe, blackboard, light_bulb, byndr_android, byndr_ios, byndr_responsive_platform, vvit_img, stanley_img, vardhaman_img, gprec_img, author_Img, slider_2, slider_3, student_icon, admin_icon, teacher_icon, Double_Arrows_pink } from "../../assets";
 import { Home_A_Context } from '../../contextApi/HomeSplit_A.context';
 
 interface props {
@@ -102,7 +102,7 @@ export default class Home_A_Hero extends React.Component<props, any> {
                           <NavLink exact to={activeSlideDetails.gettingStarted.link}>{activeSlideDetails.gettingStarted.text}</NavLink>
                         </div>
                         <div className="cta_outline_color">
-                          <NavLink exact to={activeSlideDetails.howitworks.link}><i className="fa fa-chevron-circle-right" aria-hidden="true"></i>{activeSlideDetails.howitworks.text}</NavLink>
+                          <NavLink exact to={activeSlideDetails.howitworks.link}><img src={Double_Arrows_pink} width="14" style={{marginRight:10}} />{activeSlideDetails.howitworks.text}</NavLink>
                         </div>
                       </div>
                     </div>

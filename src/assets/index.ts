@@ -53,7 +53,11 @@ import secure_technology from "./images/secure_technology.svg";
 import student_icon from "./images/student_icon.svg";
 import admin_icon from "./images/admin_icon.svg";
 import teacher_icon from "./images/teacher_icon.svg";
+
+import Double_Arrows_pink from "./images/Double_Arrows_pink.svg"
+
 export {assess_support,
+    Double_Arrows_pink,
     student_icon,
     admin_icon,
     teacher_icon,
