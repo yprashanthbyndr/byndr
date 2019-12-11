@@ -35,7 +35,7 @@ togglePopup() {
                     {fromPage}
                   </div>
                   {pageSubtitle !=""?<div className="banner_content">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    {pageSubtitle}
                   </div>:null}
                   {videoDisplay == "true"?<div className="video">
                     <div className="home_v2_banner_play">
@@ -56,7 +56,7 @@ togglePopup() {
                   {tryBtnDisplay == "true"?<div className="CallToAction_btn">
                     <div className="CallToAction_btn_inr">
                       <a href="./"> 
-                        Try Byndr
+                        Start using Byndr Free.
                       </a>
                     </div>
                   </div>:null}

@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
 // import { AppContext } from '../contextApi/AppContext';
-import { Home_A_Hero, Home_A_Grids, FeaturesGrid, FooterCTA, SupportedDivices, HomeTestimonial, Header, Footer, Navigation } from '../theme/components';
+import { Home_A_Hero, Home_A_Grids, SupportedDivices, HomeTestimonial, Header, Footer, FooterDoubleCTA } from '../theme/components';
 import { Helmet } from "react-helmet";
-import { Home_A_Context } from '../contextApi/HomeSplit_A.context';
 
 import { connect } from 'react-redux';
-import { CSSTransition } from 'react-transition-group';
 
 
 interface props {
@@ -49,10 +47,10 @@ class HomeSplit_A extends Component<props, any>{
                     //  State={this.state}  click_Tab={this.onbuttonclick}  
                     />
                     <Home_A_Grids />
-                    <FeaturesGrid />
+                    {/* <FeaturesGrid /> */}
                     <SupportedDivices />
                     <HomeTestimonial />
-                    <FooterCTA />
+                    <FooterDoubleCTA />
                 </div>
                 <Footer />
                 {/* </Home_A_Context.Provider> */}

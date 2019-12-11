@@ -1,5 +1,5 @@
 import React from 'react';
-import { ProductCoreCapabilities, WhoIsBynderFor, FooterCTA, Header, Navigation, Footer, InnerPageTitleBlock } from '../theme/components';
+import { ProductCoreCapabilities, WhoIsBynderFor, FooterCTA, Header, Navigation, Footer, InnerPageTitleBlock, FooterDoubleCTA } from '../theme/components';
 import { AppContext } from '../contextApi/AppContext';
 
 import { connect } from 'react-redux';
@@ -19,10 +19,10 @@ class Product extends React.Component<props, any> {
             <div>
                 <Header />
                 <div className="bodySection">
-                    <InnerPageTitleBlock fromPage="Product" pageSubtitle="Lorem Ipsum is simply dummy text of the printing and typesetting industry" videoDisplay="true" tryBtnDisplay="true"  />
+                    <InnerPageTitleBlock fromPage="A tech-savvy tool for ed-tech experience" pageSubtitle="A free social learning platform for both faculty &amp; students, offers a maintenance-free cloud-based platform with LMS features like attendance, materials, grades and more." videoDisplay="true" tryBtnDisplay="true"  />
                     <WhoIsBynderFor />
                     <ProductCoreCapabilities />
-                    <FooterCTA />
+                    <FooterDoubleCTA />
                 </div>
                 <Footer />
                 {/* </AppContext.Provider> */}

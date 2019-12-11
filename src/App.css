@@ -181,7 +181,7 @@ header{
     float: left;
     padding:20px;
     border-bottom: 1px solid #efefef;
-    box-shadow: 0px 2px 2px #efefef;
+    /* box-shadow: 0px 2px 2px #efefef; */
     background: #ffffff;
     z-index: 9;
 }
@@ -465,8 +465,8 @@ font-weight: 600;
 .homeGrid{
     width: 100%;
     float: left;
-    padding: 70px 0;
-    /* background: #F2F3F6; */
+    /* padding: 70px 0; */
+    background: #f9f9fb;
 }
 .homeGrid_inr{
     width: 100%;
@@ -481,7 +481,7 @@ font-weight: 600;
     width: calc(33.33% - 4px);
     float: left;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    /* border: 2px solid #F2F3F6; */
+    border: 2px solid #F2F3F6;
     height: 337px;
     text-align: center;
 }
@@ -493,6 +493,7 @@ font-weight: 600;
   transition: box-shadow 0.2s ease, z-index 0s 0s ease, -webkit-transform 0.2s ease;
   transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease;
   transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease, -webkit-transform 0.2s ease;
+  border: 2px solid #fff;
 }
 .homeSingleGridinr{
     padding: 80px 50px 0px 50px;
@@ -959,6 +960,7 @@ float: left;
     background-color: rgba(50,50,50,0.06);
 }
 .activeMenu,.activeMenu:hover{
+    color: #ffffff !important;
     background-color: rgba(196, 32, 116, 0.89) !important;
 }
 .activeMenu a{
@@ -1781,8 +1783,8 @@ select#contact_purpose {
 .widget_button {
     margin-top: 50px;
 }
-
-.core_capabilities.bg_gray li:before {
+/* 
+.core_capabilities.bg_gray li.mainItem:before {
     content: "\f0ca";
     width: 51px;
     height: 47px;
@@ -1799,7 +1801,7 @@ select#contact_purpose {
     border-radius: 50%;
     padding: 20px 11px 14px 18px;
     line-height: 1;
-}
+} */
 .li_title {
     font-size: 32px;
     color: #333333;
@@ -1862,12 +1864,13 @@ select#contact_purpose {
     color:#00144C;
     font-weight: 300;
 }
-.core_capabilities.bg_gray li {
-    width: 41%;
+.core_capabilities.bg_gray li.mainItem {
+    width: 50%;
     float: left;
     position: relative;
-    padding: 6px 0 0 87px;
+    /* padding: 6px 0 0 87px; */
     margin:30px 0px;
+    min-height: 170px;
 }
 
 /*.inverstors */
@@ -4141,4 +4144,91 @@ margin: 10px 0;
 }
 .RouteNotFoundMain h4{
     margin: 10px 0;
+}
+/* Double CTA section */
+.DoublecallToAction{
+    width: 100%;
+    float: left;
+    background: url('./assets/images/cta_bg.png') no-repeat center;
+    background-size: cover;
+    color: #ffffff;
+    line-height: 1.5;
+}
+.DoublecallToAction_main{
+    width: 100%;
+    float: left;
+    padding: 100px 0;
+    background: rgba(0, 0, 0, 0.76);
+}
+.DoublecallToAction_inr{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.DoublecallToAction_title{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 24px;
+    letter-spacing: 0;
+    font-weight: 100;
+}
+.DoublecallToAction_content{
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 0;
+    font-weight: 300;
+}
+.DoublecallToAction_btn{
+    width: 100%;
+    padding: 40px 0 0 0;
+    max-width: 250px;
+    margin: 0 auto;
+}
+.DoublecallToAction_btn_inr{
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+.DoublecallToAction_btn_inr a{
+    background: #CB0A7A 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    padding: 16px 0px;
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}
+.DoublecallToAction_btn_inr a:hover{
+    background: #960c5c 0% 0% no-repeat padding-box;
+}
+.DoublecallToActionLeft{
+    width: 50%;
+    float: left;
+    /* position: relative; */
+}
+/* .DoublecallToActionLeft::after{
+    content: "";
+    position: absolute;
+    border: 0 solid transparent;
+    -webkit-transform: rotate(360deg);
+    z-index: 1;
+    border-top-width: 50vh;
+    border-bottom-width: 50vh;
+    border-top-color: #292929;
+    border-bottom-color: #292929;
+    border-right-width: 5rem;
+    top: 0;
+    right: -5rem;
+} */
+.DoublecallToActionRight{
+    width: 50%;
+    float: left;
+}
+.DoublecallToActionInrRow{
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
 }
