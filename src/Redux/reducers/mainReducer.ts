@@ -1,7 +1,7 @@
 
 
 import { HomeReducer, ActionModel } from '../../models';
-import { SAVE_SCROLL_HEIGHT, SAVE_CONTACT_US_IP_VALUES, SUBMIT_CONTACT_FORM_SUCCESS, OPEN_OR_CLOSE_MENUBAR, SAVE_SELECTED_TESTIMONIAL, STICKY_PRICINGTABLE, MINI_HEADER_OPTIONS } from '../actions';
+import { SAVE_SCROLL_HEIGHT, SAVE_CONTACT_US_IP_VALUES, SUBMIT_CONTACT_FORM_SUCCESS, OPEN_OR_CLOSE_MENUBAR,OPEN_OR_CLOSE_PLAY_VIDEO, SAVE_SELECTED_TESTIMONIAL, STICKY_PRICINGTABLE, MINI_HEADER_OPTIONS } from '../actions';
 
 const INIT_STATE: HomeReducer = {
   HideHeader: false,
@@ -20,6 +20,7 @@ const INIT_STATE: HomeReducer = {
   },
   ContactFormSubmitSuccess: false,
   OpenMenuBar: false,
+  OpenPlayVideo:false,
   activeTestimonial: 'vvit',
   Stickypricing_table: false,
   MiniHeaderOptions: "overview",
@@ -46,6 +47,11 @@ export default (state = INIT_STATE, action: ActionModel) => {
 
       return {
         ...state, OpenMenuBar: !state.OpenMenuBar
+      }
+      case OPEN_OR_CLOSE_PLAY_VIDEO:
+
+      return {
+        ...state, OpenPlayVideo: !state.OpenPlayVideo
       }
     case SAVE_SELECTED_TESTIMONIAL:
       return {

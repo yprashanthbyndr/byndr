@@ -1,21 +1,40 @@
 import React from 'react';
+import { Open_Or_Close_MenuBar,Open_Or_Close_PlayVideo } from '../../services';
 interface props {
     onLeftMenu?(): void,
-    OpenModelPopup: any
+    OpenPlayVideo?:boolean,
 }
 
 export default class ModelPopup extends React.Component<props, any> {
 
     render(): any {
+        console.log("OpenPlayVideo",this.props.OpenPlayVideo)
+        const show = this.props.OpenPlayVideo
         return (
             
-            <React.Fragment>
-                <div className='model_popup'>
+               <div className="model_popup" style={{ display: show ? 'block' : 'none' }}>
+                   <div className="backdrop_close"  onClick={() =>   {
+                                            Open_Or_Close_PlayVideo()
+                                        }}></div>
         <div className='model_popup_inner'>
-            <button onClick={this.props.OpenModelPopup}>close me</button>
+            <span className="model_popup_close" onClick={() =>   {
+                                            Open_Or_Close_PlayVideo()
+                                        }}><i className="fa fa-times-thin fa-2x" aria-hidden="true"></i></span>
+                                      <iframe
+        style={{
+          position: "relative",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%"
+        }}
+        src={`https://www.youtube.com/embed/AmFFG7LfQuo`}
+        frameBorder="0"
+      />
         </div>
+        
       </div>
-            </React.Fragment>
+           
         );
     }
 }

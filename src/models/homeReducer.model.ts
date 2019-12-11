@@ -7,6 +7,7 @@ export interface HomeReducer {
     ContactUsForm: Intr_ContactFormObject,
     ContactFormSubmitSuccess: boolean,
     OpenMenuBar: boolean,
+    OpenPlayVideo: boolean,
     activeTestimonial: string,
     Stickypricing_table: boolean,
     MiniHeaderOptions: string,

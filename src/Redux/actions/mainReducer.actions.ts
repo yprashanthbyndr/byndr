@@ -6,6 +6,7 @@ export const SAVE_SCROLL_HEIGHT = 'SAVE_SCROLL_HEIGHT';
 export const SAVE_CONTACT_US_IP_VALUES = 'SAVE_CONTACT_US_IP_VALUES';
 export const SUBMIT_CONTACT_FORM_SUCCESS = 'SUBMIT_CONTACT_FORM_SUCCESS';
 export const OPEN_OR_CLOSE_MENUBAR = 'OPEN_OR_CLOSE_MENUBAR';
+export const OPEN_OR_CLOSE_PLAY_VIDEO = 'OPEN_OR_CLOSE_PLAY_VIDEO';
 export const SAVE_SELECTED_TESTIMONIAL = 'SAVE_SELECTED_TESTIMONIAL';
 export const STICKY_PRICINGTABLE = "STICKY_PRICINGTABLE";
 export const MINI_HEADER_OPTIONS = "MINI_HEADER_OPTIONS";
@@ -44,6 +45,11 @@ function actionOpen_Or_Close_MenuBar(): ActionModel {
         type: OPEN_OR_CLOSE_MENUBAR,
     };
 }
+function actionOpen_Or_Close_PlayVideo(): ActionModel {
+    return {
+        type: OPEN_OR_CLOSE_PLAY_VIDEO,
+    };
+}
 function actionTestimonialSelection(selectedOption): ActionModel {
     return {
         type: SAVE_SELECTED_TESTIMONIAL,
@@ -73,6 +79,7 @@ export {
     actionCantactUs_Ip_Values,
     actionCantactUs_ApiResponse,
     actionOpen_Or_Close_MenuBar,
+    actionOpen_Or_Close_PlayVideo,
     actionTestimonialSelection,
     actionSticky_PricingTable,
     actionMiniHeaderOptions
