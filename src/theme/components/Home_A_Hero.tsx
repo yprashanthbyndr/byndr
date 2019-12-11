@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { AppContext } from '../../contextApi/AppContext';
 
 import { CSSTransition, Transition } from 'react-transition-group';
-import { slider_1, open_book, teamwork, medical_history, earth_globe, blackboard, light_bulb, byndr_android, byndr_ios, byndr_responsive_platform, vvit_img, stanley_img, vardhaman_img, gprec_img, author_Img, slider_2, slider_3 } from "../../assets";
+import { slider_1, open_book, teamwork, medical_history, earth_globe, blackboard, light_bulb, byndr_android, byndr_ios, byndr_responsive_platform, vvit_img, stanley_img, vardhaman_img, gprec_img, author_Img, slider_2, slider_3, student_icon, admin_icon, teacher_icon } from "../../assets";
 import { Home_A_Context } from '../../contextApi/HomeSplit_A.context';
 
 interface props {
@@ -119,7 +119,7 @@ export default class Home_A_Hero extends React.Component<props, any> {
                   <ul className="slides">
                     <li className={activeSlide == "teachers" ? " flex-active-slide" : ""} onClick={() => this.selectedSlide("teachers")}>
                       <span className="homeBanner_slider_nav_icon">
-                        <i className="fa fa-user" aria-hidden="true" />
+                        <img src={teacher_icon} />
                       </span>
                       <span className="homeBanner_slider_nav_text">
                         Teacher
@@ -130,7 +130,7 @@ export default class Home_A_Hero extends React.Component<props, any> {
                         this.selectedSlide("students")
                       }>
                       <span className="homeBanner_slider_nav_icon">
-                        <i className="fa fa-users" aria-hidden="true" />
+                      <img src={student_icon} />
                       </span>
                       <span className="homeBanner_slider_nav_text">
                         Student
@@ -139,7 +139,7 @@ export default class Home_A_Hero extends React.Component<props, any> {
                     <li className={activeSlide == "adminstrator" ? " flex-active-slide" : ""}
                       onClick={() => this.selectedSlide("adminstrator")}>
                       <span className="homeBanner_slider_nav_icon">
-                        <i className="fa fa-user" aria-hidden="true" />
+                      <img src={admin_icon} />
                       </span>
                       <span className="homeBanner_slider_nav_text">
                         Adminstrator
