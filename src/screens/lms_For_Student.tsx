@@ -18,7 +18,6 @@ interface props {
 class lms_For_Student extends React.Component<props, any> {
     constructor(props: any) {
         super(props);
-
         this.handleScroll = this.handleScroll.bind(this);
     }
 

@@ -28,7 +28,7 @@ class Footer extends React.Component<props, any> {
                                         <div className="footerWidgetList">
                                             <ul>
                                                 <li>
-                                                    <NavLink exact to="/product-roles"
+                                                    <NavLink exact to="/product"
                                                         onClick={() => {
                                                             document.body.scrollTop = 0;
                                                             document.documentElement.scrollTop = 0;

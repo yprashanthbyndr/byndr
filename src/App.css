@@ -273,12 +273,17 @@ header{
     text-align: center;
     font: Bold 16px/19px Lato;
     letter-spacing: 0;
-    color: #CB0A7A;
+    color: #ffffff;
     border: 2px solid #CB0A7A;
     border-radius: 2px;
     opacity: 1;
     padding: 8px 0;
     max-width: 136px;
+    background: #CB0A7A;
+}
+.signUpFree a:hover{
+    background: #960c5c;
+    border: 2px solid #960c5c;
 }
 .navMenu {
     float: right;
@@ -379,7 +384,7 @@ cursor: pointer;
 .cta_full_color a{
     color: #fff;
     font-size: 18px;
-    padding: 14px 0;
+    padding: 13px 0;
     width: 100%;
     float: left;
     font-weight: 500;
@@ -388,34 +393,34 @@ cursor: pointer;
     letter-spacing: 0.03em;
 }
 .cta_outline_color{
-    width: 100%;
-    max-width: 275px;
+    /* width: 100%; */
+    /* max-width: 170px; */
     color: #fff;
     float: left;
 }
 .cta_outline_color a{
     letter-spacing: 0.03em;
     font-size: 18px;
-    padding: 11px 0;
+    padding: 11px 9px;
     width: 100%;
     float: left;
     font-weight: 500;
     border-radius: 4px;
-    color: #CB0A7A;
+    color: #000000;
     border: 2px solid #CB0A7A;
 }
 .cta_full_color a:hover{
-    border: 2px solid #CB0A7A;
-    background: transparent;
-    color:#CB0A7A;
-    padding: 12px 0;
+    color: #ffffff;
+    background: #960c5c;
 }
 .cta_outline_color a:hover{
-    background: #CB0A7A 0% 0% no-repeat padding-box;
-    color:#fff;
+    color: #CB0A7A;
 }
 .cta_outline_color a i{
     vertical-align: bottom;
+    margin-right: 10px;
+    font-size: 22px;
+    line-height: 1;
 }
 .homeBanner_slider_navigation{
     width: 100%;
@@ -909,21 +914,19 @@ font-weight: 600;
     right: 0;
     width: 100%;
     float: right;
-    max-width: 250px;
+    max-width: 350px;
     height: 100%;
     transform: translateX(200%);
-    -webkit-transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    -o-transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     min-width: 288px;
     z-index: 999;
 }
 .main_menu_inr {
     width: 100%;
-    max-width: 250px;
+    max-width: 350px;
     float: right;
     height: 100%;
-    background: #fff;
+    background: rgba(201, 55, 130, 0.99);
     /*  */
 }.menu_cancel {
     text-align: right;
@@ -940,28 +943,27 @@ float: left;
 float: left;
 }
 .menu_block ul li{
+    width: 100%;
+    float: left;
     line-height: 44px;
 }
 
 .menu_block ul li a{
-    color: rgba(0,0,0,0.87);
+    color: rgba(255, 255, 255, 0.87);
     display: block;
-    font-size: 14px;
+    font-size: 22px;
     font-weight: 500;
-    /* height: 48px; */
-    /* line-height: 48px; */
-    /* padding: 0 32px; */
-    /* font-size: 13px; */
-    line-height: 44px;
-    height: 44px;
+    line-height: 50px;
     padding: 0 30px;
+    font-weight: 100;
+    letter-spacing: 1px;
 }
 .menu_block ul li:hover{
     background-color: rgba(50,50,50,0.06);
 }
 .activeMenu,.activeMenu:hover{
     color: #ffffff !important;
-    background-color: rgba(196, 32, 116, 0.89) !important;
+    background-color: rgb(196, 32, 116) !important;
 }
 .activeMenu a{
     color: #ffffff !important;
@@ -971,6 +973,9 @@ float: left;
 }
 .submenu ul li{
     padding-left: 15px;
+}
+.submenu ul li a{
+    font-size: 18px;
 }
 .subMenuItem{
     

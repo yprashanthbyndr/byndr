@@ -64,11 +64,11 @@ class lms_For_Admins extends React.Component<props, any> {
             <div>
                 <div className="header_main_container">
                     <Header Hide={this.props.HideHeader} />
-                    <MiniHeader Title="for Admins" />
+                    <MiniHeader Title="Admins" tryLink="" />
                 </div>
                 <div className="bodySection" style={{marginTop:175}}>
                     <InnerPageTitleBlock fromPage="Monitoring Made Easy, Organized & Efficient" pageSubtitle="" videoDisplay="true" tryBtnDisplay="true"  />
-                    <ProductForRolesBlock />
+                    <ProductForRolesBlock Title="Admins" content="Lorem ipsum Dolotr sit amitz" />
                     <HomeTestimonial />
                     <FaqBlock />
                     <FooterDoubleCTA />

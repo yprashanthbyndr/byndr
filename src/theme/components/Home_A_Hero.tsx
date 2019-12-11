@@ -24,7 +24,7 @@ export default class Home_A_Hero extends React.Component<props, any> {
           content: "Monitoring Made Easy, Organized & Efficient",
           howitworks: {
             link: '/',
-            text: "How it works For Admins"
+            text: "Request A Demo"
           },
           gettingStarted: {
             link: '/',
@@ -36,7 +36,7 @@ export default class Home_A_Hero extends React.Component<props, any> {
           content: "Teaching Made Engaging, Productive & Valuable",
           howitworks: {
             link: '/',
-            text: "How it works For Teacher"
+            text: "Learn More"
           },
           gettingStarted: {
             link: '/',
@@ -48,7 +48,7 @@ export default class Home_A_Hero extends React.Component<props, any> {
           content: "Learning Made Interactive, Simple & Effective",
           howitworks: {
             link: '/',
-            text: "How it works For Students"
+            text: "Learn More"
           },
           gettingStarted: {
             link: '/',
@@ -102,9 +102,7 @@ export default class Home_A_Hero extends React.Component<props, any> {
                           <NavLink exact to={activeSlideDetails.gettingStarted.link}>{activeSlideDetails.gettingStarted.text}</NavLink>
                         </div>
                         <div className="cta_outline_color">
-                          <NavLink exact to={activeSlideDetails.howitworks.link}><i className="material-icons">
-                            play_arrow
-                                 </i>{activeSlideDetails.howitworks.text}</NavLink>
+                          <NavLink exact to={activeSlideDetails.howitworks.link}><i className="fa fa-chevron-circle-right" aria-hidden="true"></i>{activeSlideDetails.howitworks.text}</NavLink>
                         </div>
                       </div>
                     </div>

@@ -18,19 +18,19 @@ class Header extends React.Component<props, any> {
 
     constructor(props: any) {
         super(props);
-        // this.headerRef = {};
-
+        this.state = {
+            scroll_length:0
+        }
         this.handleScroll = this.handleScroll.bind(this);
         this.initializeReactGA = this.initializeReactGA.bind(this);
     }
 
-
-    componentDidMount(): any {
-        console.log("in header component: ", this.context);
+    componentDidUpdate():any{
         window.addEventListener('scroll', this.handleScroll);
-        //window.addEventListener('load', this.initializeReactGA);
     }
-
+    componentDidMount(): any {
+        window.addEventListener('scroll', this.handleScroll);
+    }
 
     /**
      * Remove Event wile we remove this component from DOM.
@@ -40,23 +40,22 @@ class Header extends React.Component<props, any> {
         window.removeEventListener('scroll', this.handleScroll);
     }
 
-
-    handleScroll() {
-
-        let element = this.refs.Sticky_context_header;
-        // var domRect = element.getBoundingClientRect();
+    handleScroll = () => {
+        let scroll_position = 0;
+        scroll_position = window.scrollY;
+        this.setState({scroll_length:scroll_position})
     }
     initializeReactGA() {
         ReactGA.initialize('UA-59718524-2');
         ReactGA.pageview(window.location.pathname + window.location.search);
     }
     render(): any {
-        // console.log("Hide  Hide Hide : ", this.props);
+        let handleBorder = this.state.scroll_length > 200 ? true:false
         return (
             <header
                 className={this.props.Hide ? "slideup" : "slidedown"}
             >
-                <div ref="Sticky_context_header" className={this.props.Hide ? "header_main" : "header_main_sticky"}>
+                <div ref="Sticky_context_header" className={this.props.Hide ? "header_main" : "header_main_sticky"} style={{borderBottom:handleBorder === true ?"1px solid #efefef":"none"}}>
                     <div className="header_main_inr">
                         <div className="logo">
                             <NavLink exact to="/"><img src={byndr_Logo} className="default_logo" /></NavLink>

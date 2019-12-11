@@ -50,7 +50,7 @@ export default class Home_A_Grids extends React.Component<props, any> {
                     <div className="homeSingleGridIcon">
                       <img src={earth_globe} />
                     </div>
-                    <div className="homeSingleGridTitle">Support & Connect</div>
+                    <div className="homeSingleGridTitle">Assess & Support</div>
                     <div className="homeSingleGridContent">
                     It enables the teachers to create assignments, track performance and evaluate to overcome the weaknesses.
             </div>
