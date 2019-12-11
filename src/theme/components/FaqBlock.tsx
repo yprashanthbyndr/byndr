@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Collapse, Button, CardBody, Card } from 'reactstrap';
+// import { Collapse, Button, CardBody, Card } from 'reactstrap';
 
 
 import { connect } from 'react-redux';
@@ -37,68 +37,68 @@ class FaqBlock extends React.Component<props, any> {
               <button className="accordion"
                 onClick={() => this.toggle(1)}
               >Lorem ipsum dolor sit ametsed diam nonumy eirmod ?</button>
-              <Collapse isOpen={this.state.SelectedFaq == 1}>
+              {/* <Collapse isOpen={this.state.SelectedFaq == 1}>
                 <div >
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
-              </Collapse>
+              </Collapse> */}
 
 
               <button className="accordion"
                 onClick={() => this.toggle(2)}
               >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod ?</button>
 
-              <Collapse isOpen={this.state.SelectedFaq == 2}>
+              {/* <Collapse isOpen={this.state.SelectedFaq == 2}>
                 <div
                 //  className="panel"
                 >
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
-              </Collapse>
+              </Collapse> */}
 
               <button className="accordion"
                 onClick={() => this.toggle(3)}
               >Lorem ipsum dolor sit amet, consetetur sadipscing elitreirmod ?</button>
-              <Collapse isOpen={this.state.SelectedFaq == 3}>
+              {/* <Collapse isOpen={this.state.SelectedFaq == 3}>
                 <div 
                 // className="panel"
                 >
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
-              </Collapse>
+              </Collapse> */}
 
               <button className="accordion"
                 onClick={() => this.toggle(4)}
               >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy?</button>
-              <Collapse isOpen={this.state.SelectedFaq == 4}>
+              {/* <Collapse isOpen={this.state.SelectedFaq == 4}>
                 <div 
                 // className="panel"
                 >
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
 
-              </Collapse>
+              </Collapse> */}
               <button className="accordion"
                 onClick={() => this.toggle(5)}
               >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod ?</button>
-              <Collapse isOpen={this.state.SelectedFaq == 5}>
+              {/* <Collapse isOpen={this.state.SelectedFaq == 5}>
                 <div 
                 // className="panel"
                 >
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
-              </Collapse>
+              </Collapse> */}
 
               <button className="accordion"
                 onClick={() => this.toggle(6)}
               >Lorem ipsum dolor sit amet, sadipscing, sed diam ?</button>
-              <Collapse isOpen={this.state.SelectedFaq == 6}>
+              {/* <Collapse isOpen={this.state.SelectedFaq == 6}>
                 <div 
                 // className="panel"
                 >
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
-              </Collapse>
+              </Collapse> */}
               {/* 
               <Button color="primary" onClick={this.toggle} style={{ marginBottom: '1rem' }}>Toggle</Button>
               <Collapse isOpen={this.state.isOpen}>

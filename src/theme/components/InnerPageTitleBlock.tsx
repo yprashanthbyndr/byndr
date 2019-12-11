@@ -1,6 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { connect } from 'react-redux';
 import ModelPopup from './ModelPopup';
+import { Open_Or_Close_PlayVideo } from '../../services';
 
 interface props {
     onLeftMenu?(): void,
@@ -8,10 +10,11 @@ interface props {
     pageSubtitle:any,
     videoDisplay:any,
     tryBtnDisplay:any,
-    OpenModelPopup?: any
+    OpenModelPopup?: any,
+    OpenPlayVideo?:boolean,
 }
 
-export default class InnerPageTitleBlock extends React.Component<props, any> {
+class InnerPageTitleBlock extends React.Component<props, any> {
   constructor(props) {
     super(props);
     this.state = { OpenModelPopup: false };
@@ -24,7 +27,7 @@ togglePopup() {
 }
     render(): any {
 
-      const {fromPage,pageSubtitle,videoDisplay,tryBtnDisplay} = this.props
+      const {fromPage,pageSubtitle,videoDisplay,tryBtnDisplay,OpenPlayVideo} = this.props
 
         return (
             <section>
@@ -39,20 +42,25 @@ togglePopup() {
                   </div>:null}
                   {videoDisplay == "true"?<div className="video">
                     <div className="home_v2_banner_play">
-                      <div className="home_v2_banner_play_icon">
-                        <a href="https://vimeo.com/83897470" data-lightbox><i className="material-icons">
+                      <div className="home_v2_banner_play_icon" onClick={() =>   {
+                                            Open_Or_Close_PlayVideo()
+                                        }}>
+                        <i className="material-icons">
                             play_arrow
-                          </i></a>
+                          </i>
                       </div>
                     </div>
                   </div>:null}
-                  {/* <button onClick={this.togglePopup.bind(this)}> Play</button>
-                  {this.state.OpenModelPopup ?
-         <ModelPopup OpenModelPopup={this.state.OpenModelPopup}
-         />
+                  {/* <button onClick={() =>   {
+                                            Open_Or_Close_PlayVideo()
+                                        }}> Play</button> */}
+                                                 {/* {OpenPlayVideo ?
+         <ModelPopup OpenPlayVideo={OpenPlayVideo}/>
          : null
        } */}
-                  {/* <ModelPopup OpenModelPopup={this.props.OpenModelPopup}/> */}
+                  
+         <ModelPopup OpenPlayVideo={OpenPlayVideo}/>
+         
                   {tryBtnDisplay == "true"?<div className="CallToAction_btn">
                     <div className="CallToAction_btn_inr">
                       <a href="./"> 
@@ -67,3 +75,13 @@ togglePopup() {
             );
     }
 }
+const map = (state: any) => {
+  return {
+    ...state.MainReducer
+  };
+};
+
+export default connect(
+  map,
+  null,
+)(InnerPageTitleBlock);

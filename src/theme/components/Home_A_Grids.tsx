@@ -1,5 +1,5 @@
 import React from 'react';
-import { open_book, teamwork, medical_history, earth_globe, blackboard, light_bulb } from "../../assets";
+import { open_book, teamwork, medical_history, earth_globe, blackboard, light_bulb, learn_innovate_together, builtInAccessibility, collaboration_communication, assess_support, peer_to_peer_learning, secure_technology } from "../../assets";
 
 interface props {
   onLeftMenu?(): void;
@@ -15,7 +15,7 @@ export default class Home_A_Grids extends React.Component<props, any> {
                 <div className="homeSingleGrid">
                   <div className="homeSingleGridinr">
                     <div className="homeSingleGridIcon">
-                      <img src={open_book} />
+                      <img src={learn_innovate_together} />
                     </div>
                     <div className="homeSingleGridTitle">Learn & Innovate Together</div>
                     <div className="homeSingleGridContent">
@@ -26,7 +26,7 @@ export default class Home_A_Grids extends React.Component<props, any> {
                 <div className="homeSingleGrid">
                   <div className="homeSingleGridinr">
                     <div className="homeSingleGridIcon">
-                      <img src={teamwork} />
+                      <img src={builtInAccessibility} />
                     </div>
                     <div className="homeSingleGridTitle">Built-In Accessibility Features</div>
                     <div className="homeSingleGridContent">
@@ -37,7 +37,7 @@ export default class Home_A_Grids extends React.Component<props, any> {
                 <div className="homeSingleGrid">
                   <div className="homeSingleGridinr">
                     <div className="homeSingleGridIcon">
-                      <img src={medical_history} />
+                      <img src={collaboration_communication} />
                     </div>
                     <div className="homeSingleGridTitle">Collaboration & Communication</div>
                     <div className="homeSingleGridContent">
@@ -48,7 +48,7 @@ export default class Home_A_Grids extends React.Component<props, any> {
                 <div className="homeSingleGrid">
                   <div className="homeSingleGridinr">
                     <div className="homeSingleGridIcon">
-                      <img src={earth_globe} />
+                      <img src={assess_support} />
                     </div>
                     <div className="homeSingleGridTitle">Assess & Support</div>
                     <div className="homeSingleGridContent">
@@ -59,7 +59,7 @@ export default class Home_A_Grids extends React.Component<props, any> {
                 <div className="homeSingleGrid">
                   <div className="homeSingleGridinr">
                     <div className="homeSingleGridIcon">
-                      <img src={blackboard} />
+                      <img src={peer_to_peer_learning} />
                     </div>
                     <div className="homeSingleGridTitle">Peer-to-Peer Learning</div>
                     <div className="homeSingleGridContent">
@@ -70,7 +70,7 @@ export default class Home_A_Grids extends React.Component<props, any> {
                 <div className="homeSingleGrid">
                   <div className="homeSingleGridinr">
                     <div className="homeSingleGridIcon">
-                      <img src={light_bulb} />
+                      <img src={secure_technology} />
                     </div>
                     <div className="homeSingleGridTitle">Secure Technology</div>
                     <div className="homeSingleGridContent">
