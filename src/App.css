@@ -437,11 +437,17 @@ cursor: pointer;
     flex-grow: 1;
     max-width: 130px;
     background: #E2E8F0 0% 0% no-repeat padding-box;
-    border-radius: 4px;
     opacity: 1;
     color: #00144C;
-    padding: 9px 0;
     cursor: pointer;
+    line-height: 0;
+    height: 70px;
+}
+.homeBanner_slider_navigation ul li:first-child{
+    border-radius: 4px 0 0 4px;
+}
+.homeBanner_slider_navigation ul li:last-child{
+    border-radius:0 4px 4px 0;
 }
 .homeBanner_slider_navigation ul li.activeSlide{
     background: #00144C 0% 0% no-repeat padding-box;
@@ -454,16 +460,20 @@ cursor: pointer;
     float: left;
     font-size: 28px;
     margin-bottom: 10px;
+    display: none;
+}
+.homeBanner_slider_navigation ul li.flex-active-slide .homeBanner_slider_nav_icon{
+    display: block; 
 }
 .homeBanner_slider_nav_text{
-width: 100%;
-float: left;
-text-align: center;
-font-size :14px;
-letter-spacing: 0.14px;
-
-opacity: 1;
-font-weight: 600;
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.14px;
+    opacity: 1;
+    font-weight: 400;
+    line-height: 5;
 }
 
 /* Grid */
@@ -513,7 +523,7 @@ font-weight: 600;
     margin-bottom: 20px;
 }
 .homeSingleGridIcon img{
-    width: 90px;
+    width: 80px;
 }
 .homeSingleGridTitle {
     width: 100%;
@@ -725,7 +735,7 @@ font-weight: 600;
     width: 100%;
     float: left;
     padding: 100px 0;
-    background: rgba(0, 0, 0, 0.76);
+    background: rgba(0, 20, 76, 0.85);
 }
 .callToAction_inr{
     width: 100%;
@@ -953,8 +963,8 @@ float: left;
     display: block;
     font-size: 22px;
     font-weight: 500;
-    line-height: 50px;
-    padding: 0 30px;
+    line-height: 46px;
+    padding: 0 45px;
     font-weight: 100;
     letter-spacing: 1px;
 }
@@ -965,20 +975,24 @@ float: left;
     color: #ffffff !important;
     background-color: rgb(196, 32, 116) !important;
 }
+.activeMenu{
+    background-image: url('./assets/images/DoubleArrow.svg');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 18px;
+}
 .activeMenu a{
     color: #ffffff !important;
 }
 .submenu {
     
 }
-.submenu ul li{
-    padding-left: 15px;
-}
 .submenu ul li a{
     font-size: 18px;
+    padding-left: 60px;
 }
-.subMenuItem{
-    
+.subMenuItem .activeMenu{
+    background-size: 16px;
 }
 
 /* width */
@@ -1225,10 +1239,19 @@ div#carousel1 .flex-viewport{
     overflow: unset !important;
 }
 .homeBanner_slider_navigation ul li.flex-active-slide {
-    background: #00144C 0% 0% no-repeat padding-box;
-    color: #fff;
-    -webkit-transform: scale(1.15);
+    background: #fff;
+    color: #CB0A7A;
     transform: scale(1.15);
+    border-radius: 4px;
+    box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
+    padding: 9px 0;
+    margin-top: -5px;
+    height: 60px;
+}
+.homeBanner_slider_navigation ul li.flex-active-slide .homeBanner_slider_nav_text{
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 100;
 }
 .sub_title {
     text-align: center;
@@ -2740,7 +2763,7 @@ li.year_details {
 .our-team .social li:last-child a{ padding-bottom: 0; }
 .our-team .social li a:hover{ color: #000; }
 .our-team .team-content{
-    width: 100%;
+    width: calc(100% - 20px);
     padding: 15px 10px;
     background: rgba(0, 0, 0, 0.6);
     position: absolute;
@@ -4182,7 +4205,7 @@ margin: 10px 0;
     width: 100%;
     float: left;
     /* padding: 100px 0; */
-    background: rgba(0, 0, 0, 0.76);
+    background: rgba(0, 20, 76, 0.9);
 }
 .DoublecallToAction_inr{
     width: 100%;
@@ -4263,6 +4286,7 @@ margin: 10px 0;
     max-width: 480px;
     float: right;
     padding-right: 40px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 .DoublecallToActionRight .DoublecallToActionInrRow{
     width: 100%;
@@ -4273,4 +4297,34 @@ margin: 10px 0;
 
 .DoublecallToActionRight:hover,.DoublecallToActionLeft:hover{
     background: rgba(0, 0, 0, 0.2);
+}
+.menu_cta_btns{
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+}
+.menu_cta_btns ul{
+    width: 100%;
+    float: left;
+}
+.menu_cta_btns ul li{
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+}
+.menu_cta_btns ul li a{
+    width: 100%;
+    float: left;
+    text-align: center;
+    font: 100 18px Lato;
+    color: #ffffff;
+    border-radius: 4px;
+    opacity: 1;
+    padding: 15px 0;
+    background: #00144C;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+.menu_cta_btns ul li a:hover{
+
 }
