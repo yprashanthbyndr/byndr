@@ -28,7 +28,7 @@ class Footer extends React.Component<props, any> {
                                         <div className="footerWidgetList">
                                             <ul>
                                                 <li>
-                                                    <NavLink exact to="/product-roles"
+                                                    <NavLink exact to="/product"
                                                         onClick={() => {
                                                             document.body.scrollTop = 0;
                                                             document.documentElement.scrollTop = 0;
@@ -57,15 +57,7 @@ class Footer extends React.Component<props, any> {
                                                             document.body.scrollTop = 0;
                                                             document.documentElement.scrollTop = 0;
                                                         }}
-                                                    >For Institutes</NavLink>
-                                                </li>
-                                                <li>
-                                                    <NavLink exact to="/pricing"
-                                                        onClick={() => {
-                                                            document.body.scrollTop = 0;
-                                                            document.documentElement.scrollTop = 0;
-                                                        }}
-                                                    >Pricing</NavLink>
+                                                    >For Colleges</NavLink>
                                                 </li>
                                                 <li>
                                                     <NavLink exact to="/"
@@ -76,6 +68,14 @@ class Footer extends React.Component<props, any> {
                                                         }}
                                                     >Request a Demo</NavLink>
                                                 </li>
+                                                {/* <li>
+                                                    <NavLink exact to="/pricing"
+                                                        onClick={() => {
+                                                            document.body.scrollTop = 0;
+                                                            document.documentElement.scrollTop = 0;
+                                                        }}
+                                                    >Pricing</NavLink>
+                                                </li> */}
                                             </ul>
                                         </div>
                                     </li>
@@ -126,18 +126,18 @@ class Footer extends React.Component<props, any> {
                                         </div>
                                         <div className="footerWidgetList">
                                             <ul>
-                                                <li>
+                                                {/* <li>
                                                     <a target="_blank" href="https://byndr.zendesk.com/">Datasheets</a>
-                                                </li>
+                                                </li> */}
                                                 <li>
                                                     <a target="_blank" href="https://byndr.zendesk.com/">FAQs</a>
                                                 </li>
-                                                <li>
+                                                {/* <li>
                                                     <a target="_blank" href="https://byndr.zendesk.com/">Knowledge Base</a>
                                                 </li>
                                                 <li>
                                                     <a target="_blank" href="https://byndr.zendesk.com/">Videos</a>
-                                                </li>
+                                                </li> */}
                                             </ul>
                                         </div>
                                     </li>

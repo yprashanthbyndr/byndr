@@ -11,6 +11,7 @@ export interface HomeReducer {
     activeTestimonial: string,
     Stickypricing_table: boolean,
     MiniHeaderOptions: string,
+    // SelectedFaq: string
 }
 
 interface Intr_ContactFormObject {
@@ -21,6 +22,6 @@ interface Intr_ContactFormObject {
     Position: string
     institution: string
     num_students: string
-    num_classes:string
+    num_classes: string
     comments: string
 }

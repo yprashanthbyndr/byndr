@@ -43,7 +43,25 @@ import educationalmobileapp from "./images/educational-mobile-app.jpg"
 
 import penn_selvania from './images/university-of-pennsylvania-penn-vector-logo.png'
 
-export {
+import assess_support from "./images/assess_support.svg";
+import builtInAccessibility from "./images/built_in_accessibility_features.svg";
+import collaboration_communication from "./images/collaboration_communication.svg";
+import learn_innovate_together from "./images/learn_innovate_together.svg";
+import peer_to_peer_learning from "./images/peer_to_peer_learning.svg";
+import secure_technology from "./images/secure_technology.svg";
+
+import student_icon from "./images/student_icon.svg";
+import admin_icon from "./images/admin_icon.svg";
+import teacher_icon from "./images/teacher_icon.svg";
+export {assess_support,
+    student_icon,
+    admin_icon,
+    teacher_icon,
+    builtInAccessibility,
+    collaboration_communication,
+    learn_innovate_together,
+    peer_to_peer_learning,
+    secure_technology,
     byndr_Logo_White,
     educationalmobileapp,
     penn_selvania,
