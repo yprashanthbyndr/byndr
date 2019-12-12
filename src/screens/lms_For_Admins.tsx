@@ -6,7 +6,7 @@ import {
 
 import { connect } from 'react-redux';
 import { SaveScroll_Height, MiniHeaderScrollLogic, StickyMiniHeader_In_Lms } from '../services';
-import { teamwork, medical_history, earth_globe, blackboard, light_bulb, open_book } from '../assets';
+import { teamwork, medical_history, earth_globe, blackboard, light_bulb, open_book, Cloud_based_LMS, Interactive_UI, Activity_Reports, Grade_Summary, Multi_Institute_Architecture, Instant_Messaging, Quick_Search } from '../assets';
 
 interface props {
     onLeftMenu?(): void;
@@ -75,36 +75,32 @@ class lms_For_Admins extends React.Component<props, any> {
     render(): any {
 
     const gridList = [{
-            image:teamwork,
+            image:Cloud_based_LMS,
             title:"Cloud-based & Maintenance-free Platform"
         },
         {
-            image:medical_history,
+            image:Interactive_UI,
             title:"Interactive UI & Dashboard"
         },
         {
-            image:earth_globe,
+            image:Activity_Reports,
             title:"Activity Reports"
         },
         {
-            image:blackboard,
+            image:Grade_Summary,
             title:"Grade Summary"
         },
         {
-            image:light_bulb,
+            image:Multi_Institute_Architecture,
             title:"Multi-Institute Architecture"
         },
         {
-            image:medical_history,
+            image:Instant_Messaging,
             title:"Instant Messaging"
         },
         {
-            image:earth_globe,
+            image:Quick_Search,
             title:"Simple & Quick Search Enabled"
-        },
-        {
-            image:open_book,
-            title:"Unlimited Support"
         }]
 
         const faqList = [{
