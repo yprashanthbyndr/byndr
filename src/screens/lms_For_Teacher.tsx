@@ -54,15 +54,13 @@ class lms_For_Teacher extends React.Component<props, any> {
 
         console.log(" scroll_position : ", scroll_position);
 
-        if (scroll_position > 650 && !this.props.StickMiniHeader) {
+        if (scroll_position > 560 && !this.props.StickMiniHeader) {
 
             StickyMiniHeader_In_Lms(true);
 
-        } else if (650 > scroll_position && this.props.StickMiniHeader) {
+        } else if (560 > scroll_position && this.props.StickMiniHeader) {
             StickyMiniHeader_In_Lms(false);
         }
-
-
     }
 
     render(): any {
