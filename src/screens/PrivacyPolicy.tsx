@@ -22,7 +22,8 @@ class PrivacyPolicy extends React.Component<props, any> {
             <div>
                 <Header />
                 <div className="bodySection">
-                    <div style={{padding:"62px"}}>
+                    <div className="middleBlockContainer">
+                    <div style={{padding:"62px 0"}}>
                     <h1>Privacy Policy</h1>
                     <p>Last updated on July 1st, 2016</p>
                     <p>
@@ -97,6 +98,7 @@ Conshohocken PA 19428
 </p>
 <p>We take privacy and/or security concerns very seriously and will make every effort to address them promptly and reliably.</p>
 </div>
+                </div>
                 </div>
                 <Footer />
             </div>

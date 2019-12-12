@@ -183,11 +183,20 @@ class Footer extends React.Component<props, any> {
                         </div>
                         <div className="footer_mini_footer">
                             <div className="footer_logo">
-                                <NavLink exact to="/"><img src={byndr_Logo} /></NavLink>
+                                <NavLink exact to="/"  onClick={() => {
+                                                            document.body.scrollTop = 0;
+                                                            document.documentElement.scrollTop = 0;
+                                                        }}><img src={byndr_Logo} /></NavLink>
                             </div>
                             <div className="copyright">
-                                &copy; 2019 Byndr, Inc. <NavLink exact to="/privacy-policy">Privacy Policy</NavLink>
-                                <NavLink exact to="/terms-of-use">Terms of Use</NavLink>
+                                &copy; 2019 Byndr, Inc. <NavLink exact to="/privacy-policy"  onClick={() => {
+                                                            document.body.scrollTop = 0;
+                                                            document.documentElement.scrollTop = 0;
+                                                        }}>Privacy Policy</NavLink>
+                                <NavLink exact to="/terms-of-use" onClick={() => {
+                                                            document.body.scrollTop = 0;
+                                                            document.documentElement.scrollTop = 0;
+                                                        }}>Terms of Use</NavLink>
                             </div>
                         </div>
                     </div>
