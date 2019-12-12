@@ -179,7 +179,7 @@ header{
     top: 0;
     width: 100%;
     float: left;
-    padding:20px;
+    padding:20px 0;
     border-bottom: 1px solid #efefef;
     /* box-shadow: 0px 2px 2px #efefef; */
     background: #ffffff;
@@ -198,6 +198,11 @@ header{
 .slidedown {            
     height: 97px ;    
     /* background-color: #FFFFFF;                 */
+}
+.slidedownForFaq{
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .header_main_inr{
     width: 100%;
@@ -1717,16 +1722,44 @@ select#contact_purpose {
 .homeBanner_backgroundimage {
     width: 100%;
     float: left;
-    background: url('./assets/images/about_banner.png') no-repeat center;
+    background: url('./assets/images/productBanner.png') no-repeat 50% -157px;
     background-size: cover;
     color: #ffffff;
     line-height: 1.5;
 }
+
+.homeBanner_forStudent {
+    width: 100%;
+    float: left;
+    background: url('./assets/images/productBanner.png') no-repeat 50% -157px;
+    background-size: cover;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+.homeBanner_forTeacher {
+    width: 100%;
+    float: left;
+    background: url('./assets/images/productBanner.png') no-repeat 50% -157px;
+    background-size: cover;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+.homeBanner_forAdmin {
+    width: 100%;
+    float: left;
+    background: url('./assets/images/adminBanner.png') no-repeat 50% -157px;
+    background-size: cover;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
 .homeBanner_main {
     width: 100%;
     float: left;
     padding: 120px 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.48);
 }
 .banner_title {
     text-align: center;
@@ -2596,6 +2629,16 @@ margin-bottom: 13px;
 }
   .accordion:after {
     content: '\f107';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    font: normal normal normal 18px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+  .closeAccordion:after {
+    content: '\f106';
     color: #777;
     font-weight: bold;
     float: right;
@@ -4348,4 +4391,47 @@ margin: 10px 0;
     line-height: 1.7;
     color: #00144C;
     font-weight: 300;
+}
+.testimonialsContentBlock {
+    transition: height 0.5s ease-in-out;
+    background: #ffffff;
+    overflow: hidden;
+    color: #333333;
+    font-weight: 100;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 959px;
+    line-height: 1.5;
+}
+.singleFaqSubItem {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+}
+.singleFaqSubItemTitle {
+    width: 100%;
+    float: left;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.singleFaqSubItemContent {
+    width: 100%;
+    float: left;
+}
+.singleFaqSubItemContent a{
+    color: #960c5c;
+    font-weight: 500;
+}
+.singleFaqSubItemContent b{
+    font-size: 14px;
+}
+.singleFaqSubItemContent ul{
+width: 100%;
+float: left;
+}
+.singleFaqSubItemContent ul li{
+    font-size: 14px;
+    width: 100%;
+    float: left;
+    padding: 7px 0;
 }

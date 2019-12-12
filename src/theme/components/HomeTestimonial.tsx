@@ -129,7 +129,7 @@ class HomeTestimonial extends React.Component<props, any> {
                                     </div>
                         </div>
                       </li>
-                      <li className={this.props.activeTestimonial == 'sist' ? "testimonial-fadeIn" : "testimonial-fadeOut"}>
+                      <li className={this.props.activeTestimonial == 'snist' ? "testimonial-fadeIn" : "testimonial-fadeOut"}>
                         <div className="homeTestimonialCurrent_Content">
                           Our college has got a number of learning resources, and those resources are now made available to students through Byndr. We are very thankful to Byndr - An innovative learning management system can be developed and can be used in all parts of the world.
                                   </div>

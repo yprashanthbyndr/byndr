@@ -66,6 +66,12 @@ class ProductRoles extends React.Component<props, any> {
 
     render(): any {
         let StateIs = this.props;
+
+        const faqList = [{
+            title:"Lorem Ipsum",
+            content:"Lorem ipsum"
+        }]
+
         return (
             <div>
                 <div className="header_main_container">
@@ -77,7 +83,7 @@ class ProductRoles extends React.Component<props, any> {
                     <ProductForRolesBlock />
                     <HomeTestimonial />
                     {/* <ProductRolesTestimonials /> */}
-                    <FaqBlock />
+                    <FaqBlock faqList={faqList} />
                     <FooterCTA />
                 </div>
                 <Footer />

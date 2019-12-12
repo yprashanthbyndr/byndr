@@ -12,6 +12,7 @@ interface props {
     tryBtnDisplay:any,
     OpenModelPopup?: any,
     OpenPlayVideo?:boolean,
+    role?:any
 }
 
 class InnerPageTitleBlock extends React.Component<props, any> {
@@ -31,7 +32,7 @@ togglePopup() {
 
         return (
             <section>
-            <div className="homeBanner_backgroundimage">
+            <div className={this.props.role =="admins"?"homeBanner_forAdmin":this.props.role =="teachers"?"homeBanner_forTeacher":this.props.role =="teachers"?"homeBanner_forStudent":"homeBanner_backgroundimage"}>
               <div className="homeBanner_main">
                 <div className="homeBanner_contentblock">
                   <div className="banner_title">
