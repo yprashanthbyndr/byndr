@@ -5,7 +5,7 @@ import {
 } from '../theme/components';
 
 import { connect } from 'react-redux';
-import { SaveScroll_Height, MiniHeaderScrollLogic } from '../services';
+import { SaveScroll_Height, MiniHeaderScrollLogic, StickyMiniHeader_In_Lms } from '../services';
 import { teamwork, medical_history, earth_globe, blackboard, light_bulb, open_book } from '../assets';
 
 interface props {
@@ -13,7 +13,9 @@ interface props {
     MainReducer: any,
     HideHeader: boolean,
     WindowScroolheight: number,
-    fromPage: any
+    fromPage: any,
+    StickMiniHeader: boolean,
+    StickyHeader_in_LMS: boolean
 }
 
 class lms_For_Student extends React.Component<props, any> {
@@ -58,6 +60,17 @@ class lms_For_Student extends React.Component<props, any> {
         //     HideHeder = undefined;
         //     SaveScroll_Height(HideHeder, st)
         // }
+
+
+
+        if (scroll_position > 650 && !this.props.StickMiniHeader) {
+
+            StickyMiniHeader_In_Lms(true);
+
+        } else if (650 > scroll_position && this.props.StickMiniHeader) {
+            StickyMiniHeader_In_Lms(false);
+        }
+
     }
 
     render(): any {
