@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { AppContext } from '../../contextApi/AppContext';
-import { slider_1, open_book, teamwork, medical_history, earth_globe, blackboard, light_bulb, byndr_android, byndr_ios, byndr_responsive_platform, vvit_img, stanley_img, vardhaman_img, gprec_img, author_Img } from "../../assets";
+import { slider_1, open_book, teamwork, medical_history, earth_globe, blackboard, light_bulb, byndr_android, byndr_ios, byndr_responsive_platform, vvit_img, stanley_img, vardhaman_img, gprec_img, author_Img, sabyaSachiRath, narasimhaReddy, snist } from "../../assets";
 
 
 import { connect } from 'react-redux';
@@ -104,14 +104,14 @@ class HomeTestimonial extends React.Component<props, any> {
                       >
                         <img src={vardhaman_img} />
                       </li> */}
-                      <li className={this.props.activeTestimonial == 'sist' ? "activeTestimonials" : ""}
+                      <li className={this.props.activeTestimonial == 'snist' ? "activeTestimonials" : ""}
                         onClick={() => {
-                          if (this.props.activeTestimonial !== 'sist') {
-                            TestimonialSelection("sist")
+                          if (this.props.activeTestimonial !== 'snist') {
+                            TestimonialSelection("snist")
                           }
                         }}
                       >
-                        <img src={gprec_img} />
+                        <img src={snist} />
                       </li>
                     </ul>
                   </div>
@@ -125,7 +125,7 @@ class HomeTestimonial extends React.Component<props, any> {
                                   </div>
                         <div className="homeTestimonialCurrent_author">
                           <div className="homeTestimonialCurrent_author_img">
-                            <img src={author_Img} />
+                            <img src={sabyaSachiRath} />
                           </div>
                           <div className="homeTestimonialCurrent_author_name">
                             Dr. Sabyasachi Rath
@@ -141,7 +141,7 @@ class HomeTestimonial extends React.Component<props, any> {
                                   </div>
                         <div className="homeTestimonialCurrent_author">
                           <div className="homeTestimonialCurrent_author_img">
-                            <img src={author_Img} />
+                            <img src={narasimhaReddy} />
                           </div>
                           <div className="homeTestimonialCurrent_author_name">
                             Dr. P. Narasimha Reddy

@@ -63,8 +63,15 @@ import PraveenVangeepuram from "./images/team/PraveenVangeepuram.jpg";
 import PrashanthiVangeepuram from "./images/team/PrashanthiVangeepuram.jpg";
 import MarcGarabedian from "./images/team/MarcGarabedian.jpg";
 import JoeFreed from "./images/team/JoeFreed.jpg";
+import snist from "./images/testimonials/snist.jpg";
+
+import narasimhaReddy from "./images/testimonials/narasimhaReddy.png";
+import sabyaSachiRath from "./images/testimonials/sabyaSachiRath.png";
 
 export {assess_support,
+    snist,
+    narasimhaReddy,
+    sabyaSachiRath,
     SatishNampally,
     PraveenVangeepuram,
     PrashanthiVangeepuram,

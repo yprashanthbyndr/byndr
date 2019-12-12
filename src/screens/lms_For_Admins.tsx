@@ -62,7 +62,7 @@ class lms_For_Admins extends React.Component<props, any> {
 
     render(): any {
 
-        const gridList = [{
+    const gridList = [{
             image:teamwork,
             title:"Cloud-based & Maintenance-free Platform"
         },
@@ -94,6 +94,10 @@ class lms_For_Admins extends React.Component<props, any> {
             image:open_book,
             title:"Unlimited Support"
         }]
+
+    const faqList = [{
+        
+    }]
 
         return (
             <div>
