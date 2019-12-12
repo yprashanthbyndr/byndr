@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { AppContext } from '../../contextApi/AppContext';
 
 interface props {
     onLeftMenu?(): void;
@@ -9,10 +8,6 @@ interface props {
 export default class CTAForCollege extends React.Component<props, any> {
     render(): any {
         return (
-        <AppContext.Provider value={{
-                // authenticated: false,
-            }}>
-                {/* cta start */}
                 <section>
                     <div className="CallToAction">
                       <div className="callToAction_main">
@@ -34,8 +29,7 @@ export default class CTAForCollege extends React.Component<props, any> {
                       </div>
                     </div>
                   </section>
-                  {/* cta end */}
-            </AppContext.Provider>
+               
         );
     }
 }
