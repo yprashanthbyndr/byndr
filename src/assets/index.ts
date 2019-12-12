@@ -69,7 +69,46 @@ import narasimhaReddy from "./images/testimonials/narasimhaReddy.png";
 import sabyaSachiRath from "./images/testimonials/sabyaSachiRath.png";
 import satyalankaPrasad from "./images/testimonials/satyalankaPrasad.png";
 
+// features icons
+
+import Access_Material_Anytime from "./images/featuresIcons/Access-Material-Anytime.svg";
+import Activity_Reports from "./images/featuresIcons/Activity-Reports.svg";
+import Attendance_Student_Performance from "./images/featuresIcons/Attendance-Student-Performance.svg";
+import Cloud_based_LMS from "./images/featuresIcons/Cloud-based-LMS.svg";
+import Create_Courses from "./images/featuresIcons/Create-Courses.svg";
+import Create_Library from "./images/featuresIcons/Create-Library.svg";
+import Grade_Summary from "./images/featuresIcons/Grade-Summary.svg";
+import Instant_Messaging from "./images/featuresIcons/Instant-Messaging.svg";
+import Interactive_UI from "./images/featuresIcons/Interactive-UI.svg";
+import Join_Courses from "./images/featuresIcons/Join-Courses.svg";
+import Mobile_Learning from "./images/featuresIcons/Mobile-Learning.svg";
+import Multi_Institute_Architecture from "./images/featuresIcons/Multi-Institute-Architecture.svg";
+import Peer_to_Peer from "./images/featuresIcons/Peer-to-Peer.svg";
+import Private_Message_to_Faculty from "./images/featuresIcons/Private-Message-to-Faculty.svg";
+import Quick_Search from "./images/featuresIcons/Quick-Search.svg";
+import QuizAssignments from "./images/featuresIcons/QuizAssignments.svg";
+import Self_Assessment from "./images/featuresIcons/Self-Assessment.svg";
+import Weightage_Based_Grading from "./images/featuresIcons/Weightage-Based-Grading.svg";
+
 export {assess_support,
+    Mobile_Learning,
+    Peer_to_Peer,
+    QuizAssignments,
+    Weightage_Based_Grading,
+    Self_Assessment,
+    Quick_Search,
+    Private_Message_to_Faculty,
+    Multi_Institute_Architecture,
+    Access_Material_Anytime,
+    Activity_Reports,
+    Attendance_Student_Performance,
+    Cloud_based_LMS,
+    Create_Courses,
+    Create_Library,
+    Grade_Summary,
+    Instant_Messaging,
+    Interactive_UI,
+    Join_Courses,
     snist,
     narasimhaReddy,
     satyalankaPrasad,

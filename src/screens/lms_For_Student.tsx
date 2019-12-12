@@ -6,7 +6,7 @@ import {
 
 import { connect } from 'react-redux';
 import { SaveScroll_Height, MiniHeaderScrollLogic, StickyMiniHeader_In_Lms } from '../services';
-import { teamwork, medical_history, earth_globe, blackboard, light_bulb, open_book } from '../assets';
+import { teamwork, medical_history, earth_globe, blackboard, light_bulb, open_book, Cloud_based_LMS, Interactive_UI, Join_Courses, peer_to_peer_learning, Access_Material_Anytime, Self_Assessment, Instant_Messaging, Mobile_Learning } from '../assets';
 
 interface props {
     onLeftMenu?(): void;
@@ -87,36 +87,36 @@ class lms_For_Student extends React.Component<props, any> {
     render(): any {
 
         const gridList = [{
-            image: teamwork,
-            title: "Cloud-based LMS"
+            image:Cloud_based_LMS,
+            title:"Cloud-based LMS"
         },
         {
-            image: medical_history,
-            title: "Interactive UI"
+            image:Interactive_UI,
+            title:"Interactive UI"
         },
         {
-            image: earth_globe,
-            title: "Join Courses"
+            image:Join_Courses,
+            title:"Join Courses"
         },
         {
-            image: blackboard,
-            title: "Self-Learning / Peer-to-Peer Learning"
+            image:peer_to_peer_learning,
+            title:"Self-Learning / Peer-to-Peer Learning"
         },
         {
-            image: light_bulb,
-            title: "Access Material Anytime"
+            image:Access_Material_Anytime,
+            title:"Access Material Anytime"
         },
         {
-            image: medical_history,
-            title: "Self-Assessment"
+            image:Self_Assessment,
+            title:"Self-Assessment"
         },
         {
-            image: earth_globe,
-            title: "Private Message to Faculty"
+            image:Instant_Messaging,
+            title:"Private Message to Faculty"
         },
         {
-            image: open_book,
-            title: "Personalized, Social and Mobile Learning"
+            image:Mobile_Learning,
+            title:"Personalized, Social and Mobile Learning"
         }]
 
         const faqList = [{

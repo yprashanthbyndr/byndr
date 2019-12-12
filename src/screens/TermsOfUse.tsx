@@ -22,7 +22,8 @@ class TermsOfUse extends React.Component<props, any> {
             <div>
                 <Header />
                 <div className="bodySection">
-                    <div style={{padding:"62px"}}>
+                    <div className="middleBlockContainer">
+                    <div style={{padding:"62px 0"}}>
                     <h1>Terms of Use</h1>
                     <p>Last updated on July 1st, 2016</p>
                     <p>
@@ -79,6 +80,7 @@ Conshohocken PA 19428
 </p>
                     
 </div>
+                </div>
                 </div>
                 <Footer />
             </div>

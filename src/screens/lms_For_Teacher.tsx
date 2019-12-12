@@ -6,7 +6,7 @@ import {
 
 import { connect } from 'react-redux';
 import { SaveScroll_Height, MiniHeaderScrollLogic, StickyMiniHeader_In_Lms } from '../services';
-import { teamwork, medical_history, earth_globe, blackboard, light_bulb, open_book } from '../assets';
+import { teamwork, medical_history, earth_globe, blackboard, light_bulb, open_book, Cloud_based_LMS, Attendance_Student_Performance, Create_Courses, Create_Library, QuizAssignments, Weightage_Based_Grading, Mobile_Learning } from '../assets';
 
 interface props {
     onLeftMenu?(): void;
@@ -87,36 +87,32 @@ class lms_For_Teacher extends React.Component<props, any> {
         console.log("this.props in lms : ", this.props);
 
         const gridList = [{
-            image: teamwork,
+            image: Cloud_based_LMS,
             title: "Cloud-based LMS"
         },
         {
-            image: medical_history,
+            image: Attendance_Student_Performance,
             title: "Attendance & Student Performance"
         },
         {
-            image: earth_globe,
+            image: Create_Courses,
             title: "Create Courses"
         },
         {
-            image: blackboard,
+            image: Create_Library,
             title: "Create Your Own Library"
         },
         {
-            image: light_bulb,
+            image: QuizAssignments,
             title: "Quiz, Assignments, Polls and Assessments"
         },
         {
-            image: medical_history,
+            image: Weightage_Based_Grading,
             title: "Weightage-Based Grading"
         },
         {
-            image: earth_globe,
+            image: Mobile_Learning,
             title: "Personalized, Social and Mobile Learning"
-        },
-        {
-            image: open_book,
-            title: "Lorem dolor"
         }]
         const faqList = [{
             title: "How to login?",
