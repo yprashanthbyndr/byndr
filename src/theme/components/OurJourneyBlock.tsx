@@ -18,21 +18,21 @@ export default class OurJourneyBlock extends React.Component<props, any> {
 
                                     <div className="single_year">
                                         <div className="yearOfJourney_content">
-                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                        Company Established
                                             </div>
-                                        <div className="year">2015</div>
+                                        <div className="year">Aug 2015</div>
                                     </div>
 
                                     <div className="single_year">
                                         <div className="yearOfJourney_content">
-                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                        Seed Funding
                                             </div>
-                                        <div className="year">2017</div>
+                                        <div className="year">July 2016</div>
                                     </div>
 
                                     <div className="single_year">
                                         <div className="yearOfJourney_content">
-                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                        1,00,000 downloads on Playstore
                                             </div>
                                         <div className="year">2019</div>
                                     </div>
@@ -45,16 +45,16 @@ export default class OurJourneyBlock extends React.Component<props, any> {
 
                                     <div className="single_year">
                                         <div className="yearOfJourney_content">
-                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                        Product Launched (Web, Android App)
                                             </div>
-                                        <div className="year">2016</div>
+                                        <div className="year">March 2016</div>
                                     </div>
 
                                     <div className="single_year">
                                         <div className="yearOfJourney_content">
-                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                        Launched iOS App
                                             </div>
-                                        <div className="year">2018</div>
+                                        <div className="year">July 2017</div>
                                     </div>
 
                                 </div>

@@ -2285,7 +2285,7 @@ a.twitter {
     font-size: 20px;
 }
 .yearOfJourney_content {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 26px;
     color: #00144C;
     font-weight: 300;
@@ -2375,12 +2375,12 @@ margin-bottom: 13px;
 } */
 .product-role-small_content {
     width: 100%;
-    max-width: 740px;
+    max-width: 900px;
     margin: 0px auto;
-    font-size: 32px;
+    font-size: 18px;
     font-weight: 300;
     color: #333333;
-    line-height: 1.5;
+    line-height: 1.7;
     margin-bottom: 75px;
     text-align: center;
 }
@@ -2736,7 +2736,7 @@ li.year_details {
 .our-team:hover img{ transform: scale(1.2); }
 .our-team .social{
     list-style: none;
-    padding: 30px 15px;
+    padding: 17px 15px;
     margin: 0;
     background: #cb0a7a;
     border-bottom-right-radius: 50px;
@@ -2764,14 +2764,15 @@ li.year_details {
 .our-team .social li a:hover{ color: #000; }
 .our-team .team-content{
     width: calc(100% - 20px);
-    padding: 15px 10px;
+    padding: 10px 10px;
     background: rgba(0, 0, 0, 0.6);
     position: absolute;
     bottom: 0;
     left: 0;
+    border-radius: 25px 25px 0 0;
 }
 .our-team .title{
-    font-size: 22px;
+    font-size: 14px;
     letter-spacing: 1px;
     color: #fff;
     margin: 0 0 5px 0;
@@ -2779,7 +2780,7 @@ li.year_details {
 }
 .our-team .post{
     display: block;
-    font-size: 14px;
+    font-size: 13px;
     color: #fff;
     font-weight: 300;
 }
@@ -4327,4 +4328,24 @@ margin: 10px 0;
 }
 .menu_cta_btns ul li a:hover{
 
+}
+.aboutContent_block{
+    width: 100%;
+    float: left;
+    padding-bottom: 120px;
+    text-align: center;
+    line-height: 1.7;
+    font-size: 19px;
+    color: #efefef;
+}
+.aboutContent_main{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+}
+.aboutContent_contentData{
+    font-size: 20px;
+    line-height: 1.7;
+    color: #00144C;
+    font-weight: 300;
 }

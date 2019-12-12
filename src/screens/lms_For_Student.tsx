@@ -6,6 +6,7 @@ import {
 
 import { connect } from 'react-redux';
 import { SaveScroll_Height, MiniHeaderScrollLogic } from '../services';
+import { teamwork, medical_history, earth_globe, blackboard, light_bulb, open_book } from '../assets';
 
 interface props {
     onLeftMenu?(): void;
@@ -60,6 +61,40 @@ class lms_For_Student extends React.Component<props, any> {
     }
 
     render(): any {
+
+        const gridList = [{
+            image:teamwork,
+            title:"Cloud-based LMS"
+        },
+        {
+            image:medical_history,
+            title:"Interactive UI"
+        },
+        {
+            image:earth_globe,
+            title:"Join Courses"
+        },
+        {
+            image:blackboard,
+            title:"Self-Learning / Peer-to-Peer Learning"
+        },
+        {
+            image:light_bulb,
+            title:"Access Material Anytime"
+        },
+        {
+            image:medical_history,
+            title:"Self-Assessment"
+        },
+        {
+            image:earth_globe,
+            title:"Private Message to Faculty"
+        },
+        {
+            image:open_book,
+            title:"Personalized, Social and Mobile Learning"
+        }]
+
         return (
             <div>
                 <div className="header_main_container">
@@ -67,11 +102,11 @@ class lms_For_Student extends React.Component<props, any> {
                     <MiniHeader Title="Student" tryLink="https://test.byndr.com/freesignup/student/" />
                 </div>
                 <div className="bodySection" style={{marginTop:175}}>
-                    <InnerPageTitleBlock fromPage="Learning Made Interactive, Simple & Effective" pageSubtitle="" videoDisplay="true" tryBtnDisplay="true"  />
-                    <ProductForRolesBlock Title="Student" content="Lorem Ipsum dolor sit amit" />
+                    <InnerPageTitleBlock fromPage="Learning Made Interactive, Simple & Effective" pageSubtitle="Experience Byndr Today!" videoDisplay="true" tryBtnDisplay="true"  />
+                    <ProductForRolesBlock Title="students" content="Byndr, with student centric & social LMS platform, enabling consistency in learning and allowing students to connect with their teachers, fellow students (Peers) and has access to their materials, from anywhere and at any time." gridList={gridList} />
                     <HomeTestimonial />
                     <FaqBlock />
-                    <FooterDoubleCTA />
+                    <FooterCTA />
                 </div>
                 <Footer />
             </div>

@@ -6,6 +6,7 @@ import {
 
 import { connect } from 'react-redux';
 import { SaveScroll_Height, MiniHeaderScrollLogic } from '../services';
+import { teamwork, medical_history, earth_globe, blackboard, light_bulb, open_book } from '../assets';
 
 interface props {
     onLeftMenu?(): void;
@@ -51,6 +52,40 @@ class lms_For_Teacher extends React.Component<props, any> {
     }
 
     render(): any {
+
+        const gridList = [{
+            image:teamwork,
+            title:"Cloud-based LMS"
+        },
+        {
+            image:medical_history,
+            title:"Attendance & Student Performance"
+        },
+        {
+            image:earth_globe,
+            title:"Create Courses"
+        },
+        {
+            image:blackboard,
+            title:"Create Your Own Library"
+        },
+        {
+            image:light_bulb,
+            title:"Quiz, Assignments, Polls and Assessments"
+        },
+        {
+            image:medical_history,
+            title:"Weightage-Based Grading"
+        },
+        {
+            image:earth_globe,
+            title:"Personalized, Social and Mobile Learning"
+        },
+        {
+            image:open_book,
+            title:"Lorem dolor"
+        }]
+
         return (
             <div>
                 <div className="header_main_container">
@@ -59,7 +94,7 @@ class lms_For_Teacher extends React.Component<props, any> {
                 </div>
                 <div className="bodySection" style={{marginTop:175}}>
                     <InnerPageTitleBlock fromPage="Teaching Made Engaging, Productive & Valuable" pageSubtitle="Experience Byndr Today!" videoDisplay="true" tryBtnDisplay="true"  />
-                    <ProductForRolesBlock Title="Teachers" content="Lorem Ipsum dolor sit amit" />
+                    <ProductForRolesBlock Title="Teachers" content="Byndr gives teachers a platform to extend their help to students beyond classroom. Teachers can provide study materials, guidelines and instructions to create inspiring learning environment. Also, our LMS tool helps faculty to schedule assignments, evaluate the performance and guide students individually for better outcomes." gridList={gridList} />
                     <HomeTestimonial />
                     <FaqBlock />
                     <FooterDoubleCTA />

@@ -1,11 +1,12 @@
 import React from 'react';
 import {
     FaqBlock, MiniHeader, FooterCTA, Header, Footer, InnerPageTitleBlock,
-    ProductForRolesBlock, HomeTestimonial, FooterDoubleCTA
+    ProductForRolesBlock, HomeTestimonial, FooterDoubleCTA, CTAForCollege
 } from '../theme/components';
 
 import { connect } from 'react-redux';
 import { SaveScroll_Height, MiniHeaderScrollLogic } from '../services';
+import { teamwork, medical_history, earth_globe, blackboard, light_bulb, open_book } from '../assets';
 
 interface props {
     onLeftMenu?(): void;
@@ -60,6 +61,40 @@ class lms_For_Admins extends React.Component<props, any> {
     }
 
     render(): any {
+
+        const gridList = [{
+            image:teamwork,
+            title:"Cloud-based & Maintenance-free Platform"
+        },
+        {
+            image:medical_history,
+            title:"Interactive UI & Dashboard"
+        },
+        {
+            image:earth_globe,
+            title:"Activity Reports"
+        },
+        {
+            image:blackboard,
+            title:"Grade Summary"
+        },
+        {
+            image:light_bulb,
+            title:"Multi-Institute Architecture"
+        },
+        {
+            image:medical_history,
+            title:"Instant Messaging"
+        },
+        {
+            image:earth_globe,
+            title:"Simple & Quick Search Enabled"
+        },
+        {
+            image:open_book,
+            title:"Unlimited Support"
+        }]
+
         return (
             <div>
                 <div className="header_main_container">
@@ -67,11 +102,11 @@ class lms_For_Admins extends React.Component<props, any> {
                     <MiniHeader Title="Admins" tryLink="" />
                 </div>
                 <div className="bodySection" style={{marginTop:175}}>
-                    <InnerPageTitleBlock fromPage="Monitoring Made Easy, Organized & Efficient" pageSubtitle="" videoDisplay="true" tryBtnDisplay="true"  />
-                    <ProductForRolesBlock Title="Admins" content="Lorem ipsum Dolotr sit amitz" />
+                    <InnerPageTitleBlock fromPage="Monitoring Made Easy, Organized & Efficient" pageSubtitle="Experience Byndr Today!" videoDisplay="true" tryBtnDisplay="true"  />
+                    <ProductForRolesBlock Title="college" content="Byndr has been designed and developed with attention on connectivity and the mobile user experience. Easy and intuitive, Byndr offers a maintenance-free platform and unlimited support. Our platform is lightweight and accessed on any mobile or desktop browser (responsive web app), enabling teachers and students to access the content quickly. Teachers can collaborate, upload files, grade assignments, and take attendance right from their phones." gridList={gridList} />
                     <HomeTestimonial />
                     <FaqBlock />
-                    <FooterDoubleCTA />
+                    <CTAForCollege />
                 </div>
                 <Footer />
             </div>

@@ -55,8 +55,22 @@ import admin_icon from "./images/admin_icon.svg";
 import teacher_icon from "./images/teacher_icon.svg";
 
 import Double_Arrows_pink from "./images/Double_Arrows_pink.svg"
+import IntraEdge_Logo from "./images/IntraEdge-Logo.png"
+
+
+import SatishNampally from "./images/team/SatishNampally.jpg";
+import PraveenVangeepuram from "./images/team/PraveenVangeepuram.jpg";
+import PrashanthiVangeepuram from "./images/team/PrashanthiVangeepuram.jpg";
+import MarcGarabedian from "./images/team/MarcGarabedian.jpg";
+import JoeFreed from "./images/team/JoeFreed.jpg";
 
 export {assess_support,
+    SatishNampally,
+    PraveenVangeepuram,
+    PrashanthiVangeepuram,
+    JoeFreed,
+    MarcGarabedian,
+    IntraEdge_Logo,
     Double_Arrows_pink,
     student_icon,
     admin_icon,

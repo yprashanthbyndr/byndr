@@ -29,6 +29,8 @@ import BlogList from './BlogList';
 import BlogItem from './BlogItem';
 import Page404 from './Page404';
 import FooterDoubleCTA from './FooterDoubleCTA';
+import AboutContentBlock from './AboutContentBlock';
+import CTAForCollege from './CTAForCollege';
 
 export {ContactusThankYou,ContactUsForm, ContactFormAddress,Header,Footer,FooterCTA,HomeTestimonial,SupportedDivices,Home_B_Hero,WelcomeBannerGrids,FeaturesGrid,Home_A_Hero,Home_A_Grids,Navigation,InnerPageTitleBlock,InvestorsBlock,OurJourneyBlock,OurTeam,VisionAndMission,PricingPlans,
     ProductForRolesBlock,BlogGrid,
@@ -40,5 +42,7 @@ export {ContactusThankYou,ContactUsForm, ContactFormAddress,Header,Footer,Footer
     ProductCoreCapabilities,
     BlogItem,
     Page404,
-    FooterDoubleCTA
+    FooterDoubleCTA,
+    AboutContentBlock,
+    CTAForCollege
  }

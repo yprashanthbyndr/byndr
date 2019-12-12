@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Our_team } from '../../assets';
+import { Our_team, JoeFreed, PraveenVangeepuram, SatishNampally, MarcGarabedian, PrashanthiVangeepuram } from '../../assets';
 import { Inverstors_1,
     Inverstors_2,
     Inverstors_3,
@@ -24,75 +24,59 @@ export default class OurTeam extends React.Component<props, any> {
 
                                 <div className="our-team">
                                     <div className="pic">
-                                        <img src={Our_team}/>
+                                        <img src={JoeFreed}/>
                                         <ul className="social">
-                                            <li><NavLink exact to="/" className="fab fa-twitter"></NavLink></li>
-                                            <li><NavLink exact to="/" className="fab fa-linkedin"></NavLink></li>
+                                            {/* <li><NavLink exact to="/" className="fab fa-twitter"></NavLink></li> */}
+                                            <li><a href="https://www.linkedin.com/in/joefreed" target="_blank" className="fab fa-linkedin"></a></li>
                                         </ul>
                                     </div>
                                     <div className="team-content">
-                                        <h3 className="title">Williamson</h3>
-                                        <span className="post">Web Developer</span>
+                                        <h3 className="title">Joseph Freed</h3>
+                                        <span className="post">Co-Founder</span>
                                     </div>
                                 </div>
 
                                 <div className="our-team">
                                     <div className="pic">
-                                        <img src={Our_team}/>
+                                        <img src={PraveenVangeepuram}/>
                                         <ul className="social">
-                                            <li><NavLink exact to="/" className="fab fa-twitter"></NavLink></li>
-                                            <li><NavLink exact to="/" className="fab fa-linkedin"></NavLink></li>
+                                            {/* <li><NavLink exact to="/" className="fab fa-twitter"></NavLink></li> */}
+                                            <li><a href="https://www.linkedin.com/in/praveen-vangeepuram-1aaa363" target="_blank" className="fab fa-linkedin"></a></li>
                                         </ul>
                                     </div>
                                     <div className="team-content">
-                                        <h3 className="title">Williamson</h3>
-                                        <span className="post">Web Developer</span>
-                                    </div>
-                                </div>
-
-
-                                <div className="our-team">
-                                    <div className="pic">
-                                        <img src={Our_team}/>
-                                        <ul className="social">
-                                            <li><NavLink exact to="/" className="fab fa-twitter"></NavLink></li>
-                                            <li><NavLink exact to="/" className="fab fa-linkedin"></NavLink></li>
-                                        </ul>
-                                    </div>
-                                    <div className="team-content">
-                                        <h3 className="title">Williamson</h3>
-                                        <span className="post">Web Developer</span>
+                                        <h3 className="title">Praveen Vangeepuram</h3>
+                                        <span className="post">Co-Founder</span>
                                     </div>
                                 </div>
 
 
                                 <div className="our-team">
                                     <div className="pic">
-                                        <img src={Our_team}/>
+                                        <img src={SatishNampally}/>
                                         <ul className="social">
-                                            <li><NavLink exact to="/" className="fab fa-twitter"></NavLink></li>
-                                            <li><NavLink exact to="/" className="fab fa-linkedin"></NavLink></li>
+                                            {/* <li><NavLink exact to="/" className="fab fa-twitter"></NavLink></li> */}
+                                            <li><a href="https://www.linkedin.com/in/satishnampally" target="_blank" className="fab fa-linkedin"></a></li>
                                         </ul>
                                     </div>
                                     <div className="team-content">
-                                        <h3 className="title">Williamson</h3>
-                                        <span className="post">Web Developer</span>
+                                        <h3 className="title">Satish Nampally</h3>
+                                        <span className="post">Co-Founder</span>
                                     </div>
                                 </div>
 
 
-
                                 <div className="our-team">
                                     <div className="pic">
-                                        <img src={Our_team}/>
+                                        <img src={MarcGarabedian}/>
                                         <ul className="social">
-                                            <li><NavLink exact to="/" className="fab fa-twitter"></NavLink></li>
-                                            <li><NavLink exact to="/" className="fab fa-linkedin"></NavLink></li>
+                                            {/* <li><NavLink exact to="/" className="fab fa-twitter"></NavLink></li> */}
+                                            <li><a href="https://www.linkedin.com/in/marcgarabedian" target="_blank" className="fab fa-linkedin"></a></li>
                                         </ul>
                                     </div>
                                     <div className="team-content">
-                                        <h3 className="title">Williamson</h3>
-                                        <span className="post">Web Developer</span>
+                                        <h3 className="title">Marc Garabedian</h3>
+                                        <span className="post">Co-Founder</span>
                                     </div>
                                 </div>
 
@@ -100,46 +84,16 @@ export default class OurTeam extends React.Component<props, any> {
 
                                 <div className="our-team">
                                     <div className="pic">
-                                        <img src={Our_team}/>
+                                        <img src={PrashanthiVangeepuram}/>
                                         <ul className="social">
-                                            <li><NavLink exact to="/" className="fab fa-twitter"></NavLink></li>
-                                            <li><NavLink exact to="/" className="fab fa-linkedin"></NavLink></li>
+                                            {/* <li><NavLink exact to="/" className="fab fa-twitter"></NavLink></li>
+                                            <li><NavLink exact to="/" className="fab fa-linkedin"></NavLink></li> */}
+                                            <li><a href="https://www.linkedin.com/in/prashanthi-vangeepuram-4b21a1b" target="_blank" className="fab fa-linkedin"></a></li>
                                         </ul>
                                     </div>
                                     <div className="team-content">
-                                        <h3 className="title">Williamson</h3>
-                                        <span className="post">Web Developer</span>
-                                    </div>
-                                </div>
-
-
-
-                                <div className="our-team">
-                                    <div className="pic">
-                                        <img src={Our_team}/>
-                                        <ul className="social">
-                                            <li><NavLink exact to="/" className="fab fa-twitter"></NavLink></li>
-                                            <li><NavLink exact to="/" className="fab fa-linkedin"></NavLink></li>
-                                        </ul>
-                                    </div>
-                                    <div className="team-content">
-                                        <h3 className="title">Williamson</h3>
-                                        <span className="post">Web Developer</span>
-                                    </div>
-                                </div>
-
-
-                                <div className="our-team">
-                                    <div className="pic">
-                                        <img src={Our_team}/>
-                                        <ul className="social">
-                                            <li><NavLink exact to="/" className="fab fa-twitter"></NavLink></li>
-                                            <li><NavLink exact to="/" className="fab fa-linkedin"></NavLink></li>
-                                        </ul>
-                                    </div>
-                                    <div className="team-content">
-                                        <h3 className="title">Williamson</h3>
-                                        <span className="post">Web Developer</span>
+                                        <h3 className="title">Prashanthi Vangeepuram</h3>
+                                        <span className="post">Co-Founder</span>
                                     </div>
                                 </div>
 
