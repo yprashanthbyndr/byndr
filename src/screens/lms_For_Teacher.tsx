@@ -5,7 +5,7 @@ import {
 } from '../theme/components';
 
 import { connect } from 'react-redux';
-import { SaveScroll_Height, MiniHeaderScrollLogic } from '../services';
+import { SaveScroll_Height, MiniHeaderScrollLogic, StickyMiniHeader_In_Lms } from '../services';
 import { teamwork, medical_history, earth_globe, blackboard, light_bulb, open_book } from '../assets';
 
 interface props {
@@ -13,7 +13,9 @@ interface props {
     MainReducer: any,
     HideHeader: boolean,
     WindowScroolheight: number,
-    fromPage: any
+    fromPage: any,
+    StickMiniHeader: boolean,
+    StickyHeader_in_LMS: boolean
 }
 
 class lms_For_Teacher extends React.Component<props, any> {
@@ -47,110 +49,124 @@ class lms_For_Teacher extends React.Component<props, any> {
 
         var st = window.pageYOffset || document.documentElement.scrollTop;
 
-        MiniHeaderScrollLogic(st, lastScrollTop, this.props.HideHeader);
+        // MiniHeaderScrollLogic(st, lastScrollTop, this.props.HideHeader);
+
+
+        console.log(" scroll_position : ", scroll_position);
+
+        if (scroll_position > 650 && !this.props.StickMiniHeader) {
+
+            StickyMiniHeader_In_Lms(true);
+
+        } else if (650 > scroll_position && this.props.StickMiniHeader) {
+            StickyMiniHeader_In_Lms(false);
+        }
+
 
     }
 
     render(): any {
 
+        console.log("this.props in lms : ", this.props);
+
         const gridList = [{
-            image:teamwork,
-            title:"Cloud-based LMS"
+            image: teamwork,
+            title: "Cloud-based LMS"
         },
         {
-            image:medical_history,
-            title:"Attendance & Student Performance"
+            image: medical_history,
+            title: "Attendance & Student Performance"
         },
         {
-            image:earth_globe,
-            title:"Create Courses"
+            image: earth_globe,
+            title: "Create Courses"
         },
         {
-            image:blackboard,
-            title:"Create Your Own Library"
+            image: blackboard,
+            title: "Create Your Own Library"
         },
         {
-            image:light_bulb,
-            title:"Quiz, Assignments, Polls and Assessments"
+            image: light_bulb,
+            title: "Quiz, Assignments, Polls and Assessments"
         },
         {
-            image:medical_history,
-            title:"Weightage-Based Grading"
+            image: medical_history,
+            title: "Weightage-Based Grading"
         },
         {
-            image:earth_globe,
-            title:"Personalized, Social and Mobile Learning"
+            image: earth_globe,
+            title: "Personalized, Social and Mobile Learning"
         },
         {
-            image:open_book,
-            title:"Lorem dolor"
+            image: open_book,
+            title: "Lorem dolor"
         }]
         const faqList = [{
-            title:"How to login?",
-            content:[
+            title: "How to login?",
+            content: [
                 {
-                    singleFaqTitle:"Enterprise version:",
-                    singleFaqContent:"<ul><li>Download Byndr App from play store or go to <a href='https://app.byndr.com'>https://app.byndr.com</a> to log in through your Credentials sent to your Registered Mobile or Email once your college is activated on Byndr.</li><li>If still, you face any problem contact your college Byndr Coordinator or mail to <a href='mailto:info@byndr.in'>info@byndr.in</a></li></ul>"
+                    singleFaqTitle: "Enterprise version:",
+                    singleFaqContent: "<ul><li>Download Byndr App from play store or go to <a href='https://app.byndr.com'>https://app.byndr.com</a> to log in through your Credentials sent to your Registered Mobile or Email once your college is activated on Byndr.</li><li>If still, you face any problem contact your college Byndr Coordinator or mail to <a href='mailto:info@byndr.in'>info@byndr.in</a></li></ul>"
                 },
                 {
-                    singleFaqTitle:"Free Version:",
-                    singleFaqContent:"<ul><li>Whereas, byndr isn't in college? Create your own space to get connect with your class / connect with your friends for group learning/discussions <a href=''>Get started</a> by a click on <a href=''>I'm a student.</a></li></ul>"
+                    singleFaqTitle: "Free Version:",
+                    singleFaqContent: "<ul><li>Whereas, byndr isn't in college? Create your own space to get connect with your class / connect with your friends for group learning/discussions <a href=''>Get started</a> by a click on <a href=''>I'm a student.</a></li></ul>"
                 }
             ]
-        },{
-            title:"How to Create Account?",
-            content:[
+        }, {
+            title: "How to Create Account?",
+            content: [
                 {
-                    singleFaqTitle:"Free Version:",
-                    singleFaqContent:"<ul><li>When you click on I'm a student account it redirects to the 'Create Account' page. Fill your details Course code, Name, Mobile Number, Email, and password.</li><li>Note: The teacher needs to invite students by adding them to the course then invitation mail is sent to students. The student accepts the invitation or copies the Course code to join a course.</li></ul>"
+                    singleFaqTitle: "Free Version:",
+                    singleFaqContent: "<ul><li>When you click on I'm a student account it redirects to the 'Create Account' page. Fill your details Course code, Name, Mobile Number, Email, and password.</li><li>Note: The teacher needs to invite students by adding them to the course then invitation mail is sent to students. The student accepts the invitation or copies the Course code to join a course.</li></ul>"
                 }
             ]
-        },{
-            title:"How to Set up?",
-            content:[
+        }, {
+            title: "How to Set up?",
+            content: [
                 {
-                    singleFaqTitle:"Enterprise Version:",
-                    singleFaqContent:"<ul><li>Once you are login with user id and password, Account is set up with courses and respective faculties, displaying your materials and performance.</li></ul>"
+                    singleFaqTitle: "Enterprise Version:",
+                    singleFaqContent: "<ul><li>Once you are login with user id and password, Account is set up with courses and respective faculties, displaying your materials and performance.</li></ul>"
                 },
                 {
-                    singleFaqTitle:"Free Version:",
-                    singleFaqContent:"<ul><li>Set up your account by describing the Name of your institution with website URL and Education level. Each option has a scroll down bar to make it easy.</li></ul>"
+                    singleFaqTitle: "Free Version:",
+                    singleFaqContent: "<ul><li>Set up your account by describing the Name of your institution with website URL and Education level. Each option has a scroll down bar to make it easy.</li></ul>"
                 }
             ]
-        },{
-            title:"How to Create a Self-Learning Group?",
-            content:[
+        }, {
+            title: "How to Create a Self-Learning Group?",
+            content: [
                 {
-                    singleFaqTitle:"Enterprise Version",
-                    singleFaqContent:"<ul><li>Do Not Have an Option for Peer to Peer learning.</li></ul>"
+                    singleFaqTitle: "Enterprise Version",
+                    singleFaqContent: "<ul><li>Do Not Have an Option for Peer to Peer learning.</li></ul>"
                 },
                 {
-                    singleFaqTitle:"Free Version:",
-                    singleFaqContent:"<ul><li>If No course-code, you can create your self-learning group by adding your friends for a group studies and discussions.</li></ul>"
+                    singleFaqTitle: "Free Version:",
+                    singleFaqContent: "<ul><li>If No course-code, you can create your self-learning group by adding your friends for a group studies and discussions.</li></ul>"
                 }
             ]
-        },{
-            title:"How to Add Friends?",
-            content:[
+        }, {
+            title: "How to Add Friends?",
+            content: [
                 {
-                    singleFaqTitle:"Free Version:",
-                    singleFaqContent:"<ul><li>Save option redirects to 'Add Friends' Page, you can add them in easy ways.</li><li>Option to upload a spreadsheet or add them manually.</li><li>Download the byndr data template for a quick set up.</li><li>Do not have to upload everything at once, you can always add later or anytime.</li><li>Select a Group where to be added manually, and click on 'Edit'</li><li>Enter mail_ ids by giving 'Space' Or pressing 'Enter'</li></ul>"
+                    singleFaqTitle: "Free Version:",
+                    singleFaqContent: "<ul><li>Save option redirects to 'Add Friends' Page, you can add them in easy ways.</li><li>Option to upload a spreadsheet or add them manually.</li><li>Download the byndr data template for a quick set up.</li><li>Do not have to upload everything at once, you can always add later or anytime.</li><li>Select a Group where to be added manually, and click on 'Edit'</li><li>Enter mail_ ids by giving 'Space' Or pressing 'Enter'</li></ul>"
                 }
             ]
-        },{
-            title:"How to Submit Assignments?",
-            content:[
+        }, {
+            title: "How to Submit Assignments?",
+            content: [
                 {
-                    singleFaqTitle:"Enterprise Version/Free Version",
-                    singleFaqContent:"<ul><li>If Teacher posted Assignment for online submission, Login to account, click on Specific Course for which you want to Upload Assignment, You will be redirected to Course Feed Page, click on Coursework Tab, Select the Assignments which are shown in left, find an upload button below the assignment, Click on Upload and Select document Save.</li><li>Can also Upload Multiple documents before Due Date, the latest version will be shown to your Teacher</li></ul>"
+                    singleFaqTitle: "Enterprise Version/Free Version",
+                    singleFaqContent: "<ul><li>If Teacher posted Assignment for online submission, Login to account, click on Specific Course for which you want to Upload Assignment, You will be redirected to Course Feed Page, click on Coursework Tab, Select the Assignments which are shown in left, find an upload button below the assignment, Click on Upload and Select document Save.</li><li>Can also Upload Multiple documents before Due Date, the latest version will be shown to your Teacher</li></ul>"
                 }
             ]
-        },{
-            title:"How to message my Professor privately?",
-            content:[
+        }, {
+            title: "How to message my Professor privately?",
+            content: [
                 {
-                    singleFaqTitle:"Enterprise Version/Free Version",
-                    singleFaqContent:"<ul><li>Login to account, click on Specific Courses for which you want to Ask Question, And will be redirected to Course Feed Page, There you will find Message Professor Privately on the top of the Feed Page, Enter your Questions, Doubt or Suggestion and click on Send Private Message, now your Teacher and you can have a private conversation on that post you just created.</li></ul>"
+                    singleFaqTitle: "Enterprise Version/Free Version",
+                    singleFaqContent: "<ul><li>Login to account, click on Specific Courses for which you want to Ask Question, And will be redirected to Course Feed Page, There you will find Message Professor Privately on the top of the Feed Page, Enter your Questions, Doubt or Suggestion and click on Send Private Message, now your Teacher and you can have a private conversation on that post you just created.</li></ul>"
                 }
             ]
         }]
@@ -158,10 +174,10 @@ class lms_For_Teacher extends React.Component<props, any> {
             <div>
                 <div className="header_main_container">
                     <Header Hide={this.props.HideHeader} />
-                    
+
                 </div>
                 <div className="bodySection">
-                    <InnerPageTitleBlock role="teachers" fromPage="Teaching Made Engaging, Productive & Valuable" pageSubtitle="Experience Byndr Today!" videoDisplay="false" tryBtnDisplay="true"  />
+                    <InnerPageTitleBlock role="teachers" fromPage="Teaching Made Engaging, Productive & Valuable" pageSubtitle="Experience Byndr Today!" videoDisplay="false" tryBtnDisplay="true" />
                     <MiniHeader Title="Teachers" tryLink="https://test.byndr.com/freesignup/teacher/" />
                     <ProductForRolesBlock Title="Teachers" content="Byndr gives teachers a platform to extend their help to students beyond classroom. Teachers can provide study materials, guidelines and instructions to create inspiring learning environment. Also, our LMS tool helps faculty to schedule assignments, evaluate the performance and guide students individually for better outcomes." gridList={gridList} />
                     <HomeTestimonial />

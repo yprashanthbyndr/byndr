@@ -4,12 +4,13 @@ import { HomeReducer, ActionModel } from '../../models';
 import {
   SAVE_SCROLL_HEIGHT, SAVE_CONTACT_US_IP_VALUES, SUBMIT_CONTACT_FORM_SUCCESS,
   OPEN_OR_CLOSE_MENUBAR, OPEN_OR_CLOSE_PLAY_VIDEO, SAVE_SELECTED_TESTIMONIAL,
-  STICKY_PRICINGTABLE, MINI_HEADER_OPTIONS, TESTIMONIAL_INTERVAL, TCHANGE_DIRECTION_IN_HOME_SLIDES, SAVE_SELECTED_SLIDE_INHOME
+  STICKY_PRICINGTABLE, MINI_HEADER_OPTIONS, TESTIMONIAL_INTERVAL, TCHANGE_DIRECTION_IN_HOME_SLIDES, SAVE_SELECTED_SLIDE_INHOME, STICKY_MINI_HEADER, action_Sticky_Mini_Header
 } from '../actions';
 
 const INIT_STATE: HomeReducer = {
   HideHeader: false,
-  StickInnerHeader: false,
+  StickyHeader_in_LMS: true,
+  StickMiniHeader: false,
   WindowScroolheight: 0,
   ContactUsForm: {
     title: '',
@@ -30,7 +31,7 @@ const INIT_STATE: HomeReducer = {
   MiniHeaderOptions: "overview",
   HomeScreenprops: {
     changeDetector: false,
-    activeSlide:"teachers",
+    activeSlide: "teachers",
   }
   // SelectedFaq:''
 };
@@ -99,6 +100,12 @@ export default (state = INIT_STATE, action: ActionModel) => {
           changeDetector: false,
           activeSlide: action.payload,
         }
+      }
+
+    case STICKY_MINI_HEADER:
+      return {
+        ...state, StickyHeader_in_LMS: !action.payload,
+        StickMiniHeader: action.payload,
       }
 
     default:

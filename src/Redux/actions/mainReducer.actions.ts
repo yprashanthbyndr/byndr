@@ -13,6 +13,7 @@ export const MINI_HEADER_OPTIONS = "MINI_HEADER_OPTIONS";
 export const TESTIMONIAL_INTERVAL = "TESTIMONIAL_INTERVAL";
 export const TCHANGE_DIRECTION_IN_HOME_SLIDES = "TCHANGE_DIRECTION_IN_HOME_SLIDES";
 export const SAVE_SELECTED_SLIDE_INHOME = "SAVE_SELECTED_SLIDE_INHOME";
+export const STICKY_MINI_HEADER ="STICKY_MINI_HEADER¨";
 
 
 function sampleFunction(data: any): ActionModel {
@@ -98,6 +99,13 @@ function action_Save_SelecteSlide_InHome(selectedSlide: string): ActionModel {
     };
 }
 
+function action_Sticky_Mini_Header(Sticky: boolean): ActionModel {
+    return {
+        type: STICKY_MINI_HEADER,
+        payload: Sticky
+    };
+}
+
 export {
     sampleFunction,
     actionSaveScrollHeight,
@@ -110,6 +118,7 @@ export {
     actionMiniHeaderOptions,
     action_TestimonialInterval,
     action_ChangeDIrection_InHomeSlide,
-    action_Save_SelecteSlide_InHome
+    action_Save_SelecteSlide_InHome,
+    action_Sticky_Mini_Header
 };
 

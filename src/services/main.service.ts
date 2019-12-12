@@ -1,7 +1,7 @@
 import {
     store, actionSaveScrollHeight, actionCantactUs_Ip_Values, actionCantactUs_ApiResponse,
     actionOpen_Or_Close_MenuBar, actionTestimonialSelection,
-    actionSticky_PricingTable, actionOpen_Or_Close_PlayVideo, action_TestimonialInterval, action_ChangeDIrection_InHomeSlide, action_Save_SelecteSlide_InHome
+    actionSticky_PricingTable, actionOpen_Or_Close_PlayVideo, action_TestimonialInterval, action_ChangeDIrection_InHomeSlide, action_Save_SelecteSlide_InHome, action_Sticky_Mini_Header
 } from "../Redux";
 
 function SaveScroll_Height(HideHeder, currentScroolHeight) {
@@ -121,7 +121,14 @@ function SlideActionInHome(selectedSlide: string) {
 }
 
 
+
+function StickyMiniHeader_In_Lms (Sticky : boolean) {
+    store.dispatch(action_Sticky_Mini_Header(Sticky))
+}
+
+
 export {
     SaveScroll_Height, CantactUs_Ip_Values, SubmitContactPage, Open_Or_Close_MenuBar, Open_Or_Close_PlayVideo, TestimonialSelection,
-    Sticky_PricingTable, MiniHeaderScrollLogic, TestimonialInterval, SlideActionInHome 
+    Sticky_PricingTable, MiniHeaderScrollLogic, TestimonialInterval, SlideActionInHome  ,
+    StickyMiniHeader_In_Lms
 }

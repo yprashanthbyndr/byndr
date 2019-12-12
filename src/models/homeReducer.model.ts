@@ -2,7 +2,8 @@ import { string } from "prop-types";
 
 export interface HomeReducer {
     HideHeader: any,
-    StickInnerHeader: boolean,
+    StickyHeader_in_LMS:boolean,
+    StickMiniHeader: boolean,
     WindowScroolheight: number,
     ContactUsForm: Intr_ContactFormObject,
     ContactFormSubmitSuccess: boolean,
