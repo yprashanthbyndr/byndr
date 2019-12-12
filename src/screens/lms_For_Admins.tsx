@@ -49,7 +49,7 @@ class lms_For_Admins extends React.Component<props, any> {
 
         var st = window.pageYOffset || document.documentElement.scrollTop;
         MiniHeaderScrollLogic(st, lastScrollTop, this.props.HideHeader);
-        // let diff = st - lastScrollTop;
+        let diff = st - lastScrollTop;
         // if (st > lastScrollTop && !this.props.HideHeader) {
         //     HideHeder = true;
         //     SaveScroll_Height(HideHeder, st)
@@ -62,13 +62,24 @@ class lms_For_Admins extends React.Component<props, any> {
         // }
 
 
-        if (scroll_position > 650 && !this.props.StickMiniHeader) {
+        // if (st > 650 && !this.props.StickMiniHeader) {
+        //     let HideMainHeader = true;
+        //     let StickyMiniHeader = true;
+        //     StickyMiniHeader_In_Lms(HideMainHeader, StickyMiniHeader, st);
 
-            StickyMiniHeader_In_Lms(true);
-
-        } else if (650 > scroll_position && this.props.StickMiniHeader) {
-            StickyMiniHeader_In_Lms(false);
-        }
+        // } else if (650 > st && this.props.StickMiniHeader) {
+        //     let HideMainHeader = false;
+        //     let StickyMiniHeader = false;
+        //     StickyMiniHeader_In_Lms(HideMainHeader, StickyMiniHeader, st);
+        // } else if (diff < -10 && !this.props.StickyHeader_in_LMS) {
+        //     let HideMainHeader = true;
+        //     let StickyMiniHeader = this.props.StickMiniHeader ;
+        //     StickyMiniHeader_In_Lms(HideMainHeader, StickyMiniHeader, st);
+        // } else if (diff > 10) {
+        //     let HideMainHeader = this.props.HideHeader;
+        //     let StickyMiniHeader = this.props.StickMiniHeader;
+        //      StickyMiniHeader_In_Lms(HideMainHeader, StickyMiniHeader, st);
+        // }
 
     }
 

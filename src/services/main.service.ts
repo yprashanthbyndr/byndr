@@ -112,23 +112,21 @@ function Sticky_PricingTable(divheight: number, scroolHeight: number, StickyEnab
 
 function SlideActionInHome(selectedSlide: string) {
     store.dispatch(action_ChangeDIrection_InHomeSlide());
-  
+
     setTimeout(
         () => store.dispatch(action_Save_SelecteSlide_InHome(selectedSlide)),
         500
     );
-
 }
 
 
-
-function StickyMiniHeader_In_Lms (Sticky : boolean) {
-    store.dispatch(action_Sticky_Mini_Header(Sticky))
+function StickyMiniHeader_In_Lms(StickyMainHeader :boolean,StickyMiniHeader:boolean, scroolHieght: number) {
+    store.dispatch(action_Sticky_Mini_Header(StickyMainHeader, StickyMiniHeader ,scroolHieght))
 }
 
 
 export {
     SaveScroll_Height, CantactUs_Ip_Values, SubmitContactPage, Open_Or_Close_MenuBar, Open_Or_Close_PlayVideo, TestimonialSelection,
-    Sticky_PricingTable, MiniHeaderScrollLogic, TestimonialInterval, SlideActionInHome  ,
+    Sticky_PricingTable, MiniHeaderScrollLogic, TestimonialInterval, SlideActionInHome,
     StickyMiniHeader_In_Lms
 }

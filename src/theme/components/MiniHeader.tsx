@@ -6,6 +6,7 @@ import React from 'react';
 
 import { connect } from 'react-redux';
 import { store, actionMiniHeaderOptions } from '../../Redux';
+import { StickyMiniHeader_In_Lms } from '../../services';
 
 interface props {
     onLeftMenu?(): void;
@@ -13,7 +14,10 @@ interface props {
     HideHeader: boolean,
     MiniHeaderOptions: string,
     Title: string,
-    tryLink?:string
+    tryLink?: string,
+    Sticky: boolean,
+    WindowScroolheight: number,
+    StickMiniHeader: boolean
 }
 
 class MiniHeader extends React.Component<props, any> {
@@ -32,14 +36,46 @@ class MiniHeader extends React.Component<props, any> {
             document.body.scrollTop || document.documentElement.scrollTop
         // console.log("this.props.MiniHeaderOptions", this.props.MiniHeaderOptions);
         // console.log(". / . / .  / winScroll in min header : ", winScroll);
-        if (winScroll > 0 && winScroll < 700 && this.props.MiniHeaderOptions !== "overview") {
-            store.dispatch(actionMiniHeaderOptions("overview"))
-        } else if (winScroll > 700 && winScroll < 1500 && this.props.MiniHeaderOptions !== "features") {
-            store.dispatch(actionMiniHeaderOptions("features"))
-        } else if (winScroll > 1500 && winScroll < 2200 && this.props.MiniHeaderOptions !== "Testimonials") {
-            store.dispatch(actionMiniHeaderOptions("Testimonials"))
-        } else if (winScroll > 2200 && this.props.MiniHeaderOptions !== "FAQ") {
-            store.dispatch(actionMiniHeaderOptions("FAQ"))
+        // if (winScroll > 0 && winScroll < 700 && this.props.MiniHeaderOptions !== "overview") {
+        //     store.dispatch(actionMiniHeaderOptions("overview"))
+        // } else if (winScroll > 700 && winScroll < 1500 && this.props.MiniHeaderOptions !== "features") {
+        //     store.dispatch(actionMiniHeaderOptions("features"))
+        // } else if (winScroll > 1500 && winScroll < 2200 && this.props.MiniHeaderOptions !== "Testimonials") {
+        //     store.dispatch(actionMiniHeaderOptions("Testimonials"))
+        // } else if (winScroll > 2200 && this.props.MiniHeaderOptions !== "FAQ") {
+        //     store.dispatch(actionMiniHeaderOptions("FAQ"))
+        // }
+
+
+        var lastScrollTop = this.props.WindowScroolheight;
+        let HideHeder;
+
+        // MiniHeaderScrollLogic(st, lastScrollTop, this.props.HideHeader);
+        let diff = winScroll - lastScrollTop;
+
+        if (winScroll > 560 && !this.props.StickMiniHeader) {
+            let HideMainHeader = true;
+            let StickyMiniHeader = true;
+            StickyMiniHeader_In_Lms(HideMainHeader, StickyMiniHeader, winScroll);
+
+        } else if (560 > winScroll && this.props.StickMiniHeader) {
+
+            let HideMainHeader = false;
+            let StickyMiniHeader = false;
+            StickyMiniHeader_In_Lms(HideMainHeader, StickyMiniHeader, winScroll);
+        } else if (diff < -10 && this.props.HideHeader) {
+
+            let HideMainHeader = false;
+            let StickyMiniHeader = this.props.StickMiniHeader;
+            StickyMiniHeader_In_Lms(HideMainHeader, StickyMiniHeader, winScroll);
+        } else if (diff > 10 && !this.props.HideHeader && this.props.StickMiniHeader) {
+            let HideMainHeader = true;
+            let StickyMiniHeader = this.props.StickMiniHeader;
+            StickyMiniHeader_In_Lms(HideMainHeader, StickyMiniHeader, winScroll);
+        } else if (diff > 10) {
+            let HideMainHeader = this.props.HideHeader;
+            let StickyMiniHeader = this.props.StickMiniHeader;
+            StickyMiniHeader_In_Lms(HideMainHeader, StickyMiniHeader, winScroll);
         }
     }
 
@@ -53,7 +89,7 @@ class MiniHeader extends React.Component<props, any> {
             //     classNames="moveminiHeader-enter"
             //     unmountOnExit
             // >
-            <div className="role_based_header">
+            <div className= { this.props.StickMiniHeader? "role_based_header_sticky":  "role_based_header"}>
                 <div className="role_based_header_main">
                     <div className="role_title"><span>Byndr</span> For {this.props.Title} </div>
                     <div className="role_menu">

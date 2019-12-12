@@ -47,20 +47,39 @@ class lms_For_Teacher extends React.Component<props, any> {
         var lastScrollTop = this.props.WindowScroolheight;
         let HideHeder;
 
-        var st = window.pageYOffset || document.documentElement.scrollTop;
+        // var st = window.pageYOffset || document.documentElement.scrollTop;
 
         // MiniHeaderScrollLogic(st, lastScrollTop, this.props.HideHeader);
+        let diff = scroll_position - lastScrollTop;
 
+        // console.log(" scroll_position : ", scroll_position);
 
-        console.log(" scroll_position : ", scroll_position);
+        console.log(" diff ", diff, scroll_position, lastScrollTop)
 
-        if (scroll_position > 560 && !this.props.StickMiniHeader) {
+        // if (scroll_position > 560 && !this.props.StickMiniHeader) {
+        //     let HideMainHeader = true;
+        //     let StickyMiniHeader = true;
+        //     StickyMiniHeader_In_Lms(HideMainHeader, StickyMiniHeader, scroll_position);
 
-            StickyMiniHeader_In_Lms(true);
+        // } else if (560 > scroll_position && this.props.StickMiniHeader) {
 
-        } else if (560 > scroll_position && this.props.StickMiniHeader) {
-            StickyMiniHeader_In_Lms(false);
-        }
+        //     let HideMainHeader = false;
+        //     let StickyMiniHeader = false;
+        //     StickyMiniHeader_In_Lms(HideMainHeader, StickyMiniHeader, scroll_position);
+        // } else if (diff < -10 && this.props.HideHeader) {
+
+        //     let HideMainHeader = false;
+        //     let StickyMiniHeader = this.props.StickMiniHeader;
+        //     StickyMiniHeader_In_Lms(HideMainHeader, StickyMiniHeader, scroll_position);
+        // } else if (diff > 10 && !this.props.HideHeader && this.props.StickMiniHeader) {
+        //     let HideMainHeader = true;
+        //     let StickyMiniHeader = this.props.StickMiniHeader;
+        //     StickyMiniHeader_In_Lms(HideMainHeader, StickyMiniHeader, scroll_position);
+        // } else if (diff > 10) {
+        //     let HideMainHeader = this.props.HideHeader;
+        //     let StickyMiniHeader = this.props.StickMiniHeader;
+        //     StickyMiniHeader_In_Lms(HideMainHeader, StickyMiniHeader, scroll_position);
+        // }
     }
 
     render(): any {
@@ -176,7 +195,7 @@ class lms_For_Teacher extends React.Component<props, any> {
                 </div>
                 <div className="bodySection">
                     <InnerPageTitleBlock role="teachers" fromPage="Teaching Made Engaging, Productive & Valuable" pageSubtitle="Experience Byndr Today!" videoDisplay="false" tryBtnDisplay="true" />
-                    <MiniHeader Title="Teachers" tryLink="https://test.byndr.com/freesignup/teacher/" />
+                    <MiniHeader Sticky={this.props.StickyHeader_in_LMS} Title="Teachers" tryLink="https://test.byndr.com/freesignup/teacher/" />
                     <ProductForRolesBlock Title="Teachers" content="Byndr gives teachers a platform to extend their help to students beyond classroom. Teachers can provide study materials, guidelines and instructions to create inspiring learning environment. Also, our LMS tool helps faculty to schedule assignments, evaluate the performance and guide students individually for better outcomes." gridList={gridList} />
                     <HomeTestimonial />
                     <FaqBlock faqList={faqList} />

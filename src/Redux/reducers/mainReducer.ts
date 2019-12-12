@@ -99,15 +99,17 @@ export default (state = INIT_STATE, action: ActionModel) => {
           ...state.HomeScreenprops,
           changeDetector: false,
           activeSlide: action.payload,
+          // WindowScroolheight: action.payload.
         }
       }
 
     case STICKY_MINI_HEADER:
       return {
-        ...state, StickyHeader_in_LMS: !action.payload,
-        StickMiniHeader: action.payload,
+        ...state,
+        HideHeader: action.payload.StickyMainHeader,
+        StickMiniHeader: action.payload.StickyMiniHeader,
+        WindowScroolheight: action.payload.scroolHieght
       }
-
     default:
       return state;
   }

@@ -2683,6 +2683,23 @@ margin-bottom: 13px;
     width: 100%;
     float: left;
 }
+
+
+
+.role_based_header_sticky{
+    position: -webkit-sticky;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    float: left;
+    padding:20px 0;
+    border-bottom: 1px solid #efefef;
+    box-shadow: 0px 2px 4px #00000029;
+    background: rgba(255, 255, 255, 0.73);
+    z-index: 9;
+}
+
+
 .role_title span {
     color: #CB0A7A;
 }
