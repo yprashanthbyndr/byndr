@@ -4,7 +4,7 @@ import { HomeReducer, ActionModel } from '../../models';
 import {
   SAVE_SCROLL_HEIGHT, SAVE_CONTACT_US_IP_VALUES, SUBMIT_CONTACT_FORM_SUCCESS,
   OPEN_OR_CLOSE_MENUBAR, OPEN_OR_CLOSE_PLAY_VIDEO, SAVE_SELECTED_TESTIMONIAL,
-  STICKY_PRICINGTABLE, MINI_HEADER_OPTIONS, TESTIMONIAL_INTERVAL
+  STICKY_PRICINGTABLE, MINI_HEADER_OPTIONS, TESTIMONIAL_INTERVAL, TCHANGE_DIRECTION_IN_HOME_SLIDES, SAVE_SELECTED_SLIDE_INHOME
 } from '../actions';
 
 const INIT_STATE: HomeReducer = {
@@ -28,6 +28,10 @@ const INIT_STATE: HomeReducer = {
   activeTestimonial: 'vvit',
   Stickypricing_table: false,
   MiniHeaderOptions: "overview",
+  HomeScreenprops: {
+    changeDetector: false,
+    activeSlide:"teachers",
+  }
   // SelectedFaq:''
 };
 
@@ -78,6 +82,24 @@ export default (state = INIT_STATE, action: ActionModel) => {
         ...state, activeTestimonial: Current == 'vvit' ? 'stanley' : Current == 'stanley' ? 'sist' : 'vvit'
       }
 
+    case TCHANGE_DIRECTION_IN_HOME_SLIDES:
+
+      return {
+        ...state, HomeScreenprops: {
+          ...state.HomeScreenprops,
+          changeDetector: true,
+        }
+      }
+
+    case SAVE_SELECTED_SLIDE_INHOME:
+
+      return {
+        ...state, HomeScreenprops: {
+          ...state.HomeScreenprops,
+          changeDetector: false,
+          activeSlide: action.payload,
+        }
+      }
 
     default:
       return state;

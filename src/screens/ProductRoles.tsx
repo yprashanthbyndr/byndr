@@ -1,6 +1,6 @@
 import React from 'react';
 import { BlogGrid, ProductRolesTestimonials, FaqBlock, MiniHeader, FooterCTA, Header, Navigation, Footer, InnerPageTitleBlock, ProductForRolesBlock, HomeTestimonial } from '../theme/components';
-import { AppContext } from '../contextApi/AppContext';
+
 import { CSSTransition } from 'react-transition-group';
 
 

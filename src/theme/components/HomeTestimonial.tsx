@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { AppContext } from '../../contextApi/AppContext';
 import { slider_1, open_book, teamwork, medical_history, earth_globe, blackboard, light_bulb, byndr_android, byndr_ios, byndr_responsive_platform, vvit_img, stanley_img, vardhaman_img, gprec_img, author_Img } from "../../assets";
 
 
@@ -51,7 +50,7 @@ class HomeTestimonial extends React.Component<props, any> {
 
   //   console.log(" testimonials method ", this.props)
 
-  
+
 
   //   // let Current = this.state.activeTestimonialis;
   //   // this.setState({ activeTestimonial: Current == 'vvit' ? 'stanley' : Current == 'stanley' ? 'sist' : 'vvit' })
@@ -62,11 +61,8 @@ class HomeTestimonial extends React.Component<props, any> {
 
   render(): any {
     return (
-      // <AppContext.Provider value={{
-      //   authenticated: false,
-      // }}>
+
       <div>
-        {/* testimonials block start */}
         <section>
           <div className="homeTestimonials">
             <div className="homeTestimonialsInr">
@@ -174,9 +170,6 @@ class HomeTestimonial extends React.Component<props, any> {
             </div>
           </div>
         </section>
-
-        {/* testimonials end */}
-        {/* </AppContext.Provider> */}
       </div>
     );
   }

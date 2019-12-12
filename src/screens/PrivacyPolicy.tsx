@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { Header, Footer, Navigation } from '../theme/components';
-import { AppContext } from '../contextApi/AppContext';
 
 
 import { connect } from 'react-redux';

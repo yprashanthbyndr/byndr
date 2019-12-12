@@ -1,6 +1,8 @@
-import { store, actionSaveScrollHeight, actionCantactUs_Ip_Values, actionCantactUs_ApiResponse,
-     actionOpen_Or_Close_MenuBar, actionTestimonialSelection,
-     actionSticky_PricingTable,actionOpen_Or_Close_PlayVideo ,action_TestimonialInterval } from "../Redux";
+import {
+    store, actionSaveScrollHeight, actionCantactUs_Ip_Values, actionCantactUs_ApiResponse,
+    actionOpen_Or_Close_MenuBar, actionTestimonialSelection,
+    actionSticky_PricingTable, actionOpen_Or_Close_PlayVideo, action_TestimonialInterval, action_ChangeDIrection_InHomeSlide, action_Save_SelecteSlide_InHome
+} from "../Redux";
 
 function SaveScroll_Height(HideHeder, currentScroolHeight) {
 
@@ -24,8 +26,6 @@ function SaveScroll_Height(HideHeder, currentScroolHeight) {
         store.dispatch(actionSaveScrollHeight(currentScroolHeight, HideHeder));
     }
 }
-
-
 
 function MiniHeaderScrollLogic(st, lastScrollTop, HideHeader_Present) {
 
@@ -107,10 +107,21 @@ function Sticky_PricingTable(divheight: number, scroolHeight: number, StickyEnab
 
         store.dispatch(actionSticky_PricingTable(false));
     }
+}
+
+
+function SlideActionInHome(selectedSlide: string) {
+    store.dispatch(action_ChangeDIrection_InHomeSlide());
+  
+    setTimeout(
+        () => store.dispatch(action_Save_SelecteSlide_InHome(selectedSlide)),
+        500
+    );
 
 }
 
+
 export {
-    SaveScroll_Height, CantactUs_Ip_Values, SubmitContactPage, Open_Or_Close_MenuBar,Open_Or_Close_PlayVideo, TestimonialSelection,
-    Sticky_PricingTable, MiniHeaderScrollLogic ,TestimonialInterval
+    SaveScroll_Height, CantactUs_Ip_Values, SubmitContactPage, Open_Or_Close_MenuBar, Open_Or_Close_PlayVideo, TestimonialSelection,
+    Sticky_PricingTable, MiniHeaderScrollLogic, TestimonialInterval, SlideActionInHome 
 }

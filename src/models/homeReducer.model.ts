@@ -11,7 +11,14 @@ export interface HomeReducer {
     activeTestimonial: string,
     Stickypricing_table: boolean,
     MiniHeaderOptions: string,
+    HomeScreenprops: Intr_HomeScreen,
     // SelectedFaq: string
+}
+
+
+interface Intr_HomeScreen {
+    changeDetector: boolean,
+    activeSlide: string,
 }
 
 interface Intr_ContactFormObject {

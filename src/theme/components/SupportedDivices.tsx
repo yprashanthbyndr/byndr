@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { AppContext } from '../../contextApi/AppContext';
 import { slider_1,open_book,teamwork,medical_history,earth_globe,blackboard,light_bulb,byndr_android,byndr_ios,byndr_responsive_platform,vvit_img,stanley_img,vardhaman_img,gprec_img,author_Img } from "../../assets";
 
 interface props {
@@ -10,10 +9,7 @@ interface props {
 export default class SupportedDivices extends React.Component<props, any> {
     render(): any {
         return (
-          <AppContext.Provider value={{
-              // authenticated: false,
-          }}>
-            {/* home availble divices start */}
+
             <section>
               <div className="homeAvailableDivices">
                 <div className="homeAvailableDivices_inr">
@@ -41,8 +37,6 @@ export default class SupportedDivices extends React.Component<props, any> {
                 </div>
               </div>
             </section>
-            {/* home availble divices end */}
-          </AppContext.Provider>
         );
     }
 }

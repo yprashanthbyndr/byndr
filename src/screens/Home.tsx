@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
 
-// import { AppContext } from '../contextApi/AppContext';
-
 import { HomeSplit_A, HomeSplit_B } from './index';
 import { Header, Footer, Navigation } from "../theme/components";
 
 import { connect } from 'react-redux';
 
 interface props {
-
     MainReducer: any
     OpenMenuBar: boolean
-
 }
 
 class Home extends Component<props, any> {

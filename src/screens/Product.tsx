@@ -1,6 +1,5 @@
 import React from 'react';
 import { ProductCoreCapabilities, WhoIsBynderFor, FooterCTA, Header, Navigation, Footer, InnerPageTitleBlock, FooterDoubleCTA } from '../theme/components';
-import { AppContext } from '../contextApi/AppContext';
 
 import { connect } from 'react-redux';
 
@@ -13,9 +12,7 @@ class Product extends React.Component<props, any> {
     render(): any {
 
         return (
-            // <AppContext.Provider value={{
-            //     authenticated: false,
-            // }}>
+      
             <div>
                 <Header />
                 <div className="bodySection">
@@ -25,7 +22,6 @@ class Product extends React.Component<props, any> {
                     <FooterDoubleCTA />
                 </div>
                 <Footer />
-                {/* </AppContext.Provider> */}
             </div>
         )
     }

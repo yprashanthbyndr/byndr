@@ -1,5 +1,4 @@
 import React from 'react';
-import { AppContext } from '../../contextApi/AppContext';
 import { FB_img, TW_img, Li_img } from '../../assets';
 
 interface props {
@@ -32,5 +31,3 @@ export default class ContactusThankYou extends React.Component<props, any> {
           );
     }
 }
-
-ContactusThankYou.contextType = AppContext;

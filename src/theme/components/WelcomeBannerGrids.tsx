@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { AppContext } from '../../contextApi/AppContext';
 
 interface props {
     onLeftMenu?(): void;
@@ -9,9 +8,7 @@ interface props {
 export default class WelcomeBannerGrids extends React.Component<props, any> {
     render(): any {
         return (
-        <AppContext.Provider value={{
-                // authenticated: false,
-            }}>
+   
             <section>
                     <div className="home_v2_blocks">
                       <div className="home_v2_blocks_inr">
@@ -78,7 +75,6 @@ export default class WelcomeBannerGrids extends React.Component<props, any> {
                       </div>
                     </div>
                   </section>
-            </AppContext.Provider>
         );
     }
 }

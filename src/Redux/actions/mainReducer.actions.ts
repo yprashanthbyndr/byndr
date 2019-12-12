@@ -11,6 +11,8 @@ export const SAVE_SELECTED_TESTIMONIAL = 'SAVE_SELECTED_TESTIMONIAL';
 export const STICKY_PRICINGTABLE = "STICKY_PRICINGTABLE";
 export const MINI_HEADER_OPTIONS = "MINI_HEADER_OPTIONS";
 export const TESTIMONIAL_INTERVAL = "TESTIMONIAL_INTERVAL";
+export const TCHANGE_DIRECTION_IN_HOME_SLIDES = "TCHANGE_DIRECTION_IN_HOME_SLIDES";
+export const SAVE_SELECTED_SLIDE_INHOME = "SAVE_SELECTED_SLIDE_INHOME";
 
 
 function sampleFunction(data: any): ActionModel {
@@ -81,6 +83,21 @@ function action_TestimonialInterval(): ActionModel {
 
 
 
+function action_ChangeDIrection_InHomeSlide(): ActionModel {
+    return {
+        type: TCHANGE_DIRECTION_IN_HOME_SLIDES,
+        // payload: selected
+    };
+}
+
+
+function action_Save_SelecteSlide_InHome(selectedSlide: string): ActionModel {
+    return {
+        type: SAVE_SELECTED_SLIDE_INHOME,
+        payload: selectedSlide
+    };
+}
+
 export {
     sampleFunction,
     actionSaveScrollHeight,
@@ -90,7 +107,9 @@ export {
     actionOpen_Or_Close_PlayVideo,
     actionTestimonialSelection,
     actionSticky_PricingTable,
-    actionMiniHeaderOptions ,
-    action_TestimonialInterval
+    actionMiniHeaderOptions,
+    action_TestimonialInterval,
+    action_ChangeDIrection_InHomeSlide,
+    action_Save_SelecteSlide_InHome
 };
 
