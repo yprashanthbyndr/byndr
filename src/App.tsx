@@ -11,7 +11,6 @@ interface props {
 }
 class App extends Component<props, any>{
 
-
   render() {
     return (
       <Provider store={store}>

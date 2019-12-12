@@ -2,7 +2,6 @@ import React from 'react';
 import byndr_Logo from '../../assets/images/byndr-Logo.png';
 import byndr_Logo_White from '../../assets/images/byndr-logo-white.png';
 import { NavLink } from 'react-router-dom';
-import { AppContext } from '../../contextApi/AppContext';
 import { connect } from 'react-redux';
 import { Open_Or_Close_MenuBar } from '../../services';
 import { YMInitializer } from 'react-yandex-metrika';
@@ -94,8 +93,6 @@ class Header extends React.Component<props, any> {
         );
     }
 }
-
-// Header.contextType = AppContext;
 
 const map = (state: any) => {
     return {

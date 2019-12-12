@@ -2,7 +2,6 @@ import React from 'react';
 // import '../styles/Header.style.css'
 // import byndr_Logo from '../../assets/images/byndr-Logo.png';
 // import { NavLink } from 'react-router-dom';
-// import { AppContext } from '../../contextApi/AppContext';
 // import { CSSTransition } from 'react-transition-group';
 
 import { connect } from 'react-redux';
@@ -98,8 +97,6 @@ class MiniHeader extends React.Component<props, any> {
         );
     }
 }
-
-// MiniHeader.contextType = AppContext;
 
 const map = (state: any) => {
     return {

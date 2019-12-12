@@ -1,6 +1,6 @@
 import React from 'react';
 import { InnerPageTitleBlock, Header, FooterCTA, Footer, Navigation, PricingPlans } from '../theme/components';
-import { AppContext } from '../contextApi/AppContext';
+
 
 import { connect } from 'react-redux';
 
