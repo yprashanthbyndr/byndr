@@ -1,5 +1,5 @@
 import React from 'react';
-import { vvit_img, stanley_img, author_Img, sabyaSachiRath, narasimhaReddy, snist } from "../../assets";
+import { vvit_img, stanley_img, author_Img, sabyaSachiRath, narasimhaReddy, snist, satyalankaPrasad } from "../../assets";
 
 import { connect } from 'react-redux';
 import { TestimonialSelection, TestimonialInterval } from '../../services';
@@ -35,7 +35,6 @@ class HomeTestimonial extends React.Component<props, any> {
       var intervalId = setInterval(TestimonialInterval, 2000);
       this.setState({ intervalId: intervalId });
     } else if (this.props.MiniHeaderOptions !== "Testimonials" && this.state.intervalId !== '') {
-      console.log("clear intervel")
       clearInterval(this.state.intervalId);
       this.setState({ intervalId: '' });
     }
@@ -151,7 +150,7 @@ class HomeTestimonial extends React.Component<props, any> {
                                   </div>
                         <div className="homeTestimonialCurrent_author">
                           <div className="homeTestimonialCurrent_author_img">
-                            <img src={author_Img} />
+                            <img src={satyalankaPrasad} />
                           </div>
                           <div className="homeTestimonialCurrent_author_name">
                             Dr. Satya Lanka Prasad

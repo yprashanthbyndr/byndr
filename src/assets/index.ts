@@ -67,10 +67,12 @@ import snist from "./images/testimonials/snist.jpg";
 
 import narasimhaReddy from "./images/testimonials/narasimhaReddy.png";
 import sabyaSachiRath from "./images/testimonials/sabyaSachiRath.png";
+import satyalankaPrasad from "./images/testimonials/satyalankaPrasad.png";
 
 export {assess_support,
     snist,
     narasimhaReddy,
+    satyalankaPrasad,
     sabyaSachiRath,
     SatishNampally,
     PraveenVangeepuram,
