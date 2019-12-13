@@ -1728,6 +1728,7 @@ select#contact_purpose {
     width: 100%;
     float: left;
     line-height: 1.8;
+    color: #333333;
 }
 /* inner page Banner */
 .homeBanner_backgroundimage {
@@ -3817,19 +3818,30 @@ li.year_details {
         width: calc(50% - 4px);
         height: 200px;
     }
-    .homeBanner_main {
-        padding: 80px 0;
-    }
-    .bodySection {
-        margin-top: 67px;
-    }
     .banner_title {
         font-size: 30px;
         margin-bottom: 5px;
     }
+    .sticky_table_menu_main {
+        width: 96%;
+    }
     .banner_content {
         text-align: center;
         font-size: 20px;
+    }
+    .who_is_byndr_left_block {
+        width: 40%;
+    }.who_is_byndr_right_block {
+        width: 58%;
+    }
+    .column-reverse .who_is_byndr_left_block{
+        width: 58%;
+    }
+    .column-reverse .who_is_byndr_right_block{
+        width: 40%;
+    }
+    .column-reverse .who_is_byndr_right_block img{
+        width: 88%;
     }
     .home_v2_list_single_title {
         font: Bold 18px/48px Lato;
@@ -3852,9 +3864,11 @@ li.year_details {
     .homeBanner_right {
         margin-top: 0;
     }
-    .cta_full_color, .cta_outline_color {
-        max-width: 78%;
-        margin: 10px 0px;
+    .home_slides{
+        min-height: 310px;
+    }
+    .homeBanner_slider_navigation ul li.flex-active-slide .homeBanner_slider_nav_text{
+        font-size: 14px;
     }
     .homeBanner_left {
         margin-top: 40px;
@@ -3888,6 +3902,15 @@ li.year_details {
     }
     .footerWidgetDownload ul li img {
         max-width: 100%;
+    }
+    li.year_details:before{
+        background: none;
+    }
+    .slider_logo img {
+        width: 80%;
+    }
+    .main_menu_inr{
+        overflow-y: scroll;
     }
     .homeAvailableDivicesIcons ul li {
         float: left;
@@ -4233,29 +4256,44 @@ li.year_details {
         max-width: 100%;
     }
     .cta_full_color, .cta_outline_color {
-        max-width: 220px;
-        width: 100%;
-        clear: both;
-        margin: 0 auto;
-        float: none;
+        margin-bottom: 0px;
     }
     .cta_full_color a, .cta_outline_color a {
         font-size: 16px;
         margin-bottom: 20px;
+    }
+    .column-reverse .who_is_byndr_left_block {
+        width: 100%;
+    }
+    .contact_section{
+        padding: 40px 0;
+    }
+    .calltoActions {
+        width: 90%;
+        float: none;
+        text-align: center;
+        margin: 0 auto;
     }
     .banner_content {
         text-align: center;
         font-size: 16px;
     }
     .calltoActions {
+        width: 90%;
+        float: none;
+        text-align: center;
+        margin: 0 auto;
         margin-top: 25px;
+    }
+    .DoublecallToAction_content {
+        font-size: 16px;
     }
     .homeAvailableDivicesText {
         font-size: 14px;
         display: none;
     }
     .homeBanner_left h1 {
-        font-size: 24px;
+        font-size: 28px;
         text-align: center;
         width: 80%;
         margin: 0px auto;
@@ -4403,6 +4441,12 @@ li.year_details {
     }
     .contact-thankyou-wrapper {
         margin-bottom: 40px;
+    }
+    .calltoActions {
+        width: 75%;
+    }
+    .widget_button a{
+        font-size: 13px;
     }
     
 }
