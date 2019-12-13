@@ -144,7 +144,9 @@ class Home_A_Hero extends React.Component<props, any> {
                 <div className="homeBanner_slider_navigation">
                   <div className="homeBanner_slider_nav_inr flexslider">
                     <ul className="slides">
-                      <li className={activeSlide == "teachers" ? " flex-active-slide" : ""} onClick={() => this.selectedSlide("teachers")}>
+                      <li className={activeSlide == "teachers" ? " flex-active-slide" : ""} 
+                      // onClick={() => this.selectedSlide("teachers")}
+                      >
                         <span className="homeBanner_slider_nav_icon">
                           <img src={teacher_icon} />
                         </span>
@@ -153,9 +155,8 @@ class Home_A_Hero extends React.Component<props, any> {
               </span>
                       </li>
                       <li className={activeSlide == "students" ? " flex-active-slide" : ""}
-                        onClick={() =>
-                          this.selectedSlide("students")
-                        }>
+                        // onClick={() => this.selectedSlide("students") }
+                        >
                         <span className="homeBanner_slider_nav_icon">
                           <img src={student_icon} />
                         </span>
@@ -164,7 +165,8 @@ class Home_A_Hero extends React.Component<props, any> {
               </span>
                       </li>
                       <li className={activeSlide == "adminstrator" ? " flex-active-slide" : ""}
-                        onClick={() => this.selectedSlide("adminstrator")}>
+                        // onClick={() => this.selectedSlide("adminstrator")}
+                        >
                         <span className="homeBanner_slider_nav_icon">
                           <img src={admin_icon} />
                         </span>

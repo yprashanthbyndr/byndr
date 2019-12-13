@@ -16,9 +16,11 @@ class Pricing extends React.Component<props, any> {
 
     return (
       <div>
+        <div className="header_main_container">
         <Header />
+        </div>
         <div className="bodySection">
-          <InnerPageTitleBlock fromPage="Pricing" pageSubtitle="" videoDisplay="true" tryBtnDisplay="true" />
+          <InnerPageTitleBlock fromPage="Pricing" role="no_role" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false" />
           <PricingPlans />
           <FooterCTA />
         </div>

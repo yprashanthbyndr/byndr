@@ -72,14 +72,14 @@ export default class Navigation extends React.Component<props, any> {
 </div>
 
                                 </li>
-                                {/* <li className="menuItem">
+                                <li className="menuItem">
                                     <NavLink exact to="/pricing"
                                     activeClassName="activeMenu"
                                         onClick={() =>   {
                                             this.ScroolToTp();
                                             Open_Or_Close_MenuBar()
                                         }}>Pricing</NavLink>
-                                </li> */}
+                                </li>
                                 <li className="menuItem">
                                     <a target="_blank" href="https://byndr.breezy.hr/">Careers <sup style={{fontSize: 12,
 color:"yellow"}}>We're hiring</sup></a>

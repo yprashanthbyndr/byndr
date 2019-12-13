@@ -444,7 +444,7 @@ cursor: pointer;
     background: #E2E8F0 0% 0% no-repeat padding-box;
     opacity: 1;
     color: #00144C;
-    cursor: pointer;
+    cursor: default;
     line-height: 0;
     height: 70px;
 }
@@ -1276,7 +1276,18 @@ div#carousel1 .flex-viewport{
 
 
 /*ricing table */
-
+.sticky_table_menu{
+    display: block;
+    z-index: 9;
+    position: fixed;
+    top: 98px;
+    padding: 14px 0;
+    background: #fff;
+    border-bottom: 1px solid #efefef;
+}
+.nonsticky_table_menu{
+    display: none;
+}
 .pricing_table {
     width: 100%;
     float: left;
@@ -2866,7 +2877,8 @@ li.year_details {
 .sticky_table_menu .pricing_title {
     font-size: 18px;
     float: left;
-    margin-top: 13px;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 .sticky_table_title {
     width: 50%;
@@ -2882,9 +2894,10 @@ li.year_details {
 .sticky_table_menu_main {
     width: 72.7%;
     float: right;
+    background: #ffffff;
 }
 .sticky_table_menu {
-    width: 1000px;
+    width: 100%;
     margin: 0px auto;
 }
 

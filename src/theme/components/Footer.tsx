@@ -68,14 +68,14 @@ class Footer extends React.Component<props, any> {
                                                         }}
                                                     >Request a Demo</NavLink>
                                                 </li>
-                                                {/* <li>
+                                                <li>
                                                     <NavLink exact to="/pricing"
                                                         onClick={() => {
                                                             document.body.scrollTop = 0;
                                                             document.documentElement.scrollTop = 0;
                                                         }}
                                                     >Pricing</NavLink>
-                                                </li> */}
+                                                </li>
                                             </ul>
                                         </div>
                                     </li>

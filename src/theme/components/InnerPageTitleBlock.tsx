@@ -33,7 +33,7 @@ togglePopup() {
         return (
             <section>
             <div className={this.props.role =="admins"?"homeBanner_forAdmin":this.props.role =="teachers"?"homeBanner_forTeacher":this.props.role =="teachers"?"homeBanner_forStudent":"homeBanner_backgroundimage"}>
-              <div className="homeBanner_main">
+              <div className="homeBanner_main" style={{padding:(this.props.role == "admins" || this.props.role == "students" || this.props.role == "teachers")?'':"160px 0 120px 0"}}>
                 <div className="homeBanner_contentblock">
                   <div className="banner_title">
                     {fromPage}

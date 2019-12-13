@@ -37,7 +37,7 @@ class Blog extends Component<props, any> {
     render(): any {
         return (
             <React.Fragment>
-                <Header />
+                 <div className="header_main_container"><Header /></div>
                 <InnerPageTitleBlock fromPage="Blog" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false"  />
                 <BlogList />
                 <Footer />

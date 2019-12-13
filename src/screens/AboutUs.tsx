@@ -12,7 +12,7 @@ export default class AboutUs extends React.Component<props, any,boolean> {
         return (
          
             <div>
-                <Header />
+                <div className="header_main_container"><Header /></div>
                 <div className="bodySection">
                     <InnerPageTitleBlock fromPage="Welcome to Byndr" pageSubtitle="Utilising the technology for successful learning experience" videoDisplay="false" tryBtnDisplay="false"/>
                     <VisionAndMission />

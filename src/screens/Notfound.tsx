@@ -14,7 +14,7 @@ class NotFound extends React.Component<props, any> {
 
     return (
       <div>
-        <Header />
+        <div className="header_main_container"><Header /></div>
         <div className="bodySection">
           <Page404 />
         </div>
