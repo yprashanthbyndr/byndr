@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import { CSSTransition, Transition } from 'react-transition-group';
-import { slider_1, open_book, teamwork, medical_history, earth_globe, blackboard, light_bulb, byndr_android, byndr_ios, byndr_responsive_platform, vvit_img, stanley_img, vardhaman_img, gprec_img, author_Img, slider_2, slider_3, student_icon, admin_icon, teacher_icon, Double_Arrows_pink } from "../../assets";
+import { slider_1, open_book, teamwork, medical_history, earth_globe, blackboard, light_bulb, byndr_android, byndr_ios, byndr_responsive_platform, vvit_img, stanley_img, vardhaman_img, gprec_img, author_Img, slider_2, slider_3, student_icon, admin_icon, teacher_icon, Double_Arrows_pink, bannerForAdmin, bannerForTeachers, bannerForStudents } from "../../assets";
 // import { Home_A_Context } from '../../contextApi/HomeSplit_A.context';
 import { SlideActionInHome } from '../../services';
 
@@ -24,7 +24,7 @@ class Home_A_Hero extends React.Component<props, any> {
       activeSlide: "teachers",
       sliders: {
         adminstrator: {
-          imageUrl: slider_1,
+          imageUrl: bannerForAdmin,
           content: "Monitoring Made Easy, Organized & Efficient",
           howitworks: {
             link: '/',
@@ -36,7 +36,7 @@ class Home_A_Hero extends React.Component<props, any> {
           },
         },
         teachers: {
-          imageUrl: slider_1,
+          imageUrl: bannerForTeachers,
           content: "Teaching Made Engaging, Productive & Valuable",
           howitworks: {
             link: '/',
@@ -48,7 +48,7 @@ class Home_A_Hero extends React.Component<props, any> {
           },
         },
         students: {
-          imageUrl: slider_1,
+          imageUrl: bannerForStudents,
           content: "Learning Made Interactive, Simple & Effective",
           howitworks: {
             link: '/',

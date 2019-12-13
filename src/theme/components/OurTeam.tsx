@@ -32,7 +32,7 @@ export default class OurTeam extends React.Component<props, any> {
                                     </div>
                                     <div className="team-content">
                                         <h3 className="title">Joseph Freed</h3>
-                                        <span className="post">Co-Founder</span>
+                                        <span className="post">Board Member</span>
                                     </div>
                                 </div>
 
@@ -76,24 +76,7 @@ export default class OurTeam extends React.Component<props, any> {
                                     </div>
                                     <div className="team-content">
                                         <h3 className="title">Marc Garabedian</h3>
-                                        <span className="post">Co-Founder</span>
-                                    </div>
-                                </div>
-
-
-
-                                <div className="our-team">
-                                    <div className="pic">
-                                        <img src={PrashanthiVangeepuram}/>
-                                        <ul className="social">
-                                            {/* <li><NavLink exact to="/" className="fab fa-twitter"></NavLink></li>
-                                            <li><NavLink exact to="/" className="fab fa-linkedin"></NavLink></li> */}
-                                            <li><a href="https://www.linkedin.com/in/prashanthi-vangeepuram-4b21a1b" target="_blank" className="fab fa-linkedin"></a></li>
-                                        </ul>
-                                    </div>
-                                    <div className="team-content">
-                                        <h3 className="title">Prashanthi Vangeepuram</h3>
-                                        <span className="post">Co-Founder</span>
+                                        <span className="post">Board Member</span>
                                     </div>
                                 </div>
 

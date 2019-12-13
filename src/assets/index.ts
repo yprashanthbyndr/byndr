@@ -90,7 +90,14 @@ import QuizAssignments from "./images/featuresIcons/QuizAssignments.svg";
 import Self_Assessment from "./images/featuresIcons/Self-Assessment.svg";
 import Weightage_Based_Grading from "./images/featuresIcons/Weightage-Based-Grading.svg";
 
+import bannerForTeachers from "./images/bannerForTeachers.svg";
+import bannerForAdmin from "./images/bannerForAdmin.svg";
+import bannerForStudents from "./images/bannerForStudents.svg";
+
 export {assess_support,
+    bannerForTeachers,
+    bannerForAdmin,
+    bannerForStudents,
     Mobile_Learning,
     Peer_to_Peer,
     QuizAssignments,
