@@ -90,7 +90,6 @@ class Home_A_Hero extends React.Component<props, any> {
 
   SliderInterval() {
 
-    console.log(" . / . / . / this.SliderInterval ", this.props);
     let Active = this.props.HomeScreenprops.activeSlide;
     let selectedSlide = Active == "teachers" ? "students" :
       Active == "students" ? "adminstrator" : "teachers"

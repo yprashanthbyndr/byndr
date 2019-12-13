@@ -56,9 +56,8 @@ class Header extends React.Component<props, any> {
         let handleBorder = this.state.scroll_length > 200 ? true:false
         return (
             <header
-                className={this.props.Hide ? "slideup" : "slidedown"}
-            >
-                <div ref="Sticky_context_header" className={this.props.Hide ? "header_main" : "header_main_sticky"} style={{borderBottom:handleBorder === true ?"1px solid #efefef":"none"}}>
+                className={this.props.Hide?"slideup":"slidedown"}>
+                <div ref="Sticky_context_header" className={this.props.Hide ? "header_main" : "header_main_sticky"} style={{borderBottom:handleBorder === true ?"1px solid #efefef":"none",backgroundColor:handleBorder === true ? "#fff":''}}>
                     <div className="header_main_inr">
                         <div className="logo">
                             <NavLink exact to="/" onClick={() =>   {

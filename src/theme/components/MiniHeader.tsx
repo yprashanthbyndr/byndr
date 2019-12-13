@@ -7,6 +7,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { store, actionMiniHeaderOptions } from '../../Redux';
 import { StickyMiniHeader_In_Lms } from '../../services';
+import { byndr_Logo } from '../../assets';
 
 interface props {
     onLeftMenu?(): void;
@@ -53,12 +54,12 @@ class MiniHeader extends React.Component<props, any> {
         // MiniHeaderScrollLogic(st, lastScrollTop, this.props.HideHeader);
         let diff = winScroll - lastScrollTop;
 
-        if (winScroll > 560 && !this.props.StickMiniHeader) {
+        if (winScroll > 580 && !this.props.StickMiniHeader) {
             let HideMainHeader = true;
             let StickyMiniHeader = true;
             StickyMiniHeader_In_Lms(HideMainHeader, StickyMiniHeader, winScroll);
 
-        } else if (560 > winScroll && this.props.StickMiniHeader) {
+        } else if (580 > winScroll && this.props.StickMiniHeader) {
 
             let HideMainHeader = false;
             let StickyMiniHeader = false;
@@ -81,24 +82,18 @@ class MiniHeader extends React.Component<props, any> {
 
 
     render(): any {
+
         return (
-            // <CSSTransition
-            //     in={this.props.HideHeader}
-            //     timeout={1000}
-            //     transition
-            //     classNames="moveminiHeader-enter"
-            //     unmountOnExit
-            // >
-            <div className= { this.props.StickMiniHeader? "role_based_header_sticky":  "role_based_header"}>
+            <div className= { this.props.StickMiniHeader? "role_based_header_sticky":  "role_based_header"} style={{top:this.props.StickMiniHeader && !this.props.HideHeader ?97:0}}>
                 <div className="role_based_header_main">
-                    <div className="role_title"><span>Byndr</span> For {this.props.Title} </div>
+                    <div className="role_title">{this.props.StickMiniHeader?<span className="byndrLogoForMini"><img src={byndr_Logo} /></span>:<React.Fragment><span>Byndr</span> For</React.Fragment>} {this.props.Title} </div>
                     <div className="role_menu">
                         <ul className="menu">
                             <li className={this.props.MiniHeaderOptions === "overview" ? "current-page" : ""}
                                 onClick={() => {
                                     store.dispatch(actionMiniHeaderOptions("overview"))
-                                    document.body.scrollTop = 0;
-                                    document.documentElement.scrollTop = 0;
+                                    document.body.scrollTop = 560;
+                                    document.documentElement.scrollTop = 560;
                                 }}
                             >Overview</li>
                             <li className={this.props.MiniHeaderOptions === "features" ? "current-page" : ""}
@@ -129,7 +124,6 @@ class MiniHeader extends React.Component<props, any> {
                     <div className="try_byndr_btn"><a href={this.props.tryLink}>Try Byndr</a></div>
                 </div>
             </div>
-            //  </CSSTransition>
         );
     }
 }
