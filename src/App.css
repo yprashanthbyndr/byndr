@@ -3225,6 +3225,7 @@ li.year_details {
         width: 100%;
         margin: 0 auto;
         max-width: 1400px;
+        color: #333333;
     }
 
 /* 1360 screen */
@@ -3755,22 +3756,24 @@ li.year_details {
         line-height: 30px;
         margin-bottom: 20px;
     }
-    .core_capabilities.bg_gray li {
-        width: 38%;
-        padding: 6px 0 0 64px;
-        margin: 30px 0px;
-    }
     .li_title {
         font-size: 24px;
-        margin-bottom: 0px;
+        margin-bottom: 20px;
     }
-    .core_capabilities.bg_gray li:before {
-        width: 37px;
-        height: 36px;
-        left: -13px;
-        top: 2px;
-        font-size: 22px;
-        padding: 16px 0px 0px 14px;
+    .core_capabilities.bg_gray li.mainItem{
+        width: 100%;
+        min-height: auto !important;
+    }
+    .who_is_byndr_right_block{
+        width: 50%;
+    }
+    .who_is_byndr_left_block{
+        width: 50%;
+    }.who_is_byndr_left_block.image img {
+        width: 88%;
+    }
+    .homeBanner_main{
+        padding: 200px 0 100px 0;
     }
     .core_capabilities, .testimonial.drak_gray, .who_is_byndr, .homeAvailableDivices, .pricing_table {
         padding: 60px 0px 60px 0px;
@@ -3778,9 +3781,6 @@ li.year_details {
     .flex-direction-nav .flex-next {
         opacity: 1;
         right: -55px;
-    }
-    .bodySection {
-        margin-top: 70px;
     }
     .our-team {
         width: 28%;

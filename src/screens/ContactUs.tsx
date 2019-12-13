@@ -20,7 +20,7 @@ class ContactUs extends React.Component<props, any> {
 
         return (
             <div>
-                <div className="header_main_container"><Header /></div>
+                <Header />
                 <div className="bodySection">
                     <div className="contact_section">
                         <div className="contact_section_inr">
