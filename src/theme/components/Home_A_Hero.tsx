@@ -81,7 +81,7 @@ class Home_A_Hero extends React.Component<props, any> {
 
   componentDidMount(): any {
 
-    var intervalId = setInterval(this.SliderInterval, 4000);
+    var intervalId = setInterval(this.SliderInterval, 6000);
 
     this.setState({ intervalId_Home: intervalId })
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Dummy_Img } from '../../assets';
+import { Dummy_Img, bannerForTeachers, bannerForStudents, bannerForAdmin } from '../../assets';
 
 interface props {
     onLeftMenu?(): void;
@@ -16,7 +16,7 @@ export default class WhoIsBynderFor extends React.Component<props, any> {
                     <div className="widget_title"> WHO IS BYNDR IS FOR? </div>
 
                      <div className="who_is_byndr_blocks">
-                         <div className="who_is_byndr_left_block image"><img src={Dummy_Img} width="375"/></div>
+                         <div className="who_is_byndr_left_block image"><img src={bannerForTeachers} width="375"/></div>
                          <div className="who_is_byndr_right_block">
                              <div className="widget_block_title">For Teachers - <span>Free</span></div>
                              <div className="content">Byndr gives teachers a platform to extend their help to students beyond classroom. Teachers can provide study materials, guidelines and instructions to create inspiring learning environment. Also, our LMS tool helps faculty to schedule assignments, evaluate the performance and guide students individually for better outcomes.</div>
@@ -39,11 +39,11 @@ export default class WhoIsBynderFor extends React.Component<props, any> {
                                     </div>
                             </div>
                             <div className="who_is_byndr_right_block image">
-                                    <img src={Dummy_Img} width="375"/>
+                                    <img src={bannerForStudents} width="375"/>
                             </div>
                         </div>
                      <div className="who_is_byndr_blocks">
-                            <div className="who_is_byndr_left_block image"><img src={Dummy_Img} width="375"/></div>
+                            <div className="who_is_byndr_left_block image"><img src={bannerForAdmin} width="375"/></div>
                             <div className="who_is_byndr_right_block">
                                 <div className="widget_block_title">For College</div>
                                 <div className="content">Byndr helps the college administration overcome the challenges of keeping track of student's details, performances and punctuality, through its social learning platform. It also provides a support system to the teacher through better coordination, communication and systematic functioning.</div>

@@ -3564,16 +3564,38 @@ li.year_details {
         font-size: 15px; 
     }
     .homeSingleGrid {
-        height: 260px;
+        width: calc(50% - 4px);
     }
-    .homeSingleGridinr {
-        padding: 40px 50px 0px 50px;
+    .DoublecallToActionLeft .DoublecallToActionInrRow {
+        padding-right: 0px;
+        max-width: 480px;
+        float: none;
+        border-right: none;
+    }
+    .DoublecallToActionLeft{
+        width: 100%;
+    }
+    .DoublecallToActionRight {
+        width: 100%;
+    }
+    .DoublecallToActionRight .DoublecallToActionInrRow {
+        padding-left: 0px;
+        float: none;
+    }
+    .product-role .homeSingleGrid {
+        width: calc(33.33% - 4px);
     }
     .homeAvailableDivices_left h3 {
         font-size: 22px;
     }
     .homeAvailableDivicesText {
         font-size: 16px;
+    }
+    .contact-form-container input, .contact-form-container select, .contact-form-container textarea{
+        padding: 13px 15px;
+    }
+    .contact-form-container input, .contact-form-container select, .contact-form-container textarea{
+        padding: 13px 15px;
     }
     .homeTestimonialsLogos_inr ul li img {
         width: 100%;
