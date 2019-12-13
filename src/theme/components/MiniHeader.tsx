@@ -6,8 +6,9 @@ import React from 'react';
 
 import { connect } from 'react-redux';
 import { store, actionMiniHeaderOptions } from '../../Redux';
-import { StickyMiniHeader_In_Lms } from '../../services';
+import { StickyMiniHeader_In_Lms, Open_Or_Close_MenuBar } from '../../services';
 import { byndr_Logo } from '../../assets';
+import { NavLink } from 'react-router-dom';
 
 interface props {
     onLeftMenu?(): void;
@@ -79,14 +80,19 @@ class MiniHeader extends React.Component<props, any> {
             StickyMiniHeader_In_Lms(HideMainHeader, StickyMiniHeader, winScroll);
         }
     }
-
+    ScroolToTp(): any {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
 
     render(): any {
 
         return (
             <div className= { this.props.StickMiniHeader? "role_based_header_sticky":  "role_based_header"} style={{top:this.props.StickMiniHeader && !this.props.HideHeader ?97:0}}>
                 <div className="role_based_header_main">
-                    <div className="role_title">{this.props.StickMiniHeader?<span className="byndrLogoForMini"><img src={byndr_Logo} /></span>:<React.Fragment><span>Byndr</span> For</React.Fragment>} {this.props.Title} </div>
+                    <div className="role_title">{this.props.StickMiniHeader?<span className="byndrLogoForMini"><NavLink exact to="/" activeClassName="activeMenu" onClick={() => {
+                                        this.ScroolToTp()
+                                    }}><img src={byndr_Logo} /></NavLink></span>:<React.Fragment><span>Byndr</span> For</React.Fragment>} {this.props.Title} </div>
                     <div className="role_menu">
                         <ul className="menu">
                             <li className={this.props.MiniHeaderOptions === "overview" ? "current-page" : ""}
