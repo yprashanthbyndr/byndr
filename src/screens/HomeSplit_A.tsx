@@ -42,7 +42,7 @@ class HomeSplit_A extends Component<props, any>{
                     <Home_A_Grids />
                     {/* <FeaturesGrid /> */}
                     <SupportedDivices />
-                    {/* <USPs /> */}
+                    <USPs />
                     <HomeTestimonial />
                     <FooterDoubleCTA />
                 </div>

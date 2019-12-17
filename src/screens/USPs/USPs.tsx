@@ -1,5 +1,5 @@
 import React  from 'react';
-import { slider_1, favicon } from "../../assets";
+import { slider_1, favicon, feature_dlt_later, calender_dlt_later } from "../../assets";
 
 import { connect } from 'react-redux';
 
@@ -56,58 +56,58 @@ class USPs extends React.Component<props, any> {
         let Left_HeadersList = [{
             for: "page1",
             name: "Page 1",
-            logo: favicon,
+            logo: calender_dlt_later,
 
         }, {
             for: "page2",
             name: "Page 2",
-            logo: favicon,
+            logo: calender_dlt_later,
 
         }, {
             for: "page3",
             name: "Page 3",
-            logo: favicon,
+            logo: calender_dlt_later,
 
         }, {
             for: "page4",
             name: "Page 4",
-            logo: favicon,
+            logo: calender_dlt_later,
 
         }, {
             for: "page5",
             name: "Page 5",
-            logo: favicon,
+            logo: calender_dlt_later,
 
         }, {
             for: "page6",
             name: "Page 6",
-            logo: favicon,
+            logo: calender_dlt_later,
 
         }];
 
         let RightSideContent = [{
             for: "page1",
-            logo: slider_1,
+            logo: feature_dlt_later,
             content: " this content is for page 1 related. we should keep this dummy text for the view : Dummy DAta  Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta "
         }, {
             for: "page2",
-            logo: slider_1,
+            logo: feature_dlt_later,
             content: " this content is for page 2 related. we should keep this dummy text for the view :  Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta"
         }, {
             for: "page3",
-            logo: slider_1,
+            logo: feature_dlt_later,
             content: " this content is for page 3 related. we should keep this dummy text for the view :  Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta"
         }, {
             for: "page4",
-            logo: slider_1,
+            logo: feature_dlt_later,
             content: " this content is for page 4 related. we should keep this dummy text for the view :  Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta"
         }, {
             for: "page5",
-            logo: slider_1,
+            logo: feature_dlt_later,
             content: " this content is for page 5 related. we should keep this dummy text for the view : Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta "
         }, {
             for: "page6",
-            logo: slider_1,
+            logo: feature_dlt_later,
             content: " this content is for page 6 related. we should keep this dummy text for the view : Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta "
         }]
 
@@ -136,9 +136,6 @@ class USPs extends React.Component<props, any> {
                         var x = elmnt.scrollLeft;
                         var Top = elmnt.scrollTop;
                         this.OnScroolInScroolView(Top)
-                        console.log(" on scrool event event", x, Top);
-                        // console.log("? ? ? ? ? ?  : event :  ",event.scrollTop);
-
                     }
                 }} style={{
                     float: 'right', width: '55%', height: '100%',
@@ -150,11 +147,13 @@ class USPs extends React.Component<props, any> {
 
                     {RightSideContent.map(item => {
                         return (
-                            <div id="RefElement" style={{ padding: 10, display: 'block' }}>
-                                <img style={{ height: '100px' }} src={item.logo} />
-                                <text style={{ fontSize: 25, marginTop: 20 }}>
+                            <div className="singleHomeBlockElement currentBlockSelected">
+                                <div className="singleHomeBlockElementImage">
+                                    <img src={item.logo} />
+                                </div>
+                                <div className="singleHomeBlockElementText">
                                     {item.content}
-                                </text>
+                                </div>
                             </div>
                         )
                     })}
