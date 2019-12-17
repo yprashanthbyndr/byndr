@@ -30,30 +30,38 @@ class USPs extends React.Component<props, any> {
         let winScroll =
             document.body.scrollTop || document.documentElement.scrollTop;
         console.log(" . / . / . /  winScroll:", winScroll, this.state, this.props);
-        if ((!this.state.StickyUsps && winScroll > 1390) || (this.state.StickyUsps && winScroll < 1390)) {
+        if ((!this.state.StickyUsps && winScroll > 1390 && winScroll <5680 ) || (this.state.StickyUsps && (winScroll >5680 || winScroll < 1390) )) {
             this.setState_("StickyUsps", !this.state.StickyUsps);
         }
-    }
 
+        this.OnScroolInScroolView(winScroll);
+    }
 
     componentWillUnmount(): any {
         window.removeEventListener('scroll', this.ScroolEvent);
     }
-
 
     setState_(key: any, value: any) {
         this.setState({ [key]: value });
     }
     OnScroolInScroolView(scroolHeoght: number) {
         let currentActiveTab = this.state.ActiveTab;
-        if (scroolHeoght < 50 && currentActiveTab !== "page1") {
+        if (scroolHeoght > 1410 && scroolHeoght < 1730 && currentActiveTab !== "page1") {
             this.setState_("ActiveTab", "page1");
-        } else if (scroolHeoght > 160 && scroolHeoght < 300 && currentActiveTab !== "page2") {
+        } else if (scroolHeoght > 1940 && scroolHeoght < 2280 && currentActiveTab !== "page2") {
             this.setState_("ActiveTab", "page2");
-        } else if (scroolHeoght > 340 && scroolHeoght < 400 && currentActiveTab !== "page3") {
+        } else if (scroolHeoght > 2500 && scroolHeoght < 2750 && currentActiveTab !== "page3") {
             this.setState_("ActiveTab", "page3");
-        } else if (scroolHeoght > 530 && scroolHeoght < 600 && currentActiveTab !== "page4") {
+        } else if (scroolHeoght > 3080 && scroolHeoght < 3350 && currentActiveTab !== "page4") {
             this.setState_("ActiveTab", "page4");
+        } else if (scroolHeoght > 3630 && scroolHeoght < 4000 && currentActiveTab !== "page5") {
+            this.setState_("ActiveTab", "page5");
+        } else if (scroolHeoght > 4200 && scroolHeoght < 4550 && currentActiveTab !== "page6") {
+            this.setState_("ActiveTab", "page6");
+        } else if (scroolHeoght > 4770 && scroolHeoght < 5150 && currentActiveTab !== "page7") {
+            this.setState_("ActiveTab", "page7");
+        } else if (scroolHeoght > 5400 && scroolHeoght < 5700 && currentActiveTab !== "page8") {
+            this.setState_("ActiveTab", "page8");
         }
     }
 
@@ -142,7 +150,7 @@ class USPs extends React.Component<props, any> {
                             <div className="uspsMainBlockLeftTitle">News feed</div>
                             {Left_HeadersList.map(item => {
                                 return (
-                                    <div className="uspsMainBlockLeftItem">
+                                    <div className={"uspsMainBlockLeftItem " + (this.state.ActiveTab === item.for ? "selectedLeft-List-Item":"")}>
                                         {/* style={{ display: 'block', padding: 10, backgroundColor: this.state.ActiveTab == item.for ? "blue" : "" }} */}
                                         <div className="uspsMainBlockLeftItemImg"><img src={item.logo} /></div>
                                         <div className="uspsMainBlockLeftItemText">{item.name}</div>

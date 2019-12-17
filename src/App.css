@@ -4749,6 +4749,11 @@ li.year_details {
         animation: leftText 2s linear forwards;
        }
 
+       .selectedLeft-List-Item{
+background-color: #00abeb;
+font-size: large !important;
+       }
+
        @keyframes leftText {
            0%{
             top:0px; left:0px
