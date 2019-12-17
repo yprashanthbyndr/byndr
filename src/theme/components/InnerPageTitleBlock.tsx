@@ -12,7 +12,8 @@ interface props {
     tryBtnDisplay:any,
     OpenModelPopup?: any,
     OpenPlayVideo?:boolean,
-    role?:any
+    role?:any,
+    btnText?:any
 }
 
 class InnerPageTitleBlock extends React.Component<props, any> {
@@ -28,7 +29,7 @@ togglePopup() {
 }
     render(): any {
 
-      const {fromPage,pageSubtitle,videoDisplay,tryBtnDisplay,OpenPlayVideo} = this.props
+      const {fromPage,pageSubtitle,videoDisplay,tryBtnDisplay,OpenPlayVideo,btnText} = this.props
 
         return (
             <section>
@@ -65,7 +66,7 @@ togglePopup() {
                   {tryBtnDisplay == "true"?<div className="CallToAction_btn">
                     <div className="CallToAction_btn_inr">
                       <a href="./"> 
-                        Start using Byndr Free.
+      {btnText !== undefined ? btnText : "Start using Byndr Free"}
                       </a>
                     </div>
                   </div>:null}

@@ -1322,7 +1322,7 @@ div#carousel1 .flex-viewport{
     height: 60px;
 }
 .homeBanner_slider_navigation ul li.flex-active-slide .homeBanner_slider_nav_text{
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1;
     font-weight: 100;
 }
@@ -1409,10 +1409,10 @@ div#carousel1 .flex-viewport{
     line-height: 1.8;
     letter-spacing: 1px;
 }
-.uspsMainBlockLeftItemText{
+/* .uspsMainBlockLeftItemText{
     float: left;
     margin-left: 10px;
-}
+} */
 .uspsMainBlockLeftTitle {
     text-align: left;
     font-size: 28px;
@@ -1926,7 +1926,23 @@ select#contact_purpose {
     font-size: 45px;
     margin-bottom: 24px;
     letter-spacing: 0;
-    font-weight:100;
+    font-weight: 100;
+    max-width: 788px;
+    margin: 0 auto;
+}
+.ByndrTeamContent_block {
+    width: 100%;
+    float: left;
+    padding: 120px 0;
+}.ByndrTeamContent_main {
+    width: 100%;
+    float: left;
+}.ByndrTeamContent_contentData {
+    width: 100%;
+    float: left;
+}
+.ByndrTeamContent_contentData img{
+    max-width: 100%;
 }
 .banner_content {
     text-align: center;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { vvit_img, stanley_img, author_Img, sabyaSachiRath, narasimhaReddy, snist, satyalankaPrasad } from "../../assets";
+import { vvism, stanley_img, author_Img, sabyaSachiRath, narasimhaReddy, snist, satyalankaPrasad } from "../../assets";
 
 import { connect } from 'react-redux';
 import { TestimonialSelection, TestimonialInterval } from '../../services';
@@ -18,7 +18,7 @@ class HomeTestimonial extends React.Component<props, any> {
   constructor(props) {
     super(props);
     this.state = {
-      activeTestimonialis: "vvit",
+      activeTestimonialis: "vvism",
       intervalId: ''
     }
   }
@@ -50,7 +50,7 @@ class HomeTestimonial extends React.Component<props, any> {
 
 
   //   // let Current = this.state.activeTestimonialis;
-  //   // this.setState({ activeTestimonial: Current == 'vvit' ? 'stanley' : Current == 'stanley' ? 'sist' : 'vvit' })
+  //   // this.setState({ activeTestimonial: Current == 'vvism' ? 'stanley' : Current == 'stanley' ? 'sist' : 'vvism' })
 
   // }
 
@@ -70,14 +70,14 @@ class HomeTestimonial extends React.Component<props, any> {
                 <div className="homeTestimonialsLogos">
                   <div className="homeTestimonialsLogos_inr flexslider" id="carousel">
                     <ul className="slides">
-                      <li className={this.props.activeTestimonial == 'vvit' ? "activeTestimonials" : ""}
+                      <li className={this.props.activeTestimonial == 'vvism' ? "activeTestimonials" : ""}
                         onClick={() => {
-                          if (this.props.activeTestimonial !== 'vvit') {
-                            TestimonialSelection("vvit")
+                          if (this.props.activeTestimonial !== 'vvism') {
+                            TestimonialSelection("vvism")
                           }
                         }}
                       >
-                        <img src={vvit_img} />
+                        <img src={vvism} />
                       </li>
                       <li className={this.props.activeTestimonial == 'stanley' ? "activeTestimonials" : ""}
                         onClick={() => {
@@ -112,9 +112,9 @@ class HomeTestimonial extends React.Component<props, any> {
                 <div className="homeTestimonialCurrent flexslider" id="slider">
                   <div className="homeTestimonialCurrentInr">
                     <ul className="slides">
-                      <li className={this.props.activeTestimonial == 'vvit' ? "testimonial-fadeIn" : "testimonial-fadeOut"}>
+                      <li className={this.props.activeTestimonial == 'vvism' ? "testimonial-fadeIn" : "testimonial-fadeOut"}>
                         <div className="homeTestimonialCurrent_Content">
-                          My compliments to team Byndr for designing a simple and sweet LMS. It is versatile, simple and inclusive. All students and faculty have been very positive about Byndr and its role as a learning catalyst.
+                        My compliments to team Byndr for designing a simple and sweet LMS. It is versatile, simple and inclusive. All students and faculty have been very positive about Byndr and its role as a learning catalyst.
                                   </div>
                         <div className="homeTestimonialCurrent_author">
                           <div className="homeTestimonialCurrent_author_img">
@@ -130,7 +130,7 @@ class HomeTestimonial extends React.Component<props, any> {
                       </li>
                       <li className={this.props.activeTestimonial == 'snist' ? "testimonial-fadeIn" : "testimonial-fadeOut"}>
                         <div className="homeTestimonialCurrent_Content">
-                          Our college has got a number of learning resources, and those resources are now made available to students through Byndr. We are very thankful to Byndr - An innovative learning management system can be developed and can be used in all parts of the world.
+                        Our college has got a number of learning resources, and those resources are now made available to students through Byndr. We are very thankful to Byndr - An innovative learning management system can be developed and can be used in all parts of the world.
                                   </div>
                         <div className="homeTestimonialCurrent_author">
                           <div className="homeTestimonialCurrent_author_img">
@@ -146,7 +146,7 @@ class HomeTestimonial extends React.Component<props, any> {
                       </li>
                       <li className={this.props.activeTestimonial == 'stanley' ? "testimonial-fadeIn" : "testimonial-fadeOut"}>
                         <div className="homeTestimonialCurrent_Content">
-                          I would recommend Byndr LMS, it’s simple and easy to use platform within weeks after implementation we could see the usage above 70% and we also noticed improvement in student attendance and Teacher-Student interaction.
+                        I would recommend Byndr LMS, it’s simple and easy to use platform within weeks after implementation we could see the usage above 70% and we also noticed improvement in student attendance and Teacher-Student interaction.
                                   </div>
                         <div className="homeTestimonialCurrent_author">
                           <div className="homeTestimonialCurrent_author_img">

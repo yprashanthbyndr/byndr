@@ -144,7 +144,7 @@ class USPs extends React.Component<props, any> {
                                 return (
                                     <div className="uspsMainBlockLeftItem">
                                         {/* style={{ display: 'block', padding: 10, backgroundColor: this.state.ActiveTab == item.for ? "blue" : "" }} */}
-                                        <div className="uspsMainBlockLeftItemImg"><img src={item.logo} /></div>
+                                        {/* <div className="uspsMainBlockLeftItemImg"><img src={item.logo} /></div> */}
                                         <div className="uspsMainBlockLeftItemText">{item.name}</div>
                                     </div>
                                 )

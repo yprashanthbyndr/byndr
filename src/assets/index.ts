@@ -98,7 +98,13 @@ import bannerForStudents from "./images/bannerForStudents.svg";
 import feature_dlt_later from "./images/feature_dlt_later.png";
 import calender_dlt_later from "./images/calender_dlt_later.svg";
 
+import vvism from "./images/vvism.png";
+
+import ByndrTeamImg from "./images/ourTeam.jpg";
+
 export {
+    ByndrTeamImg,
+    vvism,
     feature_dlt_later,
     calender_dlt_later,
     assess_support,

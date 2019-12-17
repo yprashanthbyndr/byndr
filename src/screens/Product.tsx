@@ -18,9 +18,9 @@ class Product extends React.Component<props, any> {
                 <Header />
                 </div>
                 <div className="bodySection">
-                    <InnerPageTitleBlock fromPage="A tech-savvy tool for ed-tech experience" pageSubtitle="A free social learning platform for both faculty &amp; students, offers a maintenance-free cloud-based platform with LMS features like attendance, materials, grades and more." videoDisplay="false" tryBtnDisplay="true"  />
+                    <InnerPageTitleBlock fromPage="A tech-savvy tool for ed-tech experience" pageSubtitle="A free social learning platform for both faculty & students, offers a maintenance-free cloud-based platform with LMS features like attendance, materials, grades and more..." videoDisplay="false" tryBtnDisplay="true"  />
                     <WhoIsBynderFor />
-                    <ProductCoreCapabilities />
+                    {/* <ProductCoreCapabilities /> */}
                     <FooterDoubleCTA />
                 </div>
                 <Footer />

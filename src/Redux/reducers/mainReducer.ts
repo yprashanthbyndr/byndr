@@ -26,7 +26,7 @@ const INIT_STATE: HomeReducer = {
   ContactFormSubmitSuccess: false,
   OpenMenuBar: false,
   OpenPlayVideo: false,
-  activeTestimonial: 'vvit',
+  activeTestimonial: 'vvism',
   Stickypricing_table: false,
   MiniHeaderOptions: "overview",
   HomeScreenprops: {
@@ -80,7 +80,7 @@ export default (state = INIT_STATE, action: ActionModel) => {
     case TESTIMONIAL_INTERVAL:
       let Current = state.activeTestimonial;
       return {
-        ...state, activeTestimonial: Current == 'vvit' ? 'stanley' : Current == 'stanley' ? 'sist' : 'vvit'
+        ...state, activeTestimonial: Current == 'vvism' ? 'stanley' : Current == 'stanley' ? 'sist' : 'vvism'
       }
 
     case TCHANGE_DIRECTION_IN_HOME_SLIDES:

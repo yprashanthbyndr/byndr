@@ -17,7 +17,7 @@ export default class Home_A_Grids extends React.Component<props, any> {
                     <div className="homeSingleGridIcon">
                       <img src={learn_innovate_together} />
                     </div>
-                    <div className="homeSingleGridTitle">Learn & Innovate Together</div>
+                    <div className="homeSingleGridTitle">Learn & Innovate</div>
                     <div className="homeSingleGridContent">
                     Enables teachers to provide study materials, communicate effectively and encourage pro-active thinking among students.
             </div>
@@ -28,7 +28,7 @@ export default class Home_A_Grids extends React.Component<props, any> {
                     <div className="homeSingleGridIcon">
                       <img src={builtInAccessibility} />
                     </div>
-                    <div className="homeSingleGridTitle">Built-In Accessibility Features</div>
+                    <div className="homeSingleGridTitle">Plan, Perform & Progress</div>
                     <div className="homeSingleGridContent">
                     It enables the students to access course material, get their doubts clarified, take assessments and monitor the progress.
             </div>
@@ -39,9 +39,9 @@ export default class Home_A_Grids extends React.Component<props, any> {
                     <div className="homeSingleGridIcon">
                       <img src={collaboration_communication} />
                     </div>
-                    <div className="homeSingleGridTitle">Collaboration & Communication</div>
+                    <div className="homeSingleGridTitle">Collaboration & Co-ordination</div>
                     <div className="homeSingleGridContent">
-                    It is a cloud-based platform that enables the administrators to co-ordinate and monitor the performance of teachers and students on a regular basis.
+                    All course activity rolls up into a simple feed, no clicks, simple social learning, collaboration with real-time push notifications, keeping users engaged and connected.
             </div>
                   </div>
                 </div>
@@ -52,7 +52,7 @@ export default class Home_A_Grids extends React.Component<props, any> {
                     </div>
                     <div className="homeSingleGridTitle">Assess & Support</div>
                     <div className="homeSingleGridContent">
-                    It enables the teachers to create assignments, track performance and evaluate to overcome the weaknesses.
+                    It enables the teachers to create assignments, track performance, evaluate for better learning outcomes
             </div>
                   </div>
                 </div>
@@ -63,7 +63,7 @@ export default class Home_A_Grids extends React.Component<props, any> {
                     </div>
                     <div className="homeSingleGridTitle">Peer-to-Peer Learning</div>
                     <div className="homeSingleGridContent">
-                    It enables the students to create their own study group, share knowledge and exchange ideas within the group and focus on self-development.
+                    It enables the students to create their own study group, share notes, exchange ideas within the group and focus on self-development.
             </div>
                   </div>
                 </div>
@@ -74,7 +74,7 @@ export default class Home_A_Grids extends React.Component<props, any> {
                     </div>
                     <div className="homeSingleGridTitle">Secure Technology</div>
                     <div className="homeSingleGridContent">
-                    A secured learning management tool enabling easy integration, no set-up costs and servers to maintain.
+                    A Secure cloud-based learning platform that enables easy integration, Secure storage for documents and materials, monitor the engagement level, no set-up costs and no servers to maintain.
             </div>
                   </div>
                 </div>
