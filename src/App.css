@@ -4690,5 +4690,10 @@ li.year_details {
            }
        }
 
+       .Stickyusps{
+           position: fixed;
+           top: 120px;
+       }
+
    /* End USPs styles   */
  
