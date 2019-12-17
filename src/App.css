@@ -1345,14 +1345,16 @@ div#carousel1 .flex-viewport{
 .singleHomeBlockElement {
     width: 100%;
     float: left;
-    height: inherit;
+    min-height: 450px;
+    padding: 60px 0;
 }
 .singleHomeBlockElementImage {
     width: 100%;
     float: left;
+    padding: 60px 0;
 }
 .singleHomeBlockElementImage img{
-    max-width: 250px;
+    max-width: 320px;
     margin: 0 auto;
 }
 .uspsMainBlockStickey {
@@ -1386,8 +1388,9 @@ div#carousel1 .flex-viewport{
 }
 .uspsMainBlockRightInr {
     width: 100%;
-    float: left;
     padding: 25px 0;
+    max-width: 650px;
+    margin: 0 auto;
 }
 .uspsMainBlockLeftItem {
     width: 100%;
@@ -1399,6 +1402,12 @@ div#carousel1 .flex-viewport{
 .uspsMainBlockLeftItemImg img{
     float: left;
     width: 21px;
+}
+.singleHomeBlockElementText {
+    width: 100%;
+    float: left;
+    line-height: 1.8;
+    letter-spacing: 1px;
 }
 .uspsMainBlockLeftItemText{
     float: left;
