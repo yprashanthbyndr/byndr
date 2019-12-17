@@ -508,13 +508,13 @@ cursor: pointer;
 }
 .homeBanner_slider_navigation ul li{
     flex-grow: 1;
-    max-width: 130px;
+    max-width: 100px;
     background: #E2E8F0 0% 0% no-repeat padding-box;
     opacity: 1;
     color: #00144C;
     cursor: default;
     line-height: 0;
-    height: 70px;
+    height: 60px;
 }
 .homeBanner_slider_navigation ul li:first-child{
     border-radius: 4px 0 0 4px;
@@ -542,11 +542,11 @@ cursor: pointer;
     width: 100%;
     float: left;
     text-align: center;
-    font-size: 14px;
+    font-size: 13px;
     letter-spacing: 0.14px;
     opacity: 1;
     font-weight: 400;
-    line-height: 5;
+    line-height: 4.5;
 }
 
 /* Grid */
@@ -1322,7 +1322,7 @@ div#carousel1 .flex-viewport{
     height: 60px;
 }
 .homeBanner_slider_navigation ul li.flex-active-slide .homeBanner_slider_nav_text{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1;
     font-weight: 100;
 }
@@ -1342,6 +1342,19 @@ div#carousel1 .flex-viewport{
     z-index: 9;
   }
 
+.singleHomeBlockElement {
+    width: 100%;
+    float: left;
+    height: inherit;
+}
+.singleHomeBlockElementImage {
+    width: 100%;
+    float: left;
+}
+.singleHomeBlockElementImage img{
+    max-width: 250px;
+    margin: 0 auto;
+}
 
 /*ricing table */
 .sticky_table_menu{

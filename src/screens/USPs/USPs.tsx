@@ -1,5 +1,5 @@
-import React from 'react';
-import { slider_1, favicon } from "../../assets";
+import React  from 'react';
+import { slider_1, favicon, feature_dlt_later, calender_dlt_later } from "../../assets";
 
 import { connect } from 'react-redux';
 
@@ -61,65 +61,83 @@ class USPs extends React.Component<props, any> {
         let Left_HeadersList = [{
             for: "page1",
             name: "Latest Feed & Posts",
-            logo: favicon,
+            logo: calender_dlt_later,
 
         }, {
             for: "page2",
             name: "Courses",
-            logo: favicon,
+            logo: calender_dlt_later,
 
         }, {
             for: "page3",
             name: "Groups",
-            logo: favicon,
+            logo: calender_dlt_later,
 
         }, {
             for: "page4",
             name: "Documents/Materials",
-            logo: favicon,
+            logo: calender_dlt_later,
 
         }, {
             for: "page5",
             name: "Calendar",
-            logo: favicon,
+            logo: calender_dlt_later,
 
         }, {
             for: "page6",
             name: "Coursework",
-            logo: favicon,
+            logo: calender_dlt_later,
+
+        }, {
+            for: "page7",
+            name: "User-Friendly",
+            logo: calender_dlt_later,
+
+        }, {
+            for: "page8",
+            name: "Secure",
+            logo: calender_dlt_later,
 
         }];
 
         let RightSideContent = [{
             for: "page1",
-            logo: slider_1,
-            content: "All course activity posts, shared materials, announcements, polls and quiz, rolls up into a simple home screen feed, no clicks. Keep up with all the latest activity together, so you can quickly access. Collaboration and notifications in real time"
+            logo: feature_dlt_later,
+            content: "All course activity posts, shared materials, announcements, polls and quiz, rolls up into a simple home screen feed, no clicks. Keep up with all the latest activity together, so you can quickly access. Collaboration and notifications in real time."
         }, {
             for: "page2",
-            logo: slider_1,
+            logo: feature_dlt_later,
             content: "Here, you'll find option to create all your courses and link students to their courseaccordingly. All these courses are organized, so you can take attendance, upload and share materials, submit assignments or check grades. Create your class and experience the Byndr today!"
         }, {
             for: "page3",
-            logo: slider_1,
+            logo: feature_dlt_later,
             content: " Groups in Byndr, way to collaborate to interact or initiate one-one discussions (teacher with students, students with students, even teachers with teachers) of the group. This is ideal solution for mentoring for Events, Sports, Innovation or anything that you would to drive learning curricular or extra-curricular."
         }, {
             for: "page4",
-            logo: slider_1,
-            content: "Within Byndr, you can organize all the materials for a class, and share it with all the students in class. You can add Images, Word, Excel, PowerPoint and pdf files, weblinks or even can share drive links"
+            logo: feature_dlt_later,
+            content: "Within Byndr, you can organize all the materials for a class, and share it with all the students in class. You can add Images, Word, Excel, PowerPoint and pdf files, weblinks or even can share drive links."
         }, {
             for: "page5",
-            logo: slider_1,
+            logo: feature_dlt_later,
             content: "Calendar is designed, you can easily monitor all your class schedule, assignments, important due dates and get reminders about upcoming activities, thereby giving zero-chance of missing to-do’s."
         }, {
             for: "page6",
-            logo: slider_1,
-            content: " At Byndr, Teachers can manage all their day-to-day activities like marking attendance, post and manage assignments, manage and communicate grades etc. All these options can be easily done on any device "
+            logo: feature_dlt_later,
+            content: "At Byndr, Teachers can manage all their day-to-day activities like marking attendance, post and manage assignments, manage and communicate grades etc. All these options can be easily done on any device."
+        }, {
+            for: "page7",
+            logo: feature_dlt_later,
+            content: "Byndr has been designed and developed with emphasis on connectivity and mobile user experience. Our native Android app & iOS along with responsive webapp - are lightweight, ensuring every student and teacher has access to educational resources inside and outside the classroom."
+        }, {
+            for: "page8",
+            logo: feature_dlt_later,
+            content: "A Secure cloud-based learning platform that enables easy integration, Secure storage for documents and materials, monitor the engagement level, no set-up costs and no servers to maintain. Byndr, with its in-depth experience in technology products, aims to provide an easy-to-use, fast, and mobile-first platform to benefit all stakeholders in higher education."
         }]
 
         return (
 
-            <div style={{ width: '100%', height: '500px' }} >
-                <div style={{ float: 'left', width: '25%', display: 'inline', height: '500px' }}>
+            <div className= {this.state.StickyUsps? "Stickyusps": ""} style={{ width: '100%' }} >
+                <div  style={{ float: 'left', width: '25%', display: 'inline', height: '500px' }}>
                     {Left_HeadersList.map(item => {
                         return (
                             <div style={{ display: 'block', padding: 10, backgroundColor: this.state.ActiveTab == item.for ? "blue" : "" }}>
@@ -138,28 +156,21 @@ class USPs extends React.Component<props, any> {
                     var elmnt = document.getElementById("myDIV");
 
                     if (elmnt !== null && elmnt !== undefined) {
-                        var x = elmnt.scrollLeft;
                         var Top = elmnt.scrollTop;
-                        this.OnScroolInScroolView(Top)
-                        console.log(" on scrool event event", x, Top);
-                        // console.log("? ? ? ? ? ?  : event :  ",event.scrollTop);
-
+                        this.OnScroolInScroolView(Top);
                     }
                 }} style={{
-                    float: 'right', width: '55%', height: '100%',
-                    // overflowY: 'scroll',
-                    overflow: "auto"
-                    // overflowX: "hidden",
-
-                }}>
+                    float: 'right', width: '55%', height: '100%'}}>
 
                     {RightSideContent.map(item => {
                         return (
-                            <div id="RefElement" style={{ padding: 10, display: 'block' }}>
-                                <img style={{ height: '100px' }} src={item.logo} />
-                                <text style={{ fontSize: 25, marginTop: 20 }}>
+                            <div className="singleHomeBlockElement currentBlockSelected">
+                                <div className="singleHomeBlockElementImage">
+                                    <img src={item.logo} />
+                                </div>
+                                <div className="singleHomeBlockElementText">
                                     {item.content}
-                                </text>
+                                </div>
                             </div>
                         )
                     })}

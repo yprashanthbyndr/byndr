@@ -95,7 +95,12 @@ import bannerForTeachers from "./images/bannerForTeachers.svg";
 import bannerForAdmin from "./images/bannerForAdmin.svg";
 import bannerForStudents from "./images/bannerForStudents.svg";
 
+import feature_dlt_later from "./images/feature_dlt_later.png";
+import calender_dlt_later from "./images/calender_dlt_later.svg";
+
 export {
+    feature_dlt_later,
+    calender_dlt_later,
     assess_support,
     bannerForTeachers,
     bannerForAdmin,
