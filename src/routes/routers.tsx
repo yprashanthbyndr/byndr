@@ -10,6 +10,7 @@ const ByndrRoutes = [
         metaTitle: "Page 1",
         metaTags: "Meta Tags for Page 1",
         path: '/',
+        key: 'home',
         metaDescription: "Meta Description for Page 1",
         component: HomeSplit_A,
         routes: [],
@@ -21,6 +22,7 @@ const ByndrRoutes = [
         metaTitle: "Page 2",
         metaTags: "Meta Tags for Page 2",
         path: '/test-case',
+        key: 'test-case',
         metaDescription: "Meta Description for Page 2",
         component: HomeSplit_B,
         routes: []
@@ -32,6 +34,7 @@ const ByndrRoutes = [
         metaTitle: "About Us",
         metaTags: "About Us Meta Tags",
         path: '/aboutus',
+        key: 'aboutus',
         metaDescription: "About Us Meta Description",
         component: AboutUs,
         routes: []
@@ -43,6 +46,7 @@ const ByndrRoutes = [
         metaTitle: "Pricing Plans",
         metaTags: "Pricing Plans Meta Tags",
         path: '/pricing',
+        key: 'pricing',
         metaDescription: "Pricing Plans Meta Description",
         component: Pricing,
         routes: []
@@ -54,6 +58,7 @@ const ByndrRoutes = [
         metaTitle: "Product",
         metaTags: "Product Meta Tags",
         path: '/product',
+        key: 'product',
         metaDescription: "Product Meta Description",
         component: Product,
         routes: []
@@ -65,6 +70,7 @@ const ByndrRoutes = [
         metaTitle: "Product Roles",
         metaTags: "Product Roles Meta Tags",
         path: '/product-roles',
+        key: 'product-roles',
         metaDescription: "Product Roles Meta Description",
         component: ProductRoles,
         routes: []
@@ -76,6 +82,7 @@ const ByndrRoutes = [
         metaTitle: "Contact Us",
         metaTags: "Contact Us Meta Tags",
         path: '/contact-us',
+        key: 'contact-us',
         metaDescription: "Contact Us Meta Description",
         component: ContactUs,
         routes: []
@@ -87,6 +94,7 @@ const ByndrRoutes = [
         metaTitle: "Blog",
         metaTags: "Blog Meta Tags",
         path: '/blog',
+        key: 'blog',
         metaDescription: "Blog Meta Description",
         component: Blog,
         // routes: [{
@@ -106,6 +114,7 @@ const ByndrRoutes = [
         metaTitle: "Contact Us",
         metaTags: "Contact Us Meta Tags",
         path: '/lms-for-teachers',
+        key: 'lms-for-teachers',
         metaDescription: "Contact Us Meta Description",
         component: lms_For_Teacher,
         routes: []
@@ -117,6 +126,7 @@ const ByndrRoutes = [
         metaTitle: "LMS For Students",
         metaTags: "LMS For Students Meta Tags",
         path: '/lms-for-students',
+        key: 'lms-for-students',
         metaDescription: "LMS For Students Meta Description",
         component: lms_For_Student,
         routes: []
@@ -128,6 +138,7 @@ const ByndrRoutes = [
         metaTitle: "LMS For Admins",
         metaTags: "LMS For Admins Meta Tags",
         path: '/lms-for-admins',
+        key: 'lms-for-admins',
         metaDescription: "LMS For Admins Meta Description",
         component: lms_For_Admin,
         routes: []
@@ -139,6 +150,7 @@ const ByndrRoutes = [
         metaTitle: "Blog Child1",
         metaTags: "Blog Meta Tags child1",
         path: '/blog/whats-in-store-for-learning-management-system-india-in-2017',
+        key: 'whats-in-store-for-learning-management-system-india-in-2017',
         metaDescription:"BlogChild1",
         component: BlogChild1,
     },
@@ -149,6 +161,7 @@ const ByndrRoutes = [
         metaTitle: "Key factors to consider when planning to collaborate with a mobile LMS platform",
         metaTags: "Key factors to consider when planning to collaborate with a mobile LMS platform",
         path: '/blog/key-factors-to-consider-when-planning-to-collaborate-with-a-mobile-lms-platform',
+        key: 'key-factors-to-consider-when-planning-to-collaborate-with-a-mobile-lms-platform',
         metaDescription:"Key factors to consider when planning to collaborate with a mobile LMS platform",
         component: BlogChild2,
     },{
@@ -158,6 +171,7 @@ const ByndrRoutes = [
         metaTitle: "Use of learning management systems in India",
         metaTags: "Use of learning management systems in India",
         path: '/blog/use-of-learning-management-systems-in-india',
+        key: 'use-of-learning-management-systems-in-india',
         metaDescription:"Use of learning management systems in India",
         component: BlogChild3,
     },
@@ -168,6 +182,7 @@ const ByndrRoutes = [
         metaTitle: "Blog Child4",
         metaTags: "Blog Meta Tags child4",
         path: '/blog/why-colleges-need-mobile-learning-apps',
+        key: 'why-colleges-need-mobile-learning-apps',
         metaDescription:"BlogChild4",
         component: BlogChild4,
     },
@@ -178,6 +193,7 @@ const ByndrRoutes = [
         metaTitle:"Privacy Policy",
         metaTags:"Privacy Policy Meta Tags",
         path:'/privacy-policy',
+        key: 'privacy-policy',
         metaDescription:"Privacy Policy Description",
         component:PrivacyPolicy,
         routes: []
@@ -189,6 +205,7 @@ const ByndrRoutes = [
         metaTitle:"Terms of Use",
         metaTags:"Terms of Use Meta Tags",
         path:'/terms-of-use',
+        key: 'terms-of-use',
         metaDescription:"Terms of Use Description",
         component:TermsOfUse,
         routes: []
