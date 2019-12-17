@@ -91,7 +91,7 @@ class Home_A_Hero extends React.Component<props, any> {
 
     let Active = this.props.HomeScreenprops.activeSlide;
     let selectedSlide = Active === "teachers" ? "students" :
-      Active === "students" ? "adminstrator" : Active === "adminstrator" ?   "teachers" : ""
+      Active === "students" ? "adminstrator" : Active === "adminstrator" ? "teachers" : ""
 
     SlideActionInHome(selectedSlide);
   }
@@ -128,7 +128,8 @@ class Home_A_Hero extends React.Component<props, any> {
                             <NavLink exact to={activeSlideDetails.gettingStarted.link}>{activeSlideDetails.gettingStarted.text}</NavLink>
                           </div>
                           <div className="cta_outline_color">
-                            <NavLink exact to={activeSlideDetails.howitworks.link}><img src={Double_Arrows_pink} width="14" style={{ marginRight: 10 }} />{activeSlideDetails.howitworks.text}</NavLink>
+                            <NavLink exact to={activeSlideDetails.howitworks.link}>
+                              <img src={Double_Arrows_pink} width="14" style={{ marginRight: 10 }} />{activeSlideDetails.howitworks.text}</NavLink>
                           </div>
                         </div>
                       </div>
@@ -146,9 +147,9 @@ class Home_A_Hero extends React.Component<props, any> {
                       <li className={activeSlide === "teachers" ? "flex-active-slide" : ""}
                       // onClick={() => this.selectedSlide("teachers")}
                       >
-                        <span className="homeBanner_slider_nav_icon">
-                          <img src={teacher_icon} /> 
-                        </span>
+                        {activeSlide === "teachers" ? <span className="homeBanner_slider_nav_icon">
+                          <img src={teacher_icon} />
+                        </span> : null}
                         <span className="homeBanner_slider_nav_text">
                           Teacher
               </span>
@@ -156,9 +157,9 @@ class Home_A_Hero extends React.Component<props, any> {
                       <li className={activeSlide === "students" ? " flex-active-slide" : ""}
                       // onClick={() => this.selectedSlide("students") }
                       >
-                        <span className="homeBanner_slider_nav_icon">
+                        {activeSlide === "students" ? <span className="homeBanner_slider_nav_icon">
                           <img src={student_icon} />
-                        </span>
+                        </span> : null}
                         <span className="homeBanner_slider_nav_text">
                           Student
               </span>
@@ -166,9 +167,9 @@ class Home_A_Hero extends React.Component<props, any> {
                       <li className={activeSlide === "adminstrator" ? " flex-active-slide" : ""}
                       // onClick={() => this.selectedSlide("adminstrator")}
                       >
-                        <span className="homeBanner_slider_nav_icon">
+                        {activeSlide === "adminstrator" ? <span className="homeBanner_slider_nav_icon">
                           <img src={admin_icon} />
-                        </span>
+                        </span> : null}
                         <span className="homeBanner_slider_nav_text">
                           Adminstrator
               </span>
