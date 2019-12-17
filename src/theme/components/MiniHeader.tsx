@@ -9,7 +9,6 @@ import { store, actionMiniHeaderOptions } from '../../Redux';
 import { StickyMiniHeader_In_Lms } from '../../services';
 import { byndr_Logo } from '../../assets';
 import { NavLink } from 'react-router-dom';
-import { useSpring, animated } from 'react-spring'
 
 
 interface props {
