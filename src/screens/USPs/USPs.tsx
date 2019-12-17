@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from 'react';
 import { slider_1, favicon, feature_dlt_later, calender_dlt_later } from "../../assets";
 
 import { connect } from 'react-redux';
@@ -19,7 +19,7 @@ class USPs extends React.Component<props, any> {
             ActiveTab: "page1",
             StickyUsps: false,
         }
-        this.ScroolEvent= this.ScroolEvent.bind(this)
+        this.ScroolEvent = this.ScroolEvent.bind(this)
     }
 
     componentDidMount(): any {
@@ -30,7 +30,7 @@ class USPs extends React.Component<props, any> {
         let winScroll =
             document.body.scrollTop || document.documentElement.scrollTop;
         console.log(" . / . / . /  winScroll:", winScroll, this.state, this.props);
-        if ((!this.state.StickyUsps && winScroll > 1260) || (this.state.StickyUsps && winScroll < 1260)) {
+        if ((!this.state.StickyUsps && winScroll > 1390) || (this.state.StickyUsps && winScroll < 1390)) {
             this.setState_("StickyUsps", !this.state.StickyUsps);
         }
     }
@@ -137,30 +137,30 @@ class USPs extends React.Component<props, any> {
         return (
             <div className="uspsMainBlockStickey">
                 <div className="uspsMainBlock">
-                <div className="uspsMainBlockInr">
-                    <div className="uspsMainBlockLeft">
-                        <div className="uspsMainBlockLeftTitle">News feed</div>
-                        {Left_HeadersList.map(item => {
-                            return (
-                                <div className="uspsMainBlockLeftItem">
-                                    {/* style={{ display: 'block', padding: 10, backgroundColor: this.state.ActiveTab == item.for ? "blue" : "" }} */}
-                                    <div className="uspsMainBlockLeftItemImg"><img src={item.logo} /></div>
-                                    <div className="uspsMainBlockLeftItemText">{item.name}</div>
-                                </div>
-                            )
-                        })}
-                    </div>
-                    <div className="uspsMainBlockRight">
+                    <div className="uspsMainBlockInr">
+                        <div className={"uspsMainBlockLeft " + (this.state.StickyUsps ? "Stickyusps-Left" : "")}>
+                            <div className="uspsMainBlockLeftTitle">News feed</div>
+                            {Left_HeadersList.map(item => {
+                                return (
+                                    <div className="uspsMainBlockLeftItem">
+                                        {/* style={{ display: 'block', padding: 10, backgroundColor: this.state.ActiveTab == item.for ? "blue" : "" }} */}
+                                        <div className="uspsMainBlockLeftItemImg"><img src={item.logo} /></div>
+                                        <div className="uspsMainBlockLeftItemText">{item.name}</div>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                        <div className="uspsMainBlockRight">
                             <div id="myDIV" className="uspsMainBlockRightInr" onScroll={(event) => {
-                                        // let height = document.getElementById('RefElement');
-                                        var elmnt = document.getElementById("myDIV");
+                                // let height = document.getElementById('RefElement');
+                                var elmnt = document.getElementById("myDIV");
 
-                                        if (elmnt !== null && elmnt !== undefined) {
-                                            var x = elmnt.scrollLeft;
-                                            var Top = elmnt.scrollTop;
-                                            this.OnScroolInScroolView(Top)
-                                        }
-                                    }}>
+                                if (elmnt !== null && elmnt !== undefined) {
+                                    var x = elmnt.scrollLeft;
+                                    var Top = elmnt.scrollTop;
+                                    this.OnScroolInScroolView(Top)
+                                }
+                            }}>
 
                                 {RightSideContent.map(item => {
                                     return (
@@ -174,12 +174,12 @@ class USPs extends React.Component<props, any> {
                                         </div>
                                     )
                                 })}
+                            </div>
                         </div>
                     </div>
+
                 </div>
-                
-            </div>
-    
+
             </div>
 
             // <section>
