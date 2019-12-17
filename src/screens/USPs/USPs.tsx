@@ -135,49 +135,52 @@ class USPs extends React.Component<props, any> {
         }]
 
         return (
-
-            <div className= {this.state.StickyUsps? "Stickyusps": ""} style={{ width: '100%' }} >
-                <div  style={{ float: 'left', width: '25%', display: 'inline', height: '500px' }}>
-                    {Left_HeadersList.map(item => {
-                        return (
-                            <div style={{ display: 'block', padding: 10, backgroundColor: this.state.ActiveTab == item.for ? "blue" : "" }}>
-                                {} <img style={{ height: '50px', width: '50px' }} src={item.logo} />
-                                <text className={"usp-left-text " + (this.state.ActiveTab === item.for ? "anim" : "")}>
-                                    {item.name}
-                                </text>
-                            </div>
-                        )
-                    })}
-                </div>
-
-
-                <div id="myDIV" onScroll={(event) => {
-                    // let height = document.getElementById('RefElement');
-                    var elmnt = document.getElementById("myDIV");
-
-                    if (elmnt !== null && elmnt !== undefined) {
-                        var Top = elmnt.scrollTop;
-                        this.OnScroolInScroolView(Top);
-                    }
-                }} style={{
-                    float: 'right', width: '55%', height: '100%'}}>
-
-                    {RightSideContent.map(item => {
-                        return (
-                            <div className="singleHomeBlockElement currentBlockSelected">
-                                <div className="singleHomeBlockElementImage">
-                                    <img src={item.logo} />
+            <div className="uspsMainBlockStickey">
+                <div className="uspsMainBlock">
+                <div className="uspsMainBlockInr">
+                    <div className="uspsMainBlockLeft">
+                        <div className="uspsMainBlockLeftTitle">News feed</div>
+                        {Left_HeadersList.map(item => {
+                            return (
+                                <div className="uspsMainBlockLeftItem">
+                                    {/* style={{ display: 'block', padding: 10, backgroundColor: this.state.ActiveTab == item.for ? "blue" : "" }} */}
+                                    <div className="uspsMainBlockLeftItemImg"><img src={item.logo} /></div>
+                                    <div className="uspsMainBlockLeftItemText">{item.name}</div>
                                 </div>
-                                <div className="singleHomeBlockElementText">
-                                    {item.content}
-                                </div>
-                            </div>
-                        )
-                    })}
-                </div>
+                            )
+                        })}
+                    </div>
+                    <div className="uspsMainBlockRight">
+                            <div id="myDIV" className="uspsMainBlockRightInr" onScroll={(event) => {
+                                        // let height = document.getElementById('RefElement');
+                                        var elmnt = document.getElementById("myDIV");
 
+                                        if (elmnt !== null && elmnt !== undefined) {
+                                            var x = elmnt.scrollLeft;
+                                            var Top = elmnt.scrollTop;
+                                            this.OnScroolInScroolView(Top)
+                                        }
+                                    }}>
+
+                                {RightSideContent.map(item => {
+                                    return (
+                                        <div className="singleHomeBlockElement currentBlockSelected">
+                                            <div className="singleHomeBlockElementImage">
+                                                <img src={item.logo} />
+                                            </div>
+                                            <div className="singleHomeBlockElementText">
+                                                {item.content}
+                                            </div>
+                                        </div>
+                                    )
+                                })}
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-
+    
+            </div>
 
             // <section>
             //   <div className="homeAvailableDivices">

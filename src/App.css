@@ -1355,7 +1355,65 @@ div#carousel1 .flex-viewport{
     max-width: 250px;
     margin: 0 auto;
 }
-
+.uspsMainBlockStickey {
+    min-height: 450px;
+    /* position: fixed; */
+    width: 100%;
+    float: left;
+    top: 100px;
+    background: #efefef;
+}
+.uspsMainBlock {
+    width: 100%;
+    float: left;
+    background: #f9f9fb;
+    padding: 150px 0;
+}
+.uspsMainBlockInr {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.uspsMainBlockLeft {
+    width: 30%;
+    float: left;
+    max-width: 300px;
+}
+.uspsMainBlockRight {
+    width: 70%;
+    float: right;
+    text-align: center;
+}
+.uspsMainBlockRightInr {
+    width: 100%;
+    float: left;
+    padding: 25px 0;
+}
+.uspsMainBlockLeftItem {
+    width: 100%;
+    float: left;
+    padding: 10px 0;
+}.uspsMainBlockLeftItemImg {
+    float: left;
+}
+.uspsMainBlockLeftItemImg img{
+    float: left;
+    width: 21px;
+}
+.uspsMainBlockLeftItemText{
+    float: left;
+    margin-left: 10px;
+}
+.uspsMainBlockLeftTitle {
+    text-align: left;
+    font-size: 28px;
+    letter-spacing: 0;
+    color: #00144C;
+    opacity: 1;
+    margin-top: 0;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
 /*ricing table */
 .sticky_table_menu{
     display: block;
