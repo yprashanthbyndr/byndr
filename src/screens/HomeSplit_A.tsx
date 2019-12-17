@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Home_A_Hero, Home_A_Grids, SupportedDivices, HomeTestimonial, Header, Footer, FooterDoubleCTA } from '../theme/components';
 import { Helmet } from "react-helmet";
 
+import {USPs} from './USPs';
+
 import { connect } from 'react-redux';
 
 
@@ -36,11 +38,11 @@ class HomeSplit_A extends Component<props, any>{
                 </Helmet>
                 <Header />
                 <div className="bodySection">
-                    <Home_A_Hero
-                    />
+                    <Home_A_Hero/>
                     <Home_A_Grids />
                     {/* <FeaturesGrid /> */}
                     <SupportedDivices />
+                    {/* <USPs /> */}
                     <HomeTestimonial />
                     <FooterDoubleCTA />
                 </div>

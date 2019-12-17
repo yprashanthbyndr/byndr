@@ -8,8 +8,7 @@ interface props {
 export default class ModelPopup extends React.Component<props, any> {
 
     render(): any {
-        console.log("OpenPlayVideo",this.props.OpenPlayVideo)
-        const show = this.props.OpenPlayVideo
+       const show = this.props.OpenPlayVideo
         return (
             
                <div className="model_popup" style={{ display: show ? 'block' : 'none' }}>

@@ -1,4 +1,72 @@
 
+
+
+.fade-appear {
+    opacity: 0;
+  }
+  
+  .fade-appear.fade-appear-active {
+    opacity: 1;
+    transition: opacity 500ms linear;
+  }
+
+
+  .fade-exit {
+    opacity: 1;
+    transform: scale(1);
+
+  }
+  
+  .fade-exit.fade-exit-active {
+    opacity: 0;
+    transform: scale(1.1);
+    transition: opacity 500ms linear;
+  }
+  .fade-exit-done {
+    opacity: 0;
+  }
+
+
+  .fade-enter {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  
+  .fade-enter.fade-enter-active {
+    opacity: 0;
+    transform: scale(1);
+
+    transition: opacity 500ms linear;
+
+  }
+
+  /* .Mini-Header-Anim{
+     
+  } */
+
+  @keyframes byndrLogoForMini{
+     0% {
+/* transform: translateX(0%);
+ */
+ top:opx; left:0px;
+     }
+      100% {
+        /* transform: translateX(80px); */
+        top:opx; left:100px;
+      }
+
+  }
+
+  
+  /* .fade-leave {
+    opacity: 1;
+  }
+  
+  .fade-leave.fade-leave-active {
+    opacity: 0.01;
+    transition: opacity 3000ms ease-in;
+  } */
+
 .background-enter {
     transform: translate(100%);
   }
@@ -2713,6 +2781,8 @@ margin-bottom: 13px;
 }
 .byndrLogoForMini{
     display: none;
+   
+
 }
 .role_based_header_sticky .byndrLogoForMini{
     display: block;
@@ -2722,6 +2792,25 @@ margin-bottom: 13px;
     border-right: 1px solid #CB0A7A;
     margin-right: 10px;
     line-height: 1;
+    /* animation: slide 2s ease-in  forwards; */
+  
+}
+
+.BoxANim{
+    width:  50px;
+    height : 50px;
+    background-color: #01154d;
+    animation-name: miniheaderlogo;
+    animation-duration: 2s;
+}
+
+@keyframes miniheaderlogo{
+    0%{
+left: 0px; top: 0px;
+    }
+    100%{
+left:100px; top: 0px;
+    }
 }
 .role_based_header_sticky .byndrLogoForMini img{
     width: 100%;
@@ -4571,4 +4660,22 @@ li.year_details {
         margin-bottom: 0px;
     }
  }
+/* start USPs styles   */
+
+  .usp-left-text {  
+      font-size: 15px; 
+     }
+      .anim {  
+        animation: leftText 2s linear forwards;
+       }
+
+       @keyframes leftText {
+           0%{
+            top:0px; left:0px
+           } 100%{
+            top:0px; left:20px
+           }
+       }
+
+   /* End USPs styles   */
  

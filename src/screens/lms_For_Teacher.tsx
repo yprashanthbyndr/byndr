@@ -52,10 +52,6 @@ class lms_For_Teacher extends React.Component<props, any> {
         // MiniHeaderScrollLogic(st, lastScrollTop, this.props.HideHeader);
         let diff = scroll_position - lastScrollTop;
 
-        // console.log(" scroll_position : ", scroll_position);
-
-        console.log(" diff ", diff, scroll_position, lastScrollTop)
-
         // if (scroll_position > 560 && !this.props.StickMiniHeader) {
         //     let HideMainHeader = true;
         //     let StickyMiniHeader = true;
@@ -83,8 +79,6 @@ class lms_For_Teacher extends React.Component<props, any> {
     }
 
     render(): any {
-
-        console.log("this.props in lms : ", this.props);
 
         const gridList = [{
             image: Cloud_based_LMS,

@@ -34,7 +34,6 @@ class PricingPlans extends React.Component<props, any> {
     var testDiv = document.getElementById("STANDARD");
 
     if (testDiv == null) {
-      console.log("  testDiv ==null");
     } else {
       let DivHeight = testDiv.offsetTop;
       const winScroll =

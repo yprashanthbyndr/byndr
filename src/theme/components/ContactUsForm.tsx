@@ -24,8 +24,6 @@ class ContactUsForm extends React.Component<props, any> {
 
   ReadeInput(field: string, value: any) {
 
-    console.log(" in ReadeInput ", field, value);
-
     CantactUs_Ip_Values(field, value)
 
   }
@@ -39,18 +37,13 @@ class ContactUsForm extends React.Component<props, any> {
       alert('please enter valid details')
     } else {
       let validate = validateEmail(FormDetails.email);
-      console.log("./ . /. / validate : ", validate);
-      // let ObjectResponseis = this.props.ContactUsForm
+     // let ObjectResponseis = this.props.ContactUsForm
       SubmitContactPage(FormDetails)
     }
 
   }
 
   render(): any {
-
-    console.log(" in contact us page : ", this.props);
-
-    console.log("ContactUsForm : ", this.props.ContactUsForm);
 
     return (
       <div className="contact-form-container">

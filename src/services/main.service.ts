@@ -66,7 +66,6 @@ function SubmitContactPage(reqObject: any) {
     }).then(function (response) {
         return response.json();
     }).then(function (data) {
-        console.log(" data on contact api ", data);
 
         store.dispatch(actionCantactUs_ApiResponse(SuccessOrFail));
 
@@ -100,8 +99,7 @@ function Sticky_PricingTable(divheight: number, scroolHeight: number, StickyEnab
 
     if (scroolHeight > divheight && !StickyEnabled) {
 
-        console.log(" scrool height is exceeded div geight ");
-        store.dispatch(actionSticky_PricingTable(true));
+       store.dispatch(actionSticky_PricingTable(true));
 
     } else if (StickyEnabled && scroolHeight < divheight) {
 

@@ -12,9 +12,6 @@ interface props {
 export default class ProductForRolesBlock extends React.Component<props, any> {
 
     render(): any {
-
-      console.log('this.props.gridList', this.props.gridList)
-
         return (
             <section>
     <div className="homeGrid product-role">

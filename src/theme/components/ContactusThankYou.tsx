@@ -8,7 +8,6 @@ interface props {
 export default class ContactusThankYou extends React.Component<props, any> {
 
     componentDidMount(): any {
-        console.log("in header component: ", this.context);
     }
     render(): any {
         return (

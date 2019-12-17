@@ -30,6 +30,7 @@ import Inverstors_4 from './images/inverstors/inverstors_3.png';
 import Inverstors_5 from './images/inverstors/inverstors_3.png';
 import Inverstors_6 from './images/inverstors/inverstors_3.png';
 import ben_franklin from './images/ben_franklin.png';
+import favicon from './images/favicon.png';
 
 import penn_img from './images/penn.png';
 
@@ -94,7 +95,8 @@ import bannerForTeachers from "./images/bannerForTeachers.svg";
 import bannerForAdmin from "./images/bannerForAdmin.svg";
 import bannerForStudents from "./images/bannerForStudents.svg";
 
-export {assess_support,
+export {
+    assess_support,
     bannerForTeachers,
     bannerForAdmin,
     bannerForStudents,
@@ -174,5 +176,6 @@ export {assess_support,
     testimonial_person,
     Blog_img,
     PersonImage,
-    Our_team
+    Our_team,
+    favicon
 }
