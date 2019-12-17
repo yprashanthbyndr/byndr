@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from 'react';
 import { slider_1, favicon } from "../../assets";
 
 import { connect } from 'react-redux';
@@ -16,8 +16,10 @@ class USPs extends React.Component<props, any> {
     constructor(props) {
         super(props);
         this.state = {
-            ActiveTab: "page1"
+            ActiveTab: "page1",
+            StickyUsps: false,
         }
+        this.ScroolEvent= this.ScroolEvent.bind(this)
     }
 
     componentDidMount(): any {
@@ -27,7 +29,10 @@ class USPs extends React.Component<props, any> {
     ScroolEvent(event) {
         let winScroll =
             document.body.scrollTop || document.documentElement.scrollTop;
-        console.log(" . / . / . /  winScroll:", winScroll);
+        console.log(" . / . / . /  winScroll:", winScroll, this.state, this.props);
+        if ((!this.state.StickyUsps && winScroll > 1260) || (this.state.StickyUsps && winScroll < 1260)) {
+            this.setState_("StickyUsps", !this.state.StickyUsps);
+        }
     }
 
 
@@ -43,11 +48,11 @@ class USPs extends React.Component<props, any> {
         let currentActiveTab = this.state.ActiveTab;
         if (scroolHeoght < 50 && currentActiveTab !== "page1") {
             this.setState_("ActiveTab", "page1");
-        }else   if (scroolHeoght > 160 &&  scroolHeoght < 300 && currentActiveTab !== "page2") {
+        } else if (scroolHeoght > 160 && scroolHeoght < 300 && currentActiveTab !== "page2") {
             this.setState_("ActiveTab", "page2");
-        }else   if (scroolHeoght > 340 &&  scroolHeoght < 400 && currentActiveTab !== "page3") {
+        } else if (scroolHeoght > 340 && scroolHeoght < 400 && currentActiveTab !== "page3") {
             this.setState_("ActiveTab", "page3");
-        }else   if (scroolHeoght > 530 &&  scroolHeoght < 600 && currentActiveTab !== "page4") {
+        } else if (scroolHeoght > 530 && scroolHeoght < 600 && currentActiveTab !== "page4") {
             this.setState_("ActiveTab", "page4");
         }
     }
@@ -55,32 +60,32 @@ class USPs extends React.Component<props, any> {
     render(): any {
         let Left_HeadersList = [{
             for: "page1",
-            name: "Page 1",
+            name: "Latest Feed & Posts",
             logo: favicon,
 
         }, {
             for: "page2",
-            name: "Page 2",
+            name: "Courses",
             logo: favicon,
 
         }, {
             for: "page3",
-            name: "Page 3",
+            name: "Groups",
             logo: favicon,
 
         }, {
             for: "page4",
-            name: "Page 4",
+            name: "Documents/Materials",
             logo: favicon,
 
         }, {
             for: "page5",
-            name: "Page 5",
+            name: "Calendar",
             logo: favicon,
 
         }, {
             for: "page6",
-            name: "Page 6",
+            name: "Coursework",
             logo: favicon,
 
         }];
@@ -88,27 +93,27 @@ class USPs extends React.Component<props, any> {
         let RightSideContent = [{
             for: "page1",
             logo: slider_1,
-            content: " this content is for page 1 related. we should keep this dummy text for the view : Dummy DAta  Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta "
+            content: "All course activity posts, shared materials, announcements, polls and quiz, rolls up into a simple home screen feed, no clicks. Keep up with all the latest activity together, so you can quickly access. Collaboration and notifications in real time"
         }, {
             for: "page2",
             logo: slider_1,
-            content: " this content is for page 2 related. we should keep this dummy text for the view :  Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta"
+            content: "Here, you'll find option to create all your courses and link students to their courseaccordingly. All these courses are organized, so you can take attendance, upload and share materials, submit assignments or check grades. Create your class and experience the Byndr today!"
         }, {
             for: "page3",
             logo: slider_1,
-            content: " this content is for page 3 related. we should keep this dummy text for the view :  Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta"
+            content: " Groups in Byndr, way to collaborate to interact or initiate one-one discussions (teacher with students, students with students, even teachers with teachers) of the group. This is ideal solution for mentoring for Events, Sports, Innovation or anything that you would to drive learning curricular or extra-curricular."
         }, {
             for: "page4",
             logo: slider_1,
-            content: " this content is for page 4 related. we should keep this dummy text for the view :  Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta"
+            content: "Within Byndr, you can organize all the materials for a class, and share it with all the students in class. You can add Images, Word, Excel, PowerPoint and pdf files, weblinks or even can share drive links"
         }, {
             for: "page5",
             logo: slider_1,
-            content: " this content is for page 5 related. we should keep this dummy text for the view : Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta "
+            content: "Calendar is designed, you can easily monitor all your class schedule, assignments, important due dates and get reminders about upcoming activities, thereby giving zero-chance of missing to-do’s."
         }, {
             for: "page6",
             logo: slider_1,
-            content: " this content is for page 6 related. we should keep this dummy text for the view : Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta Dummy DAta "
+            content: " At Byndr, Teachers can manage all their day-to-day activities like marking attendance, post and manage assignments, manage and communicate grades etc. All these options can be easily done on any device "
         }]
 
         return (
