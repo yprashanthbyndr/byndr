@@ -4766,8 +4766,8 @@ li.year_details {
        }
 
        .selectedLeft-List-Item{
-background-color: #00abeb;
-font-size: large !important;
+color: #CB0A7A;
+font-weight: 600;
        }
 
        @keyframes leftText {
