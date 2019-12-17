@@ -42,6 +42,7 @@ const RouteWithSubRoutes = (route) => {
       exact
       path={route.path}
       component={route.component}
+      key={route.path}
     // render={props => (
     //   // pass the sub-routes down to keep nesting
     //   <route  {...props} routes={route.routes} />
