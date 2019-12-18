@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Our_team, JoeFreed, PraveenVangeepuram, SatishNampally, MarcGarabedian, PrashanthiVangeepuram } from '../../assets';
+import { Our_team, PraveenVangeepuram, SatishNampally, MarcGarabedian, KalSomani, LarryFraize, ChintanGattu, Jagadeesh, JoeFreed } from '../../assets';
 import { Inverstors_1,
     Inverstors_2,
     Inverstors_3,
@@ -24,7 +24,7 @@ export default class OurTeam extends React.Component<props, any> {
 
                                 <div className="our-team">
                                     <div className="pic">
-                                        <img src={JoeFreed}/>
+                                        <img src={SatishNampally}/>
                                         <ul className="social">
                                             <li><a href="https://www.linkedin.com/in/satishnampally/" target="_blank" className="fab fa-linkedin"></a></li>
                                         </ul>
@@ -37,7 +37,7 @@ export default class OurTeam extends React.Component<props, any> {
 
                                 <div className="our-team">
                                     <div className="pic">
-                                        <img src={PraveenVangeepuram}/>
+                                        <img src={KalSomani}/>
                                         <ul className="social">
                                             <li><a href="https://linkedin.com/in/kalsomani/" target="_blank" className="fab fa-linkedin"></a></li>
                                         </ul>
@@ -51,7 +51,7 @@ export default class OurTeam extends React.Component<props, any> {
 
                                 <div className="our-team">
                                     <div className="pic">
-                                        <img src={SatishNampally}/>
+                                        <img src={LarryFraize}/>
                                         <ul className="social">
                                             <li><a href="https://linkedin.com/in/larryfraize/" target="_blank" className="fab fa-linkedin"></a></li>
                                         </ul>
@@ -65,7 +65,7 @@ export default class OurTeam extends React.Component<props, any> {
 
                                 <div className="our-team">
                                     <div className="pic">
-                                        <img src={MarcGarabedian}/>
+                                        <img src={ChintanGattu}/>
                                         <ul className="social">
                                             <li><a href="https://www.linkedin.com/in/chintan-gattu-819376115/" target="_blank" className="fab fa-linkedin"></a></li>
                                         </ul>
@@ -78,7 +78,7 @@ export default class OurTeam extends React.Component<props, any> {
 
                                 <div className="our-team">
                                     <div className="pic">
-                                        <img src={MarcGarabedian}/>
+                                        <img src={Jagadeesh}/>
                                         <ul className="social">
                                             <li><a href="https://www.linkedin.com/in/jagadeeshc/" target="_blank" className="fab fa-linkedin"></a></li>
                                         </ul>
@@ -91,7 +91,7 @@ export default class OurTeam extends React.Component<props, any> {
 
                                 <div className="our-team">
                                     <div className="pic">
-                                        <img src={MarcGarabedian}/>
+                                        <img src={JoeFreed}/>
                                         <ul className="social">
                                             <li><a href="https://www.linkedin.com/in/joefreed/" target="_blank" className="fab fa-linkedin"></a></li>
                                         </ul>
@@ -104,7 +104,7 @@ export default class OurTeam extends React.Component<props, any> {
 
                                 <div className="our-team">
                                     <div className="pic">
-                                        <img src={MarcGarabedian}/>
+                                        <img src={PraveenVangeepuram}/>
                                         <ul className="social">
                                             <li><a href="https://www.linkedin.com/in/praveen-vangeepuram-1aaa363/" target="_blank" className="fab fa-linkedin"></a></li>
                                         </ul>

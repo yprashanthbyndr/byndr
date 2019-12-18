@@ -15,7 +15,7 @@ export default class AboutUs extends React.Component<props, any,boolean> {
             <div>
                 <div className="header_main_container"><Header /></div>
                 <div className="bodySection">
-                    <InnerPageTitleBlock fromPage="Connecting the ed-tech stakeholders (or) A Game-changing Learning Platform" pageSubtitle="Utilising the technology for successful learning experience" videoDisplay="false" tryBtnDisplay="false"/>
+                    <InnerPageTitleBlock fromPage="Connecting the ed-tech stakeholders" pageSubtitle="Utilising the technology for successful learning experience" videoDisplay="false" tryBtnDisplay="false"/>
                     <VisionAndMission />
                     <OurJourneyBlock />
                     <AboutContentBlock />

@@ -25,7 +25,7 @@ class BlogChild2 extends Component<props, any> {
                 <Header />
             </div>                
             <div className="bodySection">
-                <InnerPageTitleBlock fromPage="Key factors to consider when planning to collaborate with a mobile LMS platform" pageSubtitle="" videoDisplay="true" tryBtnDisplay="true" />
+                <InnerPageTitleBlock fromPage="Key factors to consider when planning to collaborate with a mobile LMS platform" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false" />
                     <BlogItem Content={contentGenerated} />
                 <FooterCTA />
             </div>

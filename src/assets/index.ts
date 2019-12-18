@@ -59,11 +59,16 @@ import Double_Arrows_pink from "./images/Double_Arrows_pink.svg"
 import IntraEdge_Logo from "./images/IntraEdge-Logo.png"
 
 
-import SatishNampally from "./images/team/SatishNampally.jpg";
-import PraveenVangeepuram from "./images/team/PraveenVangeepuram.jpg";
-import PrashanthiVangeepuram from "./images/team/PrashanthiVangeepuram.jpg";
-import MarcGarabedian from "./images/team/MarcGarabedian.jpg";
-import JoeFreed from "./images/team/JoeFreed.jpg";
+import SatishNampally from "./images/team/Satish.png";
+import PraveenVangeepuram from "./images/team/Praveen-Vangeepuram.png";
+import MarcGarabedian from "./images/team/Marc-Garabedian.png";
+import JoeFreed from "./images/team/Joe-Freed.png";
+import LarryFraize from "./images/team/Larry-Fraize.png";
+import KalSomani from "./images/team/Kal-Somani.png";
+import Jagadeesh from "./images/team/Jagadeesh.png";
+import ChintanGattu from "./images/team/Chintan-Gattu.png";
+
+
 import snist from "./images/testimonials/snist.jpg";
 
 import narasimhaReddy from "./images/testimonials/narasimhaReddy.png";
@@ -94,19 +99,34 @@ import Weightage_Based_Grading from "./images/featuresIcons/Weightage-Based-Grad
 import bannerForTeachers from "./images/bannerForTeachers.svg";
 import bannerForAdmin from "./images/bannerForAdmin.svg";
 import bannerForStudents from "./images/bannerForStudents.svg";
-
-import feature_dlt_later from "./images/feature_dlt_later.png";
-import calender_dlt_later from "./images/calender_dlt_later.svg";
-
 import vvism from "./images/vvism.png";
-
 import ByndrTeamImg from "./images/ourTeam.jpg";
 
+import Calendar from "./images/usps/Calendar.svg";
+import Courses from "./images/usps/Courses.svg";
+import Coursework from "./images/usps/Coursework.svg";
+import Groups from "./images/usps/Groups.svg";
+import LatestFeedPosts from "./images/usps/Latest-Feed-Posts.svg";
+import Secure from "./images/usps/Secure.svg";
+import UserFriendly from "./images/usps/User-Friendly.svg";
+import Materials from "./images/usps/Materials.svg";
+
 export {
+    Calendar,
+    Materials,
+    Courses,
+    Coursework,
+    Groups,
+    LatestFeedPosts,
+    Secure,
+    UserFriendly,
     ByndrTeamImg,
+    LarryFraize,
+    JoeFreed,
+    KalSomani,
+    Jagadeesh,
+    ChintanGattu,
     vvism,
-    feature_dlt_later,
-    calender_dlt_later,
     assess_support,
     bannerForTeachers,
     bannerForAdmin,
@@ -135,8 +155,6 @@ export {
     sabyaSachiRath,
     SatishNampally,
     PraveenVangeepuram,
-    PrashanthiVangeepuram,
-    JoeFreed,
     MarcGarabedian,
     IntraEdge_Logo,
     Double_Arrows_pink,

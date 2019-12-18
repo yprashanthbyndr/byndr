@@ -25,7 +25,7 @@ class BlogChild3 extends Component<props, any> {
                 <Header />
             </div>                
             <div className="bodySection">
-                <InnerPageTitleBlock fromPage="Use of learning management systems in India" pageSubtitle="" videoDisplay="true" tryBtnDisplay="true" />
+                <InnerPageTitleBlock fromPage="Use of learning management systems in India" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false" />
                     <BlogItem Content={contentGenerated} />
                 <FooterCTA />
             </div>

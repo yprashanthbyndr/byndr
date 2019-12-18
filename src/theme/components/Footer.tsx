@@ -192,8 +192,8 @@ class Footer extends React.Component<props, any> {
                                 &copy; 2019 Byndr, Inc. <NavLink exact to="/privacy-policy"  onClick={() => {
                                                             document.body.scrollTop = 0;
                                                             document.documentElement.scrollTop = 0;
-                                                        }}>Privacy Policy</NavLink>
-                                <NavLink exact to="/terms-of-use" onClick={() => {
+                                                        }}>Privacy Policy</NavLink> &nbsp;&nbsp;| 
+                                &nbsp;&nbsp;<NavLink exact to="/terms-of-use" onClick={() => {
                                                             document.body.scrollTop = 0;
                                                             document.documentElement.scrollTop = 0;
                                                         }}>Terms of Use</NavLink>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="953px" height="807px" viewBox="0 0 953 807" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>Secure</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#808080" stop-opacity="0.25" offset="0%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.12" offset="54%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="8.86848147e-15%" id="linearGradient-2">
+            <stop stop-color="#808080" stop-opacity="0.25" offset="0%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.12" offset="54%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0.00272494414%" id="linearGradient-3">
+            <stop stop-color="#808080" stop-opacity="0.25" offset="0%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.12" offset="54%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9999197%" y1="100.01263%" x2="49.9999197%" y2="-0.0167581485%" id="linearGradient-4">
+            <stop stop-color="#808080" stop-opacity="0.25" offset="0%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.12" offset="54%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100.003998%" x2="50%" y2="0%" id="linearGradient-5">
+            <stop stop-color="#808080" stop-opacity="0.25" offset="0%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.12" offset="54%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Secure">
+            <path d="M430.64856,806.576131 C559.468311,806.576131 593.603663,724.941763 682.64856,658.956131 C785.819473,582.502586 898.475311,760.436131 898.475311,293.936131 C898.475311,63.3594276 646.64856,-28.4238695 454.14856,7.57613053 C329.453735,30.8956822 263.056223,188.882307 174.367924,253.596131 C69.5120654,330.107052 0,322.268592 0,447.188646 C0,571.992906 101.961583,577.120222 206.64856,653.626131 C311.335537,730.132039 303.085632,806.576131 430.64856,806.576131 Z" id="Oval" fill="#C9177A" fill-rule="nonzero" opacity="0.1"></path>
+            <g id="Group" opacity="0.8" transform="translate(542.000000, 43.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+                <rect id="Rectangle" x="0" y="0" width="411" height="458.72"></rect>
+            </g>
+            <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="548.79" y="349.27" width="397.41" height="142.46"></rect>
+            <rect id="Rectangle" fill="#64FFDA" fill-rule="nonzero" x="581.41" y="383.06" width="15.4" height="73"></rect>
+            <g id="Group" opacity="0.7" transform="translate(611.000000, 383.000000)" fill="#64FFDA" fill-rule="nonzero">
+                <rect id="Rectangle" x="0.81" y="0.06" width="15.4" height="73"></rect>
+            </g>
+            <g id="Group" opacity="0.6" transform="translate(642.000000, 383.000000)" fill="#64FFDA" fill-rule="nonzero">
+                <rect id="Rectangle" x="0.22" y="0.06" width="15.4" height="73"></rect>
+            </g>
+            <g id="Group" opacity="0.5" transform="translate(672.000000, 383.000000)" fill="#64FFDA" fill-rule="nonzero">
+                <rect id="Rectangle" x="0.62" y="0.06" width="15.4" height="73"></rect>
+            </g>
+            <g id="Group" opacity="0.5" transform="translate(703.000000, 383.000000)" fill="#64FFDA" fill-rule="nonzero">
+                <rect id="Rectangle" x="0.02" y="0.06" width="15.4" height="73"></rect>
+            </g>
+            <g id="Group" opacity="0.4" transform="translate(733.000000, 383.000000)" fill="#64FFDA" fill-rule="nonzero">
+                <rect id="Rectangle" x="0.42" y="0.06" width="15.4" height="73"></rect>
+            </g>
+            <g id="Group" opacity="0.3" transform="translate(763.000000, 383.000000)" fill="#64FFDA" fill-rule="nonzero">
+                <rect id="Rectangle" x="0.83" y="0.06" width="15.4" height="73"></rect>
+            </g>
+            <circle id="Oval" fill="#C9177A" fill-rule="nonzero" cx="889.94" cy="419.09" r="37.16"></circle>
+            <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="548.79" y="201.26" width="397.41" height="142.46"></rect>
+            <rect id="Rectangle" fill="#64FFDA" fill-rule="nonzero" x="581.41" y="235.05" width="15.4" height="73"></rect>
+            <g id="Group" opacity="0.7" transform="translate(611.000000, 235.000000)" fill="#64FFDA" fill-rule="nonzero">
+                <rect id="Rectangle" x="0.81" y="0.05" width="15.4" height="73"></rect>
+            </g>
+            <g id="Group" opacity="0.6" transform="translate(642.000000, 235.000000)" fill="#64FFDA" fill-rule="nonzero">
+                <rect id="Rectangle" x="0.22" y="0.05" width="15.4" height="73"></rect>
+            </g>
+            <g id="Group" opacity="0.5" transform="translate(672.000000, 235.000000)" fill="#64FFDA" fill-rule="nonzero">
+                <rect id="Rectangle" x="0.62" y="0.05" width="15.4" height="73"></rect>
+            </g>
+            <g id="Group" opacity="0.5" transform="translate(703.000000, 235.000000)" fill="#64FFDA" fill-rule="nonzero">
+                <rect id="Rectangle" x="0.02" y="0.05" width="15.4" height="73"></rect>
+            </g>
+            <g id="Group" opacity="0.4" transform="translate(733.000000, 235.000000)" fill="#64FFDA" fill-rule="nonzero">
+                <rect id="Rectangle" x="0.42" y="0.05" width="15.4" height="73"></rect>
+            </g>
+            <g id="Group" opacity="0.3" transform="translate(763.000000, 235.000000)" fill="#64FFDA" fill-rule="nonzero">
+                <rect id="Rectangle" x="0.83" y="0.05" width="15.4" height="73"></rect>
+            </g>
+            <circle id="Oval" fill="#C9177A" fill-rule="nonzero" cx="889.94" cy="271.09" r="37.16"></circle>
+            <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="548.79" y="53.25" width="397.41" height="142.46"></rect>
+            <rect id="Rectangle" fill="#64FFDA" fill-rule="nonzero" x="581.41" y="87.05" width="15.4" height="73"></rect>
+            <g id="Group" opacity="0.7" transform="translate(611.000000, 87.000000)" fill="#64FFDA" fill-rule="nonzero">
+                <rect id="Rectangle" x="0.81" y="0.05" width="15.4" height="73"></rect>
+            </g>
+            <g id="Group" opacity="0.6" transform="translate(642.000000, 87.000000)" fill="#64FFDA" fill-rule="nonzero">
+                <rect id="Rectangle" x="0.22" y="0.05" width="15.4" height="73"></rect>
+            </g>
+            <g id="Group" opacity="0.5" transform="translate(672.000000, 87.000000)" fill="#64FFDA" fill-rule="nonzero">
+                <rect id="Rectangle" x="0.62" y="0.05" width="15.4" height="73"></rect>
+            </g>
+            <g id="Group" opacity="0.5" transform="translate(703.000000, 87.000000)" fill="#64FFDA" fill-rule="nonzero">
+                <rect id="Rectangle" x="0.02" y="0.05" width="15.4" height="73"></rect>
+            </g>
+            <g id="Group" opacity="0.4" transform="translate(733.000000, 87.000000)" fill="#64FFDA" fill-rule="nonzero">
+                <rect id="Rectangle" x="0.42" y="0.05" width="15.4" height="73"></rect>
+            </g>
+            <g id="Group" opacity="0.3" transform="translate(763.000000, 87.000000)" fill="#64FFDA" fill-rule="nonzero">
+                <rect id="Rectangle" x="0.83" y="0.05" width="15.4" height="73"></rect>
+            </g>
+            <circle id="Oval" fill="url(#linearGradient-2)" fill-rule="nonzero" cx="889.94" cy="123.08" r="40.06"></circle>
+            <circle id="Oval" fill="url(#linearGradient-2)" fill-rule="nonzero" cx="889.94" cy="272.08" r="40.06"></circle>
+            <circle id="Oval" fill="url(#linearGradient-2)" fill-rule="nonzero" cx="889.94" cy="420.08" r="40.06"></circle>
+            <circle id="Oval" fill="#C9177A" fill-rule="nonzero" cx="889.94" cy="123.08" r="37.16"></circle>
+            <g id="Group" opacity="0.8" transform="translate(120.000000, 371.000000)" fill="url(#linearGradient-3)" fill-rule="nonzero">
+                <path d="M550.13,367.37 L0.07,367.37 L0.07,16.19 C0.07,11.9995795 1.73463808,7.98078764 4.69771286,5.01771286 C7.66078764,2.05463808 11.6795795,0.39 15.87,0.39 L534.32,0.39 C543.046099,0.39 550.12,7.46390095 550.12,16.19 L550.13,367.37 Z" id="Path"></path>
+            </g>
+            <path d="M143.45,377.85 L646.75,377.85 C655.476099,377.85 662.55,384.923901 662.55,393.65 L662.55,738.37 L127.65,738.37 L127.65,393.65 C127.65,384.923901 134.723901,377.85 143.45,377.85 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <rect id="Rectangle" fill="#F5F5F5" fill-rule="nonzero" x="144.87" y="398.82" width="500.46" height="328.25"></rect>
+            <rect id="Rectangle" fill="#1D1C2D" fill-rule="nonzero" opacity="0.8" x="146.79" y="414.76" width="498.34" height="295.32"></rect>
+            <rect id="Rectangle" fill="#F5F5F5" fill-rule="nonzero" x="146.79" y="399.07" width="498.34" height="15.69"></rect>
+            <circle id="Oval" fill="#FF5252" fill-rule="nonzero" cx="157.47" cy="406.67" r="3.8"></circle>
+            <circle id="Oval" fill="#FFFF00" fill-rule="nonzero" cx="167.93" cy="406.67" r="3.8"></circle>
+            <circle id="Oval" fill="#69F0AE" fill-rule="nonzero" cx="178.4" cy="406.67" r="3.8"></circle>
+            <g id="Group" opacity="0.8" transform="translate(87.000000, 703.000000)" fill="url(#linearGradient-4)" fill-rule="nonzero">
+                <path d="M598.52,58.96 C567.9,61.28 42.06,60.35 23.68,58.96 C-0.41,47.35 -0.000444287512,2.31 -0.000444287512,2.31 L241.15,0.7 L241.96,14.41 L345.2,14.41 L349.2,2.31 L616.48,2.31 C616.48,2.31 621.79,43.64 598.52,58.96 Z" id="Path"></path>
+            </g>
+            <path d="M699.56,708.94 L437.5,708.94 C439.606126,711.312504 440.111335,714.705385 438.787797,717.588575 C437.464259,720.471766 434.562064,722.300467 431.39,722.25 L331.39,722.25 C328.217936,722.300467 325.315741,720.471766 323.992203,717.588575 C322.668665,714.705385 323.173874,711.312504 325.28,708.94 L90.6295766,708.94 C90.6295766,708.94 90.23,748.06 114.02,758.14 C132.17,759.35 651.58,760.14 681.82,758.14 C704.81,744.83 699.56,708.94 699.56,708.94 Z" id="Path" fill="#F5F5F5" fill-rule="nonzero"></path>
+            <circle id="Oval" fill="#E0E0E0" fill-rule="nonzero" cx="145.07" cy="717.4" r="3.23"></circle>
+            <circle id="Oval" fill="#E0E0E0" fill-rule="nonzero" cx="154.75" cy="717.4" r="3.23"></circle>
+            <circle id="Oval" fill="#E0E0E0" fill-rule="nonzero" cx="164.43" cy="717.4" r="3.23"></circle>
+            <g id="Group" opacity="0.7" transform="translate(282.000000, 426.000000)" fill="url(#linearGradient-5)" fill-rule="nonzero">
+                <path d="M97.55,0.37 L0.49,60.1 C0.49,60.1 0.49,183.3 97.55,250.49 C194.61,183.29 194.61,60.1 194.61,60.1 L97.55,0.37 Z" id="Path"></path>
+            </g>
+            <path d="M379.55,433.42 L288,489.79 C288,489.79 288,606.05 379.6,669.46 C471.2,606.05 471.2,489.79 471.2,489.79 L379.55,433.42 Z" id="Path" fill="#C9177A" fill-rule="nonzero"></path>
+            <path d="M381.11,433.42 L379.54,434.42 L379.54,668.42 L381.11,669.52 C472.71,606.11 472.71,489.85 472.71,489.85 L381.11,433.42 Z" id="Path" fill="#000000" fill-rule="nonzero" opacity="0.05"></path>
+            <path d="M379.55,447.04 L298.55,496.9 C298.55,496.9 298.55,599.74 379.55,655.84 C460.55,599.74 460.55,496.9 460.55,496.9 L379.55,447.04 Z" id="Path" stroke-opacity="0.5" stroke="#FFFFFF" stroke-width="2" fill="#C9177A" fill-rule="nonzero"></path>
+            <path d="M379.55,447.43 L379.55,656.19 C460.55,600.09 460.55,497.25 460.55,497.25 L379.55,447.43 Z" id="Path" fill="#000000" fill-rule="nonzero" opacity="0.08"></path>
+            <path d="M326,349.38 L326,142.38 L497,142.38" id="Path" stroke="#3AD29F" stroke-width="2" stroke-dasharray="12"></path>
+            <path d="M273,286.38 L273,79.38 L444,79.38" id="Path" stroke="#3AD29F" stroke-width="2" stroke-dasharray="12"></path>
+            <path d="M803,520.38 L803,682.38 L713,682.38" id="Path" stroke="#3AD29F" stroke-width="2" stroke-dasharray="12"></path>
+            <path d="M857,556.38 L857,718.38 L767,718.38" id="Path" stroke="#3AD29F" stroke-width="2" stroke-dasharray="12"></path>
+        </g>
+    </g>
+</svg>

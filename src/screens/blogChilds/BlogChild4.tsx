@@ -24,7 +24,7 @@ class BlogChild4 extends Component<props, any> {
                 <Header />
             </div>                
             <div className="bodySection">
-                <InnerPageTitleBlock fromPage="Why colleges need mobile learning apps" pageSubtitle="" videoDisplay="true" tryBtnDisplay="true" />
+                <InnerPageTitleBlock fromPage="Why colleges need mobile learning apps" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false" />
                     <BlogItem Content={contentGenerated} />
                 <FooterCTA />
             </div>
