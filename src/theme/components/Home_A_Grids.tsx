@@ -1,5 +1,5 @@
 import React from 'react';
-import { open_book, teamwork, medical_history, earth_globe, blackboard, light_bulb, learn_innovate_together, builtInAccessibility, collaboration_communication, assess_support, peer_to_peer_learning, secure_technology } from "../../assets";
+import { open_book, teamwork, medical_history, earth_globe, blackboard, light_bulb, learn_innovate_together, builtInAccessibility, collaboration_communication, assess_support, peer_to_peer_learning, secure_technology, PlanProgress } from "../../assets";
 
 interface props {
   onLeftMenu?(): void;
@@ -26,7 +26,7 @@ export default class Home_A_Grids extends React.Component<props, any> {
                 <div className="homeSingleGrid">
                   <div className="homeSingleGridinr">
                     <div className="homeSingleGridIcon">
-                      <img src={builtInAccessibility} />
+                      <img src={PlanProgress} />
                     </div>
                     <div className="homeSingleGridTitle">Plan, Perform & Progress</div>
                     <div className="homeSingleGridContent">
