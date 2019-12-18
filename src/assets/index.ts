@@ -111,7 +111,10 @@ import Secure from "./images/usps/Secure.svg";
 import UserFriendly from "./images/usps/User-Friendly.svg";
 import Materials from "./images/usps/Materials.svg";
 
+import PlanProgress from "./images/PlanProgress.svg";
+
 export {
+    PlanProgress,
     Calendar,
     Materials,
     Courses,
