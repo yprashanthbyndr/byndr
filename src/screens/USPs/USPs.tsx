@@ -72,46 +72,57 @@ class USPs extends React.Component<props, any> {
 
 
         let scroolTo = 0;
+        let HideHeader = this.props.HideHeader;
+
+        let ScroolToUp = false;
 
         switch (item.for) {
             case "page1":
                 this.setState_("ActiveTab", item.for);
                 scroolTo = 1450;
+                ScroolToUp = this.state.ActiveTab > item.for;
                 break;
 
             case "page2":
                 this.setState_("ActiveTab", item.for);
                 scroolTo = 1945;
+                ScroolToUp = this.state.ActiveTab > item.for;
                 break;
             case "page3":
                 this.setState_("ActiveTab", item.for);
+                ScroolToUp = this.state.ActiveTab > item.for;
                 scroolTo = 2505;
                 break;
             case "page4":
                 this.setState_("ActiveTab", item.for);
+                ScroolToUp = this.state.ActiveTab > item.for;
                 scroolTo = 3085;
                 break;
             case "page5":
                 this.setState_("ActiveTab", item.for);
+                ScroolToUp = this.state.ActiveTab > item.for;
                 scroolTo = 3635;
                 break;
             case "page6":
                 this.setState_("ActiveTab", item.for);
+                ScroolToUp = this.state.ActiveTab > item.for;
                 scroolTo = 4205;
                 break;
             case "page7":
                 this.setState_("ActiveTab", item.for);
+                ScroolToUp = this.state.ActiveTab > item.for;
                 scroolTo = 4775;
                 break;
             case "page8":
                 this.setState_("ActiveTab", item.for);
+                ScroolToUp = this.state.ActiveTab > item.for;
                 scroolTo = 5405;
                 break;
 
         }
 
+        scroolTo = this.state.StickyUsps && this.props.routeProps.pageName === "LMS For Admins" ? ScroolToUp ? scroolTo + 150 : scroolTo + 300 : scroolTo
 
-        // document.body.scrollTop = 0;
         document.documentElement.scrollTop = scroolTo;
 
     }
@@ -182,7 +193,7 @@ class USPs extends React.Component<props, any> {
             <div className="uspsMainBlockStickey">
                 <div className="uspsMainBlock">
                     <div className="uspsMainBlockInr">
-                        <div style={ !this.props.HideHeader&&this.state.StickyUsps && this.props.routeProps.pageName ==="LMS For Admins" ? {top: '200px'} : {} } className={"uspsMainBlockLeft " + (this.state.StickyUsps ? "Stickyusps-Left" : "")}>
+                        <div style={!this.props.HideHeader && this.state.StickyUsps && this.props.routeProps.pageName === "LMS For Admins" ? { top: '200px' } : {}} className={"uspsMainBlockLeft " + (this.state.StickyUsps ? "Stickyusps-Left" : "")}>
                             {Left_HeadersList.map(item => {
                                 return (
                                     <div className={"uspsMainBlockLeftItem " + (this.state.ActiveTab === item.for ? "selectedLeft-List-Item" : "")}>
