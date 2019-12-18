@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 
 import { HomeSplit_A, HomeSplit_B } from './index';
-import { Header, Footer, Navigation } from "../theme/components";
+import { Header, Footer, Navigation, Seo } from "../theme/components";
 
 import { connect } from 'react-redux';
 
 interface props {
     MainReducer: any
     OpenMenuBar: boolean
+    routeProps:any
 }
 
 class Home extends Component<props, any> {
@@ -57,6 +58,7 @@ class Home extends Component<props, any> {
     render(): any {
         return (
             <div>
+                <Seo seoData={this.props.routeProps} />
                 <Header />
                 <HomeSplit_A />
                 <Footer />

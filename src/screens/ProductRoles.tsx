@@ -1,5 +1,5 @@
 import React from 'react';
-import { BlogGrid, ProductRolesTestimonials, FaqBlock, MiniHeader, FooterCTA, Header, Navigation, Footer, InnerPageTitleBlock, ProductForRolesBlock, HomeTestimonial } from '../theme/components';
+import { BlogGrid, ProductRolesTestimonials, FaqBlock, MiniHeader, FooterCTA, Header, Navigation, Footer, InnerPageTitleBlock, ProductForRolesBlock, HomeTestimonial, Seo } from '../theme/components';
 
 import { CSSTransition } from 'react-transition-group';
 
@@ -11,7 +11,8 @@ interface props {
     onLeftMenu?(): void;
     MainReducer: any,
     HideHeader: boolean,
-    WindowScroolheight: number
+    WindowScroolheight: number,
+    routeProps:any
 }
 
 class ProductRoles extends React.Component<props, any> {
@@ -74,6 +75,7 @@ class ProductRoles extends React.Component<props, any> {
 
         return (
             <div>
+                <Seo seoData={this.props.routeProps} />
                 <div className="header_main_container">
                     <Header Hide={this.props.HideHeader} />
                     <MiniHeader />

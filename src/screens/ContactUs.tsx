@@ -1,12 +1,13 @@
 import React from 'react';
 
-import { Header, Footer, Navigation, ContactUsForm, ContactusThankYou, ContactFormAddress } from '../theme/components';
+import { Header, Footer, Navigation, ContactUsForm, ContactusThankYou, ContactFormAddress, Seo } from '../theme/components';
 
 
 import { connect } from 'react-redux';
 interface props {
     onLeftMenu?(): void;
-    ContactFormSubmitSuccess: boolean
+    ContactFormSubmitSuccess: boolean,
+    routeProps:any
 }
 
 class ContactUs extends React.Component<props, any> {
@@ -20,6 +21,7 @@ class ContactUs extends React.Component<props, any> {
 
         return (
             <div>
+                <Seo seoData={this.props.routeProps} />
                 <Header />
                 <div className="bodySection">
                     <div className="contact_section">

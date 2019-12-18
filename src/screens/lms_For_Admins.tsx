@@ -1,7 +1,7 @@
 import React from 'react';
 import {
     FaqBlock, MiniHeader, FooterCTA, Header, Footer, InnerPageTitleBlock,
-    ProductForRolesBlock, HomeTestimonial, FooterDoubleCTA, CTAForCollege
+    ProductForRolesBlock, HomeTestimonial, FooterDoubleCTA, CTAForCollege, Seo
 } from '../theme/components';
 
 import { connect } from 'react-redux';
@@ -190,10 +190,9 @@ class lms_For_Admins extends React.Component<props, any> {
             ]
         }]
 
-        console.log(" this.props:  in main header : ", this.props)
-
         return (
             <div>
+                <Seo seoData={this.props.routeProps} />
                 <div className="header_main_container">
                     <Header Hide={this.props.HideHeader} />
                 </div>

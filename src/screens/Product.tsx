@@ -1,11 +1,12 @@
 import React from 'react';
-import { ProductCoreCapabilities, WhoIsBynderFor, FooterCTA, Header, Navigation, Footer, InnerPageTitleBlock, FooterDoubleCTA } from '../theme/components';
+import { ProductCoreCapabilities, WhoIsBynderFor, FooterCTA, Header, Navigation, Footer, InnerPageTitleBlock, FooterDoubleCTA, Seo } from '../theme/components';
 
 import { connect } from 'react-redux';
 
 interface props {
     onLeftMenu?(): void,
     HideHeader: boolean,
+    routeProps:any
 }
 class Product extends React.Component<props, any> {
 
@@ -14,6 +15,7 @@ class Product extends React.Component<props, any> {
         return (
       
             <div>
+                <Seo seoData={this.props.routeProps} />
                 <div className="header_main_container">
                 <Header />
                 </div>

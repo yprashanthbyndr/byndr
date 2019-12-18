@@ -4,38 +4,26 @@ import { BlogChild1 ,BlogChild2 ,BlogChild3, BlogChild4 } from '../screens/blogC
 
 const ByndrRoutes = [
     {
-        pageName: "Page 1",
-        title: "Page 1",
+        pageName: "Home",
+        title: "Home",
         seoVisibility: true, // default it has to be true
-        metaTitle: "Page 1",
-        metaTags: "Meta Tags for Page 1",
+        metaTitle: "Home",
+        metaTags: "Meta Tags for Home",
         path: '/',
         key: 'home',
-        metaDescription: "Meta Description for Page 1",
+        metaDescription: "Meta Description for Home",
         component: HomeSplit_A,
         routes: [],
     },
     {
-        pageName: "Page 2",
-        title: "Page 2",
+        pageName: "About Us - Byndr",
+        title: "About Us - Byndr",
         seoVisibility: true, // default it has to be true
-        metaTitle: "Page 2",
-        metaTags: "Meta Tags for Page 2",
-        path: '/test-case',
-        key: 'test-case',
-        metaDescription: "Meta Description for Page 2",
-        component: HomeSplit_B,
-        routes: []
-    },
-    {
-        pageName: "We are an education company",
-        title: "About Us",
-        seoVisibility: true, // default it has to be true
-        metaTitle: "About Us",
-        metaTags: "About Us Meta Tags",
+        metaTitle: "About Us - Byndr",
+        metaTags: "",
         path: '/aboutus',
         key: 'aboutus',
-        metaDescription: "About Us Meta Description",
+        metaDescription: "Byndr is a Mobile Learning Platform passionate about creating learning solutions that is transforming the way the world learns.",
         component: AboutUs,
         routes: []
     },

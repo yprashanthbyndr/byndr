@@ -1,12 +1,13 @@
 import React from 'react';
 
-import { Header, Footer, Navigation } from '../theme/components';
+import { Header, Footer, Navigation, Seo } from '../theme/components';
 
 
 import { connect } from 'react-redux';
 interface props {
     onLeftMenu?(): void;
-    ContactFormSubmitSuccess: boolean
+    ContactFormSubmitSuccess: boolean,
+    routeProps:any
 }
 
 class TermsOfUse extends React.Component<props, any> {
@@ -20,6 +21,7 @@ class TermsOfUse extends React.Component<props, any> {
 
         return (
             <div>
+                <Seo seoData={this.props.routeProps} />
                 <Header />
                 <div className="bodySection">
                     <div className="middleBlockContainer">

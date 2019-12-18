@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 
-import { Header, Footer, BlogList, InnerPageTitleBlock } from "../theme/components";
+import { Header, Footer, BlogList, InnerPageTitleBlock, Seo } from "../theme/components";
 
 import { connect } from 'react-redux';
 
 interface props {
 
     MainReducer: any
-    OpenMenuBar: boolean
+    OpenMenuBar: boolean,
+    routeProps:any
 }
 
 class Blog extends Component<props, any> {
@@ -37,6 +38,7 @@ class Blog extends Component<props, any> {
     render(): any {
         return (
             <React.Fragment>
+                <Seo seoData={this.props.routeProps} />
                  <div className="header_main_container"><Header /></div>
                 <InnerPageTitleBlock fromPage="Blog" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false"  />
                 <BlogList />

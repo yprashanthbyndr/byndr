@@ -118,7 +118,6 @@ class USPs extends React.Component<props, any> {
 
     render(): any {
 
-        console.log(" this.props:  in Upsc render : ", this.props);
         let Left_HeadersList = [{
             for: "page1",
             name: "Latest Feed & Posts"

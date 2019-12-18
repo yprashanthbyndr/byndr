@@ -1,7 +1,7 @@
 import React from 'react';
 import {
     FaqBlock, MiniHeader, FooterCTA, Header, Footer, InnerPageTitleBlock,
-    ProductForRolesBlock, HomeTestimonial, FooterDoubleCTA
+    ProductForRolesBlock, HomeTestimonial, FooterDoubleCTA, Seo
 } from '../theme/components';
 
 import { connect } from 'react-redux';
@@ -15,7 +15,8 @@ interface props {
     WindowScroolheight: number,
     fromPage: any,
     StickMiniHeader: boolean,
-    StickyHeader_in_LMS: boolean
+    StickyHeader_in_LMS: boolean,
+    routeProps:any
 }
 
 class lms_For_Student extends React.Component<props, any> {
@@ -194,6 +195,7 @@ class lms_For_Student extends React.Component<props, any> {
         }]
         return (
             <div>
+                <Seo seoData={this.props.routeProps} />
                 <div className="header_main_container">
                     <Header Hide={this.props.HideHeader} />
                 </div>

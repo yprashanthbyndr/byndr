@@ -1,5 +1,5 @@
 import React from 'react';
-import { InnerPageTitleBlock, Header, FooterCTA, Footer, Navigation, PricingPlans } from '../theme/components';
+import { InnerPageTitleBlock, Header, FooterCTA, Footer, Navigation, PricingPlans, Seo } from '../theme/components';
 
 
 import { connect } from 'react-redux';
@@ -7,7 +7,8 @@ import { connect } from 'react-redux';
 
 interface props {
   onLeftMenu?(): void;
-  OpenMenuBar: boolean
+  OpenMenuBar: boolean,
+  routeProps:any
 }
 
 class Pricing extends React.Component<props, any> {
@@ -16,6 +17,7 @@ class Pricing extends React.Component<props, any> {
 
     return (
       <div>
+        <Seo seoData={this.props.routeProps} />
         <div className="header_main_container">
         <Header />
         </div>

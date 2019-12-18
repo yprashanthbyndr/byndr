@@ -113,7 +113,10 @@ import Materials from "./images/usps/Materials.svg";
 
 import PlanProgress from "./images/PlanProgress.svg";
 
+import ogimg from "./images/ogimg.png";
+
 export {
+    ogimg,
     PlanProgress,
     Calendar,
     Materials,
