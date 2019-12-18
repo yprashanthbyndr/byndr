@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch,Redirect } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import './App.css';
 import { ByndrRoutes } from './routes/routers';
-import {Provider} from 'react-redux';
+import { Provider } from 'react-redux';
 import { store } from './Redux/store';
 import Notfound from './screens/Notfound';
 
@@ -16,13 +16,13 @@ class App extends Component<props, any>{
       <Provider store={store}>
         <div className="main">
           <BrowserRouter>
-          {/* <Header /> */}
+            {/* <Header /> */}
             <Switch>
               {ByndrRoutes.map((route) => {
                 return RouteWithSubRoutes({ ...route })
               })}
               {/* 301&302 redirects start */}
-                <Redirect from='/old-path' to='/blog' />
+              <Redirect from='/old-path' to='/blog' />
               {/* 301&302 redirects end */}
               <Route component={Notfound} />
             </Switch>
@@ -41,8 +41,9 @@ const RouteWithSubRoutes = (route) => {
     <Route
       exact
       path={route.path}
-      component={route.component}
+      component={(props) => <route.component {...props} routeProps={route} />}
       key={route.path}
+
     // render={props => (
     //   // pass the sub-routes down to keep nesting
     //   <route  {...props} routes={route.routes} />

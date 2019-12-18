@@ -16,7 +16,8 @@ interface props {
     WindowScroolheight: number,
     fromPage: any ,
     StickMiniHeader: boolean,
-    StickyHeader_in_LMS: boolean
+    StickyHeader_in_LMS: boolean,
+    routeProps:any
 }
 
 class lms_For_Admins extends React.Component<props, any> {
@@ -189,6 +190,8 @@ class lms_For_Admins extends React.Component<props, any> {
             ]
         }]
 
+        console.log(" this.props:  in main header : ", this.props)
+
         return (
             <div>
                 <div className="header_main_container">
@@ -198,7 +201,7 @@ class lms_For_Admins extends React.Component<props, any> {
                     <InnerPageTitleBlock role="admins" fromPage="Monitoring Made Easy, Organized & Efficient" pageSubtitle="Experience Byndr Today!" videoDisplay="false" tryBtnDisplay="true"  />
                     <MiniHeader Title="Colleges" tryLink="" />
                     <ProductForRolesBlock Title="college" content="Byndr has been designed and developed with attention on connectivity and the mobile user experience. Easy and intuitive, Byndr offers a maintenance-free platform and unlimited support. Our platform is lightweight and accessed on any mobile or desktop browser (responsive web app), enabling teachers and students to access the content quickly. Teachers can collaborate, upload files, grade assignments, and take attendance right from their phones." gridList={gridList} />
-                    <USPs />
+                    <USPs routeProps={this.props.routeProps} />
                     <HomeTestimonial />
                     <FaqBlock faqList={faqList} />
                     <CTAForCollege />

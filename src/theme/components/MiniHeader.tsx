@@ -110,13 +110,9 @@ class MiniHeader extends React.Component<props, any> {
                                 <NavLink exact to="/" activeClassName="activeMenu" onClick={() => {
                                     this.ScroolToTp()
                                 }}><img src={byndr_Logo} /></NavLink></span>
-
                             // </CSSTransition>
-
                             :
-                          
                             <React.Fragment><span>Byndr</span> For</React.Fragment>
-
                             // </CSSTransition>
                         } {this.props.Title}
                     </div>

@@ -1,10 +1,16 @@
 import React from 'react';
-import { LatestFeedPosts,  Groups, Calendar, Coursework, UserFriendly, Secure, Materials, Courses } from "../../assets";
+import { LatestFeedPosts, Groups, Calendar, Coursework, UserFriendly, Secure, Materials, Courses } from "../../assets";
 
 import { connect } from 'react-redux';
+import { UspsPagesEnum } from '../../theme/enum/Usps.enum';
 
 interface props {
     onLeftMenu?(): void;
+    routeProps: any;
+    HideHeader: boolean;
+    StickMiniHeader: boolean;
+    WindowScroolheight: number,
+
 }
 
 class USPs extends React.Component<props, any> {
@@ -27,7 +33,7 @@ class USPs extends React.Component<props, any> {
         let winScroll =
             document.body.scrollTop || document.documentElement.scrollTop;
         console.log(" . / . / . /  winScroll:", winScroll, this.state, this.props);
-        if ((!this.state.StickyUsps && winScroll > 1390 && winScroll <5680 ) || (this.state.StickyUsps && (winScroll >5680 || winScroll < 1390) )) {
+        if ((!this.state.StickyUsps && winScroll > 1390 && winScroll < 5680) || (this.state.StickyUsps && (winScroll > 5680 || winScroll < 1390))) {
             this.setState_("StickyUsps", !this.state.StickyUsps);
         }
         this.OnScroolInScroolView(winScroll);
@@ -42,26 +48,88 @@ class USPs extends React.Component<props, any> {
     }
     OnScroolInScroolView(scroolHeoght: number) {
         let currentActiveTab = this.state.ActiveTab;
-        if (scroolHeoght > 1410 && scroolHeoght < 1730 && currentActiveTab !== "page1") {
+
+        if (scroolHeoght > UspsPagesEnum.page1 && scroolHeoght < UspsPagesEnum.page1_end && currentActiveTab !== "page1") {
             this.setState_("ActiveTab", "page1");
-        } else if (scroolHeoght > 1940 && scroolHeoght < 2280 && currentActiveTab !== "page2") {
+        } else if (scroolHeoght > UspsPagesEnum.page2 && scroolHeoght < UspsPagesEnum.page2_end && currentActiveTab !== "page2") {
             this.setState_("ActiveTab", "page2");
-        } else if (scroolHeoght > 2500 && scroolHeoght < 2750 && currentActiveTab !== "page3") {
+        } else if (scroolHeoght > UspsPagesEnum.page3 && scroolHeoght < UspsPagesEnum.page3_end && currentActiveTab !== "page3") {
             this.setState_("ActiveTab", "page3");
-        } else if (scroolHeoght > 3080 && scroolHeoght < 3350 && currentActiveTab !== "page4") {
+        } else if (scroolHeoght > UspsPagesEnum.page4 && scroolHeoght < UspsPagesEnum.page4_end && currentActiveTab !== "page4") {
             this.setState_("ActiveTab", "page4");
-        } else if (scroolHeoght > 3630 && scroolHeoght < 4000 && currentActiveTab !== "page5") {
+        } else if (scroolHeoght > UspsPagesEnum.page5 && scroolHeoght < UspsPagesEnum.page5_end && currentActiveTab !== "page5") {
             this.setState_("ActiveTab", "page5");
-        } else if (scroolHeoght > 4200 && scroolHeoght < 4550 && currentActiveTab !== "page6") {
+        } else if (scroolHeoght > UspsPagesEnum.page6 && scroolHeoght < UspsPagesEnum.page6_end && currentActiveTab !== "page6") {
             this.setState_("ActiveTab", "page6");
-        } else if (scroolHeoght > 4770 && scroolHeoght < 5150 && currentActiveTab !== "page7") {
+        } else if (scroolHeoght > UspsPagesEnum.page7 && scroolHeoght < UspsPagesEnum.page7_end && currentActiveTab !== "page7") {
             this.setState_("ActiveTab", "page7");
-        } else if (scroolHeoght > 5400 && scroolHeoght < 5700 && currentActiveTab !== "page8") {
+        } else if (scroolHeoght > UspsPagesEnum.page8 && scroolHeoght < UspsPagesEnum.page8_end && currentActiveTab !== "page8") {
             this.setState_("ActiveTab", "page8");
         }
     }
 
+    ClickOnLeft_Item(item: any) {
+
+
+        let scroolTo = 0;
+        let HideHeader = this.props.HideHeader;
+
+        let ScroolToUp = false;
+
+        switch (item.for) {
+            case "page1":
+                this.setState_("ActiveTab", item.for);
+                scroolTo = 1450;
+                ScroolToUp = this.state.ActiveTab > item.for;
+                break;
+
+            case "page2":
+                this.setState_("ActiveTab", item.for);
+                scroolTo = 1945;
+                ScroolToUp = this.state.ActiveTab > item.for;
+                break;
+            case "page3":
+                this.setState_("ActiveTab", item.for);
+                ScroolToUp = this.state.ActiveTab > item.for;
+                scroolTo = 2505;
+                break;
+            case "page4":
+                this.setState_("ActiveTab", item.for);
+                ScroolToUp = this.state.ActiveTab > item.for;
+                scroolTo = 3085;
+                break;
+            case "page5":
+                this.setState_("ActiveTab", item.for);
+                ScroolToUp = this.state.ActiveTab > item.for;
+                scroolTo = 3635;
+                break;
+            case "page6":
+                this.setState_("ActiveTab", item.for);
+                ScroolToUp = this.state.ActiveTab > item.for;
+                scroolTo = 4205;
+                break;
+            case "page7":
+                this.setState_("ActiveTab", item.for);
+                ScroolToUp = this.state.ActiveTab > item.for;
+                scroolTo = 4775;
+                break;
+            case "page8":
+                this.setState_("ActiveTab", item.for);
+                ScroolToUp = this.state.ActiveTab > item.for;
+                scroolTo = 5405;
+                break;
+
+        }
+
+        scroolTo = this.state.StickyUsps && this.props.routeProps.pageName === "LMS For Admins" ? ScroolToUp ? scroolTo + 150 : scroolTo + 300 : scroolTo
+
+        document.documentElement.scrollTop = scroolTo;
+
+    }
+
     render(): any {
+
+        console.log(" this.props:  in Upsc render : ", this.props);
         let Left_HeadersList = [{
             for: "page1",
             name: "Latest Feed & Posts"
@@ -126,11 +194,11 @@ class USPs extends React.Component<props, any> {
             <div className="uspsMainBlockStickey">
                 <div className="uspsMainBlock">
                     <div className="uspsMainBlockInr">
-                        <div className={"uspsMainBlockLeft " + (this.state.StickyUsps ? "Stickyusps-Left" : "")}>
+                        <div style={!this.props.HideHeader && this.state.StickyUsps && this.props.routeProps.pageName === "LMS For Admins" ? { top: '200px' } : {}} className={"uspsMainBlockLeft " + (this.state.StickyUsps ? "Stickyusps-Left" : "")}>
                             {Left_HeadersList.map(item => {
                                 return (
-                                    <div className={"uspsMainBlockLeftItem " + (this.state.ActiveTab === item.for ? "selectedLeft-List-Item":"")}>
-                                        <div className="uspsMainBlockLeftItemText">{item.name}</div>
+                                    <div className={"uspsMainBlockLeftItem " + (this.state.ActiveTab === item.for ? "selectedLeft-List-Item" : "")}>
+                                        <div className="uspsMainBlockLeftItemText" onClick={() => this.state.ActiveTab === item.for ? null : this.ClickOnLeft_Item(item)}>{item.name}</div>
                                     </div>
                                 )
                             })}
@@ -138,7 +206,6 @@ class USPs extends React.Component<props, any> {
                         <div className="uspsMainBlockRight">
                             <div id="myDIV" className="uspsMainBlockRightInr" onScroll={() => {
                                 var elmnt = document.getElementById("myDIV");
-
                                 if (elmnt !== null && elmnt !== undefined) {
                                     var Top = elmnt.scrollTop;
                                     this.OnScroolInScroolView(Top)
