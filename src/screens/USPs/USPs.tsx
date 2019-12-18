@@ -1,5 +1,5 @@
 import React from 'react';
-import { LatestFeedPosts,  Groups, Calendar, Coursework, UserFriendly, Secure, Materials, Courses } from "../../assets";
+import { LatestFeedPosts, Groups, Calendar, Coursework, UserFriendly, Secure, Materials, Courses } from "../../assets";
 
 import { connect } from 'react-redux';
 
@@ -27,7 +27,7 @@ class USPs extends React.Component<props, any> {
         let winScroll =
             document.body.scrollTop || document.documentElement.scrollTop;
         console.log(" . / . / . /  winScroll:", winScroll, this.state, this.props);
-        if ((!this.state.StickyUsps && winScroll > 1390 && winScroll <5680 ) || (this.state.StickyUsps && (winScroll >5680 || winScroll < 1390) )) {
+        if ((!this.state.StickyUsps && winScroll > 1390 && winScroll < 5680) || (this.state.StickyUsps && (winScroll > 5680 || winScroll < 1390))) {
             this.setState_("StickyUsps", !this.state.StickyUsps);
         }
         this.OnScroolInScroolView(winScroll);
@@ -59,6 +59,54 @@ class USPs extends React.Component<props, any> {
         } else if (scroolHeoght > 5400 && scroolHeoght < 5700 && currentActiveTab !== "page8") {
             this.setState_("ActiveTab", "page8");
         }
+    }
+
+    ClickOnLeft_Item(item: any) {
+
+
+        let scroolTo = 0;
+
+        switch (item.for) {
+            case "page1":
+                this.setState_("ActiveTab", item.for);
+                scroolTo = 1450;
+                break;
+
+            case "page2":
+                this.setState_("ActiveTab", item.for);
+                scroolTo = 1945;
+                break;
+            case "page3":
+                this.setState_("ActiveTab", item.for);
+                scroolTo = 2505;
+                break;
+            case "page4":
+                this.setState_("ActiveTab", item.for);
+                scroolTo = 3085;
+                break;
+            case "page5":
+                this.setState_("ActiveTab", item.for);
+                scroolTo = 3635;
+                break;
+            case "page6":
+                this.setState_("ActiveTab", item.for);
+                scroolTo = 4205;
+                break;
+            case "page7":
+                this.setState_("ActiveTab", item.for);
+                scroolTo = 4775;
+                break;
+            case "page8":
+                this.setState_("ActiveTab", item.for);
+                scroolTo = 5405;
+                break;
+
+        }
+
+
+        // document.body.scrollTop = 0;
+        document.documentElement.scrollTop = scroolTo;
+
     }
 
     render(): any {
@@ -129,8 +177,8 @@ class USPs extends React.Component<props, any> {
                         <div className={"uspsMainBlockLeft " + (this.state.StickyUsps ? "Stickyusps-Left" : "")}>
                             {Left_HeadersList.map(item => {
                                 return (
-                                    <div className={"uspsMainBlockLeftItem " + (this.state.ActiveTab === item.for ? "selectedLeft-List-Item":"")}>
-                                        <div className="uspsMainBlockLeftItemText">{item.name}</div>
+                                    <div className={"uspsMainBlockLeftItem " + (this.state.ActiveTab === item.for ? "selectedLeft-List-Item" : "")}>
+                                        <div className="uspsMainBlockLeftItemText" onClick= {() => this.state.ActiveTab === item.for ? null : this.ClickOnLeft_Item(item)}>{item.name}</div>
                                     </div>
                                 )
                             })}
@@ -138,7 +186,6 @@ class USPs extends React.Component<props, any> {
                         <div className="uspsMainBlockRight">
                             <div id="myDIV" className="uspsMainBlockRightInr" onScroll={() => {
                                 var elmnt = document.getElementById("myDIV");
-
                                 if (elmnt !== null && elmnt !== undefined) {
                                     var Top = elmnt.scrollTop;
                                     this.OnScroolInScroolView(Top)
