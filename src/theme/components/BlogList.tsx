@@ -48,7 +48,7 @@ export default class BlogList extends React.Component<props, any> {
                   <img src="https://byndrblog.files.wordpress.com/2016/11/mobile-learning.png?w=366&h=415&crop=1" />
                 </div>
                 <div className="content_blogList">
-                  <div className="blogList_title"><NavLink exact to="/blog/use-of-learning-management-systems-in-indi">Use of learning management systems in India</NavLink></div>
+                  <div className="blogList_title"><NavLink exact to="/blog/use-of-learning-management-systems-in-india">Use of learning management systems in India</NavLink></div>
                   <div className="blogList_feature_content">
                   For the past few years, the dream of strengthening the presence of learning management system in India has gained significant pace. The target of an LMS is to bring together the key components of the educational system – educators, administrators...</div>
                 </div>
