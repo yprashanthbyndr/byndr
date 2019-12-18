@@ -80,6 +80,7 @@ class lms_For_Teacher extends React.Component<props, any> {
 
     render(): any {
 
+        console.log(" in Lams_Teachers Render : ", this.props);
         const gridList = [{
             image: Cloud_based_LMS,
             title: "Cloud-based LMS"

@@ -9,8 +9,8 @@ import { connect } from 'react-redux';
 
 interface props {
     MainReducer: any,
-
-    OpenMenuBar: boolean
+    OpenMenuBar: boolean,
+    RouteProps: any
 }
 
 class HomeSplit_A extends Component<props, any>{
@@ -29,6 +29,9 @@ class HomeSplit_A extends Component<props, any>{
 
     render(): any {
      
+
+        console.log(" HomeSplit_A : ", this.props);
+
         return (
             <div>
                 <Helmet>
