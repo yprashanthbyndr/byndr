@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Home_A_Hero, Home_A_Grids, SupportedDivices, HomeTestimonial, Header, Footer, FooterDoubleCTA } from '../theme/components';
 import { Helmet } from "react-helmet";
 
-import {USPs} from './USPs';
+import { USPs } from './USPs';
 
 import { connect } from 'react-redux';
 
@@ -10,7 +10,7 @@ import { connect } from 'react-redux';
 interface props {
     MainReducer: any,
     OpenMenuBar: boolean,
-    RouteProps: any
+    routeProps: any
 }
 
 class HomeSplit_A extends Component<props, any>{
@@ -28,9 +28,6 @@ class HomeSplit_A extends Component<props, any>{
     }
 
     render(): any {
-     
-
-        console.log(" HomeSplit_A : ", this.props);
 
         return (
             <div>
@@ -41,16 +38,16 @@ class HomeSplit_A extends Component<props, any>{
                 </Helmet>
                 <Header />
                 <div className="bodySection">
-                    <Home_A_Hero/>
+                    <Home_A_Hero />
                     <Home_A_Grids />
                     {/* <FeaturesGrid /> */}
                     {/* <SupportedDivices /> */}
-                    <USPs />
+                    <USPs routeProps={this.props.routeProps} />
                     <HomeTestimonial />
                     <FooterDoubleCTA />
                 </div>
                 <Footer />
-            
+
             </div>
         );
     }
