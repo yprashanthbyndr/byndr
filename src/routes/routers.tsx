@@ -1,6 +1,6 @@
 import { AboutUs, Pricing, Product, ProductRoles, Blog, HomeSplit_A, HomeSplit_B, ContactUs, PrivacyPolicy, TermsOfUse, lms_For_Admin, lms_For_Student, lms_For_Teacher } from "../screens"
 
-import { BlogChild1 ,BlogChild2 ,BlogChild3, BlogChild4 } from '../screens/blogChilds/index';
+import { BlogChild1 ,BlogChild2 ,BlogChild3, BlogChild4, BlogChild5, BlogChild6, BlogChild7, BlogChild8, BlogChild9 } from '../screens/blogChilds/index';
 
 const ByndrRoutes = [
     {
@@ -185,6 +185,63 @@ const ByndrRoutes = [
         key: 'why-colleges-need-mobile-learning-apps',
         metaDescription:"BlogChild4",
         component: BlogChild4,
+    },
+    {
+        pageName: "Blog child5",
+        title: "Blog child5",
+        seoVisibility: true,
+        metaTitle: "Blog Child5",
+        metaTags: "Blog Meta Tags child5",
+        path: '/blog/mobile-learning-empowering-education-industry',
+        key: 'mobile-learning-empowering-education-industry',
+        metaDescription:"BlogChild5",
+        component: BlogChild5,
+    },
+    {
+        pageName: "Blog child6",
+        title: "Blog child6",
+        seoVisibility: true,
+        metaTitle: "Blog Child6",
+        metaTags: "Blog Meta Tags child6",
+        path: '/blog/mobile-learning-empowering-education-industrylearning-management-systems-self-paced-and-easy-to-use',
+        key: 'mobile-learning-empowering-education-industrylearning-management-systems-self-paced-and-easy-to-use',
+        metaDescription:"BlogChild6",
+        component: BlogChild6,
+    },
+    {
+        pageName: "Blog child7",
+        title: "Blog child7",
+        seoVisibility: true,
+        metaTitle: "Blog Child7",
+        metaTags: "Blog Meta Tags child7",
+        path: '/blog/bright-future-ahead-for-lms-industry',
+        key: 'bright-future-ahead-for-lms-industry',
+        metaDescription:"BlogChild7",
+        component: BlogChild7,
+    }
+    ,
+    {
+        pageName: "Blog child8",
+        title: "Blog child8",
+        seoVisibility: true,
+        metaTitle: "Blog Child8",
+        metaTags: "Blog Meta Tags child8",
+        path: '/blog/how-online-learning-platform-can-help-startup-ventures',
+        key: 'how-online-learning-platform-can-help-startup-ventures',
+        metaDescription:"BlogChild8",
+        component: BlogChild8,
+    }
+    ,
+    {
+        pageName: "Blog child9",
+        title: "Blog child9",
+        seoVisibility: true,
+        metaTitle: "Blog Child9",
+        metaTags: "Blog Meta Tags child9",
+        path: '/blog/blog-post-title-5',
+        key: 'blog-post-title-5',
+        metaDescription:"BlogChild9",
+        component: BlogChild9,
     },
     {
         pageName:"Privacy Policy",
