@@ -6,10 +6,26 @@ import { Provider } from 'react-redux';
 import { store } from './Redux/store';
 import Notfound from './screens/Notfound';
 
+
+import { createBrowserHistory } from 'history';
+
+const history = createBrowserHistory();
+
+
+let location=  history.location
+const path = (/#!(\/.*)$/.exec(location.hash) || [])[1];
+
+if (path) {
+  history.replace(path);
+}
+
+console.log(" out side is " ,history)
+
 interface props {
 
 }
 class App extends Component<props, any>{
+
 
   render() {
     return (
