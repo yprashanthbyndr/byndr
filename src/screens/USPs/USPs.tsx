@@ -32,7 +32,6 @@ class USPs extends React.Component<props, any> {
     ScroolEvent() {
         let winScroll =
             document.body.scrollTop || document.documentElement.scrollTop;
-        console.log(" . / . / . /  winScroll:", winScroll, this.state, this.props);
         if ((!this.state.StickyUsps && winScroll > 1390 && winScroll < 5680) || (this.state.StickyUsps && (winScroll > 5680 || winScroll < 1390))) {
             this.setState_("StickyUsps", !this.state.StickyUsps);
         }
