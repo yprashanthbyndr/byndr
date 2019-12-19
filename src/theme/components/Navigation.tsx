@@ -105,7 +105,7 @@ color:"yellow"}}>We're hiring</sup></a>
                         <div className="menu_cta_btns">
                             <ul>
                                 <li><a href="./">Get Started For Free</a></li>
-                                <li><a href="./" style={{    background: "transparent",
+                                <li><a href="./request-a-demo" style={{    background: "transparent",
     border: "1px solid #ffffff",padding:"14px 0"}}>Request A Demo</a></li>
                             </ul>
                         </div>

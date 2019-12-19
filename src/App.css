@@ -1217,7 +1217,9 @@ color: #fff;
 max-width: 162px;
 text-align: center;
 }
-
+.requestdemo_singleRowField input:focus, .requestdemo_singleRowField select:focus, .requestdemo_singleRowField textarea:focus{
+    border: 1.5px solid #00B1FF;
+}
 .home_v2_features {
     background: #F2F3F6;
     width: 100%;
@@ -1346,7 +1348,7 @@ div#carousel1 .flex-viewport{
     width: 100%;
     float: left;
     min-height: 450px;
-    padding: 60px 0;
+    padding:0 0 60px 0;
 }
 .singleHomeBlockElementImage {
     width: 100%;
@@ -1395,8 +1397,8 @@ div#carousel1 .flex-viewport{
     width: 100%;
     float: left;
     padding: 18px 0;
-    font-size: 24px;
-    font-weight: 100;
+    font-size: 22px;
+    font-weight: 400;
     cursor: pointer;
 }.uspsMainBlockLeftItemImg {
     float: left;
@@ -3436,7 +3438,7 @@ li.year_details {
         float: left;
     }
     .requestDemoLeft {
-        width: 40%;
+        width: 25%;
         float: left;
         background: url('./assets/images/requestDemoBg.png') no-repeat left top;
         background-size: cover;
@@ -3445,7 +3447,7 @@ li.year_details {
         max-width: 880px;
     }
     .requestDemoRight {
-        width: 60%;
+        width: 75%;
         float: right;
     }
     .requestDemoContentMain {
@@ -3557,7 +3559,7 @@ li.year_details {
         width: calc(100% - 20px);
         float: left;
         background: rgba(255, 255, 255, 1) 0% 0% no-repeat padding-box;
-        border: 1px solid rgba(169, 169, 169, 1);
+        border: 1.5px solid rgba(169, 169, 169, 1);
         border-radius: 2px;
         opacity: 1;
         padding: 12px 10px;
