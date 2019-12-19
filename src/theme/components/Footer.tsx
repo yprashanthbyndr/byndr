@@ -60,7 +60,7 @@ class Footer extends React.Component<props, any> {
                                                     >For Colleges</NavLink>
                                                 </li>
                                                 <li>
-                                                    <NavLink exact to="/"
+                                                    <NavLink exact to="/request-a-demo"
 
                                                         onClick={() => {
                                                             document.body.scrollTop = 0;
