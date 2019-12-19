@@ -1,4 +1,4 @@
-import { AboutUs, Pricing, Product, ProductRoles, Blog, HomeSplit_A, HomeSplit_B, ContactUs, PrivacyPolicy, TermsOfUse, lms_For_Admin, lms_For_Student, lms_For_Teacher } from "../screens"
+import { AboutUs, Pricing, Product, ProductRoles, Blog, HomeSplit_A, HomeSplit_B, ContactUs, PrivacyPolicy, TermsOfUse, lms_For_Admin, lms_For_Student, lms_For_Teacher, RequestDemo } from "../screens"
 
 import { BlogChild1 ,BlogChild2 ,BlogChild3, BlogChild4, BlogChild5, BlogChild6, BlogChild7, BlogChild8, BlogChild9 } from '../screens/blogChilds/index';
 
@@ -253,6 +253,18 @@ const ByndrRoutes = [
         key: 'terms-of-use',
         metaDescription:"Terms of Use Description",
         component:TermsOfUse,
+        routes: []
+    },
+    {
+        pageName:"Request a Demo",
+        title:"Request a Demo",
+        seoVisibility:true, // default it has to be true
+        metaTitle:"Request a Demo",
+        metaTags:"Request a Demo Meta Tags",
+        path:'/request-a-demo',
+        key: 'request-a-demo',
+        metaDescription:"Request a Demo Description",
+        component:RequestDemo,
         routes: []
     }
 ]

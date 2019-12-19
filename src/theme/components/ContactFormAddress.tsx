@@ -16,9 +16,9 @@ export default class ContactFormAddress extends React.Component<props, any> {
               <div className="single_address_name">
                 <h4>USA</h4>
                 <span className="address_details">
-                  <span className="address_maincity">Philadelphia, USA</span>
-                  <span className="address_streetAddress">100 W. Oxford Street, Suite E1500</span>
-                  <span className="address_Locality">Philadelphia, PA 19122, USA</span>
+                  <span className="address_maincity">5660 W. Chandler Blvd</span>
+                  <span className="address_streetAddress">Suite 1, Chandler,AZ 85226</span>
+                  {/* <span className="address_Locality"></span> */}
                 </span>
               </div>
               <div className="single_address_name">

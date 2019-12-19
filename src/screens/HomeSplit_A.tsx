@@ -30,6 +30,7 @@ class HomeSplit_A extends Component<props, any>{
     render(): any {
         return (
             <div>
+                <Seo seoData={this.props.routeProps} />
                 <Header />
                 <div className="bodySection">
                     <Home_A_Hero />
