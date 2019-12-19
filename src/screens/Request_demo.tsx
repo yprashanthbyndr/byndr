@@ -145,12 +145,12 @@ class RequestDemo extends React.Component<props, any> {
                                                             <div className="requestdemo_singleRowField">
                                                                 <input value={this.state.firstName} onChange={(txt) => { this.StoreIPValues("firstName", txt.target.value) }} type="text" placeholder="First Name" />
                                                             </div>
-                                                            <div className="requestdemo_singleRowFieldHalf" style={{float:"right"}}>
+                                                        </div>
+                                                        <div className="requestdemo_singleRowFieldHalf" style={{float:"right"}}>
                                                                 <div className="requestdemo_singleRowField">
                                                                     <input value={this.state.lastName} onChange={(txt) => { this.StoreIPValues("lastName", txt.target.value) }} type="text" placeholder="Last Name / Surname" />
                                                                 </div>
                                                             </div>
-                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div className="requestdemo_singleRow">
