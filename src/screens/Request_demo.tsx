@@ -3,6 +3,7 @@ import { Seo } from '../theme/components';
 import { connect } from 'react-redux';
 import { SaveScroll_Height } from '../services';
 import { byndr_Logo_White, krishnaMurthi, Icon_Testimonial_pink } from '../assets';
+import { NavLink } from 'react-router-dom';
 
 interface props {
     onLeftMenu?(): void;
@@ -85,7 +86,7 @@ class RequestDemo extends React.Component<props, any> {
                                 <div className="requestDemoContentMain">
                                     <div className="requestDemoCenter">
                                         <div className="requestdemoLogo">
-                                            <img src={byndr_Logo_White} width="120" />
+                                            <NavLink exact to="/"><img src={byndr_Logo_White} width="130" /></NavLink>
                                         </div>
                                         <div className="requestDemoMainContent">
                                             <h4>What does Byndr do?</h4>
@@ -144,10 +145,10 @@ class RequestDemo extends React.Component<props, any> {
                                                             <div className="requestdemo_singleRowField">
                                                                 <input value={this.state.firstName} onChange={(txt) => { this.StoreIPValues("firstName", txt.target.value) }} type="text" placeholder="First Name" />
                                                             </div>
-                                                        </div>
-                                                        <div className="requestdemo_singleRowFieldHalf">
-                                                            <div className="requestdemo_singleRowField">
-                                                                <input value={this.state.lastName} onChange={(txt) => { this.StoreIPValues("lastName", txt.target.value) }} type="text" placeholder="Last Name / Surname" />
+                                                            <div className="requestdemo_singleRowFieldHalf" style={{float:"right"}}>
+                                                                <div className="requestdemo_singleRowField">
+                                                                    <input value={this.state.lastName} onChange={(txt) => { this.StoreIPValues("lastName", txt.target.value) }} type="text" placeholder="Last Name / Surname" />
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -166,19 +167,10 @@ class RequestDemo extends React.Component<props, any> {
                                                     <div className="requestdemo_singleRowLable">
                                                         Phone Number
                                                         </div>
-                                                    <div className="requestdemo_singleRowField">
-                                                        <div className="requestdemo_singleRowFieldPhoneLeft">
-                                                            <div className="requestdemo_singleRowField">
-                                                                <input value={this.state.phoneNumber} onChange={(txt) => { this.StoreIPValues("phoneNumber", txt.target.value) }} type="text" placeholder="Please enter" />
-                                                            </div>
-                                                        </div>
-                                                        <div className="requestdemo_singleRowFieldPhoneLeft">
-                                                            <div className="requestdemo_singleRowField">
-                                                                <select>
-                                                                    <option value="+91">INDIA</option>
-                                                                    <option value="+1">USA</option>
-                                                                </select>
-                                                            </div>
+                                                        <div className="requestdemo_singleRowField">
+                                                                <div className="requestdemo_singleRowField">
+                                                                    <input value={this.state.phoneNumber} onChange={(txt) => { this.StoreIPValues("phoneNumber", txt.target.value) }} type="text" placeholder="Please enter phone number" />
+                                                                </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -209,12 +201,14 @@ class RequestDemo extends React.Component<props, any> {
                                                     </div>
                                                     <div className="requestdemo_singleRowField">
                                                         <div className="requestdemo_singleRowField">
-                                                            <select  value={this.state.sizeOfInstitue} onChange={(txt)=> this.StoreIPValues("sizeOfInstitue", txt.target.value)}>
-                                                                <option value="" selected>Select</option>
-                                                                <option value="0-25">0-25</option>
-                                                                <option value="25-50">25-50</option>
-                                                                <option value="50-100" selected>50-100</option>
-                                                            </select>
+                                                            <div className="requestdemo_singleRowField">
+                                                                <select value={this.state.sizeOfInstitue} onChange={(txt)=> this.StoreIPValues("sizeOfInstitue", txt.target.value)} className="disableField">
+                                                                    <option value="" selected>Select</option>
+                                                                    <option value="0-25">0-25</option>
+                                                                    <option value="25-50">25-50</option>
+                                                                    <option value="50-100">50-100</option>
+                                                                </select>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>

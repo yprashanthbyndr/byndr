@@ -3412,6 +3412,196 @@ li.year_details {
         color: #333333;
     }
 
+    .requestDemoMain {
+        width: 100%;
+        float: left;
+    }
+    .requestDemo {
+        width: 100%;
+        float: left;
+    }
+    .requestDemoinr {
+        width: 100%;
+        float: left;
+    }
+    .requestDemoLeft {
+        width: 40%;
+        float: left;
+        background: url('./assets/images/requestDemoBg.png') no-repeat left top;
+        background-size: cover;
+        color: #ffffff;
+        font-weight: 100;
+        max-width: 880px;
+    }
+    .requestDemoRight {
+        width: 60%;
+        float: right;
+    }
+    .requestDemoContentMain {
+        width: calc(100% - 64px);
+        float: left;
+        padding: 30px 32px;
+        background: rgba(0, 20, 76, 0.9);
+    }
+    .requestDemoCenter {
+        width: 100%;
+        float: left;
+    }
+    .requestDemoMainContent {
+        width: 100%;
+        float: left;
+        padding: 150px 0 40px 0;
+    }
+    .requestDemoMainContent h4{
+        font-size: 24px;
+        font-weight: 100;
+    }
+    .requestDemoMainContent ul{
+        padding: 0;
+        margin: 0;
+    }
+    .requestDemoMainContent ul li{
+        padding: 10px 0;
+        float: left;
+        width: 100%;
+        line-height: 1.8;
+    }
+    .requestDemoForm {
+        float: left;
+        width: 100%;
+    }
+    .requestDemoFormInr {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 400px;
+    }
+    .requestaDemoMain {
+        width: 100%;
+        float: left;
+        padding: 40px 0;
+    }
+    .requestdemotitle {
+        font-size: 32px;
+        font-weight: bolder;
+        margin: 0;
+    }
+    .requestDemoTestimonials,.requestDemoTestimonialsInr{
+        width: 100%;
+        float: left;
+    }
+
+    .requestDemoTestimonials_Icon {
+        text-align: center;
+    }
+    .requestDemoTestimonials_Content {
+        font-size: 16px;
+        font-style: italic;
+    }
+    .requestDemoTestimonials_Author {
+        width: 100%;
+        float: left;
+        padding: 30px 0;
+    }
+    .requestDemoTestimonials_Author_Icon {
+        width: 30%;
+        float: left;
+    }
+    .requestDemoTestimonials_Author_content {
+        width: 70%;
+        float: right;
+    }
+    .requestdemoFormStart {
+        width: 100%;
+        float: left;
+    }
+    .requestdemo_singleRow {
+        width: 100%;
+        float: left;
+        padding: 5px 0;
+    }
+    .requestdemo_singleRowLable {
+        width: 100%;
+        float: left;
+        text-align: left;
+        letter-spacing: 0;
+        color: rgba(102, 102, 102, 1);
+        opacity: 1;
+        padding-bottom: 5px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .requestdemo_singleRowField {
+        width: 100%;
+        float: left;
+    }
+    .requestdemo_singleRowFieldHalf {
+        width: 49%;
+        float: left;
+    }
+    .requestdemo_singleRowField {
+        width: 100%;
+        float: left;
+    }
+    .requestdemo_singleRowField input,.requestdemo_singleRowField select,.requestdemo_singleRowField textarea{
+        width: calc(100% - 20px);
+        float: left;
+        background: rgba(255, 255, 255, 1) 0% 0% no-repeat padding-box;
+        border: 1px solid rgba(169, 169, 169, 1);
+        border-radius: 2px;
+        opacity: 1;
+        padding: 12px 10px;
+    }
+    .requestdemo_singleRowFieldPhoneLeft{
+        width: 80%;
+        float: left;
+    }
+    .requestdemo_singleRowFieldPhoneRight{
+        width: 20%;
+        float: left;
+    }
+    .requestdemo_singleRowSubmit {
+        width: 100%;
+        float: left;
+    }
+    .requestdemo_singleRowSubmit input{
+        width: 100%;
+        background: rgba(204, 0, 123, 1) 0% 0% no-repeat padding-box;
+        border-radius: 2px;
+        opacity: 1;
+        color: #fff;
+        border: none;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+        float: left;
+        padding: 14px 0;
+    }
+    .requestdemo_singleRowText {
+        color: rgba(13, 8, 8, 1);
+        font-size: 14px;
+        letter-spacing: 0.5px;
+    }
+    .requestdemo_singleRowField select{
+        width: 100%;
+    }
+    .disableField{
+        background: #efefef;
+    }
+    .requestdemo_singleRowField textarea{
+        min-height: 80px;
+    }
+    .requestdemo_singleRowField input::-webkit-input-placeholder,.requestdemo_singleRowField textarea::-webkit-input-placeholder { /* Edge */
+        color: red;
+      }
+      
+      .requestdemo_singleRowField input:-ms-input-placeholder,.requestdemo_singleRowField textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: red;
+      }
+      
+      .requestdemo_singleRowField input::placeholder,.requestdemo_singleRowField textarea::placeholder {
+        color: red;
+      }
+    
 /* 1360 screen */
 @media only screen and (max-width: 1380px) {
     .header_main_inr, .homeBanner_inr, .homeGrid_inr, .homeAvailableDivices_inr, .footerInr, .role_based_header_main, .product-role .homeGrid_inr{
