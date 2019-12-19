@@ -115,7 +115,12 @@ import PlanProgress from "./images/PlanProgress.svg";
 
 import ogimg from "./images/ogimg.png";
 
-export {
+import krishnaMurthi from "./images/krishnaMurthi.png"
+
+import Icon_Testimonial_pink from "./images/Icon-Testimonial_pink.svg";
+
+export {krishnaMurthi,
+    Icon_Testimonial_pink,
     ogimg,
     PlanProgress,
     Calendar,
