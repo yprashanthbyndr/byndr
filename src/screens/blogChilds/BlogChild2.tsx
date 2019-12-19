@@ -25,7 +25,7 @@ class BlogChild2 extends Component<props, any> {
                 <Header />
             </div>                
             <div className="bodySection">
-                <InnerPageTitleBlock fromPage="Key factors to consider when planning to collaborate with a mobile LMS platform" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false" />
+                <InnerPageTitleBlock fromPage="Blog" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false" />
                     <BlogItem Content={contentGenerated} />
                 <FooterCTA />
             </div>
@@ -47,6 +47,7 @@ export default connect(
 
 export function getContent(){
     return(<div>
+        <h1>Key factors to consider when planning to collaborate with a mobile LMS platform</h1>
     <p>eLearning platforms in India have the power of transforming the way education is imparted in schools and companies. It is mandatory to introduce it as it can empower learning. Here are some essential factors why the learners should leverage the advantages of elearning –</p>
     <ul>
         <li>It helps to improve the learning outcomes.</li>

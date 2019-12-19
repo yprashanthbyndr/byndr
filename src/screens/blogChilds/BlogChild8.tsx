@@ -24,7 +24,7 @@ class BlogChild8 extends Component<props, any> {
                 <Header />
             </div>                
             <div className="bodySection">
-                <InnerPageTitleBlock fromPage="How online learning platform can help startup ventures" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false" />
+                <InnerPageTitleBlock fromPage="Blog" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false" />
                     <BlogItem Content={contentGenerated} />
                 <FooterCTA />
             </div>
@@ -46,6 +46,7 @@ export default connect(
 
 export function getContent(){
     return(<div>
+        <h1>How online learning platform can help startup ventures</h1>
     <p>Many people have persistent misconceptions that online learning platforms are solely meant for the MNCs and conglomerates that have strong employee base and budget. In actuality, startups and small businesses can also bag considerable benefit from a learning management system. When using an LMS, companies irrespective of their size and industry vertical can enhance profit and boost clientele base.</p>
    
     <p>In layman’s terms, an e-learning platform ensures that a business attains effective employee training and development without burning a hole in the pocket. Realising that eLearning apps in India are expected to become huge in the world of business, our guide focussing upon the benefits of LMS have for small business will come in handy and will help the entrepreneurial ventures to thrive in the existing competitive business landscape.</p>
@@ -68,7 +69,9 @@ export function getContent(){
 </ul>
 
 <p>An LMS enhances the overall efficiency of the workforce that will help introduce the best practices and consequently improve or offer the best customer service experience.</p>
-<strong>The parting words</strong>
+<ul>
+<li><strong>The parting words</strong></li>
+</ul>
 <p>For startups, an online learning platform is the need of the hour. It will help the employees update their skills, broaden their mindset, stay updated with the current industry happenings, be motivated and strengthen ROI. So, implement eLearning for your team today and reap benefits.</p>
 </div>)
 }

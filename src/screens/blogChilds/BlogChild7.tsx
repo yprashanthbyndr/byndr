@@ -24,7 +24,7 @@ class BlogChild7 extends Component<props, any> {
                 <Header />
             </div>                
             <div className="bodySection">
-                <InnerPageTitleBlock fromPage="Bright future ahead for LMS industry" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false" />
+                <InnerPageTitleBlock fromPage="Blog" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false" />
                     <BlogItem Content={contentGenerated} />
                 <FooterCTA />
             </div>
@@ -46,6 +46,7 @@ export default connect(
 
 export function getContent(){
     return(<div>
+        <h1>Bright future ahead for LMS industry</h1>
     <p>Learning management systems (LMS) have emerged as an integral part of the higher education, K-12 and business environments. There’s no denying that LMS market is diverse and also growing at a rapid scale. Currently, about 70% of the K-12 education system enjoys access to smartphones and this percentage is only going up with time. In simple words, this allows the smartphones to be used as a learning device and app as a possible medium to connect with millions of students. One can say that change is happening and eLearning platforms are boosting their clientele base.</p>
    
     <p>In the recent years, eLearning as an industry has made successful progression and promises to become bigger. In other words, the learning management system landscape has undergone a dramatic transformation with different new players stepping in and introducing changes in the feature sets and overall aesthetics. A recently unveiled report suggests that eLearning globally will touch $50billion by the end of 2016 with the projected double-digit growth in Africa, Asia, Eastern Europe and Latin America. While the availability of open online courses has garnered significant media attention, an LMS enjoy higher efficiency to help universities, companies and businesses to successfully create, assign and track the progression of online learning.</p>

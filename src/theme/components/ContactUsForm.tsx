@@ -31,9 +31,13 @@ class ContactUsForm extends React.Component<props, any> {
   OnClickSubmitForm() {
 
     let FormDetails = this.props.ContactUsForm
-    if (FormDetails.name == '' || FormDetails.title == '' || FormDetails.num_students == '' ||
-      FormDetails.institution == '' || FormDetails.email == '' ||
-      FormDetails.comments == '' || FormDetails.phone == '' || FormDetails.Position == '') {
+    // if (FormDetails.name == '' || FormDetails.title == '' || FormDetails.num_students == '' ||
+    //   FormDetails.institution == '' || FormDetails.email == '' ||
+    //   FormDetails.comments == '' || FormDetails.phone == '' || FormDetails.Position == '') {
+    //   alert('please enter valid details')
+    // }
+    if (FormDetails.name == '' || FormDetails.email == '' ||
+      FormDetails.comments == '' || FormDetails.phone == '') {
       alert('please enter valid details')
     } else {
       let validate = validateEmail(FormDetails.email);
@@ -54,22 +58,7 @@ class ContactUsForm extends React.Component<props, any> {
         //  method="post" 
          id="contact_form" className="contact-form-viewed"> */}
         <div>
-          <div className="singleField">
-            <div className="input-select-wrapper" style={{ width: '498px' }}>
-              <select id="contact_purpose"
-                onChange={(txt) => this.ReadeInput('title', txt.target.value)}
-                // onSelect= {(txt) => this.ReadeInput('title', txt)}
-                // onClick={(txt) => this.ReadeInput('title', txt)}
-                value={this.props.ContactUsForm.title}
-              >
-                <option value="" disabled selected>Title</option>
-                <option value="College Administrator">College Administrator</option>
-                <option value="Faculty">Faculty</option>
-                <option value="Student">Student</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-          </div>
+
           <div className="singleField">
             <input type="text" name="name" id="contact_name" placeholder="Name" autoComplete="off"
               value={this.props.ContactUsForm.name}
@@ -83,12 +72,12 @@ class ContactUsForm extends React.Component<props, any> {
             />
           </div>
           <div className="singleField">
-            <input type="text" name="text" id="contact_phone" placeholder="Phone Number" autoComplete="off"
+            <input type="text" name="phone" id="contact_phone" placeholder="Phone Number" autoComplete="off"
               value={this.props.ContactUsForm.phone}
               onChange={(txt) => this.ReadeInput('phone', txt.target.value)}
             />
           </div>
-          {
+          {/* {
             this.props.ContactUsForm.title == 'Student' ? null :
               <div className="singleField">
                 <input type="text" name="text" id="contact_position" placeholder="Position at College" autoComplete="off"
@@ -122,10 +111,28 @@ class ContactUsForm extends React.Component<props, any> {
               onChange={(txt) => this.ReadeInput('num_classes', txt.target.value)}
             />
           </div> : null
-          }
+          } */}
+
+{/* <div className="singleField">
+  <div className="input-select-wrapper" style={{ width: '498px' }}>
+    <select id="contact_purpose"
+      onChange={(txt) => this.ReadeInput('title', txt.target.value)}
+      // onSelect= {(txt) => this.ReadeInput('title', txt)}
+      // onClick={(txt) => this.ReadeInput('title', txt)}
+      value={this.props.ContactUsForm.title}
+    >
+      <option value="" disabled selected>Title</option>
+      <option value="College Administrator">College Administrator</option>
+      <option value="Faculty">Faculty</option>
+      <option value="Student">Student</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+</div> */}
+
 
           <div className="singleField">
-            <textarea rows={7} name="question" id="contact_question" placeholder="Your comments" maxLength={5000}
+            <textarea rows={7} name="comments" id="contact_question" placeholder="Your comments" maxLength={5000}
               value={this.props.ContactUsForm.comments}
               onChange={(txt) => this.ReadeInput('comments', txt.target.value)}
             />

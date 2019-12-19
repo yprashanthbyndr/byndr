@@ -24,7 +24,7 @@ class BlogChild9 extends Component<props, any> {
                 <Header />
             </div>                
             <div className="bodySection">
-                <InnerPageTitleBlock fromPage="Understanding the benefits of Learning management system" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false" />
+                <InnerPageTitleBlock fromPage="Blog" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false" />
                     <BlogItem Content={contentGenerated} />
                 <FooterCTA />
             </div>
@@ -46,6 +46,7 @@ export default connect(
 
 export function getContent(){
     return(<div>
+        <h1>Understanding the benefits of Learning management system</h1>
     <p>In general, this integrated software offers a flexible architecture that can be altered accordingly. Moreover, an LMS can address the scalability concerns often raised by educators. The concept of having an online learning platform is new to India, but it is quickly gaining acceptance. It allows the instructors to create and deliver their content while simultaneously monitor the student participation and review performance.</p>
    
     <p>Here are some of the possible reasons why using an <a href="https://www.byndr.com/" target="_blank" style={{color:"#117bb8"}}>LMS system in India</a> is the need of the hour and can ensure good ROI.</p>

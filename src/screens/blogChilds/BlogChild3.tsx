@@ -25,7 +25,7 @@ class BlogChild3 extends Component<props, any> {
                 <Header />
             </div>                
             <div className="bodySection">
-                <InnerPageTitleBlock fromPage="Use of learning management systems in India" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false" />
+                <InnerPageTitleBlock fromPage="Blog" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false" />
                     <BlogItem Content={contentGenerated} />
                 <FooterCTA />
             </div>
@@ -47,6 +47,7 @@ export default connect(
 
 export function getContent(){
     return(<div>
+        <h1>Use of learning management systems in India</h1>
     <p>For the past few years, the dream of strengthening the presence of learning management system in India has gained significant pace. The target of an LMS is to bring together the key components of the educational system – educators, administrators, students – to bring together in an online space to boost interactions via announcements, SMS’, email and series of other relevant features that offers classroom and other academic related details at the fingertips.</p>
     <p>With the growing income of the middle class and government expenditure in the education domain, the size of the Indian education industry is expected to bolster. In fact, in the coming years, the enhanced use of learning management system in India will push the greater number of foreign players to enter the Indian learning domain catering and meeting the need of the education industry.</p>
     <h3>Some of the key features which education domain LMS should encompass are –</h3>

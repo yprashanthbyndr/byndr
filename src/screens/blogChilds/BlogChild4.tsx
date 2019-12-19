@@ -24,7 +24,7 @@ class BlogChild4 extends Component<props, any> {
                 <Header />
             </div>                
             <div className="bodySection">
-                <InnerPageTitleBlock fromPage="Why colleges need mobile learning apps" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false" />
+                <InnerPageTitleBlock fromPage="Blog" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false" />
                     <BlogItem Content={contentGenerated} />
                 <FooterCTA />
             </div>
@@ -46,6 +46,7 @@ export default connect(
 
 export function getContent(){
     return(<div>
+        <h1>Why colleges need mobile learning apps</h1>
     <p>There's no denying that building engagement with the students during the first year of college is a must for student retention, as their first-year experiences decide the tone for their educational careers. Nearly 35% of the freshmen students leave colleges on an average every year and just a mere 10% of these dropouts have poor grades. In other words, poor grades are not responsible for making students leave colleges.</p>
     <img src={educationalmobileapp} />
     <p>Currently, millennials are a significant part of the student community and also changed the way students engage in communicating. Since the millennials have time and again displayed keenness towards mobile technology, smart devices, apps etc, it has been compelling the higher education service providers to identify fresh new ways to drive engagement with students. In such a situation, the relevance of college mobile app for learning purpose assumes importance.</p>

@@ -3182,14 +3182,25 @@ li.year_details {
     }
     .SinlgeBlogItemInr {
         width: 100%;
-        max-width: 1200px;
+        max-width: 1000px;
         margin: 0 auto;
     }
     .SinlgeBlogItemMain {
         width: 100%;
         float: left;
         line-height: 1.6;
+        font-size: 17px;
         color: #575757;
+    }
+    .SinlgeBlogItemMain ul{
+        list-style-type: circle;
+        margin-left: 20px;
+    }
+    .SinlgeBlogItemMain ul li{
+        
+    }
+    .SinlgeBlogItemMain p{
+        font-size: 17px;
     }
     .SinlgeBlogItemMain img{
         text-align: center;

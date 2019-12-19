@@ -24,7 +24,7 @@ class BlogChild5 extends Component<props, any> {
                 <Header />
             </div>                
             <div className="bodySection">
-                <InnerPageTitleBlock fromPage="Mobile learning empowering education industry" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false" />
+                <InnerPageTitleBlock fromPage="Blog" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false" />
                     <BlogItem Content={contentGenerated} />
                 <FooterCTA />
             </div>
@@ -46,6 +46,7 @@ export default connect(
 
 export function getContent(){
     return(<div>
+        <h1>Mobile learning empowering education industry</h1>
     <p>A common belief held by many that the use of mobile technologies has been successfully changing the way how we life is led and education is accessed. The constant blurring of lives (be it social, learning, business or educational) is responsible for changing the basic pattern of communication and interaction. The easy availability of mobile devices and its ability to connect is letting students use it for reasons – read books, initiate conversations, connect on social media, send and receive emails etc – anytime, anywhere. Hence, it would be inappropriate for the higher educational trainers to ignore the growing significance of mobile learning in this fast changing technology driven world.</p>
     <img src={educationalmobileapp} />
     <p>Experts are of the opinion that higher education faculty should garner knowledge and enhance familiarity with the activities that can work with mobile devices apart from understanding the key strengths of mobile learning platform.</p>

@@ -25,7 +25,7 @@ class BlogChild1 extends Component<props, any> {
                 <Header />
             </div>                
             <div className="bodySection">
-                <InnerPageTitleBlock fromPage="What's in store for Learning Management System India in 2017?" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false" />
+                <InnerPageTitleBlock fromPage="Blog" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false" />
                     <BlogItem Content={contentGenerated} />
                 <FooterCTA />
             </div>
@@ -47,6 +47,7 @@ export default connect(
 
 export function getContent(){
     return(<div>
+    <h1>What's in store for Learning Management System India in 2017?</h1>
     <p>The market for learning management systems, including instructor-led training and distance learning, etc, was valued at 5.19 billion dollars in 2016 and is set to grow at 24% CAGR to become a USD 19.05 billion worth of industry in 2022. The same has been reported by Zion Market Research, taking inputs from noteworthy inputs from the global leaders like McGraw-Hill Education, IBM Corporation and others.</p>
     <img src={learning} />
     <p>In the past, we have seen Learning Management System evolve in its role and utility. From a cost-effective method for imparting knowledge & skills, it is today a profitable, commercially viable market. Since there is always going to be a need for putting out the right content for the learners, and measure the same, hence the learning management systems are here to stay.</p>

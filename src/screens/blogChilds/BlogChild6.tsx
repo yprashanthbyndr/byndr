@@ -24,7 +24,7 @@ class BlogChild6 extends Component<props, any> {
                 <Header />
             </div>                
             <div className="bodySection">
-                <InnerPageTitleBlock fromPage="Learning management systems: Self-paced and easy to use" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false" />
+                <InnerPageTitleBlock fromPage="Blog" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false" />
                     <BlogItem Content={contentGenerated} />
                 <FooterCTA />
             </div>
@@ -46,6 +46,7 @@ export default connect(
 
 export function getContent(){
     return(<div>
+        <h1>Learning management systems: Self-paced and easy to use</h1>
     <p>Digital learning  has become a way of life for many. The growing advancement of technology has been responsible for driving profound changes in the learning field. Personalised learning environments are a reality now and learning management systems (LMS) stands as an undeniable blessing for the education industry. With so much information that can be accessed from varied sources, learners are better positioned to take charge of their learning graph.</p>
     <p>It has been observed that the new age learning management systems (LMS) are sleeker in their approach and also better positioned to implement key functions – blended learning and informal learning – efficiently.</p>
     <p>Companies ranging from prominent educational institutions to global fortune 500 companies look for essential features like the scope for optimisation, easy to use, community groups, surveys, discussion forums, real-time knowledge and information sharing etc while opting for a mobile LMS platform.</p>
