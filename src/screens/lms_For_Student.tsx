@@ -121,75 +121,19 @@ class lms_For_Student extends React.Component<props, any> {
         }]
 
         const faqList = [{
-            title: "How to login?",
-            content: [
-                {
-                    singleFaqTitle: "Enterprise version:",
-                    singleFaqContent: "<ul><li>If college is signed up with byndr, Teachers can log in with welcome emails sent from byndr or go to <a href='https://app.byndr.com'>https://app.byndr.com</a> to login.</li></ul>"
-                },
-                {
-                    singleFaqTitle: "Free Version:",
-                    singleFaqContent: "<ul><li>Whereas, byndr isn't in college? Create your own space to get connect with your class and deliver job/help teachers to deliver job and connect with your class.<a href=''>Get started</a> by a click on <a href=''>I'm a Teacher</a></li></ul>"
-                }
-            ]
-        }, {
-            title: "How to Create Account?",
-            content: [
-                {
-                    singleFaqTitle: "Free Version:",
-                    singleFaqContent: "<ul><li>I'm a Teacher redirects to create account page. Fill your details Name, Mobile Number, Email, and Password. Once it’s done, you’ll receive a confirmation mail to your e-mail.</li></ul>"
-                }
-            ]
-        }, {
-            title: "How to Set up?",
-            content: [
-                {
-                    singleFaqTitle: "Enterprise Version:",
-                    singleFaqContent: "<ul><li>Once you are login with user id and password, Account is set up with courses and students of your classes</li></ul>"
-                },
-                {
-                    singleFaqTitle: "Free Version:",
-                    singleFaqContent: "<ul><li>Set up your account by describing the Name of your institution with website URL and teaching level. Each option has a scroll down bar to make it easy. Customize your class with course and students, and Save.</li></ul>"
-                }
-            ]
-        }, {
-            title: "What is Course/Groups? And the difference between it?",
+            title: "Why should I prefer Byndr?",
             content: [
                 {
                     singleFaqTitle: "",
-                    singleFaqContent: "<ul><li>Login to your account, on the Home or Feed page</li><li>Left you have Latest, Courses &amp; Groups.</li><li>Courses are Subjects that are assignment you in the current Semester</li><li>Groups allow teachers to interact or initiate one-one discussions with Students of the Group, this is ideal for Mentoring for Events, Sports, Innovation or anything that you would to drive learning curricular or extra-curricular</li><li>Groups Also allow you to check the Overall Performance of the Students through the Performance Tab.</li></ul>"
+                    singleFaqContent: "<ul><li>Byndr helps round the clock connectivity with teachers and the peer group. Easy accessibility if the course materials shared by the faculty and peer group. Helps to overcome reluctance by clearing doubts and provide hands on information on assessment grades and attendance reports. It is user friendly, responsive UI compatible on latest browsers, Android and iOS applications. Above all it is free of cost.</li></ul>"
                 }
             ]
         }, {
-            title: "What is Poll? And How to create it?",
+            title: "Is there any support for creating my course?",
             content: [
                 {
                     singleFaqTitle: "",
-                    singleFaqContent: "<ul><li>The poll option is to record the opinion or vote on a topic to students.</li><li>Login to your account, From Post to your Students dropdown pick the Course/Subject for which you would like to create Poll, then click on Add Poll/Material, Select the Poll Option you can now add Questions (Text/Image) and Answers (Text/Image), once completed click on Post button, Poll will be live now you can anytime change the Poll by click on the Edit Poll from the Feed and also check the live response from the Feed.</li></ul>"
-                }
-            ]
-        }, {
-            title: "How to Create Assignment / Exam?",
-            content: [
-                {
-                    singleFaqTitle: "",
-                    singleFaqContent: "<ul><li>Login to your account, click on Courses from the Top, Click on the Course for which you want to Create Assignment, You will be redirected to Course Feed Page, click on Coursework Tab, you can click on New Assignment/New Exam, You can Create/Edit/Make it Private or Publish the Assignment/Exam from Coursework Tab. </li><li>You can also Create Assignment from Home / Feed Page, by click on Add an Assignment, Select the Subject option!</li><li>While Creating Assignment / Exam, you select the Grade Group, Max Marks / Points, Due Date, Attach Materials and if you want to accept Online Submission, then select the Online Submission as Yes (Online Submission is only for Assignments)</li></ul>"
-                }
-            ]
-        }, {
-            title: "How to Add/upload Note or Materials?",
-            content: [
-                {
-                    singleFaqTitle: "",
-                    singleFaqContent: "<ul><li>Login to your account, click on Specific Course for which you want Add Materials, You will be redirected to Course Feed Page, then click on Add/Upload Material, you can add Materials from Google Drive, Upload from your Computer, Create in Byndr, Upload links and Copy from your other Courses.</li><li>While uploading Notes / Materials you can select or Publish to Student or Keep it Private.</li></ul>"
-                }
-            ]
-        }, {
-            title: "How Do I Add the students?",
-            content: [
-                {
-                    singleFaqTitle: "Free Version:",
-                    singleFaqContent: "<ul><li>Login Save option for add course redirects to the 'Add Student' page. Where you have easy ways to add students.</li><li>Option to upload a spreadsheet of students list or add student data manually.</li><li>Download the byndr data template for a quick set up.</li><li>Do not have to upload everything at once, you can always add more students later or anytime.</li><li>Select a course where students are to be added manually, and click on 'Edit'</li><li>Enter student e-mails by giving 'Space' Or pressing 'Enter'</li><li>Successfully An account is created with a Course and related Students in it.</li></ul>"
+                    singleFaqContent: "<ul><li>Presently it is a self-driven social learning platform providing connectivity between the members of the group. However, we can provide professional support on specific request. You can email us at <a href='mailto:info@byndr.com'>info@byndr.com</a></li></ul>"
                 }
             ]
         }]
