@@ -1,5 +1,5 @@
 import React from 'react';
-import { vvism, stanley_img, author_Img, sabyaSachiRath, narasimhaReddy, snist, satyalankaPrasad } from "../../assets";
+import { vvism, stanley_img, author_Img, sabyaSachiRath, narasimhaReddy, snist, satyalankaPrasad, vvit, bvcgroup } from "../../assets";
 
 import { connect } from 'react-redux';
 import { TestimonialSelection, TestimonialInterval } from '../../services';
@@ -79,6 +79,15 @@ class HomeTestimonial extends React.Component<props, any> {
                       >
                         <img src={snist} />
                       </li>
+                      <li className={this.props.activeTestimonial == 'stanley' ? "activeTestimonials" : ""}
+                        onClick={() => {
+                          if (this.props.activeTestimonial !== 'stanley') {
+                            TestimonialSelection("stanley")
+                          }
+                        }}
+                      >
+                        <img src={stanley_img} />
+                      </li>
                     <li className={this.props.activeTestimonial == 'vvit' ? "activeTestimonials" : ""}
                         onClick={() => {
                           if (this.props.activeTestimonial !== 'vvit') {
@@ -86,7 +95,7 @@ class HomeTestimonial extends React.Component<props, any> {
                           }
                         }}
                       >
-                        <img src={vvism} />
+                        <img src={vvit} />
                       </li>
                       <li className={this.props.activeTestimonial == 'bvc' ? "activeTestimonials" : ""}
                         onClick={() => {
@@ -95,7 +104,7 @@ class HomeTestimonial extends React.Component<props, any> {
                           }
                         }}
                       >
-                        <img src={vvism} />
+                        <img src={bvcgroup} />
                       </li>
                       <li className={this.props.activeTestimonial == 'vvism' ? "activeTestimonials" : ""}
                         onClick={() => {
@@ -106,15 +115,7 @@ class HomeTestimonial extends React.Component<props, any> {
                       >
                         <img src={vvism} />
                       </li>
-                      <li className={this.props.activeTestimonial == 'stanley' ? "activeTestimonials" : ""}
-                        onClick={() => {
-                          if (this.props.activeTestimonial !== 'stanley') {
-                            TestimonialSelection("stanley")
-                          }
-                        }}
-                      >
-                        <img src={stanley_img} />
-                      </li>
+                      
                       {/* <li className={this.props.activeTestimonial == 'vardhaman' ? "activeTestimonials" : ""}
                         onClick={() => {
                           if (this.props.activeTestimonial !== 'vardhaman') {
@@ -143,7 +144,7 @@ class HomeTestimonial extends React.Component<props, any> {
                             Dr. Sabyasachi Rath
                                     </div>
                           <div className="homeTestimonialCurrent_author_designation">
-                            Dean, Vishwa Vishwani Institute of Systems and Management
+                            Dean, Vasireddy Venkatadri Institute of Technology
                                     </div>
                         </div>
                       </li>

@@ -10,7 +10,7 @@ import light_bulb from './images/light-bulb.png';
 import byndr_android from './images/byndr-android.png';
 import byndr_ios from './images/byndr-ios.png';
 import byndr_responsive_platform from './images/byndr-responsive-platform.png';
-import vvit_img from './images/testimonials/vvit.png';
+import vvit from './images/testimonials/vvit.png';
 import stanley_img from './images/testimonials/stanley.png';
 import vardhaman_img from './images/testimonials/vardhaman.png';
 import gprec_img from './images/testimonials/gprec.png';
@@ -126,10 +126,12 @@ import PeerToPeerIcon from "./images/request_a_demo_icons/PeerToPeerIcon.svg";
 import PlanProgressIcon from "./images/request_a_demo_icons/PlanProgressIcon.svg";
 import secureTechnologyIcon from "./images/request_a_demo_icons/secureTechnologyIcon.svg";
 
+import bvcgroup from "./images/testimonials/bvc-group-logo.png";
 
 import testIcon from "./images/testIcon.svg";
 
 export {krishnaMurthi,
+    bvcgroup,
     assess_supportIcon,
     collaborationIcon,
     learnAndInnovateIcon,
@@ -216,7 +218,7 @@ export {krishnaMurthi,
     byndr_android,
     byndr_ios,
     byndr_responsive_platform,
-    vvit_img,
+    vvit,
     stanley_img,
     vardhaman_img,
     gprec_img,
