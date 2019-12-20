@@ -1,5 +1,5 @@
 import React from 'react';
-import { LatestFeedPosts, Groups, Calendar, Coursework, UserFriendly, Secure, Materials, Courses, testIcon } from "../../assets";
+import { LatestFeedPosts, Groups, Calendar,calendarpng,coursepng,courseworkpng,Feeds,groupspng,Userfriendlypng, Securepng,Coursework, UserFriendly, Secure, Materials,Materialspng, Courses, testIcon } from "../../assets";
 
 import { connect } from 'react-redux';
 import { UspsPagesEnum } from '../../theme/enum/Usps.enum';
@@ -130,35 +130,35 @@ class USPs extends React.Component<props, any> {
 
         let Left_HeadersList = [{
             for: "page1",
-            icon: testIcon,
+            icon: Feeds,
             name: "Latest Feed & Posts"
         }, {
             for: "page2",
-            icon: testIcon,
+            icon: coursepng,
             name: "Courses"
         }, {
             for: "page3",
-            icon: testIcon,
+            icon: groupspng,
             name: "Groups"
         }, {
             for: "page4",
-            icon: testIcon,
+            icon: Materialspng,
             name: "Materials"
         }, {
             for: "page5",
-            icon: testIcon,
+            icon: calendarpng,
             name: "Calendar"
         }, {
             for: "page6",
-            icon: testIcon,
+            icon: courseworkpng,
             name: "Coursework"
         }, {
             for: "page7",
-            icon: testIcon,
+            icon: Userfriendlypng,
             name: "User-Friendly"
         }, {
             for: "page8",
-            icon: testIcon,
+            icon: Securepng,
             name: "Secure"
         }];
 
