@@ -1,5 +1,5 @@
 import React from 'react';
-import { LatestFeedPosts, Groups, Calendar, Coursework, UserFriendly, Secure, Materials, Courses } from "../../assets";
+import { LatestFeedPosts, Groups, Calendar, Coursework, UserFriendly, Secure, Materials, Courses, testIcon } from "../../assets";
 
 import { connect } from 'react-redux';
 import { UspsPagesEnum } from '../../theme/enum/Usps.enum';
@@ -130,27 +130,35 @@ class USPs extends React.Component<props, any> {
 
         let Left_HeadersList = [{
             for: "page1",
+            icon: testIcon,
             name: "Latest Feed & Posts"
         }, {
             for: "page2",
+            icon: testIcon,
             name: "Courses"
         }, {
             for: "page3",
+            icon: testIcon,
             name: "Groups"
         }, {
             for: "page4",
+            icon: testIcon,
             name: "Materials"
         }, {
             for: "page5",
+            icon: testIcon,
             name: "Calendar"
         }, {
             for: "page6",
+            icon: testIcon,
             name: "Coursework"
         }, {
             for: "page7",
+            icon: testIcon,
             name: "User-Friendly"
         }, {
             for: "page8",
+            icon: testIcon,
             name: "Secure"
         }];
 
@@ -196,6 +204,7 @@ class USPs extends React.Component<props, any> {
                             {Left_HeadersList.map(item => {
                                 return (
                                     <div className={"uspsMainBlockLeftItem " + (this.state.ActiveTab === item.for ? "selectedLeft-List-Item" : "")}>
+                                        <img src={item.icon} />
                                         <div className="uspsMainBlockLeftItemText" onClick={() => this.state.ActiveTab === item.for ? null : this.ClickOnLeft_Item(item)}>{item.name}</div>
                                     </div>
                                 )

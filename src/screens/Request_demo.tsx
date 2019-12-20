@@ -89,7 +89,6 @@ class RequestDemo extends React.Component<props, any> {
                                             <NavLink exact to="/"><img src={byndr_Logo_White} width="130" /></NavLink>
                                         </div>
                                         <div className="requestDemoMainContent">
-                                            <h4>What does Byndr do?</h4>
                                             <ul>
                                                 <li>
                                                     <div className="requestDemoList">

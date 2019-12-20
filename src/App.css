@@ -1347,7 +1347,7 @@ div#carousel1 .flex-viewport{
 .singleHomeBlockElement {
     width: 100%;
     float: left;
-    min-height: 450px;
+    min-height: 800px;
     padding:0 0 60px 0;
 }
 .singleHomeBlockElementImage {
@@ -1396,11 +1396,32 @@ div#carousel1 .flex-viewport{
 .uspsMainBlockLeftItem {
     width: 100%;
     float: left;
-    padding: 18px 0;
-    font-size: 22px;
+    padding: 14px 0;
+    font-size: 19px;
     font-weight: 400;
     cursor: pointer;
-}.uspsMainBlockLeftItemImg {
+}
+.uspsMainBlockLeftItem img{
+    float: left;
+    margin-right: 7px;
+    width: 28px;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition-property: opacity,visibility,-webkit-transform;
+    transition-property: opacity,visibility,-webkit-transform;
+    transition-property: opacity,transform,visibility;
+    transition-property: opacity,transform,visibility,-webkit-transform;
+    -webkit-transition-delay: 0s,0s,0s;
+    transition-delay: 0s,0s,0s;
+    -webkit-transition-duration: 0s,0s,0s;
+    transition-duration: 0s,0s,0s;
+}
+.uspsMainBlockLeftItemText {
+    float: left;
+    padding: 5px 0;
+    line-height: 1;
+}
+.uspsMainBlockLeftItemImg {
     float: left;
 }
 .uspsMainBlockLeftItemImg img{
@@ -1411,11 +1432,11 @@ div#carousel1 .flex-viewport{
     width: 100%;
     float: left;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 0;
     color: #333333;
     opacity: 1;
-    line-height: 1.4;
+    line-height: 1.7;
     font-weight: 300;
 }
 /* .uspsMainBlockLeftItemText{
@@ -3445,6 +3466,7 @@ li.year_details {
         color: #ffffff;
         font-weight: 100;
         max-width: 880px;
+        height: 125vh;
     }
     .requestDemoRight {
         width: 75%;
@@ -3487,6 +3509,7 @@ li.year_details {
     .requestDemoListTitle {
         width: 100%;
         float: left;
+        cursor: pointer;
     }
     .requestDemoListImage {
         float: left;
@@ -3496,10 +3519,25 @@ li.year_details {
         width: 28px;
     }
     .requestDemoListText {
-        font-size: 22px;
+        font-size: 21px;
         padding: 5px 0;
-        line-height: 1;
+        line-height: 1.2;
         float: left;
+        width: calc(100% - 38px);
+    }
+    .requestDemoListContent{
+        margin-left: 38px;
+        width: calc(100% - 38px);
+        float: left;
+        transition: opacity 1s ease-out;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        line-height: 1.4;
+    }
+    .requestDemoMainContent ul li:hover .requestDemoListContent{
+        opacity: 1;
+        height: auto;
     }
     .requestDemoForm {
         float: left;
@@ -3617,7 +3655,8 @@ li.year_details {
     }
     .requestdemo_singleRowText {
         color: #0D0808;
-        font-size: 15px;
+        font-size: 14px;
+        line-height: 1.4;
     }
     .requestdemo_singleRowField select{
         width: 100%;
@@ -3632,19 +3671,19 @@ li.year_details {
     }
     .requestdemo_singleRowField input::-webkit-input-placeholder,.requestdemo_singleRowField textarea::-webkit-input-placeholder,.requestdemo_singleRowField select::-webkit-input-placeholder { /* Edge */
         color: rgba(13, 8, 8, 0.25);
-        /* font-style: italic; */
+        font-style: italic;
         font-family: 'Lato', sans-serif;
       }
       
       .requestdemo_singleRowField input:-ms-input-placeholder,.requestdemo_singleRowField textarea:-ms-input-placeholder,.requestdemo_singleRowField select::-webkit-input-placeholder { /* Internet Explorer 10-11 */
         color: rgba(13, 8, 8, 0.25);
-        /* font-style: italic; */
+        font-style: italic;
         font-family: 'Lato', sans-serif;
       }
       
       .requestdemo_singleRowField input::placeholder,.requestdemo_singleRowField textarea::placeholder,.requestdemo_singleRowField select::-webkit-input-placeholder {
         color: rgba(13, 8, 8, 0.25);
-        /* font-style: italic; */
+        font-style: italic;
         font-family: 'Lato', sans-serif;
       }
     
@@ -4999,9 +5038,16 @@ li.year_details {
 
        .selectedLeft-List-Item{
         color: #CB0A7A;
-        font-weight: 600;
-        font-size: 26px;
+        transform: translateX(38px);
        }
+       .selectedLeft-List-Item img{
+       visibility: visible;
+       opacity: 1;
+       -webkit-transition-duration: .2s,.2s,0s;
+       transition-duration: .2s,.2s,0s;
+       -webkit-transition-delay: .2s;
+       transition-delay: .2s;
+    }
 
        @keyframes leftText {
            0%{

@@ -119,7 +119,10 @@ import krishnaMurthi from "./images/krishnaMurthi.png"
 
 import Icon_Testimonial_pink from "./images/Icon-Testimonial_pink.svg";
 
+import testIcon from "./images/testIcon.svg";
+
 export {krishnaMurthi,
+    testIcon,
     Icon_Testimonial_pink,
     ogimg,
     PlanProgress,
