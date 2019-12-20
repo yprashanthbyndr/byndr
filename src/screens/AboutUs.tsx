@@ -17,7 +17,7 @@ export default class AboutUs extends React.Component<props, any,boolean> {
                 <Seo seoData={this.props.routeProps} />
                 <div className="header_main_container"><Header /></div>
                 <div className="bodySection">
-                    <InnerPageTitleBlock fromPage="Connecting the ed-tech stakeholders" pageSubtitle="Utilising the technology for successful learning experience" videoDisplay="false" tryBtnDisplay="false"/>
+                    <InnerPageTitleBlock fromPage="<span>Connecting</span> <br/> the ed-tech stakeholders" pageSubtitle="Utilising the technology for successful learning experience" videoDisplay="false" tryBtnDisplay="false"/>
                     <VisionAndMission />
                     <OurJourneyBlock />
                     <AboutContentBlock />

@@ -205,7 +205,7 @@ class USPs extends React.Component<props, any> {
                                 return (
                                     <div className={"uspsMainBlockLeftItem " + (this.state.ActiveTab === item.for ? "selectedLeft-List-Item" : "")}>
                                         <img src={item.icon} />
-                                        <div className="uspsMainBlockLeftItemText" onClick={() => this.state.ActiveTab === item.for ? null : this.ClickOnLeft_Item(item)}>{item.name}</div>
+                                        <div className={"uspsMainBlockLeftItemText " + (this.state.ActiveTab === item.for ? "uspsMainBlockLeftItemTextActive" : "")} onClick={() => this.state.ActiveTab === item.for ? null : this.ClickOnLeft_Item(item)}>{item.name}</div>
                                     </div>
                                 )
                             })}

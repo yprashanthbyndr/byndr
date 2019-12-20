@@ -149,7 +149,7 @@ class lms_For_Admins extends React.Component<props, any> {
                     <Header Hide={this.props.HideHeader} />
                 </div>
                 <div className="bodySection">
-                    <InnerPageTitleBlock role="admins" fromPage="Monitoring Made Easy, Organized & Efficient" pageSubtitle="Experience Byndr Today!" videoDisplay="false" tryBtnDisplay="true"  />
+                    <InnerPageTitleBlock role="admins" fromPage="<span>Monitoring Made </span><br/>Easy, Organized & Efficient" pageSubtitle="Experience Byndr Today!" videoDisplay="false" tryBtnDisplay="true"  />
                     <MiniHeader Title="Colleges" tryLink="" />
                     <ProductForRolesBlock Title="college" content="Byndr has been designed and developed with attention on connectivity and the mobile user experience. Easy and intuitive, Byndr offers a maintenance-free platform and unlimited support. Our platform is lightweight and accessed on any mobile or desktop browser (responsive web app), enabling teachers and students to access the content quickly. Teachers can collaborate, upload files, grade assignments, and take attendance right from their phones." gridList={gridList} />
                     <USPs routeProps={this.props.routeProps} />

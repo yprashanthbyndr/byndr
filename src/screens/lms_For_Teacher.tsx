@@ -140,7 +140,7 @@ class lms_For_Teacher extends React.Component<props, any> {
 
                 </div>
                 <div className="bodySection">
-                    <InnerPageTitleBlock role="teachers" fromPage="Teaching Made Engaging, Productive & Valuable" pageSubtitle="Experience Byndr Today!" videoDisplay="false" tryBtnDisplay="true" btnText="Experience Byndr Today!" />
+                    <InnerPageTitleBlock role="teachers" fromPage="<span>Teaching Made </span><br/>Engaging, Productive & Valuable" pageSubtitle="Experience Byndr Today!" videoDisplay="false" tryBtnDisplay="true" btnText="Experience Byndr Today!" />
                     <MiniHeader Sticky={this.props.StickyHeader_in_LMS} Title="Teachers" tryLink="https://test.byndr.com/freesignup/teacher/" />
                     <ProductForRolesBlock Title="Teachers" content="Byndr gives teachers a platform to extend their help to students beyond classroom. Teachers can provide study materials, guidelines and instructions to create inspiring learning environment. Also, our LMS tool helps faculty to schedule assignments, evaluate the performance and guide students individually for better outcomes." gridList={gridList} />
                     <HomeTestimonial />

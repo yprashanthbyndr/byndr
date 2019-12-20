@@ -40,7 +40,7 @@ class Blog extends Component<props, any> {
             <React.Fragment>
                 <Seo seoData={this.props.routeProps} />
                  <div className="header_main_container"><Header /></div>
-                <InnerPageTitleBlock fromPage="Blog" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false"  />
+                <InnerPageTitleBlock role="blog" fromPage="Blog" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false"  />
                 <BlogList />
                 <Footer />
             </React.Fragment>

@@ -250,7 +250,7 @@ header{
     padding:20px 0;
     border-bottom: 1px solid #efefef;
     /* box-shadow: 0px 2px 2px #efefef; */
-    background: rgba(255, 255, 255, 0.73);
+    /* background: rgba(255, 255, 255, 0.73); */
     z-index: 9;
 }
 .header_main{
@@ -1912,53 +1912,61 @@ select#contact_purpose {
 .homeBanner_backgroundimage {
     width: 100%;
     float: left;
-    background: url('./assets/images/productBanner.png') no-repeat 50% 0;
-    background-size: cover;
-    color: #ffffff;
+    color: #333;
     line-height: 1.5;
+    background-size: 100%;
+    background-image: url(/static/media/bottomBg.svg),linear-gradient(to bottom,rgba(201, 23, 122, 0.1),transparent);
 }
 
-.homeBanner_forStudent {
-    width: 100%;
+.homeBanner_forStudent .homeBanner_main{
+    background: url('./assets/images/StudentBanner.svg') no-repeat 95% 78%;
+    background-size: 40%;
+    padding: 230px 0px 140px;
+}
+.homeBanner_forBlog .homeBanner_main{
+    background: url('./assets/images/blogBanner.svg') no-repeat 50% 67%;
+    background-size: 28%;
+    padding: 550px 0px 8px;
+}
+.homeBanner_forBlog .banner_title{
+    text-align: center;
+    margin: 0 auto;
+}
+.homeBanner_main .CallToAction_btn{
     float: left;
-    background: url('./assets/images/productBanner.png') no-repeat 50% 0px;
-    background-size: cover;
-    color: #ffffff;
-    line-height: 1.5;
+}
+.homeBanner_forTeacher .homeBanner_main{
+    background: url('./assets/images/teacherBanner.svg') no-repeat 95% 78%;
+    background-size: 40%;
+    padding: 230px 0px 140px;
 }
 
-.homeBanner_forTeacher {
-    width: 100%;
-    float: left;
-    background: url('./assets/images/productBanner.png') no-repeat 50% 0px;
-    background-size: cover;
-    color: #ffffff;
-    line-height: 1.5;
-}
-
-.homeBanner_forAdmin {
-    width: 100%;
-    float: left;
-    background: url('./assets/images/productBanner.png') no-repeat 50% 0px;
-    background-size: cover;
-    color: #ffffff;
-    line-height: 1.5;
+.homeBanner_forAdmin .homeBanner_main{
+    background: url('./assets/images/adminBanner.svg') no-repeat 95% 78%;
+    background-size: 40%;
+    padding: 230px 0px 140px;
 }
 
 .homeBanner_main {
     width: 100%;
-    float: left;
-    padding: 300px 0 140px 0;
-    background: rgba(0, 0, 0, 0.15);
+    float: left;    
+    padding: 310px 0px 70px;
+    background: url('./assets/images/otherBgForTitle.svg') no-repeat 95% 78%;
+    background-size: 40%;
 }
 .banner_title {
-    text-align: center;
-    font-size: 45px;
+    /* text-align: center; */
+    text-align: left;
+    font-size: 51px;
     margin-bottom: 24px;
     letter-spacing: 0;
     font-weight: 100;
     max-width: 788px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    line-height: 1.2;
+}
+.banner_title span{
+    font-size: 60px;
 }
 .ByndrTeamContent_block {
     width: 100%;
@@ -1975,11 +1983,12 @@ select#contact_purpose {
     max-width: 100%;
 }
 .banner_content {
-    text-align: center;
+    /* text-align: center; */
+    text-align: left;
     font-size: 24px;
     letter-spacing: 0;
     max-width: 685px;
-    margin: 0px auto;
+    /* margin: 0px auto; */
     font-weight:300;
 }
 .homeBanner_contentblock {
@@ -5045,6 +5054,12 @@ li.year_details {
        transition-duration: .2s,.2s,0s;
        -webkit-transition-delay: .2s;
        transition-delay: .2s;
+    }
+    .uspsMainBlockLeftItemTextActive{
+        cursor: pointer;
+        -webkit-transition: opacity .3s ease-in-out,color .3s ease-in-out;
+        transition: opacity .3s ease-in-out,color .3s ease-in-out;
+        opacity: .8;
     }
 
        @keyframes leftText {

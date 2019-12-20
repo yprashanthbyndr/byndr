@@ -128,9 +128,16 @@ import secureTechnologyIcon from "./images/request_a_demo_icons/secureTechnology
 
 import bvcgroup from "./images/testimonials/bvc-group-logo.png";
 
+import studentBanner from "./images/StudentBanner.svg";
+import teacherBanner from "./images/teacherBanner.svg";
+import adminBanner from "./images/adminBanner.svg";
+
 import testIcon from "./images/testIcon.svg";
 
 export {krishnaMurthi,
+    studentBanner,
+    teacherBanner,
+    adminBanner,
     bvcgroup,
     assess_supportIcon,
     collaborationIcon,

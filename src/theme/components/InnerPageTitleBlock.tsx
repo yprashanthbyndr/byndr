@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import ModelPopup from './ModelPopup';
 import { Open_Or_Close_PlayVideo } from '../../services';
-
+import ReactHtmlParser from 'react-html-parser';
 interface props {
     onLeftMenu?(): void,
     fromPage:any,
@@ -33,11 +33,12 @@ togglePopup() {
 
         return (
             <section>
-            <div className={this.props.role =="admins"?"homeBanner_forAdmin":this.props.role =="teachers"?"homeBanner_forTeacher":this.props.role =="teachers"?"homeBanner_forStudent":"homeBanner_backgroundimage"}>
-              <div className="homeBanner_main" style={{padding:(this.props.role == "admins" || this.props.role == "students" || this.props.role == "teachers")?'':"160px 0 120px 0"}}>
+            <div className={this.props.role =="admins"?"homeBanner_backgroundimage homeBanner_forAdmin":this.props.role =="teachers"?"homeBanner_backgroundimage homeBanner_forTeacher":this.props.role =="students"?"homeBanner_backgroundimage homeBanner_forStudent":this.props.role =="blog"?"homeBanner_backgroundimage homeBanner_forBlog":"homeBanner_backgroundimage"}
+            >
+              <div className="homeBanner_main">
                 <div className="homeBanner_contentblock">
                   <div className="banner_title">
-                    {fromPage}
+                    {ReactHtmlParser(fromPage)}
                   </div>
                   {pageSubtitle !=""?<div className="banner_content">
                     {pageSubtitle}

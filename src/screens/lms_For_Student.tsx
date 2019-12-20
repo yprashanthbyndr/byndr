@@ -144,7 +144,7 @@ class lms_For_Student extends React.Component<props, any> {
                     <Header Hide={this.props.HideHeader} />
                 </div>
                 <div className="bodySection">
-                    <InnerPageTitleBlock role="students" fromPage="Learning Made Interactive, Simple & Effective" pageSubtitle="Experience Byndr Today!" videoDisplay="false" tryBtnDisplay="true" />
+                    <InnerPageTitleBlock role="students" fromPage="<span>Learning Made</span><br/> Interactive, Simple & Effective" pageSubtitle="Experience Byndr Today!" videoDisplay="false" tryBtnDisplay="true" />
                     <MiniHeader Title="Student" tryLink="https://test.byndr.com/freesignup/student/" />
                     <ProductForRolesBlock Title="students" content="Byndr, with student centric & social LMS platform, enabling consistency in learning and allowing students to connect with their teachers, fellow students (Peers) and has access to their materials, from anywhere and at any time." gridList={gridList} />
                     <HomeTestimonial />
