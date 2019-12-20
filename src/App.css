@@ -1218,7 +1218,7 @@ max-width: 162px;
 text-align: center;
 }
 .requestdemo_singleRowField input:focus, .requestdemo_singleRowField select:focus, .requestdemo_singleRowField textarea:focus{
-    border: 1.5px solid #00B1FF;
+    border: 1px solid #00B1FF;
 }
 .home_v2_features {
     background: #F2F3F6;
@@ -3440,8 +3440,8 @@ li.year_details {
     .requestDemoLeft {
         width: 25%;
         float: left;
-        background: url('./assets/images/requestDemoBg.png') no-repeat left top;
-        background-size: cover;
+        background: rgba(0, 20, 76, 0.9) url(/static/media/cta_bg.c2779f1f.svg) repeat-y left top;
+        background-size: 500%;
         color: #ffffff;
         font-weight: 100;
         max-width: 880px;
@@ -3454,7 +3454,7 @@ li.year_details {
         width: calc(100% - 64px);
         float: left;
         padding: 30px 32px;
-        background: rgba(0, 20, 76, 0.9);
+        /* background: rgba(0, 20, 76, 0.9); */
     }
     .requestDemoCenter {
         width: 100%;
@@ -3463,10 +3463,11 @@ li.year_details {
     .requestDemoMainContent {
         width: 100%;
         float: left;
-        padding: 150px 0 40px 0;
+        padding: 80px 0 40px 0;
     }
     .requestDemoMainContent h4{
-        font-size: 24px;
+        font-size: 26px;
+        margin: 0 0 20px 0;
         font-weight: 100;
     }
     .requestDemoMainContent ul{
@@ -3478,6 +3479,27 @@ li.year_details {
         float: left;
         width: 100%;
         line-height: 1.8;
+    }
+    .requestDemoList {
+        width: 100%;
+        float: left;
+    }
+    .requestDemoListTitle {
+        width: 100%;
+        float: left;
+    }
+    .requestDemoListImage {
+        float: left;
+        padding-right: 10px;
+    }
+    .requestDemoListImage img{
+        width: 28px;
+    }
+    .requestDemoListText {
+        font-size: 22px;
+        padding: 5px 0;
+        line-height: 1;
+        float: left;
     }
     .requestDemoForm {
         float: left;
@@ -3497,6 +3519,8 @@ li.year_details {
         font-size: 32px;
         font-weight: bolder;
         margin: 0;
+        padding: 15px 0px;
+        color: rgba(13, 8, 8, 1);
     }
     .requestDemoTestimonials,.requestDemoTestimonialsInr{
         width: 100%;
@@ -3530,7 +3554,7 @@ li.year_details {
     .requestdemo_singleRow {
         width: 100%;
         float: left;
-        padding: 5px 0;
+        padding: 0 0 18px 0;
     }
     .requestdemo_singleRowLable {
         width: 100%;
@@ -3559,10 +3583,12 @@ li.year_details {
         width: calc(100% - 20px);
         float: left;
         background: rgba(255, 255, 255, 1) 0% 0% no-repeat padding-box;
-        border: 1.5px solid rgba(169, 169, 169, 1);
+        border: 1px solid rgba(169, 169, 169, 1);
         border-radius: 2px;
         opacity: 1;
         padding: 12px 10px;
+        font-weight: 600;
+        color: #333;
     }
     .requestdemo_singleRowFieldPhoneLeft{
         width: 80%;
@@ -3590,32 +3616,36 @@ li.year_details {
         padding: 14px 0;
     }
     .requestdemo_singleRowText {
-        color: rgba(13, 8, 8, 1);
-        font-size: 14px;
-        letter-spacing: 0.5px;
+        color: #0D0808;
+        font-size: 15px;
     }
     .requestdemo_singleRowField select{
         width: 100%;
+        color: rgba(13, 8, 8, 0.5) !important;
     }
     .disableField{
-        background: #efefef;
+        background: rgba(238, 238, 238, 1) !important;
+        color: rgba(13, 8, 8, 0.5) !important;
     }
     .requestdemo_singleRowField textarea{
         min-height: 80px;
     }
     .requestdemo_singleRowField input::-webkit-input-placeholder,.requestdemo_singleRowField textarea::-webkit-input-placeholder,.requestdemo_singleRowField select::-webkit-input-placeholder { /* Edge */
-        color: #cfcfcf;
-        font-style: italic;
+        color: rgba(13, 8, 8, 0.25);
+        /* font-style: italic; */
+        font-family: 'Lato', sans-serif;
       }
       
       .requestdemo_singleRowField input:-ms-input-placeholder,.requestdemo_singleRowField textarea:-ms-input-placeholder,.requestdemo_singleRowField select::-webkit-input-placeholder { /* Internet Explorer 10-11 */
-        color: #cfcfcf;
-        font-style: italic;
+        color: rgba(13, 8, 8, 0.25);
+        /* font-style: italic; */
+        font-family: 'Lato', sans-serif;
       }
       
       .requestdemo_singleRowField input::placeholder,.requestdemo_singleRowField textarea::placeholder,.requestdemo_singleRowField select::-webkit-input-placeholder {
-        color: #cfcfcf;
-        font-style: italic;
+        color: rgba(13, 8, 8, 0.25);
+        /* font-style: italic; */
+        font-family: 'Lato', sans-serif;
       }
     
 /* 1360 screen */
