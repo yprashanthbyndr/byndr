@@ -26,7 +26,7 @@ const INIT_STATE: HomeReducer = {
   ContactFormSubmitSuccess: false,
   OpenMenuBar: false,
   OpenPlayVideo: false,
-  activeTestimonial: 'vvism',
+  activeTestimonial: 'snist',
   Stickypricing_table: false,
   MiniHeaderOptions: "overview",
   HomeScreenprops: {

@@ -22,7 +22,7 @@ export default class AboutUs extends React.Component<props, any,boolean> {
                     <OurJourneyBlock />
                     <AboutContentBlock />
                     <OurTeam />
-                    <ByndrTeam />
+                    {/* <ByndrTeam /> */}
                     <InvestorsBlock />
                     <FooterCTA />
                 </div>

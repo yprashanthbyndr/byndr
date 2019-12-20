@@ -37,34 +37,6 @@ export default class OurTeam extends React.Component<props, any> {
 
                                 <div className="our-team">
                                     <div className="pic">
-                                        <img src={KalSomani}/>
-                                        <ul className="social">
-                                            <li><a href="https://linkedin.com/in/kalsomani/" target="_blank" className="fab fa-linkedin"></a></li>
-                                        </ul>
-                                    </div>
-                                    <div className="team-content">
-                                        <h3 className="title">Kal Somani</h3>
-                                        <span className="post">Advisor</span>
-                                    </div>
-                                </div>
-
-
-                                <div className="our-team">
-                                    <div className="pic">
-                                        <img src={LarryFraize}/>
-                                        <ul className="social">
-                                            <li><a href="https://linkedin.com/in/larryfraize/" target="_blank" className="fab fa-linkedin"></a></li>
-                                        </ul>
-                                    </div>
-                                    <div className="team-content">
-                                        <h3 className="title">Larry Fraize</h3>
-                                        <span className="post">Advisor</span>
-                                    </div>
-                                </div>
-
-
-                                <div className="our-team">
-                                    <div className="pic">
                                         <img src={ChintanGattu}/>
                                         <ul className="social">
                                             <li><a href="https://www.linkedin.com/in/chintan-gattu-819376115/" target="_blank" className="fab fa-linkedin"></a></li>
@@ -76,6 +48,7 @@ export default class OurTeam extends React.Component<props, any> {
                                     </div>
                                 </div>
 
+                                
                                 <div className="our-team">
                                     <div className="pic">
                                         <img src={Jagadeesh}/>
@@ -86,6 +59,33 @@ export default class OurTeam extends React.Component<props, any> {
                                     <div className="team-content">
                                         <h3 className="title">Jagadeesh Chintaginjala  </h3>
                                         <span className="post">Director - Product Growth</span>
+                                    </div>
+                                </div>
+
+
+                                <div className="our-team">
+                                    <div className="pic">
+                                        <img src={KalSomani}/>
+                                        <ul className="social">
+                                            <li><a href="https://linkedin.com/in/kalsomani/" target="_blank" className="fab fa-linkedin"></a></li>
+                                        </ul>
+                                    </div>
+                                    <div className="team-content">
+                                        <h3 className="title">Kal Somani</h3>
+                                        <span className="post">Advisor</span>
+                                    </div>
+                                </div>
+
+                                <div className="our-team">
+                                    <div className="pic">
+                                        <img src={LarryFraize}/>
+                                        <ul className="social">
+                                            <li><a href="https://linkedin.com/in/larryfraize/" target="_blank" className="fab fa-linkedin"></a></li>
+                                        </ul>
+                                    </div>
+                                    <div className="team-content">
+                                        <h3 className="title">Larry Fraize</h3>
+                                        <span className="post">Advisor</span>
                                     </div>
                                 </div>
 

@@ -70,6 +70,33 @@ class HomeTestimonial extends React.Component<props, any> {
                 <div className="homeTestimonialsLogos">
                   <div className="homeTestimonialsLogos_inr flexslider" id="carousel">
                     <ul className="slides">
+                    <li className={this.props.activeTestimonial == 'snist' ? "activeTestimonials" : ""}
+                        onClick={() => {
+                          if (this.props.activeTestimonial !== 'snist') {
+                            TestimonialSelection("snist")
+                          }
+                        }}
+                      >
+                        <img src={snist} />
+                      </li>
+                    <li className={this.props.activeTestimonial == 'vvit' ? "activeTestimonials" : ""}
+                        onClick={() => {
+                          if (this.props.activeTestimonial !== 'vvit') {
+                            TestimonialSelection("vvit")
+                          }
+                        }}
+                      >
+                        <img src={vvism} />
+                      </li>
+                      <li className={this.props.activeTestimonial == 'bvc' ? "activeTestimonials" : ""}
+                        onClick={() => {
+                          if (this.props.activeTestimonial !== 'bvc') {
+                            TestimonialSelection("bvc")
+                          }
+                        }}
+                      >
+                        <img src={vvism} />
+                      </li>
                       <li className={this.props.activeTestimonial == 'vvism' ? "activeTestimonials" : ""}
                         onClick={() => {
                           if (this.props.activeTestimonial !== 'vvism') {
@@ -97,21 +124,46 @@ class HomeTestimonial extends React.Component<props, any> {
                       >
                         <img src={vardhaman_img} />
                       </li> */}
-                      <li className={this.props.activeTestimonial == 'snist' ? "activeTestimonials" : ""}
-                        onClick={() => {
-                          if (this.props.activeTestimonial !== 'snist') {
-                            TestimonialSelection("snist")
-                          }
-                        }}
-                      >
-                        <img src={snist} />
-                      </li>
+                      
                     </ul>
                   </div>
                 </div>
                 <div className="homeTestimonialCurrent flexslider" id="slider">
                   <div className="homeTestimonialCurrentInr">
                     <ul className="slides">
+                    <li className={this.props.activeTestimonial == 'vvit' ? "testimonial-fadeIn" : "testimonial-fadeOut"}>
+                        <div className="homeTestimonialCurrent_Content">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                  </div>
+                        <div className="homeTestimonialCurrent_author">
+                          <div className="homeTestimonialCurrent_author_img">
+                            <img src={sabyaSachiRath} />
+                          </div>
+                          <div className="homeTestimonialCurrent_author_name">
+                            Dr. Sabyasachi Rath
+                                    </div>
+                          <div className="homeTestimonialCurrent_author_designation">
+                            Dean, Vishwa Vishwani Institute of Systems and Management
+                                    </div>
+                        </div>
+                      </li>
+                      <li className={this.props.activeTestimonial == 'bvc' ? "testimonial-fadeIn" : "testimonial-fadeOut"}>
+                        <div className="homeTestimonialCurrent_Content">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                  </div>
+                        <div className="homeTestimonialCurrent_author">
+                          <div className="homeTestimonialCurrent_author_img">
+                            <img src={sabyaSachiRath} />
+                          </div>
+                          <div className="homeTestimonialCurrent_author_name">
+                            Dr. Sabyasachi Rath
+                                    </div>
+                          <div className="homeTestimonialCurrent_author_designation">
+                            Dean, Vishwa Vishwani Institute of Systems and Management
+                                    </div>
+                        </div>
+                      </li>
+                      
                       <li className={this.props.activeTestimonial == 'vvism' ? "testimonial-fadeIn" : "testimonial-fadeOut"}>
                         <div className="homeTestimonialCurrent_Content">
                         My compliments to team Byndr for designing a simple and sweet LMS. It is versatile, simple and inclusive. All students and faculty have been very positive about Byndr and its role as a learning catalyst.
