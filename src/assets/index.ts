@@ -103,13 +103,22 @@ import vvism from "./images/vvism.png";
 import ByndrTeamImg from "./images/ourTeam.jpg";
 
 import Calendar from "./images/usps/Calendar.svg";
+import calendarpng from "./images/usps/calendarpng.png";
 import Courses from "./images/usps/Courses.svg";
+import coursepng from "./images/usps/coursepng.png";
 import Coursework from "./images/usps/Coursework.svg";
+import courseworkpng from "./images/usps/courseworkpng.png";
+import Feeds from "./images/usps/Feeds.png";
+
 import Groups from "./images/usps/Groups.svg";
+import groupspng from "./images/usps/groupspng.png";
 import LatestFeedPosts from "./images/usps/Latest-Feed-Posts.svg";
 import Secure from "./images/usps/Secure.svg";
+import Securepng from "./images/usps/Securepng.png";
 import UserFriendly from "./images/usps/User-Friendly.svg";
+import Userfriendlypng from "./images/usps/Userfriendlypng.png";
 import Materials from "./images/usps/Materials.svg";
+import Materialspng from "./images/usps/Materialspng.png";
 
 import PlanProgress from "./images/PlanProgress.svg";
 
@@ -150,13 +159,21 @@ export {krishnaMurthi,
     ogimg,
     PlanProgress,
     Calendar,
+    calendarpng,
     Materials,
+    Materialspng,
     Courses,
+    coursepng,
+    groupspng,
     Coursework,
+    courseworkpng,
+    Feeds,
     Groups,
     LatestFeedPosts,
     Secure,
+    Securepng,
     UserFriendly,
+    Userfriendlypng,
     ByndrTeamImg,
     LarryFraize,
     JoeFreed,
