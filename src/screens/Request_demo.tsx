@@ -2,7 +2,7 @@ import React from 'react';
 import { Seo } from '../theme/components';
 import { connect } from 'react-redux';
 import { SaveScroll_Height } from '../services';
-import { byndr_Logo_White, krishnaMurthi, Icon_Testimonial_pink, learn_innovate_together, PlanProgress, collaboration_communication, assess_support, peer_to_peer_learning, secure_technology } from '../assets';
+import { byndr_Logo_White, PlanProgressIcon, collaborationIcon, assess_supportIcon, PeerToPeerIcon, secureTechnologyIcon, learnAndInnovateIcon } from '../assets';
 import { NavLink } from 'react-router-dom';
 
 interface props {
@@ -74,8 +74,6 @@ class RequestDemo extends React.Component<props, any> {
 
     render(): any {
 
-        console.log("in render  : ", this.state)
-
         return (
             <div>
                 <Seo seoData={this.props.routeProps} />
@@ -94,7 +92,7 @@ class RequestDemo extends React.Component<props, any> {
                                                     <div className="requestDemoList">
                                                         <div className="requestDemoListTitle">
                                                             <span className="requestDemoListImage">
-                                                                <img src={learn_innovate_together}/>
+                                                                <img src={learnAndInnovateIcon}/>
                                                                 </span>
                                                             <span className="requestDemoListText">
                                                                 Learn &amp; Innovate
@@ -109,7 +107,7 @@ class RequestDemo extends React.Component<props, any> {
                                                 <div className="requestDemoList">
                                                         <div className="requestDemoListTitle">
                                                             <span className="requestDemoListImage">
-                                                                <img src={PlanProgress}/>
+                                                                <img src={PlanProgressIcon}/>
                                                                 </span>
                                                             <span className="requestDemoListText">
                                                                 Plan, Perform & Progress
@@ -124,7 +122,7 @@ class RequestDemo extends React.Component<props, any> {
                                                 <div className="requestDemoList">
                                                         <div className="requestDemoListTitle">
                                                             <span className="requestDemoListImage">
-                                                                <img src={collaboration_communication}/>
+                                                                <img src={collaborationIcon}/>
                                                                 </span>
                                                             <span className="requestDemoListText">
                                                                 Collaboration & Co-ordination
@@ -139,7 +137,7 @@ class RequestDemo extends React.Component<props, any> {
                                                 <div className="requestDemoList">
                                                         <div className="requestDemoListTitle">
                                                             <span className="requestDemoListImage">
-                                                                <img src={assess_support}/>
+                                                                <img src={assess_supportIcon}/>
                                                                 </span>
                                                             <span className="requestDemoListText">
                                                                 Assess & Support
@@ -154,7 +152,7 @@ class RequestDemo extends React.Component<props, any> {
                                                 <div className="requestDemoList">
                                                         <div className="requestDemoListTitle">
                                                             <span className="requestDemoListImage">
-                                                                <img src={peer_to_peer_learning}/>
+                                                                <img src={PeerToPeerIcon}/>
                                                                 </span>
                                                             <span className="requestDemoListText">
                                                             Peer-to-Peer Learning
@@ -169,7 +167,7 @@ class RequestDemo extends React.Component<props, any> {
                                                 <div className="requestDemoList">
                                                         <div className="requestDemoListTitle">
                                                             <span className="requestDemoListImage">
-                                                                <img src={secure_technology}/>
+                                                                <img src={secureTechnologyIcon}/>
                                                                 </span>
                                                             <span className="requestDemoListText">
                                                             Secure Technology

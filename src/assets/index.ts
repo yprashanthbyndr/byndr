@@ -119,9 +119,23 @@ import krishnaMurthi from "./images/krishnaMurthi.png"
 
 import Icon_Testimonial_pink from "./images/Icon-Testimonial_pink.svg";
 
+import assess_supportIcon from "./images/request_a_demo_icons/assess_supportIcon.svg";
+import collaborationIcon from "./images/request_a_demo_icons/collaborationIcon.svg";
+import learnAndInnovateIcon from "./images/request_a_demo_icons/learnAndInnovateIcon.svg";
+import PeerToPeerIcon from "./images/request_a_demo_icons/PeerToPeerIcon.svg";
+import PlanProgressIcon from "./images/request_a_demo_icons/PlanProgressIcon.svg";
+import secureTechnologyIcon from "./images/request_a_demo_icons/secureTechnologyIcon.svg";
+
+
 import testIcon from "./images/testIcon.svg";
 
 export {krishnaMurthi,
+    assess_supportIcon,
+    collaborationIcon,
+    learnAndInnovateIcon,
+    secureTechnologyIcon,
+    PlanProgressIcon,
+    PeerToPeerIcon,
     testIcon,
     Icon_Testimonial_pink,
     ogimg,
