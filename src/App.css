@@ -796,7 +796,7 @@ cursor: pointer;
 .CallToAction{
     width: 100%;
     float: left;
-    background: url('./assets/images/cta_bg.png') no-repeat center;
+    background:rgba(0, 20, 76, 0.9) url('./assets/images/cta_bg.svg') no-repeat center;
     background-size:cover;
     color: #ffffff;
     line-height: 1.5;
@@ -808,7 +808,7 @@ cursor: pointer;
     width: 100%;
     float: left;
     padding: 100px 0;
-    background: rgba(0, 20, 76, 0.85);
+    /* background: rgba(0, 20, 76, 0.85); */
 }
 .callToAction_inr{
     width: 100%;
@@ -3237,7 +3237,7 @@ li.year_details {
     .DoublecallToAction{
         width: 100%;
         float: left;
-        background: url('./assets/images/cta_bg.png') no-repeat center;
+        background:rgba(0, 20, 76, 0.9) url('./assets/images/cta_bg.svg') no-repeat center;
         background-size: cover;
         color: #ffffff;
         line-height: 1.5;
@@ -3246,7 +3246,7 @@ li.year_details {
         width: 100%;
         float: left;
         /* padding: 100px 0; */
-        background: rgba(0, 20, 76, 0.9);
+        /* background: rgba(0, 20, 76, 0.9); */
     }
     .DoublecallToAction_inr{
         width: 100%;
