@@ -33,7 +33,7 @@ togglePopup() {
 
         return (
             <section>
-            <div className={this.props.role =="admins"?"homeBanner_backgroundimage homeBanner_forAdmin":this.props.role =="teachers"?"homeBanner_backgroundimage homeBanner_forTeacher":this.props.role =="students"?"homeBanner_backgroundimage homeBanner_forStudent":this.props.role =="blog"?"homeBanner_backgroundimage homeBanner_forBlog":"homeBanner_backgroundimage"}
+            <div className={this.props.role =="admins"?"homeBanner_backgroundimage homeBanner_forAdmin":this.props.role =="teachers"?"homeBanner_backgroundimage homeBanner_forTeacher":this.props.role =="students"?"homeBanner_backgroundimage homeBanner_forStudent":this.props.role =="blog"?"homeBanner_backgroundimage homeBanner_forBlog":this.props.role =="pricing"?"homeBanner_backgroundimage homeBanner_forPricing":"homeBanner_backgroundimage"}
             >
               <div className="homeBanner_main">
                 <div className="homeBanner_contentblock">

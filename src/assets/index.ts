@@ -34,7 +34,7 @@ import favicon from './images/favicon.png';
 
 import penn_img from './images/penn.png';
 
-import Dummy_Img from "./images/dummy_image.png";
+// import Dummy_Img from "./images/dummy_image.PNG";
 import testimonial_person from './images/testimonial_person.png';
 import Blog_img from "./images/blog.png";
 import PersonImage from "./images/person-icon.png";
@@ -255,7 +255,6 @@ export {krishnaMurthi,
     Inverstors_6,
     ben_franklin,
     penn_img,
-    Dummy_Img,
     testimonial_person,
     Blog_img,
     PersonImage,

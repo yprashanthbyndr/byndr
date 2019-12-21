@@ -57,7 +57,9 @@ class PricingPlans extends React.Component<props, any> {
               </div>
               <div className="sticky_table_title">
                 <div className="pricing_title">PREMIUM</div>
-                <a className="pricing_btn" href="./request-a-demo">Request a Demo</a>
+                <div className="link_button">
+                  <a className="pricing_btn" href="./request-a-demo">Request a Demo</a>
+                </div>
               </div>
             </div>
           </div>
@@ -79,9 +81,9 @@ class PricingPlans extends React.Component<props, any> {
                   <tr>
                     <th className="hide"></th>
                     <th className="title_pricing">
-                      <div className="pricing_title">STANDARD</div>
+                      <div className="pricing_title standard">STANDARD</div>
                       <button className="pricing_btn">Get Started</button>
-                      <div className="pricing_value">Free - Regular Plan</div>
+                      <div className="pricing_value standard">Free - Regular Plan</div>
                     </th>
                     <th className="title_pricing">
                       <div className="pricing_title">PREMIUM</div>

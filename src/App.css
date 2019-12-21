@@ -1928,7 +1928,12 @@ select#contact_purpose {
     background-size: 28%;
     padding: 550px 0px 8px;
 }
-.homeBanner_forBlog .banner_title{
+.homeBanner_forPricing .homeBanner_main{
+    background: url('./assets/images/blogBanner.svg') no-repeat 50% 67%;
+    background-size: 28%;
+    padding: 550px 0px 8px;
+}
+.homeBanner_forBlog .banner_title,.homeBanner_forPricing .banner_title{
     text-align: center;
     margin: 0 auto;
 }
@@ -1948,11 +1953,13 @@ select#contact_purpose {
 }
 
 .homeBanner_main {
-    width: 100%;
-    float: left;    
+    width: 95%;
+    /* float: left;     */
+    float:none;
     padding: 310px 0px 70px;
     background: url('./assets/images/otherBgForTitle.svg') no-repeat 95% 78%;
     background-size: 40%;
+    margin: 0px auto;
 }
 .banner_title {
     /* text-align: center; */
@@ -3695,7 +3702,76 @@ li.year_details {
         font-style: italic;
         font-family: 'Lato', sans-serif;
       }
-    
+      .single_blogList:nth-child(3n+1) {
+        float: left;
+        clear: both;
+    }
+    a.pricing_btn {
+        color: #fff;
+        border: none;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: 'Lato', sans-serif;
+        height: 50px;
+        width: 200px;
+        padding: 14.45px 35.599px;
+        border-radius: 3px;
+        background: #CB0A7A;
+    }
+    a.pricing_btn:hover {
+        background: #960c5c;
+        cursor: pointer;
+    }
+    .sticky_table_menu a.pricing_btn {
+        padding: 3px 0px;
+        height: 41px;
+        width: 160px;
+        font-size: 16px;
+    }
+    .sticky_table_menu a.pricing_btn {
+        padding: 11px 23px;
+        height: 41px;
+        width: 160px;
+        font-size: 16px;
+    }
+    .link_button {
+        margin-top: 13px;
+    }
+    .pricing_title.standard {
+        margin-bottom: 13px;
+    }
+    .pricing_value.standard {
+        margin-top: 4px;
+    }
+    .PricingActive button {
+        background: #cb0a7a;
+        color: #fff;
+        margin-bottom: -3px;
+    }
+    .PricingActive:after {
+        content: "\f106";
+        content: "\f0d7";
+        display: inline-block;
+        font: normal normal normal 23px/1 FontAwesome;
+        font-size: 29px;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        text-align: center;
+        line-height: 0;
+        color: #cb0a7a;
+        margin-top: -7px !important;
+        top: -17px !important;
+    }
+    .pricing_table_main .bg-blue {
+        border-top: 3px solid #0097CF;
+        text-align: center;
+    }
+    article li:last-child button {
+        border-right: 1px solid #DDD;
+    }
+    article li:last-child{
+        border-right:none;
+    }
 /* 1360 screen */
 @media only screen and (max-width: 1380px) {
     .header_main_inr, .homeBanner_inr, .homeGrid_inr, .homeAvailableDivices_inr, .footerInr, .role_based_header_main, .product-role .homeGrid_inr{
@@ -3725,10 +3801,48 @@ li.year_details {
         max-width: 95%;
     }
     
+    .blogList {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 90%;
+        float: none;
+    }
+    
+    
   }
+
+    /* 1150 screen */
+@media only screen and (max-width: 1300px) { 
+    .banner_title {
+        font-size: 30px;
+        max-width: 50%;
+    }
+    .banner_content {
+        max-width: 50%;
+        font-size: 22px;
+    }
+    .blogList_feature_content {
+        width: 100%;
+        float: left;
+        line-height: 1.5;
+        min-height: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 8;
+        -webkit-box-orient: vertical;
+    }
+
+}
 
   /* 1150 screen */
 @media only screen and (max-width: 1150px) {
+    .blogList_feature_content {
+        -webkit-line-clamp: 7;
+    }
+    .homeBanner_forBlog .homeBanner_main, .homeBanner_forPricing .homeBanner_main {
+        padding: 400px 0px 8px;
+    }
     .contact-form-address {
         width: 45%;
         float: right;
@@ -3874,10 +3988,27 @@ li.year_details {
     .middleBlockContainer{
         max-width: 96%;
     }
+    .blogList_title {
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .single_blogList {
+        width: calc(34% - 50px);
+        margin: 20px;
+    }
   }
 
     /* 1024 screen */
 @media only screen and (max-width: 1024px) { 
+    .homeBanner_main {
+        background-size: 31%;
+    }
+    .blogList_title {
+        font-size: 17px;
+    }
     .our_passionate_team_main{
         width:80%;
         max-width: 100%;
@@ -3901,14 +4032,83 @@ li.year_details {
     .our_passionate_team .widget_title {
         padding-bottom: 40px;
     }
-
+    .our-team:nth-child(3n+1) {
+        clear: both;
+    }
+    .inverstors_block {
+        width: 100%;
+        float: left;
+        background: #fff;
+        padding: 0px 0px 80px 0px;
+    }
+    .ourJourney {
+        width: 100%;
+        float: left;
+        padding: 0px 0px;
+    }
+    .aboutContent_block {
+        width: 100%;
+        float: left;
+        padding: 50px 0 0px 0px;
+    }
 }
 
 /* 1000 screen */
 @media only screen and (max-width: 1000px) {
+    .uspsMainBlockLeft.Stickyusps-Left {
+        display: none;
+    }
+    .uspsMainBlockRight {
+        width: 100%;
+        float: right;
+        text-align: center;
+    }
+    .homeBanner_forAdmin .homeBanner_main {
+        background-size: 50%;
+        padding: 462px 0px 140px;
+        background-position: 50% 21%;
+    }
+    .homeBanner_forTeacher .homeBanner_main, .homeBanner_forStudent .homeBanner_main{
+        background-size: 50%;
+        padding: 400px 0px 140px;
+        background-position: 50% 21%;
+    }
+    .homeBanner_main .CallToAction_btn {
+        float: none;
+        text-align: center;
+    }
+    .aboutContent_main {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 90%;
+    }
+    .homeBanner_main {
+        width: 100%;
+        float: left;
+        padding: 399px 0px 70px;
+        background-position: 50% 29%;
+        background-size: 40%;
+    }
     .contact-thankyou-wrapper h2 {
         font-size: 28px;
     } 
+    .banner_title {
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+    }
+    .banner_content {
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+    }
+    .banner_title span {
+        font-size: 46px;
+    }
+    .aboutContent_block {
+        padding: 40px 0;
+        font-size: 19px;
+    }
     .contact-form-address-inr h3 {
         font-size: 38px;
     }
@@ -3924,10 +4124,15 @@ li.year_details {
         padding: 80px 0px;
     }
     .inverstors_block {
-        padding: 80px 0px;
+        padding: 50px 0px;
     }
     .ourJourney {
-        padding: 0px 0px 80px 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .our_passionate_team {
+        width: 100%;
+        float: left;
+        padding: 20px 0;
     }
     .product-role-small_content {
         width: 80%;
@@ -3965,7 +4170,15 @@ li.year_details {
 
 /* 935 screen */
 @media only screen and (max-width: 935px) { 
-    
+    th.title_pricing {
+        padding: 0 9px;
+    }
+    .DoublecallToActionLeft {
+        padding: 50px 0 0px 0px;
+    }
+    .DoublecallToActionRight {
+        padding: 50px 0 50px 0px;
+    }
     .testmonials {
         width: 100%;
         float: left;
@@ -4115,7 +4328,7 @@ li.year_details {
     }
     .pricing_title {
         font-size: 20px;
-        margin-bottom: 10px;
+        margin-bottom: 26px;
     }
     .pricing_value {
         font-size: 16px;
@@ -4129,8 +4342,11 @@ li.year_details {
     .pricing_table_main p {
         font-size: 16px;
     }
+    .sticky_table_menu {
+        display: none;
+    }
     .pricing_table_main td, .pricing_table_main th {
-        width: auto;
+        width: 33.33%;
     }
     button.pricing_btn {
     width: 160px;
@@ -4178,6 +4394,17 @@ li.year_details {
     .our-team .title {
         font-size: 16px;
         font-weight: 400;
+    }
+    .single_blogList {
+        width: calc(48% - 30px);
+        margin: 20px;
+    }
+    .blogList_feature_content {
+        -webkit-line-clamp: 5;
+    }
+    .single_blogList:nth-child(3n+1) {
+        float: left;
+        clear: none;
     }
     .our-team .post {
         display: block;
@@ -4237,7 +4464,25 @@ li.year_details {
         width: 88%;
     }
     .homeBanner_main{
-        padding: 200px 0 100px 0;
+        /* padding: 200px 0 100px 0; */
+        width: 100%;
+        float: left;
+        padding: 334px 0px 32px;
+        background-size: 49%;
+    }
+    .slider_logo_block {
+        width: 100%;
+        float: left;
+        margin-top: 0;
+    }
+    .banner_title span {
+        font-size: 34px;
+    }
+    .banner_title {
+        font-size: 27px;
+    }
+    .banner_content {
+        font-size: 20px;
     }
     .core_capabilities, .testimonial.drak_gray, .who_is_byndr, .homeAvailableDivices, .pricing_table {
         padding: 60px 0px 60px 0px;
@@ -4253,6 +4498,19 @@ li.year_details {
 
 /* 767 screen */
 @media only screen and (max-width: 767px) { 
+    .menu_block ul li a {
+        font-size: 16px;
+    }
+    .submenu ul li a {
+        font-size: 16px;
+        padding-left: 60px;
+    }
+    .menu_cta_btns ul li a {
+        font: 100 14px Lato;
+    }
+    .homeBanner_forBlog .homeBanner_main, .homeBanner_forPricing .homeBanner_main {
+        padding: 285px 0px 8px;
+    }
     .desktop {
         display: none;
     }
@@ -4297,8 +4555,8 @@ li.year_details {
     }.who_is_byndr_right_block {
         width: 58%;
     }
-    .column-reverse .who_is_byndr_left_block{
-        width: 58%;
+    .column-reverse .who_is_byndr_left_block {
+        width: 100%;
     }
     .column-reverse .who_is_byndr_right_block{
         width: 40%;
@@ -4367,7 +4625,22 @@ li.year_details {
         max-width: 100%;
     }
     li.year_details:before{
-        background: none;
+        content: "";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    left: -5px;
+    top: 14px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    border: 1px solid #cb0a7a;
+    border-radius: 50%;
+    padding: 0;
+    line-height: 1;
+    transform: rotate(100deg);
+    -webkit-transform: rotate(100deg);
+    background: #cb0a7a !important;
     }
     .slider_logo img {
         width: 80%;
@@ -4402,6 +4675,13 @@ li.year_details {
         width: 89%;
         max-width: 100%;
     }
+    a.pricing_btn {
+        font-size: 16px;
+        padding: 16.45px 17.599px;
+    }
+    button.pricing_btn{
+        font-size: 16px;
+    }
 
 }
 /* 705 screen */
@@ -4410,9 +4690,25 @@ li.year_details {
         width: 44%;
         margin: 3%;
     }
+    .our-team:nth-child(3n+1) {
+        clear: none;
+    }
+    .homeBanner_forTeacher .homeBanner_main {
+        background-size: 65%;
+        background-position: 50% 25%;
+    }
+    .homeBanner_forStudent .homeBanner_main {
+        background-size: 60%;
+        background-position: 50% 25%;
+    }
+    .homeBanner_forAdmin .homeBanner_main {
+        background-size: 65%;
+        background-position: 50% 25%;
+    }
 }
 /* 678 screen */
 @media only screen and (max-width: 678px) { 
+   
     .vision_block {
         width: 100%;
         float: left;
@@ -4528,6 +4824,9 @@ li.year_details {
     .slider {
         margin-top: 0;
     }
+    .role_based_header_sticky {
+        display: none;
+    }
 }
 /* 639 screen */
 @media only screen and (max-width: 639px) { 
@@ -4542,9 +4841,16 @@ li.year_details {
         background: #cb0a7a;
         color: #fff;
     }
+    .single_blogList {
+        width: calc(48% - 35px);
+        margin: 20px;
+    }
 }
 /* 600 screen */
 @media only screen and (max-width: 600px) { 
+    .homeBanner_forBlog .homeBanner_main, .homeBanner_forPricing .homeBanner_main {
+        background-size: 41%;
+    }
     .vision_mission_content {
         font-size: 16px;
         text-align: left;
@@ -4698,6 +5004,10 @@ li.year_details {
 }
 /* 568 screen */
 @media only screen and (max-width: 568px) {  
+    .homeBanner_main {
+        background-position: 50% 28%;
+        background-size: 62%;
+    }
     .product-role-small_content {
         margin-bottom: 40px;
     }
@@ -4711,7 +5021,13 @@ li.year_details {
         opacity: 1;
         right: -14px;
     }
-    
+    .blogList_feature_content {
+        -webkit-line-clamp: unset;
+    }
+    .single_blogList {
+        width: 92%;
+        margin: 4%;
+    }
     .homeBanner_left {
         margin-top: 40px;
         margin-left: 0;
@@ -4726,6 +5042,9 @@ li.year_details {
         margin-bottom: 20px;
     }
     .column-reverse .who_is_byndr_left_block {
+        width: 100%;
+    }
+    .who_is_byndr_right_block.image {
         width: 100%;
     }
     .contact_section{
@@ -4819,9 +5138,28 @@ li.year_details {
 }
 
 /* 468 screen */
-@media only screen and (max-width: 468px) {  
+@media only screen and (max-width: 468px) { 
+    .homeBanner_forTeacher .homeBanner_main {
+        padding: 310px 0px 70px;
+    }
+    .homeBanner_forAdmin .homeBanner_main {
+        background-size: 65%;
+        background-position: 50% 28%;
+        padding: 278px 0px 42px;
+    }
+    .homeBanner_forStudent .homeBanner_main {
+        background-size: 60%;
+        background-position: 50% 25%;
+        padding: 227px 0px 52px;
+    }
     .homeGrid.product-role {
-        padding: 100px 0 0px 0px;
+        padding: 100px 0 50px 0px;
+    }
+    .homeBanner_forBlog .homeBanner_main, .homeBanner_forPricing .homeBanner_main {
+        background-size: 50%;
+    }
+    .banner_title span {
+        font-size: 26px;
     }
     .our-team {
         width: 220px;
@@ -4920,6 +5258,17 @@ li.year_details {
         max-width: 275px;
         margin: 0px auto;
     }
+    .homeBanner_main {
+        background-position: 50% 25%;
+        background-size: 76%;
+        padding: 264px 0px 32px;
+    }
+    .banner_title span {
+        font-size: 28px;
+    }
+    .banner_title {
+        font-size: 20px;
+    }
     .flex-direction-nav .flex-prev {
         opacity: 1;
         left: -30px;
@@ -5009,11 +5358,17 @@ li.year_details {
         padding: 8px 0 2px 0px;
         border-radius: 50px;
     }
+    .homeBanner_forTeacher .homeBanner_main {
+        padding: 270px 0px 140px;
+    }
     .group_buttons .widget_button {
         width: 43%;
     }
+    .homeBanner_forBlog .homeBanner_main, .homeBanner_forPricing .homeBanner_main {
+        background-size: 63%;
+    }
     .widget_button a {
-        padding: 9px 19px;
+        padding: 9px 14px;
         font-size: 14px;
     }
     .core_capabilities.bg_gray li:before {
@@ -5074,6 +5429,5 @@ li.year_details {
            position: fixed;
            top: 120px;
        }
-
+       
    /* End USPs styles   */
- 

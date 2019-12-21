@@ -1,7 +1,6 @@
 import React from 'react';
 import { InnerPageTitleBlock, Header, FooterCTA, Footer, Navigation, PricingPlans, Seo } from '../theme/components';
 
-
 import { connect } from 'react-redux';
 
 
@@ -22,7 +21,7 @@ class Pricing extends React.Component<props, any> {
         <Header />
         </div>
         <div className="bodySection">
-          <InnerPageTitleBlock fromPage="Pricing" role="no_role" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false" />
+          <InnerPageTitleBlock role="pricing" fromPage="Pricing" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false" />
           <PricingPlans />
           <FooterCTA />
         </div>
@@ -42,8 +41,3 @@ export default connect(
   map,
   null,
 )(Pricing);
-
-
-
-
-

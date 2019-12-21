@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Dummy_Img, bannerForTeachers, bannerForStudents, bannerForAdmin } from '../../assets';
+import {  bannerForTeachers, bannerForStudents, bannerForAdmin } from '../../assets';
 
 interface props {
     onLeftMenu?(): void;
