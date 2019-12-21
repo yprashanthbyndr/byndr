@@ -22,6 +22,7 @@ const INIT_STATE: HomeReducer = {
     num_students: '',
     num_classes: '',
     comments: '',
+    Recaptcha_Token: '',
   },
   ContactFormSubmitSuccess: false,
   OpenMenuBar: false,
@@ -185,6 +186,13 @@ function SaveContactDetails(state: any, action: any) {
         ...state, ContactUsForm: {
           ...state.ContactUsForm,
           comments: action.payload.value,
+        }
+      }
+    case 'Recaptcha_Token':
+      return {
+        ...state, ContactUsForm: {
+          ...state.ContactUsForm,
+          Recaptcha_Token: action.payload.value,
         }
       }
     default:

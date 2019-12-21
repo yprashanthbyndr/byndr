@@ -31,5 +31,6 @@ interface Intr_ContactFormObject {
     institution: string
     num_students: string
     num_classes: string
-    comments: string
+    comments: string,
+    Recaptcha_Token: any,
 }
