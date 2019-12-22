@@ -4,15 +4,23 @@ import { Blog_img } from '../../assets';
 import { connect } from 'react-redux';
 import { CantactUs_Ip_Values, SubmitContactPage } from '../../services';
 
+var Recaptcha = require('react-recaptcha');
+
+
+
+let recaptchaInstance;
+
+// create a reset function
+const resetRecaptcha = () => {
+  recaptchaInstance.reset();
+};
+
+
+
 interface props {
   onLeftMenu?(): void;
   ContactUsForm: any;
-
-
 }
-
-
-
 
 class ContactUsForm extends React.Component<props, any> {
 
@@ -41,7 +49,7 @@ class ContactUsForm extends React.Component<props, any> {
       alert('please enter valid details')
     } else {
       let validate = validateEmail(FormDetails.email);
-     // let ObjectResponseis = this.props.ContactUsForm
+      // let ObjectResponseis = this.props.ContactUsForm
       SubmitContactPage(FormDetails)
     }
 
@@ -113,7 +121,7 @@ class ContactUsForm extends React.Component<props, any> {
           </div> : null
           } */}
 
-{/* <div className="singleField">
+          {/* <div className="singleField">
   <div className="input-select-wrapper" style={{ width: '498px' }}>
     <select id="contact_purpose"
       onChange={(txt) => this.ReadeInput('title', txt.target.value)}
@@ -137,9 +145,26 @@ class ContactUsForm extends React.Component<props, any> {
               onChange={(txt) => this.ReadeInput('comments', txt.target.value)}
             />
           </div>
-          <div className="singleField" onClick={() => this.OnClickSubmitForm()}>
-            <input type="submit" defaultValue="Send It!" />
+
+
+
+          <div className="singleField">
+            <Recaptcha
+              className="Recaptcha_class"
+              sitekey="6LdK-MYUAAAAAFfp0BoBn3FQQSQFaUWW14TQHtmk"
+              ref={e => recaptchaInstance = e}
+              render="explicit"
+              theme="dark"
+              verifyCallback={(respo) => { this.ReadeInput('Recaptcha_Token', respo) }}
+              expiredCallback={(res) => this.ReadeInput('Recaptcha_Token', '')}
+              onloadCallback={(respo) => { console.log(" . /. / . / onloadCallback :  ", respo) }}
+            // size="compact"
+            />
           </div>
+          <div className="singleField" onClick={() => this.OnClickSubmitForm()}>
+            <input disabled={this.props.ContactUsForm.Recaptcha_Token ===''} type="submit" onClick={()=> console.log("click on submit")} defaultValue="Send It!" />
+          </div>
+
           {/* </form> */}
         </div>
       </div>
