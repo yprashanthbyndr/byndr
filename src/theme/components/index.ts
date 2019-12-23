@@ -32,6 +32,7 @@ import FooterDoubleCTA from './FooterDoubleCTA';
 import AboutContentBlock from './AboutContentBlock';
 import CTAForCollege from './CTAForCollege';
 import Seo from '../thirdParty/Seo';
+import HomeUSPSCTA from './HomeUSPSCTA';
 
 export {ContactusThankYou,ContactUsForm, ContactFormAddress,Header,Footer,FooterCTA,HomeTestimonial,SupportedDivices,Home_B_Hero,WelcomeBannerGrids,FeaturesGrid,Home_A_Hero,Home_A_Grids,Navigation,InnerPageTitleBlock,InvestorsBlock,OurJourneyBlock,OurTeam,VisionAndMission,PricingPlans,
     ProductForRolesBlock,BlogGrid,
@@ -46,5 +47,6 @@ export {ContactusThankYou,ContactUsForm, ContactFormAddress,Header,Footer,Footer
     FooterDoubleCTA,
     AboutContentBlock,
     CTAForCollege,
-    Seo
+    Seo,
+    HomeUSPSCTA
  }

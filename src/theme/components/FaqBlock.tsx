@@ -29,7 +29,6 @@ class FaqBlock extends React.Component<props, any> {
         <div className="faq">
           <div className="faq_main">
             <div className="widget_title"> FREQUENTLY ASKED QUESTIONS </div>
-            <div className="product-role-small_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</div>
             <div className="accordion_block">
 
             {this.props.faqList.map((singleFaq,index)=>{

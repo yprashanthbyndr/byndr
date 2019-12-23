@@ -140,19 +140,19 @@ class USPs extends React.Component<props, any> {
             for: "page3",
             icon: groupspng,
             name: "Groups"
-        }, {
+        },{
             for: "page4",
+            icon: courseworkpng,
+            name: "Attendance & Grades"
+        },{
+            for: "page5",
             icon: Materialspng,
             name: "Materials"
         }, {
-            for: "page5",
+            for: "page6",
             icon: calendarpng,
             name: "Calendar"
-        }, {
-            for: "page6",
-            icon: courseworkpng,
-            name: "Coursework"
-        }, {
+        },  {
             for: "page7",
             icon: Userfriendlypng,
             name: "User-Friendly"
@@ -174,18 +174,18 @@ class USPs extends React.Component<props, any> {
             for: "page3",
             logo: Groups,
             content: "Groups in Byndr, way to collaborate to interact or initiate one-one discussions (teacher with students, students with students, even teachers with teachers) of the group. This is ideal solution for mentoring for Events, Sports, Innovation or anything that you would to drive learning curricular or extra-curricular."
-        }, {
+        },{
             for: "page4",
+            logo: Coursework,
+            content: "At Byndr, Teachers can manage all their day-to-day activities like marking attendance, post and manage assignments, manage and communicate grades etc. All these options can be easily done on any device."
+        }, {
+            for: "page5",
             logo: Materials,
             content: "Within Byndr, you can organize all the materials for a class, and share it with all the students in class. You can add Images, Word, Excel, PowerPoint and pdf files, weblinks or even can share drive links."
         }, {
-            for: "page5",
+            for: "page6",
             logo: Calendar,
             content: "Calendar is designed, you can easily monitor all your class schedule, assignments, important due dates and get reminders about upcoming activities, thereby giving zero-chance of missing to-do's."
-        }, {
-            for: "page6",
-            logo: Coursework,
-            content: "At Byndr, Teachers can manage all their day-to-day activities like marking attendance, post and manage assignments, manage and communicate grades etc. All these options can be easily done on any device."
         }, {
             for: "page7",
             logo: UserFriendly,

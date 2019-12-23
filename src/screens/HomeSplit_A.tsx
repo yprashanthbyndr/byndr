@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import { Home_A_Hero, Home_A_Grids, SupportedDivices, HomeTestimonial, Header, Footer, FooterDoubleCTA, Seo } from '../theme/components';
-import { Helmet } from "react-helmet";
-
+import { Home_A_Hero, Home_A_Grids, HomeTestimonial, Header, Footer, FooterDoubleCTA, Seo, HomeUSPSCTA } from '../theme/components';
 import { USPs } from './USPs';
 
 import { connect } from 'react-redux';
@@ -37,6 +35,7 @@ class HomeSplit_A extends Component<props, any>{
                     <Home_A_Grids />
                     {/* <FeaturesGrid /> */}
                     {/* <SupportedDivices /> */}
+                    <HomeUSPSCTA />
                     <USPs routeProps={this.props.routeProps} />
                     <HomeTestimonial />
                     <FooterDoubleCTA />

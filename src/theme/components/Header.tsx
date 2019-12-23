@@ -10,7 +10,9 @@ import ReactGA from 'react-ga';
 interface props {
     onLeftMenu?(): void;
     MainReducer: any,
-    Hide?: boolean
+    Hide?: boolean,
+    normalScroll?:any,
+    Pagetilte?:any
 }
 
 class Header extends React.Component<props, any> {
@@ -53,19 +55,22 @@ class Header extends React.Component<props, any> {
         document.documentElement.scrollTop = 0;
     }
     render(): any {
-        let handleBorder = this.state.scroll_length > 200 ? true:false
+        let handleBorder = this.props.normalScroll == "false" ? this.state.scroll_length > 200 ? true:false : this.state.scroll_length > 80 ? true:false
         return (
             <header
                 className={this.props.Hide?"slideup":"slidedown"}>
                 <div ref="Sticky_context_header" className={this.props.Hide ? "header_main" : "header_main_sticky"} style={{borderBottom:handleBorder === true ?"1px solid #efefef":"none",backgroundColor:handleBorder === true ? "#fff":''}}>
                     <div className="header_main_inr">
                         <div className="logo">
-                            <NavLink exact to="/" onClick={() =>   {
+                            <div className={this.props.normalScroll == "true" ? "byndrLogoForHeaderMini":""}><NavLink exact to="/" onClick={() =>   {
                                             this.ScroolToTp()
                                         }}><img src={byndr_Logo} className="default_logo" /></NavLink>
                             <NavLink exact to="/"  onClick={() =>   {
                                             this.ScroolToTp()
                                         }}><img src={byndr_Logo_White} className="transparent_logo" /></NavLink>
+
+                                    {this.state.scroll_length > 100 ?<span className="breadCrumbTitle">{this.props.Pagetilte}</span>:""}
+                                        </div>
                         </div>
                         <div className="header_nav">
                             <div className="header_nav_inr">
@@ -73,7 +78,7 @@ class Header extends React.Component<props, any> {
                                     <NavLink exact to="/">Sign In</NavLink>
                                 </div>
                                 <div className="signUpFree">
-                                    <NavLink exact to="/">SignUp - Free</NavLink>
+                                    <NavLink exact to="/">Sign Up - Free</NavLink>
                                 </div>
                                 <div className="navMenu">
                                     <div className="menuIcon" onClick={() => Open_Or_Close_MenuBar()}>

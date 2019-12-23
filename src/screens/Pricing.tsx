@@ -18,7 +18,7 @@ class Pricing extends React.Component<props, any> {
       <div>
         <Seo seoData={this.props.routeProps} />
         <div className="header_main_container">
-        <Header />
+        <Header normalScroll="true" Pagetilte="pricing" />
         </div>
         <div className="bodySection">
           <InnerPageTitleBlock role="pricing" fromPage="Pricing" pageSubtitle="" videoDisplay="false" tryBtnDisplay="false" />
