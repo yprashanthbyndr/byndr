@@ -40,7 +40,7 @@ export default class FooterDoubleCTA extends React.Component<props, any> {
                               </div>
                   <div className="DoublecallToAction_btn">
                     <div className="DoublecallToAction_btn_inr">
-                      <NavLink exact to="/request-a-demo">
+                      <NavLink exact to="/request-demo">
                         Request A Demo
                                   </NavLink>
                     </div>

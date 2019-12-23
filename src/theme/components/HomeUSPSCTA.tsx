@@ -2,6 +2,7 @@ import React from 'react';
 import { ben_franklin,
     penn_selvania,
     IntraEdge_Logo} from '../../assets';
+import { NavLink } from 'react-router-dom';
 interface props {
     onLeftMenu?(): void;
 }
@@ -18,9 +19,7 @@ export default class HomeUSPSCTA extends React.Component<props, any> {
                                 <div className="home_usps_block_content">Creating an opportunity for students to connect with educational resources on Byndr social learning platform.</div>
                             </div>
                             <div className="home_usps_btns">
-                                <a href="./request-demo">
-                                    Get started today
-                                </a>
+                                <NavLink exact to="/request-demo">Get started today</NavLink>
                             </div>
                         </div>
                     </div>

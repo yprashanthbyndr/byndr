@@ -261,8 +261,8 @@ const ByndrRoutes = [
         seoVisibility:true, // default it has to be true
         metaTitle:"Request a Demo",
         metaTags:"Request a Demo Meta Tags",
-        path:'/request-a-demo',
-        key: 'request-a-demo',
+        path:'/request-demo',
+        key: 'request-demo',
         metaDescription:"Request a Demo Description",
         component:RequestDemo,
         routes: []

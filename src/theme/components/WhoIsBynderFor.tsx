@@ -48,7 +48,7 @@ export default class WhoIsBynderFor extends React.Component<props, any> {
                                 <div className="widget_block_title">For College</div>
                                 <div className="content">Byndr helps the college administration overcome the challenges of keeping track of students details, performances and punctuality, through its social learning platform. It also provides a support system to the teacher through better coordination, communication and systematic functioning.</div>
                                 <div className="group_buttons">
-                                        <div className="widget_button"><NavLink exact to="/request-a-demo">Request A Demo </NavLink></div>
+                                        <div className="widget_button"><NavLink exact to="/request-demo">Request A Demo </NavLink></div>
                                         <div className="widget_button"> <NavLink exact to="/">Learn More</NavLink></div>
                                 </div>
                             </div>
