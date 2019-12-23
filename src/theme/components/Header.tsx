@@ -64,10 +64,10 @@ class Header extends React.Component<props, any> {
                         <div className="logo">
                             <div className={this.props.normalScroll == "true" ? "byndrLogoForHeaderMini":""}><NavLink exact to="/" onClick={() =>   {
                                             this.ScroolToTp()
-                                        }}><img src={byndr_Logo} className="default_logo" /></NavLink>
+                                        }}><img src={byndr_Logo} className="default_logo" style={{width:this.state.scroll_length > 100 ?100:120}} /></NavLink>
                             <NavLink exact to="/"  onClick={() =>   {
                                             this.ScroolToTp()
-                                        }}><img src={byndr_Logo_White} className="transparent_logo" /></NavLink>
+                                        }}><img src={byndr_Logo_White} className="transparent_logo" style={{width:this.state.scroll_length > 100 ?100:120}} /></NavLink>
 
                                     {this.state.scroll_length > 100 ?<span className="breadCrumbTitle">{this.props.Pagetilte}</span>:""}
                                         </div>
