@@ -93,10 +93,9 @@ class MiniHeader extends React.Component<props, any> {
 
         return (
             < div
-                className={this.props.StickMiniHeader ? "role_based_header_sticky" : "role_based_header"} style={{ top: this.props.StickMiniHeader && !this.props.HideHeader ? 97 : 0 }}>
+                className={this.props.StickMiniHeader ? "role_based_header_sticky" : "role_based_header"} style={{ top: this.props.StickMiniHeader && !this.props.HideHeader ? 66 : 0 }}>
                 <div className="role_based_header_main"
                 >
-
                     <div className="role_title">
                         {/* <TransitionGroup component={null}> */}
                         {this.props.StickMiniHeader ?
